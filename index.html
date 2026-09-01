@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>OHC History Web</title>
+    <link rel='stylesheet' href='carthage.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="dotty">
+    </div>
+    <div class="candywrapper">
+        <div class="glow">
+    <div class="centeredmother">
+        <h1 style="color:white; font-size: 3em; background-color: rgba(0, 0, 0, 0.5);">= The History Web =</h1>
+    </div>
+</div>
+    <div class="starter">
+            <img src="logo.png">
+            
+            <div class="startertext" style="text-align: left; align-items: left; justify-content: left;">
+                <div class="glowhover">
+                <h2 style="color: white; font-size: 1.5em;">> How to use this website?</h2>
+                </div>
+                <div class="glowhover">
+                <h2 style="color: white; font-size: 1.5em;">> Where do I submit an article?</h2>
+                </div>
+                <div class="glowhover">
+                <h2 style="color: white; font-size: 1.5em;">> What is The October Humanities Club?</h2>
+                </div>
+            </div>
+    </div>
+</div>
+<script>
+    let cursor = document.querySelector('#dotty');
+    let body = document.querySelector('.candywrapper');
+    document.addEventListener('mousemove', e =>{
+        body.style.backgroundPositionX = e.pageX / -11 + 'px';
+        body.style.backgroundPositionY = e.pageY / -11 + 'px';
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    })
+</script>
+</body>
+</html>
