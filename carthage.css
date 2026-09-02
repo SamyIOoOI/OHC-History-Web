@@ -85,3 +85,21 @@ display: none;
     font-weight: bold;
     user-select: none;
 }
+.map{
+    max-width: 2400px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.continentlink {
+    fill: rgb(160, 2, 2);
+    transition: fill 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+    cursor: none;
+}
+.continentlink:hover {
+    fill: rgb(230, 111, 0);
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px rgb(230, 111, 0));
+}
