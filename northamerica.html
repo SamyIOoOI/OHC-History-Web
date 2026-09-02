@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>North America</title>
+    <link rel='stylesheet' href='carthage.css'>
+</head>
+<body>
+    <div id="dotty">
+    </div>
+    <div class="candywrapper">
+        <h1 style="color: orangered; font-size:xx-large">UNDER CONSTRUCTION</h1>
+        <h1 style="color: orangered; font-size:xx-large"><a href="index.html">GO BACK</a></h1>
+    </div>
+    <script>
+    let cursor = document.querySelector('#dotty');
+    let body = document.querySelector('.candywrapper');
+    document.addEventListener('mousemove', e =>{
+        body.style.backgroundPositionX = e.pageX / -11 + 'px';
+        body.style.backgroundPositionY = e.pageY / -11 + 'px';
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    })
+    function throwacoinatmyface(target, target2){
+        const bodytext = document.getElementsByClassName(target)[0];
+        const arrowpointer = document.getElementsByClassName(target2)[0];
+        if(bodytext.style.display == 'block'){
+            bodytext.style.display = 'none';
+            arrowpointer.textContent= '>';
+        }
+        else{
+            bodytext.style.display = 'block';
+            arrowpointer.textContent= 'v';
+        }
+    }
+</script>
+</body>
+</html>
