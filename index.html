@@ -21,16 +21,25 @@
     <div class="starter">
             <img src="logo.png">
             
-            <div class="startertext" style="text-align: left; align-items: left; justify-content: left;">
+            <div class="startertext" style="text-align: left; align-items: left; justify-content: left; ">
                 <div class="glowhover">
-                <h2 style="color: white; font-size: 1.5em;">> How to use this website?</h2>
+                    <div style="color: white; font-size: 1.5em; margin-bottom: 25px; margin-top: 15px;">
+                        <btn class="fakeheader" id="usage" onclick="throwacoinatmyface('answer1','arrow1')"><span class="arrow1">></span> How to use this website?</btn>
+                    </div>
                 </div>
+                <p class='answer1' style="color: white;">THIS IS A PLACEHOLDER THIS IS A PLACEHOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER</p>
                 <div class="glowhover">
-                <h2 style="color: white; font-size: 1.5em;">> Where do I submit an article?</h2>
+                    <div style="color: white; font-size: 1.5em;  margin-bottom: 25px;">
+                        <btn class="fakeheader" id="article" onclick="throwacoinatmyface('answer2','arrow2')"><span class="arrow2">></span> Where do I submit an article?</btn>
+                    </div>
                 </div>
+                <p class='answer2' style="color: white;">THIS IS A PLACEHOLDER THIS IS A PLACEHOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER</p>
                 <div class="glowhover">
-                <h2 style="color: white; font-size: 1.5em;">> What is The October Humanities Club?</h2>
+                    <div style="color: white; font-size: 1.5em;  margin-bottom: 25px;">
+                        <btn class="fakeheader" id="clubinfo" onclick="throwacoinatmyface('answer3','arrow3')"><span class="arrow3">></span> What is The October Humanities Club?</btn>
+                    </div>
                 </div>
+                <p class="answer3" style="color: white;">THIS IS A PLACEHOLDER THIS IS A PLACEHOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER THIS IS A PLACE HOLDER</p>
             </div>
     </div>
 </div>
@@ -43,6 +52,18 @@
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     })
+    function throwacoinatmyface(target, target2){
+        const bodytext = document.getElementsByClassName(target)[0];
+        const arrowpointer = document.getElementsByClassName(target2)[0];
+        if(bodytext.style.display == 'block'){
+            bodytext.style.display = 'none';
+            arrowpointer.textContent= '>';
+        }
+        else{
+            bodytext.style.display = 'block';
+            arrowpointer.textContent= 'v';
+        }
+    }
 </script>
 </body>
 </html>
