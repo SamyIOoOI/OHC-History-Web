@@ -5,6 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 body{
     background: radial-gradient(circle at 50% 45%, #3a1208 0%, #0f0301 100% ); 
@@ -36,11 +37,10 @@ h1{
     position: fixed;
     inset: 0;
     pointer-events: none;
-    background-image: url(darkgrain.png);
+    background-image: url(otis-redding.png);
     background-repeat: repeat;
-    opacity: 0.50;
-    mix-blend-mode: overlay;
-    z-index: 9998;
+    opacity: 0.10;
+    z-index: 2;
 }
 .sky{
     position: absolute; inset: 0;
@@ -135,4 +135,29 @@ display: none;
     fill: rgb(230, 111, 0);
     transform: scale(1.08);
     filter: drop-shadow(0 0 10px rgb(230, 111, 0));
+}
+.glitches::before {  
+    content: "";
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.18) 2px,
+        rgba(0, 0, 0, 0.18) 4px
+    );
+    pointer-events: none;
+    animation: crt-scanline-flicker 0.08s ease-in-out infinite;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+}
+
+@keyframes crt-scanline-flicker {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.92;
+    }
 }

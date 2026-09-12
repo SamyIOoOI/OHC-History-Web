@@ -15,8 +15,6 @@
     <div class="candywrapper">
             <div class="sky">    
     </div>
-        <div class="grainy">
-        </div>
         <div class="glow">
     <div class="centeredmother">
         <h1 style="color:white; font-size: 3em; background-color: rgba(0, 0, 0, 0.5);">= The History Web =</h1>
@@ -76,6 +74,10 @@
         <p style="text-indent: 1em; color: orangered;" align="center">Made by SamyIOoOI on Github under the GPL 3.0 Licence - OHC History Mentor</p>
     </footer>
 </div>
+    <div class="grainy">
+    </div>
+    <div class="glitches">
+    </div>
 
 <script>
     const sky = document.querySelector('.sky');
@@ -113,7 +115,7 @@
         swirly.style.width = w + 'px';
         swirly.style.backgroundSize = (640 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
-        swirly.style.opacity = (0.5 + Math.random() * 0.15).toFixed(2);
+        swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
 
