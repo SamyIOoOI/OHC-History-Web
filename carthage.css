@@ -1,3 +1,12 @@
+@font-face{
+    font-family: "BlackKiryand";
+    src: url(fonts/black-kiyrand/BlackKiyrand-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.gothic{
+    font-family: "BlackKiryand";
+}
 .medievalsharp-regular {
   font-family: "MedievalSharp", cursive;
   font-weight: 400;
