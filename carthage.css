@@ -174,3 +174,7 @@ display: none;
         opacity: 0.92;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #dotty {display: none}
+}
