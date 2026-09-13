@@ -92,12 +92,13 @@
     
     let cursor = document.querySelector('#dotty');
     let body = document.querySelector('.candywrapper');
+    if (window.matchMedia('(pointer: fine)').matches){
     document.addEventListener('mousemove', e =>{
         body.style.backgroundPositionX = e.pageX / -11 + 'px';
         body.style.backgroundPositionY = e.pageY / -11 + 'px';
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
-    })
+    })}
     function throwacoinatmyface(target, target2){
         const bodytext = document.getElementsByClassName(target)[0];
         const arrowpointer = document.getElementsByClassName(target2)[0];

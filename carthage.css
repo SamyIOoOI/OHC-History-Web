@@ -175,6 +175,10 @@ display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
-    #dotty {display: none}
+@media (pointer: coarse) {
+    #dotty {display: none;}
+    body {cursor: auto;}
+    .fakeheader {cursor: pointer;}
+    .continentlink {cursor: pointer;}
+
 }
