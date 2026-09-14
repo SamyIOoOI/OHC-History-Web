@@ -21,6 +21,7 @@ body{
     font-family: 'MedievalSharp', cursive;
     min-height: 100vh;
     cursor: none;
+    margin: 0;
 }
 #dotty{
     position: fixed;
@@ -101,6 +102,37 @@ h1{
     position: relative; z-index: 1;
     min-height: 100vh;
 }
+#stickystuck{
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 9997;
+    overflow: hidden;
+    background-color:#3a1208;
+    border-bottom: 5px solid #1a0806;
+    cursor: hide;
+    font-size: x-large;
+    align-items: center;
+}
+#stickystuck a:first-of-type {margin-left: auto;}
+#stickystuck a:last-of-type {margin-right: auto;}
+a {
+    cursor: default;
+    cursor: none;
+}
+#stickystuck a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+#stickystuck a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
 .answer1{
 display: none;
 }
@@ -164,7 +196,10 @@ display: none;
     inset: 0;
     z-index: 2;
 }
-
+.logo:hover {
+transform: scale(0.98);
+filter: drop-shadow(0 0 10px rgb(161, 39, 2));
+}
 @keyframes crt-scanline-flicker {
     0%,
     100% {
