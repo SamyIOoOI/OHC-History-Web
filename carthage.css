@@ -227,5 +227,15 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     body {cursor: auto;}
     .fakeheader {cursor: pointer;}
     .continentlink {cursor: pointer;}
+    #stickystuck {
+        font-size: small;
+        padding: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    }
+    #stickystuck a {
+    font-size: small;
+    padding: 6px 0.5em;
+    }
 
 }
