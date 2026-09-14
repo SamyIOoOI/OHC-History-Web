@@ -95,6 +95,7 @@ h1{
 .startertext{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 45px;
 }
 .candywrapper{
@@ -244,6 +245,9 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
         height: 2em; 
         margin-left: 2px;
         flex-shrink: 0;
+    }
+    .startertext {
+        align-items: stretch;
     }
 
 
