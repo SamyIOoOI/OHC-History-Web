@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 </head>
 <body>
-    <audio class="sfx" loop>
+    <audio class="sfx" loop id="identity0">
         <source src="backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -22,7 +22,7 @@
     <div id="stickystuck">
         <img src="tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="window.location.href='contactus.html'">
     <a href="index.html">Home</a>
-    <a href="#map">Map</a>
+    <a href="#map" id="mapnav">Map</a>
     <a href="content.html">Content</a>
     <a href="articles.html">Articles</a>
     <a href="contactus.html">Credits</a>
@@ -62,7 +62,7 @@
                 <p class="answer3" style="color: white; font-size: 1.2rem;  text-align: center;">OHC or October Humanities Club is a student-led organization focused on humanities, philosophy, debate and history with a friendly community & is one of the few Humanities clubs in all of Egypt.</p>
             </div>
     </div>
-    <div class="map">
+    <div class="map" id="map">
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -103,6 +103,10 @@
     const FRAME_W = 32;
     const SHEET_SCALE = 1.5;
     let current_soldier = 1;
+    const maplink = document.getElementById('mapnav');
+    maplink.addEventListener('click', mapchecker)
+    const arewehomeyet = document.querySelector('#identity0.sfx');
+    const maptrgt = document.getElementById('map');
     
     let cursor = document.querySelector('#dotty');
     let body = document.querySelector('.candywrapper');
@@ -114,6 +118,19 @@
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     })}
+    function mapchecker(event){
+        event.preventDefault();
+        mapchecker2()
+    }
+    function mapchecker2(){
+        if(arewehomeyet){
+            maptrgt.scrollIntoView({behavior: 'smooth'});
+        }
+        else{
+            window.location.assign("index.html")
+        }
+    }
+
     function rollit(){
         if (current_soldier < 16){
             current_soldier++;
