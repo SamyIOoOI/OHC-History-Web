@@ -250,6 +250,9 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
         align-items: stretch;
         text-align: center;
     }
+    .fakeheader {
+        text-align: center;
+    }
 
 
 }
