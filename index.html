@@ -21,10 +21,11 @@
     </div>
     <div id="stickystuck">
         <img src="tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="window.location.href='contactus.html'">
-    <a>test</a>
-    <a>test</a>
-    <a>test</a>
-    <a href="#map">map</a>
+    <a href="index.html">Home</a>
+    <a href="#map">Map</a>
+    <a href="content.html">Content</a>
+    <a href="articles.html">Articles</a>
+    <img src="warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>
     <div class="candywrapper">
     <div class="sky">    
@@ -100,9 +101,11 @@
     const COUNT = 60;
     const FRAME_W = 32;
     const SHEET_SCALE = 1.5;
+    let current_soldier = 1;
     
     let cursor = document.querySelector('#dotty');
     let body = document.querySelector('.candywrapper');
+    let warriorwheel = document.getElementById("wheel"); 
     if (window.matchMedia('(pointer: fine)').matches){
     document.addEventListener('mousemove', e =>{
         body.style.backgroundPositionX = e.pageX / -11 + 'px';
@@ -110,6 +113,16 @@
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     })}
+    function rollit(){
+        if (current_soldier < 16){
+            current_soldier++;
+        }
+        else (
+            current_soldier = 1
+        )
+        warriorwheel.src = "warriorwheel/"+ current_soldier +".png"
+        
+    }
     function throwacoinatmyface(target, target2){
         const bodytext = document.getElementsByClassName(target)[0];
         const arrowpointer = document.getElementsByClassName(target2)[0];

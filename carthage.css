@@ -128,10 +128,22 @@ a {
     padding-left: 2em;
     padding-right: 2em;
     text-decoration: none;
+    font-weight: bolder;
 }
 #stickystuck a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
+    transform: scale(1.12);
+filter: drop-shadow(0 0 15px rgb(207, 51, 3));
+}
+#stickystuck .soldier {
+    height: 2.5em;
+    width: auto;
+    align-self: center;
+    image-rendering: auto;
+    padding-right: 2em;
+}
+#stickystuck .soldier:hover {
+  transform: scale(0.98);
+filter: drop-shadow(0 0 15px rgb(207, 51, 3));
 }
 .answer1{
 display: none;
