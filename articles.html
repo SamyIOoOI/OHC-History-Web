@@ -5,23 +5,68 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Articles</title>
     <link rel='stylesheet' href='carthage.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 </head>
 <body>
+    <audio class="sfx" loop>
+        <source src="backgroundsound.wav" type="audio/wav">
+    </audio>
     <div id="dotty">
     </div>
+    <div id="stickystuck">
+        <img src="tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="window.location.href='contactus.html'">
+    <a href="index.html">Home</a>
+    <a href="#map">Map</a>
+    <a href="content.html">Content</a>
+    <a href="articles.html">Articles</a>
+    <a href="contactus.html">Credits</a>
+    <img src="warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
+</div>
     <div class="candywrapper">
-        <h1 style="color: orangered; font-size:xx-large">UNDER CONSTRUCTION</h1>
-        <h1 style="color: orangered; font-size:xx-large"><a href="index.html">GO BACK</a></h1>
+    <div class="sky">    
+    </div> 
+      <footer>
+        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+    </footer>
+</div>
+    <div class="grainy">
     </div>
-    <script>
+    <div class="glitches">
+    </div>
+
+<script>
+    const sky = document.querySelector('.sky');
+    const COUNT = 60;
+    const FRAME_W = 32;
+    const SHEET_SCALE = 1.5;
+    let current_soldier = 1;
+    
     let cursor = document.querySelector('#dotty');
     let body = document.querySelector('.candywrapper');
+    let warriorwheel = document.getElementById("wheel"); 
+    if (window.matchMedia('(pointer: fine)').matches){
     document.addEventListener('mousemove', e =>{
         body.style.backgroundPositionX = e.pageX / -11 + 'px';
         body.style.backgroundPositionY = e.pageY / -11 + 'px';
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
-    })
+    })}
+    function rollit(){
+        if (current_soldier < 16){
+            current_soldier++;
+        }
+        else (
+            current_soldier = 1
+        )
+        warriorwheel.src = "warriorwheel/"+ current_soldier +".png"
+        
+    }
     function throwacoinatmyface(target, target2){
         const bodytext = document.getElementsByClassName(target)[0];
         const arrowpointer = document.getElementsByClassName(target2)[0];
@@ -33,6 +78,24 @@
             bodytext.style.display = 'block';
             arrowpointer.textContent= 'v';
         }
+    }
+    for (let i = 0; i < COUNT; i++){
+        const swirly = document.createElement('div');
+        swirly.className = 'wind';
+        const randframe = Math.floor(Math.random() * 20);
+        const w = 32 * SHEET_SCALE;
+        swirly.style.top = Math.random() * 100 + '%';
+        swirly.style.height = w + 'px';
+        swirly.style.width = w + 'px';
+        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundPositionX = -(randframe * w) + 'px';
+        swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
+        swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
+        swirly.style.animationDelay = -Math.random() * 30 + 's';
+
+
+
+        sky.appendChild(swirly);
     }
 </script>
 </body>
