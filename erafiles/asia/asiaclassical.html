@@ -3,66 +3,30 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>The History Web</title>
-    <link rel='stylesheet' href='carthage.css'>
+    <title>Classical Asia</title>
+    <link rel='stylesheet' href='../../carthage.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicons/apple-touch-icon.png">
 </head>
 <body>
-    <audio class="sfx" loop id="identity0">
-        <source src="backgroundsound.wav" type="audio/wav">
+    <audio class="sfx" loop id="identity4">
+        <source src="../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
     </div>
     <div id="stickystuck">
-        <img src="tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="playaudio()">
-    <a href="index.html">Home</a>
-    <a href="#map" id="mapnav">Map</a>
-    <a href="content.html">Content</a>
-    <a href="articles.html">Articles</a>
-    <a href="contactus.html">Credits</a>
-    <img src="warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
+        <img src="../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="playaudio()">
+        <a href="../../asia.html">Go Back</a>
+    <img src="../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>
     <div class="candywrapper">
-    <div class="sky">    
-    </div>
-        <div class="glow">
-            <div class="gothic">
-    <div class="centeredmother">
-        <h1 style="color:white; font-size: 3em; background-color: rgba(0, 0, 0, 0.3);">= The History Web =</h1>
-    </div>
-    </div>
-</div>
-    <div class="starter">
-            <img src="History Web Banner V2.png" style="width: 50vw;">
-            
-            <div class="startertext" style="text-align: left;">
-                <div class="glowhover">
-                    <div style="color: white; font-size: 1.5em; margin-bottom: 15px; margin-top: 0px;">
-                        <btn class="fakeheader" id="usage" onclick="throwacoinatmyface('answer1','arrow1')"><span class="arrow1">></span> How to use this website?</btn>
-                    </div>
-                </div>
-                <p class='answer1' style="color: white; font-size: 1.2rem; text-align: center;">At the bottom of the page hover on a continent and click it to view an overview of its history divided by time periods & reading sources. Remember to always take what you read from the sources with caution. Not all information is accurate or unbiased. <br> <span style="color:orangered">psst, try clicking on the icons up there</span></p>
-                <div class="glowhover">
-                    <div style="color: white; font-size: 1.5em;  margin-bottom: 15px;">
-                        <btn class="fakeheader" id="article" onclick="throwacoinatmyface('answer2','arrow2')"><span class="arrow2">></span> Where do I submit an article?</btn>
-                    </div>
-                </div>
-                <p class='answer2' style="color: white; font-size: 1.2rem;  text-align: center;">To submit an article, you must be part of the October Humanities Club or have prior approval. Contact us <a href="contactus.html">here</a> for more information.</p>
-                <div class="glowhover">
-                    <div style="color: white; font-size: 1.5em;  margin-bottom: 15px;">
-                        <btn class="fakeheader" id="clubinfo" onclick="throwacoinatmyface('answer3','arrow3')"><span class="arrow3">></span> What is The October Humanities Club?</btn>
-                    </div>
-                </div>
-                <p class="answer3" style="color: white; font-size: 1.2rem;  text-align: center;">OHC or October Humanities Club is a student-led organization focused on humanities, philosophy, debate and history with a friendly community & is one of the few Humanities clubs in all of Egypt.</p>
-            </div>
-    </div>
-    <div class="map" id="map">
+
+    <div class="map" id="map" style="display: none;">
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -104,10 +68,10 @@
     const SHEET_SCALE = 1.5;
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
-    maplink.addEventListener('click', mapchecker)
+    if (maplink) maplink.addEventListener('click', mapchecker);
     const arewehomeyet = document.querySelector('#identity0.sfx');
     const maptrgt = document.getElementById('map');
-    const audio = document.getElementById('identity0')
+    const audio = document.getElementById('identity4')
     
     let cursor = document.querySelector('#dotty');
     let body = document.querySelector('.candywrapper');
@@ -138,7 +102,7 @@
             maptrgt.scrollIntoView({behavior: 'smooth'});
         }
         else{
-            window.location.assign("index.html")
+            window.location.assign("index.html");
         }
     }
 
@@ -149,7 +113,7 @@
         else (
             current_soldier = 1
         )
-        warriorwheel.src = "warriorwheel/"+ current_soldier +".png"
+        warriorwheel.src = "../../warriorwheel/"+ current_soldier +".png"
         
     }
     function throwacoinatmyface(target, target2){
