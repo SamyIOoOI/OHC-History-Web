@@ -272,9 +272,10 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     }
     .erapicker{
         flex-direction: column;
+        align-items: center;
     }
     .erapicker img {
-        margin-top: 1%;
+        margin-top: 5%;
         margin-right: 0%;
         margin-left: 0%;
         width: 50%;
