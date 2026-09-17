@@ -283,3 +283,19 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     }
 
 }
+.pikapoo {
+    display: none;
+}
+.holdonthere {
+    background: #3a1208;
+    margin: 2%;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.holdonthere.pikapoo{
+    display: none;
+}

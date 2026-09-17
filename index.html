@@ -14,6 +14,16 @@
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 </head>
 <body>
+    <div class="holdonthere" id="holdonthere2">
+        <img class="loadingscreen" src="loadingbigokspeed.webp" style="width: 30%;">
+        <div class="centeredmother">
+        <h1 style="color:white; font-size: 3em;">Loading...</h1>
+    </div>
+    <div id="skiploading">
+        <button onclick="boring()">Skip Loading Screen</button>
+    </div>
+    </div>
+    <div class="pikapoo" id="pikapoo2">
     <audio class="sfx" loop id="identity0">
         <source src="backgroundsound.wav" type="audio/wav">
     </audio>
@@ -96,8 +106,23 @@
     </div>
     <div class="glitches">
     </div>
-
+</div>
 <script>
+    const animation = document.getElementById('holdonthere2');
+    const reveal = document.getElementById('pikapoo2');
+    let loaded = false;
+    if(!loaded){window.addEventListener('load', function(){
+        setTimeout(() => {
+            loaded = true;
+        animation.classList.add('pikapoo');
+        reveal.classList.remove('pikapoo');
+        }, 3000);
+    })}
+    function boring(){
+        loaded = true;
+        animation.classList.add('pikapoo');
+        reveal.classList.remove('pikapoo');
+    }
     const sky = document.querySelector('.sky');
     const COUNT = 60;
     const FRAME_W = 32;
