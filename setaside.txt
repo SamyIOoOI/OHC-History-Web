@@ -1,5 +1,0 @@
-    background-image: linear-gradient(to right, rgb(87, 33, 33) 2px, transparent 2px), linear-gradient(to bottom, rgb(87, 33, 33) 2px, transparent 2px);
-    background-size: 45px 45px;
-
-
-    background: radial-gradient(circle at 50% 45%, #3a1208 0%, #0f0301 100% );
