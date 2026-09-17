@@ -12,6 +12,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.girassol-regular {
+  font-family: "Girassol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 html{
     scroll-behavior: smooth;
     
@@ -239,6 +244,42 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     transform: scale(0.98);
     filter: drop-shadow(0 0 10px rgb(161, 39, 2));
 }
+.pikapoo {
+    display: none;
+}
+.holdonthere {
+    background: #3a1208;
+    margin: 2%;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.holdonthere.pikapoo{
+    display: none;
+}
+.table {
+    margin: 15%;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background:rgb(119, 25, 4);
+    color: white;
+    font-size: 1em;
+}
+.division {
+    font-size: 1.5em;
+}
+.loadingscreen{
+    width: 30%;
+}
 @media (pointer: coarse) {
     #dotty {display: none;}
     body {cursor: auto;}
@@ -281,14 +322,9 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
         width: 50%;
         height: 50%;
     }
-
-}
-.pikapoo {
-    display: none;
-}
-.holdonthere {
+    .holdonthere {
     background: #3a1208;
-    margin: 2%;
+    margin: 12%;
     cursor: default;
     align-items: center;
     justify-content: center;
@@ -296,6 +332,10 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     display: flex;
     flex-direction: column;
 }
-.holdonthere.pikapoo{
-    display: none;
+.loadingscreen{
+    width: 65%;
+}
+.table{
+    margin: 5%;
+}
 }
