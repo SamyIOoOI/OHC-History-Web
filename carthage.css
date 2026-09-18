@@ -260,6 +260,9 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
 .holdonthere.pikapoo{
     display: none;
 }
+.banner {
+    width: 50vw;
+}
 .table {
     margin: 2%;
     margin-right: 20%;
@@ -348,5 +351,8 @@ filter: drop-shadow(0 0 20px white);
 }
 .table{
     margin: 5%;
+}
+.banner {
+    width: 75vw;
 }
 }
