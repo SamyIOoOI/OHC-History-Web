@@ -88,6 +88,12 @@ h1{
     align-items: center;
     text-align: center;
 }
+.topicimage{
+    width: 25vw;
+    align-self: center;
+    margin-top: 2em;
+    max-width: 40vw;
+}
 .starter{
     display: flex;
     flex-direction: column;
