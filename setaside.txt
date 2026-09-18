@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Classical Africa</title>
+    <title>Medieval Asia</title>
     <link rel='stylesheet' href='../../carthage.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,38 +27,29 @@
     </div>
     <div id="stickystuck">
         <img src="../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="playaudio()">
-        <a href="../../africa.html">Go Back</a>
+        <a href="../../asia.html">Go Back</a>
     <img src="../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>
     <div class="candywrapper">
         <div class="table">
-            <p class="division">North Africa</p>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <p class="division">East Africa</p>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <p class="division">West Africa</p>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <p class="division">South Africa</p>
-            <a href="../../subtopics/africa/"><p></p></a>
-            <a href="../../subtopics/africa/"><p></p></a>
+            <p class="division">Levantine & Persia</p>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <p class="division">Anatolia and Caucasia</p>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <a href="../../subtopics/asia"><p></p></a>
+            <p class="division">Anatolia and Caucasia</p>
+            <p class="division">Anatolia and Caucasia</p>
+            <p class="division">Anatolia and Caucasia</p>
+            <p class="division">Anatolia and Caucasia</p>
         </div>
 
     <div class="map" id="map" style="display: none;">
