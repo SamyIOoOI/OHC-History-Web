@@ -35,12 +35,12 @@
             <img class="topicimage" src="images/">
             <h1 style="font-size:larger;"></h1>
             <p style="font-size: large;"></p>
-            <p style="font-size: large;">test</p>
+            <p style="font-size: large;"></p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="" target="_blank">Source #1</a>
             <a href="" target="_blank">Source #2</a>
             <a href="" target="_blank">Source #3</a>
-            <a href="" target="_blank" style="margin-bottom:10px;>Source #4</a>
+            <a href="" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
     <div class="map" id="map" style="display: none;">
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
