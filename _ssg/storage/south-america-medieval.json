@@ -1,0 +1,50 @@
+[
+  {
+    "linktoparent": "southam/southammedieval",
+    "image": "thechimuempire.jpg",
+    "title": "The Chimú Empire",
+    "para1": "The Chimú Empire. The Chimú Empire was a powerful coastal state that dominated the northern coast of Peru from roughly 900 to 1470 CE, emerging out of the earlier Moche culture. Centered at the massive capital city of Chan Chan—the largest adobe brick metropolis in the pre-Columbian Americas—the empire spanned over five hundred miles of arid coastline. This empire matters because it developed extraordinary urban planning, intricate silver metallurgy, and complex canal networks that turned dry desert river valleys into productive agricultural zones.",
+    "para2": "Governed by an absolute monarch, Chimú society was strictly hierarchical, housing its elites in massive, walled palace compounds known as ciudadelas. They established a state-managed economy that regulated trade, textile production, and specialized metalworking across conquered valleys. The Chimú maintained a strong regional hegemony until the late 15th century, when the expanding Inca Empire under Topa Inca Yupanqui cut off their vital upland irrigation canals, forcing the empire to surrender and integrate into Tahuantinsuyu.",
+    "source1": "https://www.britannica.com/topic/Chimu",
+    "source2": "https://www.worldhistory.org/Chimu_Civilization/",
+    "source3": "https://human.libretexts.org/Bookshelves/Art/Art_History_and_Theory/SmartHistory_of_Art_2e/SmartHistory_of_Art_XIa_-_The_Americas_before_1500/04%3A_South_America_before_c._1500/4.02%3A_Peru_and_Bolivia/4.2.11%3A_Chimu_culture/4.2.11.01%3A_Introduction_to_the_Chimu_culture",
+    "source4": "https://americanindian.si.edu/inkaroad/ancestors/beginningsoftheroad/chimu.html",
+    "filename": "thechimuempire"
+  },
+  {
+    "linktoparent": "southam/southammedieval",
+    "image": "theincaempiretahuantinsuyu.jpg",
+    "title": "The Inca Empire (Tahuantinsuyu)",
+    "para1": "The Inca Empire (Tahuantinsuyu). The Inca Empire was the largest empire in pre-Columbian history, flourishing across the Andean region of South America from 1438 to 1533 CE. Originating in the high valley of Cusco under the legendary ruler Pachacuti, the realm expanded to encompass modern-day Peru, Ecuador, Bolivia, Chile, Colombia, and Argentina. This empire matters deeply because it created a highly organized state administration, master architectural stonemasonry constructed without mortar, and an impressive sixteen-thousand-mile highway network (Qhapaq Ñan).",
+    "para2": "The Incas adapted to extreme mountain topography by constructing vast agricultural terraces, storehouses, and high-altitude administrative centers like Machu Picchu. Lacking a formal writing system, they relied on knotted cords called quipus for detailed record-keeping and population censuses. Imperial authority was maintained through forced population migrations and mandatory labor tribute (mita). Following a brutal civil war between rival brothers Huáscar and Atahualpa, the empire was fatally weakened, allowing a small force of Spanish conquistadors under Francisco Pizarro to capture and execute Atahualpa in 1533.",
+    "source1": "https://www.britannica.com/topic/Inca",
+    "source2": "https://www.worldhistory.org/article/915/pizarro--the-fall-of-the-inca-empire/",
+    "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.21%3A_Administration_of_the_Inca_Empire",
+    "source4": "https://www.pbs.org/wgbh/nova/inca/empire.html",
+    "filename": "theincaempiretahuantinsuyu"
+  },
+  {
+    "linktoparent": "southam/southammedieval",
+    "image": "themuiscaconfederation.jpg",
+    "title": "The Muisca Confederation",
+    "para1": "The Muisca Confederation was a group of chiefdoms in the highlands of modern Colombia. They flourished from about 600 to 1600 CE and were known for goldwork, salt, and agriculture. Their society was organized into powerful chiefdoms like Bacatá and Tunja.",
+    "para2": "The Spanish conquered them in the 1530s, lured by the legend of El Dorado. Their gold artifacts are famous today. Their culture was largely absorbed into colonial New Granada.",
+    "source1": "https://www.worldhistory.org/Muisca_Civilization/",
+    "source2": "https://human.libretexts.org/Bookshelves/Art/SmartHistory_of_Art_2e/SmartHistory_of_Art_XIa_-_The_Americas_before_1500/04%3A_South_America_before_c._1500/4.04%3A_Ancient_Colombia_chiefdoms/4.4.02%3A_Muisca_Raft",
+    "source3": "https://www.metmuseum.org/toah/ht/08/sann",
+    "source4": "https://smarthistory.org/muisca-raft/",
+    "filename": "themuiscaconfederation"
+  },
+  {
+    "linktoparent": "southam/southammedieval",
+    "image": "theaymarakingdoms.jpg",
+    "title": "The Aymara Kingdoms",
+    "para1": "The Aymara kingdoms were a group of powerful states around Lake Titicaca after the fall of Tiwanaku. They flourished from about 1150 to 1450 CE. They were known for military organization, agriculture, and fortified hilltop towns.",
+    "para2": "The Inca Empire conquered most of them in the 15th century. Their language and culture survived under Inca and later Spanish rule. They remain a major indigenous group in Bolivia and Peru.",
+    "source1": "https://www.britannica.com/topic/Colla",
+    "source2": "https://americanindian.si.edu/inkaroad/ancestors/beginningsoftheroad/tiwanaku.html",
+    "source3": "http://metmuseum.org/essays/wari-imperial-art",
+    "source4": "https://ich.unesco.org/en/BSP/safeguarding-intangible-cultural-heritage-of-aymara-communities-in-bolivia-chile-and-peru-00299",
+    "filename": "theaymarakingdoms"
+  }
+]
