@@ -1,8 +1,8 @@
 [
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomoffrancevaloisandbourbon.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomoffrancevaloisandbourbon.png",
       "title": "The Kingdom of France (Valois & Bourbon)",
       "para1": "Valois and Bourbon France built a strong centralized monarchy after the Hundred Years' War. Kings crushed noble power, expanded bureaucracy, and fought Habsburg rivals. France became Europe's leading cultural and military power.",
       "para2": "The Bourbon dynasty began with Henry IV in 1589. Louis XIV made France the model of absolute monarchy. Financial crisis and failed reform set the stage for the French Revolution.",
@@ -15,7 +15,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
+      "linktoparent": "europe/europecolonial.html",
       "image": "thefrenchrevolutionandnapoleonicfrance.jpg",
       "title": "The French Revolution & Napoleonic France",
       "para1": "The French Revolution began in 1789 and overthrew the monarchy, aristocracy, and church privileges. It produced the Declaration of Rights, the Reign of Terror, and years of war. Napoleon Bonaparte then seized power in 1799.",
@@ -29,8 +29,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofgreatbritainandthebritishempire.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofgreatbritainandthebritishempire.png",
       "title": "The Kingdom of Great Britain & the British Empire",
       "para1": "Great Britain united England and Scotland in 1707 and became a global power. It built the largest empire in history through trade, colonies, and naval strength. The Industrial Revolution began there in the late 18th century.",
       "para2": "Britain defeated Napoleon and later dominated world finance and shipping. Its empire covered India, Canada, Australia, and much of Africa. Decolonization after World War II ended most of it.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofspain.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofspain.png",
       "title": "The Kingdom of Spain",
       "para1": "Modern Spain formed from the union of Castile and Aragon and the conquest of Granada in 1492. It built a vast American and Asian empire and became Europe's leading power under the Habsburgs. Silver from the Americas funded its wars.",
       "para2": "Spain declined in the 17th century due to costly wars and economic problems. The Bourbon dynasty centralized the state in the 18th century. Napoleon's invasion in 1808 triggered independence movements in Spanish America.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "theportugueseempire.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "theportugueseempire.png",
       "title": "The Portuguese Empire",
       "para1": "Portugal built the first global maritime empire, starting with exploration in the 15th century. Vasco da Gama reached India in 1498, and Portugal controlled trade routes in Africa, Asia, and Brazil. Its empire brought great wealth but also brutal colonial rule.",
       "para2": "Portugal lost Brazil in 1822 and declined as other European powers expanded. It held African colonies until 1975. The empire's legacy shaped language, religion, and trade worldwide.",
@@ -71,8 +71,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thedutchrepublickingdomofthenetherlands.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thedutchrepublickingdomofthenetherlands.png",
       "title": "The Dutch Republic / Kingdom of the Netherlands",
       "para1": "The Dutch Republic won independence from Spain in the 17th century and became a major trading power. Its East India Company dominated Asian trade, and Amsterdam was a financial center. The Dutch also built colonies in the Americas and Africa.",
       "para2": "The republic declined after wars with Britain and France. The Kingdom of the Netherlands was formed in 1815. It later lost Belgium and most overseas colonies.",
@@ -85,8 +85,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofbelgium.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofbelgium.png",
       "title": "The Kingdom of Belgium",
       "para1": "Belgium became independent in 1830 after breaking away from the Netherlands. It was a constitutional monarchy and a center of early industrialization. Its location made it a battleground in European wars.",
       "para2": "Belgium acquired the Congo Free State in 1885, later the Belgian Congo, and ruled it brutally. The country was invaded in both World Wars. It remains a federal state divided by language.",
@@ -99,7 +99,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
+      "linktoparent": "europe/europecolonial.html",
       "image": "theitaliancitystatesrenaissance.jpg",
       "title": "The Italian City-States (Renaissance)",
       "para1": "The Italian city-states were independent urban republics and duchies like Florence, Venice, Milan, and Rome. They flourished in the Renaissance through trade, banking, and art. Their competition produced great achievements in painting, architecture, and political thought.",
@@ -113,7 +113,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
+      "linktoparent": "europe/europecolonial.html",
       "image": "theunificationofitalyrisorgimento.jpg",
       "title": "The Unification of Italy (Risorgimento)",
       "para1": "The Risorgimento was the 19th-century movement to unify Italy. Led by figures like Cavour, Garibaldi, and Mazzini, it ended foreign rule and created the Kingdom of Italy in 1861. Rome became the capital in 1870.",
@@ -127,8 +127,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thehabsburgmonarchyaustrianempire.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thehabsburgmonarchyaustrianempire.png",
       "title": "The Habsburg Monarchy / Austrian Empire",
       "para1": "The Habsburg Monarchy was a multiethnic empire ruling Austria, Bohemia, Hungary, and later parts of Italy and the Balkans. It was a major European power and a center of conservative Catholicism. In 1804 it became the Austrian Empire.",
       "para2": "It fought Napoleon and later competed with Prussia for German leadership. The 1867 compromise created Austria-Hungary. The empire collapsed at the end of World War I.",
@@ -141,8 +141,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "austriahungary.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "austriahungary.png",
       "title": "Austria-Hungary",
       "para1": "Austria-Hungary was a dual monarchy formed in 1867. It linked the Austrian Empire and the Kingdom of Hungary under one ruler. It was a patchwork of nationalities with rising nationalist tensions.",
       "para2": "The assassination of Archduke Franz Ferdinand in 1914 helped trigger World War I. The empire fought with Germany and collapsed in 1918. Its lands became new states like Czechoslovakia, Yugoslavia, and Hungary.",
@@ -155,8 +155,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofprussia.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofprussia.png",
       "title": "The Kingdom of Prussia",
       "para1": "Prussia rose from a small German state to the leader of German unification. Its military reforms and efficient bureaucracy made it a great power. Otto von Bismarck used diplomacy and war to defeat Denmark, Austria, and France.",
       "para2": "In 1871, Prussia created the German Empire with the Prussian king as emperor. Prussia remained dominant within Germany. It was abolished after World War II.",
@@ -169,8 +169,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thegermanempire.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thegermanempire.png",
       "title": "The German Empire",
       "para1": "The German Empire was founded in 1871 after Prussia's victory over France. It was a federal monarchy with a powerful military and rapid industrial growth. It became Europe's leading industrial power.",
       "para2": "Germany's naval buildup and alliances increased tension before World War I. It lost the war and the empire collapsed in 1918. The Weimar Republic replaced it.",
@@ -183,8 +183,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thetsardomandempireofrussia.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thetsardomandempireofrussia.png",
       "title": "The Tsardom & Empire of Russia",
       "para1": "Russia grew from the Grand Duchy of Moscow into a vast empire under the tsars. Peter the Great modernized the military and founded St. Petersburg. Catherine the Great expanded south and west.",
       "para2": "The empire became a major European power but remained economically backward. Serfdom was abolished in 1861, but unrest continued. The Russian Revolution in 1917 ended the monarchy.",
@@ -197,8 +197,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thepolishlithuaniancommonwealthanditspartitions.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thepolishlithuaniancommonwealthanditspartitions.png",
       "title": "The Polish-Lithuanian Commonwealth & its Partitions",
       "para1": "The Polish-Lithuanian Commonwealth was a large, noble-run republic in Central Europe. It had an elected king and a weak central government. It became a major cultural and political force.",
       "para2": "Russia, Prussia, and Austria partitioned it three times in 1772, 1793, and 1795. Poland disappeared from the map until 1918. The partitions shaped Polish nationalism for generations.",
@@ -211,7 +211,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
+      "linktoparent": "europe/europecolonial.html",
       "image": "theottomanbalkans.jpg",
       "title": "The Ottoman Balkans",
       "para1": "The Ottoman Balkans were the European provinces of the Ottoman Empire. They included Greece, Bulgaria, Serbia, Bosnia, and Romania. Ottoman rule brought Islam, new administration, and long periods of conflict.",
@@ -225,8 +225,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "theprincipalityofserbia.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "theprincipalityofserbia.png",
       "title": "The Principality of Serbia",
       "para1": "The Principality of Serbia won autonomy from the Ottoman Empire in the early 19th century. It became a kingdom in 1882. Serbia sought to unite South Slavs and expand into Ottoman lands.",
       "para2": "Its rivalry with Austria-Hungary helped trigger World War I. Serbia suffered huge losses but emerged on the winning side. It later became part of Yugoslavia.",
@@ -239,8 +239,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofromania.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofromania.png",
       "title": "The Kingdom of Romania",
       "para1": "Romania became independent from the Ottoman Empire in 1877 and was declared a kingdom in 1881. It united Wallachia and Moldavia and later gained Transylvania after World War I. It was rich in oil and agriculture.",
       "para2": "Romania faced political instability and fascist movements in the 1930s. It fought in World War II and then fell under communist rule. The monarchy was abolished in 1947.",
@@ -253,8 +253,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europecolonial",
-      "image": "thekingdomofgreece.jpg",
+      "linktoparent": "europe/europecolonial.html",
+      "image": "thekingdomofgreece.png",
       "title": "The Kingdom of Greece",
       "para1": "Greece won independence from the Ottoman Empire in 1830 after a long war. It became a kingdom under a Bavarian prince and later a Danish dynasty. It expanded by acquiring Crete, Thessaly, and other lands.",
       "para2": "Greece fought in the Balkan Wars and World War I. It suffered a devastating defeat in the Greco-Turkish War of 1919 to 1922. The monarchy was abolished and restored several times before ending in 1974.",

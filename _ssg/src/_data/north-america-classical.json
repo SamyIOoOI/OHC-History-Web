@@ -1,8 +1,8 @@
 [
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
-      "image": "theolmecivilization.jpg",
+      "linktoparent": "northam/northamclassical.html",
+      "image": "theolmecivilization.png",
       "title": "The Olmec Civilization",
       "para1": "The Olmec Civilization. The Olmec civilization was the earliest major Mesoamerican culture, flourishing along the Gulf Coast of modern-day Mexico from roughly 1200 BCE to 400 BCE. Operating from major urban centers like San Lorenzo and La Venta, they laid the cultural, religious, and architectural foundations for all subsequent Mesoamerican societies. This civilization matters deeply because they developed early writing systems, complex calendars, ritual ballgames, and iconic artistic traditions that resonated across the region for millennia.",
       "para2": "The Olmec are world-famous for carving massive colossal basalt heads, weighing several tons, which depicted their powerful rulers with distinctive ceremonial helmets. They built impressive earthen pyramids, engaged in widespread long-distance trade, and practiced elite ritual sacrifices. Around 400 BCE, the major Olmec centers were mysteriously abandoned and overgrown by the jungle, likely due to severe environmental shifts or river silting, but their cultural legacy deeply influenced the Maya and Zapotec civilizations.",
@@ -15,7 +15,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
+      "linktoparent": "northam/northamclassical.html",
       "image": "teotihuacan.jpg",
       "title": "Teotihuacan",
       "para1": "Teotihuacan. Teotihuacan was a monumental, highly planned metropolis located in the Valley of Mexico that flourished between 100 BCE and 550 CE. Home to an estimated population of over one hundred thousand people at its height, it was one of the largest cities in the ancient world. This city matters because it served as a major political, economic, and religious epicenter, featuring breathtaking architectural feats such as the Avenue of the Dead, the Pyramid of the Sun, and the Pyramid of the Moon.",
@@ -29,7 +29,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
+      "linktoparent": "northam/northamclassical.html",
       "image": "theclassicmaya.jpg",
       "title": "The Classic Maya",
       "para1": "The Classic Maya. The Classic Maya civilization flourished across the tropical lowlands of modern southern Mexico, Guatemala, Belize, and western Honduras from 250 CE to 900 CE. Organized into dozens of fiercely competitive, independent city-states like Tikal, Calakmul, and Palenque, the Maya built magnificent limestone temples, vast plazas, and elevated causeways. This civilization is historically vital because it developed the most fully written script in the pre-Columbian Americas, advanced mathematical concepts including the zero, and sophisticated astronomical calendars.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
-      "image": "thezapotecivilization.jpg",
+      "linktoparent": "northam/northamclassical.html",
+      "image": "thezapotecivilization.png",
       "title": "The Zapotec Civilization",
       "para1": "The Zapotec Civilization. The Zapotec civilization was an advanced Mesoamerican culture centered in the Valley of Oaxaca in southern Mexico, flourishing from roughly 500 BCE to 900 CE. Operating out of their magnificent hilltop capital at Monte Albán, they built one of the earliest urbanized state societies in the region. This civilization matters immensely because they developed one of the oldest writing systems and calendar systems in Mesoamerica, carving detailed hieroglyphs into stone monuments to record royal genealogies and military victories.",
       "para2": "Monte Albán sat on a flattened mountain ridge, featuring grand plazas, astronomical observatories, step-pyramids, and elaborate underground tombs. The Zapotecs controlled regional trade and agricultural terraces across Oaxaca, defending their territory against surrounding rival tribes. As central authority at Monte Albán began to weaken around 700 CE, the population gradually dispersed into smaller, fragmented city-states like Mitla, leaving the region open to eventual infiltration by the neighboring Mixtec culture.",
@@ -57,7 +57,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
+      "linktoparent": "northam/northamclassical.html",
       "image": "theadenaandhopewellcultures.jpg",
       "title": "The Adena & Hopewell Cultures",
       "para1": "The Adena & Hopewell Cultures. The Adena and Hopewell cultures were complex Woodland period societies that flourished along the river valleys of the eastern United States, primarily in the Ohio Valley, from 1000 BCE to 500 CE. They are historically famous as the Mound Builders, constructing massive geometric earthworks, burial mounds, and effigy structures like the Great Serpent Mound. These cultures matter because they established sprawling trade networks that connected communities across North America, exchanging copper, mica, obsidian, and marine shells.",
@@ -71,7 +71,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamclassical",
+      "linktoparent": "northam/northamclassical.html",
       "image": "theancestralpuebloans.jpg",
       "title": "The Ancestral Puebloans",
       "para1": "The Ancestral Puebloans. The Ancestral Puebloans, historically known as the Anasazi, were an advanced Native American culture that flourished across the Four Corners region of the American Southwest from roughly 100 BCE to 1300 CE. Adapting to a challenging desert environment, they transitioned from semi-nomadic pit-house dwellers to master builders of multi-story masonry towns and spectacular cliff dwellings. This culture matters because they developed complex astronomical calendars, extensive irrigation networks, and distinctive black-on-white pottery styles.",

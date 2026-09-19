@@ -1,8 +1,8 @@
 [
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
-      "image": "theviceroyaltyofnewspain.jpg",
+      "linktoparent": "northam/northamcolonial.html",
+      "image": "theviceroyaltyofnewspain.png",
       "title": "The Viceroyalty of New Spain",
       "para1": "The Viceroyalty of New Spain. The Viceroyalty of New Spain was a massive imperial territory established by the Spanish Empire in 1535 following the fall of Tenochtitlan, spanning modern-day Mexico, Central America, parts of the U.S. Southwest, and the Spanish West Indies. Governed by a viceroy appointed by the Spanish Crown, this administration matters deeply because it integrated the Americas into global maritime trade networks via the silver mines of Zacatecas and the Manila Galleon trade.",
       "para2": "The viceroyalty operated under a rigid, racially stratified caste system that privileged Iberian-born elites over indigenous, mestizo, and Afro-descendant populations. Roman Catholic religious orders extensively converted native groups while accumulating massive landholdings and social influence across the territory. Over three centuries, economic exploitation, royal monopolies, and growing resentment among local Creoles slowly destabilized imperial authority, culminating in widespread independence revolts in the early 19th century.",
@@ -15,7 +15,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
+      "linktoparent": "northam/northamcolonial.html",
       "image": "thehaitianrevolution.jpg",
       "title": "The Haitian Revolution",
       "para1": "The Haitian Revolution. The Haitian Revolution was a successful anti-slavery and anti-colonial insurrection that took place in the French colony of Saint-Domingue from 1791 to 1804. Spearheaded by self-liberated enslaved people and led by remarkable leaders like Toussaint Louverture and Jean-Jacques Dessalines, it is historically monumental as the only slave revolt in human history that directly led to the founding of an independent state. This revolution shattered the myth of European racial superiority and deeply terrified slaveholding regimes across the Western Hemisphere.",
@@ -29,7 +29,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
+      "linktoparent": "northam/northamcolonial.html",
       "image": "themexicanwarofindependence.jpg",
       "title": "The Mexican War of Independence",
       "para1": "The Mexican War of Independence. The Mexican War of Independence was an armed conflict that lasted from 1810 to 1821, ending over three centuries of Spanish rule in Mexico. Initiated by the priest Miguel Hidalgo y Costilla with his famous Grito de Dolores, the revolt mobilized impoverished indigenous and mestizo peasants against colonial oppression. This conflict matters because it created an independent Mexican nation and reshaped the geopolitical landscape of North America.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
-      "image": "newfrance.jpg",
+      "linktoparent": "northam/northamcolonial.html",
+      "image": "newfrance.png",
       "title": "New France",
       "para1": "New France was the French colonial empire in North America. It included Quebec, the Great Lakes, the Mississippi Valley, and Louisiana. It was based on fur trade and alliances with indigenous nations.",
       "para2": "Britain conquered New France in the Seven Years' War, confirmed by the Treaty of Paris in 1763. France kept only small islands. French culture survived in Quebec and Louisiana.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
-      "image": "themexicanempireandfirstrepublic.jpg",
+      "linktoparent": "northam/northamcolonial.html",
+      "image": "themexicanempireandfirstrepublic.png",
       "title": "The Mexican Empire & First Republic",
       "para1": "The Mexican Empire was created in 1821 after independence from Spain. Agustín de Iturbide became emperor but was overthrown in 1823. The First Mexican Republic then faced instability, regional conflicts, and economic problems.",
       "para2": "The republic lost Texas and much of its north to the United States in the 1840s. Political chaos continued until the reform era and French intervention. The monarchy was briefly restored under Maximilian in the 1860s.",
@@ -71,8 +71,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
-      "image": "thecolonialcaribbeanspanishfrenchbritishdutch.jpg",
+      "linktoparent": "northam/northamcolonial.html",
+      "image": "thecolonialcaribbeanspanishfrenchbritishdutch.png",
       "title": "The Colonial Caribbean (Spanish, French, British, Dutch)",
       "para1": "The colonial Caribbean was divided among Spanish, French, British, and Dutch empires. These islands produced sugar, coffee, and tobacco using enslaved African labor. They were among the most profitable colonies in the world.",
       "para2": "The Haitian Revolution ended French rule in Saint-Domingue in 1804. Slavery was abolished across most of the Caribbean in the 19th century. Many islands later became independent nations or remained overseas territories.",
@@ -85,8 +85,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
-      "image": "thethirteencoloniesandbritishamerica.jpg",
+      "linktoparent": "northam/northamcolonial.html",
+      "image": "thethirteencoloniesandbritishamerica.png",
       "title": "The Thirteen Colonies & British America",
       "para1": "The Thirteen Colonies & British America. The Thirteen Colonies were a group of British colonies along the Atlantic coast of North America founded between 1607 and 1732. Divided into New England, Middle, and Southern regions, they developed distinct economies based on maritime commerce, family farming, and cash-crop plantation agriculture powered by enslaved labor. These colonies matter because they developed robust traditions of local self-governance, representative assemblies, and vibrant mercantile economies.",
       "para2": "While operating under British imperial mercantilism and protective navigation acts, the colonies enjoyed decades of \"salutary neglect\" from London. However, following the expensive French and Indian War (1754–1763), the British Parliament attempted to impose direct taxes and assert tighter imperial control over the colonies. Widespread resistance to taxes like the Stamp Act and Townshend Acts fostered a shared political identity among the colonies, directly sparking the American Revolutionary War.",
@@ -99,7 +99,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
+      "linktoparent": "northam/northamcolonial.html",
       "image": "theamericanrevolutionandearlyrepublic.jpg",
       "title": "The American Revolution & Early Republic",
       "para1": "The American Revolution & Early Republic. The American Revolution was an epic political and military conflict from 1775 to 1783 in which thirteen British North American colonies threw off British rule to form the United States of America. Guided by Enlightenment ideals of liberty, popular sovereignty, and natural rights articulated in the Declaration of Independence, this revolution matters because it established the world's first modern constitutional republic and inspired democratic movements across Europe and the Americas.",
@@ -113,7 +113,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northamcolonial",
+      "linktoparent": "northam/northamcolonial.html",
       "image": "theconfederationofcanada.jpg",
       "title": "The Confederation of Canada",
       "para1": "The Confederation of Canada. The Confederation of Canada was the process by which three British North American provinces—the Province of Canada, Nova Scotia, and New Brunswick—united to form the Dominion of Canada on July 1, 1867. Negotiated through a series of constitutional conferences in Charlottetown, Quebec, and London, this political union matters because it established a self-governing federal dominion within the British Empire, creating a stable political framework for westward continental expansion.",

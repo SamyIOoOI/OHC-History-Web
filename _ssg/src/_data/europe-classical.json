@@ -1,7 +1,7 @@
 [
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "celticgaul.jpg",
       "title": "Celtic Gaul",
       "para1": "Celtic Gaul. Celtic Gaul was a patchwork of tribal societies in modern France, Belgium, and Switzerland before Rome conquered it. They shared Celtic language and culture but rarely formed a single state. Their towns, trade networks, and druidic religion mattered across Iron Age Europe.",
@@ -15,8 +15,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "celtiberianiberia.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "celtiberianiberia.png",
       "title": "Celtiberian Iberia",
       "para1": "Celtiberian Iberia describes the mixed Celtic and Iberian peoples of central and northern Spain before Roman conquest. They lived in fortified hill towns and were known for fierce resistance, especially at Numantia. Their culture blended local Iberian and incoming Celtic elements.",
       "para2": "Rome took centuries to subdue the region, ending with the fall of Numantia in 133 BCE. Afterwards, Iberia became a wealthy Roman province, producing metals, olive oil, and soldiers. Native languages faded under Latin rule.",
@@ -29,7 +29,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "ancientbritain.jpg",
       "title": "Ancient Britain",
       "para1": "Ancient Britain covers the prehistoric and Iron Age societies of the British Isles before and during Roman contact. Tribes such as the Brigantes and Iceni lived in hillforts and farmsteads, with rich metalwork and trade links to the continent. Their religious sites included Stonehenge and later druidic centers.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "romangaulbritainandhispania.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "romangaulbritainandhispania.png",
       "title": "Roman Gaul, Britain, & Hispania",
       "para1": "Roman Gaul, Britain, and Hispania were Rome's western provinces in modern France, Britain, and Iberia. Conquest brought roads, aqueducts, towns, and Latin administration. They supplied grain, metals, wine, and troops to the empire.",
       "para2": "Local elites gradually adopted Roman ways, creating a Gallo-Roman and Hispano-Roman culture. When Rome weakened, Germanic invasions and internal crises broke imperial control. The western provinces then passed to Visigoths, Franks, and Anglo-Saxons.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "mycenaeangreece.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "mycenaeangreece.png",
       "title": "Mycenaean Greece",
       "para1": "Mycenaean Greece was a Bronze Age civilization centered on fortified palaces like Mycenae and Pylos. It flourished from about 1600 to 1100 BCE and left behind Linear B records, massive walls, and rich shaft graves. Its warriors and trade contacts inspired later Greek legends.",
       "para2": "The palaces collapsed around 1200 BCE during the wider Bronze Age collapse. Mycenaean power faded, writing disappeared, and Greece entered a dark age. Later Greeks remembered the era through myths of Troy and Agamemnon.",
@@ -71,7 +71,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "archaicandclassicalgreece.jpg",
       "title": "Archaic & Classical Greece",
       "para1": "Archaic and Classical Greece refers to the city-states that flourished from roughly 800 to 323 BCE. Athens, Sparta, Corinth, and others developed distinct politics, colonies, art, and philosophy. This era produced democracy, drama, history writing, and the Persian and Peloponnesian Wars.",
@@ -85,7 +85,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "thehellenistickingdoms.jpg",
       "title": "The Hellenistic Kingdoms",
       "para1": "The Hellenistic kingdoms were the successor states created after Alexander the Great died in 323 BCE. Ptolemaic Egypt, Seleucid Syria, and Antigonid Macedon were the largest. They blended Greek rule with local Persian, Egyptian, and Indian traditions.",
@@ -99,8 +99,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "theetruscans.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "theetruscans.png",
       "title": "The Etruscans",
       "para1": "The Etruscans were a wealthy civilization in central Italy before Rome rose. They built cities like Tarquinia and Veii, traded across the Mediterranean, and left elaborate tombs and art. Their language remains only partly understood.",
       "para2": "Etruscan kings ruled early Rome, but Romans expelled them around 509 BCE. Etruscan power then declined as Rome and other rivals expanded. Their culture deeply influenced Roman religion, engineering, and symbols of authority.",
@@ -113,8 +113,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "theromankingdomrepublicandempire.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "theromankingdomrepublicandempire.png",
       "title": "The Roman Kingdom, Republic, & Empire",
       "para1": "Rome began as a small city-state, became a republic, then built a Mediterranean empire. Its legal system, army, roads, and citizenship policies shaped Europe for centuries. At its peak, Rome ruled from Britain to Egypt.",
       "para2": "The republic collapsed in civil war, and Augustus became the first emperor in 27 BCE. The empire later split into west and east. The western half fell in 476 CE, while the eastern half survived as Byzantium.",
@@ -127,7 +127,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "thescythians.jpg",
       "title": "The Scythians",
       "para1": "The Scythians were nomadic horse archers who dominated the Pontic steppe from about the 7th to 3rd centuries BCE. They were famous for mounted warfare, gold art, and burial mounds called kurgans. They controlled trade between Greece and the steppe.",
@@ -141,7 +141,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "thesarmatians.jpg",
       "title": "The Sarmatians",
       "para1": "The Sarmatians were nomadic Iranian-speaking peoples who replaced the Scythians on the western steppe. They were skilled cavalry, and some groups included women warriors, possibly linked to later Amazon legends. They traded and fought with Rome and Greek colonies.",
@@ -155,7 +155,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "thethracians.jpg",
       "title": "The Thracians",
       "para1": "The Thracians were Indo-European peoples of the Balkans, known for tribal kingdoms, goldwork, and fierce warriors. They lived in modern Bulgaria, Romania, and northern Greece. Their culture influenced Greek myth and music.",
@@ -169,7 +169,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
+      "linktoparent": "europe/europeclassical.html",
       "image": "thedacians.jpg",
       "title": "The Dacians",
       "para1": "The Dacians were a powerful Thracian people in modern Romania and Moldova. They built fortified mountain settlements and resisted Roman expansion under kings like Burebista and Decebalus. Their gold and silver wealth attracted Rome.",
@@ -183,8 +183,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europeclassical",
-      "image": "thebosporankingdom.jpg",
+      "linktoparent": "europe/europeclassical.html",
+      "image": "thebosporankingdom.png",
       "title": "The Bosporan Kingdom",
       "para1": "The Bosporan Kingdom was a Greek-led state on the Black Sea's northern coast. It mixed Greek cities with Scythian, Sarmatian, and local peoples. It prospered by exporting grain, fish, and slaves to the Mediterranean.",
       "para2": "It survived as a Roman client state for centuries. Invasions by Goths and Huns eventually broke it apart. Its cities remained important until the early medieval period.",

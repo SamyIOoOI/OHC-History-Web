@@ -1,7 +1,7 @@
 [
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "thevisigothickingdom.jpg",
       "title": "The Visigothic Kingdom",
       "para1": "The Visigothic Kingdom ruled much of Iberia and southern Gaul after Rome's western collapse. Its kings were Germanic Christians who ruled over a largely Roman and Hispano-Roman population. They issued law codes and held councils at Toledo.",
@@ -15,7 +15,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "thefrankishkingdommerovingians.jpg",
       "title": "The Frankish Kingdom (Merovingians)",
       "para1": "The Merovingian Franks were a Germanic dynasty that ruled much of Gaul after Clovis converted to Catholicism around 496. They expanded Frankish power and blended Roman and Germanic customs. Their kings eventually lost real power to mayors of the palace.",
@@ -29,8 +29,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thecarolingianempire.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thecarolingianempire.png",
       "title": "The Carolingian Empire",
       "para1": "The Carolingian Empire was founded by Charlemagne, who was crowned emperor in 800. It covered modern France, Germany, Italy, and the Low Countries. Charlemagne promoted education, law, and Christian reform.",
       "para2": "After his death, the empire was divided among heirs by the Treaty of Verdun in 843. It then fragmented into West Francia, East Francia, and Lotharingia. These divisions helped shape later France and Germany.",
@@ -43,7 +43,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "thekingdomofenglandanglosaxonandnorman.jpg",
       "title": "The Kingdom of England (Anglo-Saxon & Norman)",
       "para1": "Anglo-Saxon England formed after Germanic settlers took over post-Roman Britain. It became a wealthy Christian kingdom with shires, kings, and Old English culture. In 1066, William of Normandy conquered it.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thekingdomoffrancecapetians.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thekingdomoffrancecapetians.png",
       "title": "The Kingdom of France (Capetians)",
       "para1": "The Capetian dynasty began in 987 and slowly expanded royal power from the Paris region. Its kings faced powerful nobles, English rivals, and the Hundred Years' War. The dynasty eventually made France one of Europe's strongest monarchies.",
       "para2": "Key wins included the reign of Philip II and the defeat of England in the Hundred Years' War. The Valois branch later took over. Capetian rule helped build centralized French institutions.",
@@ -71,8 +71,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thecrownofcastile.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thecrownofcastile.png",
       "title": "The Crown of Castile",
       "para1": "The Crown of Castile was a major medieval Iberian kingdom formed from Leon and Castile. It drove the Reconquista southward and became a center of sheep farming, wool trade, and Atlantic exploration. Its kings claimed leadership in Christian Spain.",
       "para2": "Castile united with Aragon through the marriage of Isabella and Ferdinand in 1469. Together they conquered Granada in 1492 and sponsored Columbus. Castile then became the core of the Spanish Empire.",
@@ -85,8 +85,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thecrownofaragon.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thecrownofaragon.png",
       "title": "The Crown of Aragon",
       "para1": "The Crown of Aragon was a Mediterranean trading power based in eastern Iberia. It included Catalonia, Valencia, and later Sicily, Sardinia, and Naples. Its merchants and navy dominated western Mediterranean trade.",
       "para2": "Aragon united with Castile in the late 15th century. It retained its own laws and institutions for a time. Its Mediterranean empire later became part of a larger Spanish monarchy.",
@@ -99,7 +99,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "thereconquista.jpg",
       "title": "The Reconquista",
       "para1": "The Reconquista was the centuries-long Christian campaign to retake Iberia from Muslim rule. It began soon after the Muslim conquest of 711 and lasted until 1492. Kingdoms like Leon, Castile, Aragon, and Portugal led the effort.",
@@ -113,8 +113,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "theostrogothicandlombardkingdoms.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "theostrogothicandlombardkingdoms.png",
       "title": "The Ostrogothic & Lombard Kingdoms",
       "para1": "After Rome's western fall, the Ostrogoths ruled Italy under Theodoric the Great. They preserved Roman administration but were eventually crushed by Byzantium in the Gothic Wars. The Lombards then invaded in 568 and divided Italy into rival duchies and kingdoms.",
       "para2": "Lombard rule weakened Byzantine power in Italy and helped create the Papal States. Charlemagne conquered the Lombard kingdom in 774. Italy remained politically fragmented for centuries.",
@@ -127,8 +127,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thekingdomofitalyholyromanempire.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thekingdomofitalyholyromanempire.png",
       "title": "The Kingdom of Italy / Holy Roman Empire",
       "para1": "The medieval Kingdom of Italy was part of the Holy Roman Empire, a loose collection of German, Italian, and Burgundian lands. Emperors claimed authority over northern Italy but often clashed with popes and city-states. The empire had no strong central government.",
       "para2": "The Investiture Controversy and later wars weakened imperial control in Italy. German emperors focused more on their own lands. Italy drifted toward independent communes and principalities.",
@@ -141,8 +141,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thepapalstates.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thepapalstates.png",
       "title": "The Papal States",
       "para1": "The Papal States were territories in central Italy ruled directly by the popes. They began forming in the 8th century and lasted until 1870. The popes used them as a political base for spiritual and temporal power.",
       "para2": "The Papal States often fought with emperors, kings, and local nobles. They became a major patron of Renaissance art. Italian unification finally stripped the papacy of most of its land.",
@@ -155,8 +155,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "therepublicofvenice.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "therepublicofvenice.png",
       "title": "The Republic of Venice",
       "para1": "Venice was a wealthy maritime republic in the northern Adriatic. It built a trading empire across the Mediterranean and Black Sea. Its government was an oligarchic republic led by a doge and councils.",
       "para2": "Venice fought Genoa and the Ottoman Empire for trade dominance. It slowly lost power as Atlantic trade routes grew. The republic survived until Napoleon conquered it in 1797.",
@@ -169,7 +169,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "therepublicofgenoa.jpg",
       "title": "The Republic of Genoa",
       "para1": "Genoa was a powerful Italian maritime republic and rival of Venice. Its merchants traded across the Mediterranean and Black Sea, and it controlled colonies like Crimea and Corsica. Genoese bankers also financed European rulers.",
@@ -183,8 +183,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thekingdomofsicily.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thekingdomofsicily.png",
       "title": "The Kingdom of Sicily",
       "para1": "The Kingdom of Sicily was founded by Normans in the 12th century and included Sicily and southern Italy. It was a wealthy, multiethnic state with Latin, Greek, Arab, and Norman influences. Later it passed to Hohenstaufen, Angevin, and Aragonese rulers.",
       "para2": "The kingdom split into Naples and Sicily for long periods. It remained a battleground for Mediterranean powers. It was eventually absorbed into the Kingdom of the Two Sicilies.",
@@ -197,8 +197,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "theswissconfederacy.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "theswissconfederacy.png",
       "title": "The Swiss Confederacy",
       "para1": "The Swiss Confederacy began in 1291 as an alliance of mountain communities resisting Habsburg control. Through victories against Austria and Burgundy, it grew into a loose confederation of cantons. Swiss soldiers became famous as mercenaries.",
       "para2": "The confederacy remained outside the Holy Roman Empire in practice. It was officially recognized in 1648. Its neutrality and federal structure influenced later Switzerland.",
@@ -211,8 +211,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thefirstandsecondbulgarianempires.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thefirstandsecondbulgarianempires.png",
       "title": "The First & Second Bulgarian Empires",
       "para1": "The First Bulgarian Empire was a powerful medieval state in the Balkans. It fought Byzantium and adopted Orthodox Christianity in 864. The Second Bulgarian Empire rose after Byzantine rule ended in 1185.",
       "para2": "Both empires controlled trade and culture in southeastern Europe. They were eventually conquered by the Ottomans in the late 14th century. Bulgarian identity survived under foreign rule.",
@@ -225,8 +225,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "kievanrus.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "kievanrus.png",
       "title": "Kievan Rus'",
       "para1": "Kievan Rus' was a medieval federation of Slavic and Norse-influenced lands centered on Kiev. It controlled trade routes from the Baltic to the Black Sea. Its rulers adopted Orthodox Christianity in 988.",
       "para2": "Kievan Rus' fragmented into rival principalities in the 12th century. It was then devastated by the Mongol invasion in the 1240s. Its legacy shaped Russia, Ukraine, and Belarus.",
@@ -239,8 +239,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thegrandduchyofmoscow.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thegrandduchyofmoscow.png",
       "title": "The Grand Duchy of Moscow",
       "para1": "The Grand Duchy of Moscow began as a small principality under Mongol rule. Its princes slowly gained power by collecting tribute for the Golden Horde. Moscow eventually became the leading Russian state.",
       "para2": "It defeated the Mongols at Kulikovo in 1380 and later threw off Tatar rule in 1480. Moscow expanded and became the core of the Russian state. Its rulers took the title tsar.",
@@ -253,8 +253,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thegrandduchyoflithuania.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thegrandduchyoflithuania.png",
       "title": "The Grand Duchy of Lithuania",
       "para1": "The Grand Duchy of Lithuania was a large medieval state covering modern Lithuania, Belarus, and Ukraine. It expanded east as Kievan Rus' declined. Its rulers later converted to Catholicism and united with Poland.",
       "para2": "The union with Poland created a vast commonwealth. Lithuania retained its own laws and army for a time. It was eventually absorbed into the Russian Empire in the late 18th century.",
@@ -267,8 +267,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thekingdomofpoland.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thekingdomofpoland.png",
       "title": "The Kingdom of Poland",
       "para1": "The Kingdom of Poland emerged in the 10th century under the Piast dynasty. It adopted Christianity in 966 and became a major Central European power. Later it united with Lithuania to form a large commonwealth.",
       "para2": "Poland fought the Teutonic Knights and expanded eastward. Internal noble power and foreign invasions weakened it. It was partitioned by Russia, Prussia, and Austria in the late 18th century.",
@@ -281,7 +281,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
+      "linktoparent": "europe/europemedieval.html",
       "image": "thekingdomofhungary.jpg",
       "title": "The Kingdom of Hungary",
       "para1": "The Kingdom of Hungary was founded around 1000 by Stephen I. It became a powerful medieval state in Central Europe. It adopted Christianity and controlled lands from the Carpathians to the Adriatic.",
@@ -295,8 +295,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "theserbianempire.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "theserbianempire.png",
       "title": "The Serbian Empire",
       "para1": "The Serbian Empire was a short-lived medieval Balkan state under Stefan Dusan in the 14th century. It conquered much of Serbia, Greece, and Albania. Dusan codified laws and promoted Serbian Orthodox culture.",
       "para2": "After Dusan's death in 1355, the empire fragmented. The Ottomans defeated Serbian forces at Kosovo in 1389. Serbia then became an Ottoman vassal and later a province.",
@@ -309,8 +309,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "europe/europemedieval",
-      "image": "thekingdomofbohemia.jpg",
+      "linktoparent": "europe/europemedieval.html",
+      "image": "thekingdomofbohemia.png",
       "title": "The Kingdom of Bohemia",
       "para1": "The Kingdom of Bohemia was a powerful state in Central Europe, centered on Prague. It was part of the Holy Roman Empire and produced kings who sometimes became emperors. It was wealthy from silver mining and trade.",
       "para2": "The Hussite wars in the 15th century divided the kingdom religiously and politically. Bohemia later fell under Habsburg rule in 1526. Its capital Prague remained a major cultural center.",

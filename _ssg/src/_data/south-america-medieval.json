@@ -1,7 +1,7 @@
 [
   {
     "pageData": {
-      "linktoparent": "southam/southammedieval",
+      "linktoparent": "southam/southammedieval.html",
       "image": "thechimuempire.jpg",
       "title": "The Chimú Empire",
       "para1": "The Chimú Empire. The Chimú Empire was a powerful coastal state that dominated the northern coast of Peru from roughly 900 to 1470 CE, emerging out of the earlier Moche culture. Centered at the massive capital city of Chan Chan—the largest adobe brick metropolis in the pre-Columbian Americas—the empire spanned over five hundred miles of arid coastline. This empire matters because it developed extraordinary urban planning, intricate silver metallurgy, and complex canal networks that turned dry desert river valleys into productive agricultural zones.",
@@ -15,8 +15,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "southam/southammedieval",
-      "image": "theincaempiretahuantinsuyu.jpg",
+      "linktoparent": "southam/southammedieval.html",
+      "image": "theincaempiretahuantinsuyu.png",
       "title": "The Inca Empire (Tahuantinsuyu)",
       "para1": "The Inca Empire (Tahuantinsuyu). The Inca Empire was the largest empire in pre-Columbian history, flourishing across the Andean region of South America from 1438 to 1533 CE. Originating in the high valley of Cusco under the legendary ruler Pachacuti, the realm expanded to encompass modern-day Peru, Ecuador, Bolivia, Chile, Colombia, and Argentina. This empire matters deeply because it created a highly organized state administration, master architectural stonemasonry constructed without mortar, and an impressive sixteen-thousand-mile highway network (Qhapaq Ñan).",
       "para2": "The Incas adapted to extreme mountain topography by constructing vast agricultural terraces, storehouses, and high-altitude administrative centers like Machu Picchu. Lacking a formal writing system, they relied on knotted cords called quipus for detailed record-keeping and population censuses. Imperial authority was maintained through forced population migrations and mandatory labor tribute (mita). Following a brutal civil war between rival brothers Huáscar and Atahualpa, the empire was fatally weakened, allowing a small force of Spanish conquistadors under Francisco Pizarro to capture and execute Atahualpa in 1533.",
@@ -29,7 +29,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "southam/southammedieval",
+      "linktoparent": "southam/southammedieval.html",
       "image": "themuiscaconfederation.jpg",
       "title": "The Muisca Confederation",
       "para1": "The Muisca Confederation was a group of chiefdoms in the highlands of modern Colombia. They flourished from about 600 to 1600 CE and were known for goldwork, salt, and agriculture. Their society was organized into powerful chiefdoms like Bacatá and Tunja.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "southam/southammedieval",
-      "image": "theaymarakingdoms.jpg",
+      "linktoparent": "southam/southammedieval.html",
+      "image": "theaymarakingdoms.png",
       "title": "The Aymara Kingdoms",
       "para1": "The Aymara kingdoms were a group of powerful states around Lake Titicaca after the fall of Tiwanaku. They flourished from about 1150 to 1450 CE. They were known for military organization, agriculture, and fortified hilltop towns.",
       "para2": "The Inca Empire conquered most of them in the 15th century. Their language and culture survived under Inca and later Spanish rule. They remain a major indigenous group in Bolivia and Peru.",

@@ -1,8 +1,8 @@
 [
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thebyzantineexarchateofafrica.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thebyzantineexarchateofafrica.png",
       "title": "The Byzantine Exarchate of Africa",
       "para1": "The Byzantine Exarchate of Africa was a province centered on Carthage after Rome's western fall. It preserved Roman administration and Orthodox Christianity in North Africa. It was a base for resisting Berber and later Arab attacks.",
       "para2": "The exarchate fell to the Arab conquest in the late 7th century. Carthage was captured in 698. North Africa then gradually became part of the Islamic world.",
@@ -15,8 +15,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "theaghlabids.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "theaghlabids.png",
       "title": "The Aghlabids",
       "para1": "The Aghlabids were an Arab dynasty that ruled Ifriqiya, modern Tunisia and eastern Algeria, from 800 to 909. They were nominally under the Abbasids but acted independently. They built irrigation works and founded the city of Kairouan's great mosque.",
       "para2": "They conquered Sicily and raided Italy and the western Mediterranean. Their naval power made them a major threat. They were overthrown by the Fatimids in 909.",
@@ -29,8 +29,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thefatimidcaliphate.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thefatimidcaliphate.png",
       "title": "The Fatimid Caliphate",
       "para1": "The Fatimid Caliphate was an Ismaili Shia empire that ruled North Africa and later Egypt from 909 to 1171. It founded Cairo and Al-Azhar University. It challenged the Sunni Abbasids for leadership of the Islamic world.",
       "para2": "The Fatimids built a wealthy state based on Red Sea trade. Their power declined due to internal strife and foreign mercenaries. Saladin abolished the caliphate in 1171.",
@@ -43,8 +43,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thealmoraviddynasty.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thealmoraviddynasty.png",
       "title": "The Almoravid Dynasty",
       "para1": "The Almoravids were a Berber Islamic dynasty from the Sahara that ruled Morocco and al-Andalus from about 1040 to 1147. They founded Marrakesh and promoted strict Maliki Sunni Islam. They stopped the Christian Reconquista for a time.",
       "para2": "Their empire weakened due to rebellion and religious unrest. The Almohads overthrew them in 1147. Their rule linked West Africa, Morocco, and Spain.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thealmohadcaliphate.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thealmohadcaliphate.png",
       "title": "The Almohad Caliphate",
       "para1": "The Almohads were a Berber dynasty that replaced the Almoravids in the 12th century. They ruled Morocco, North Africa, and much of Islamic Spain. They promoted a strict but reformist Islamic theology.",
       "para2": "They won major victories against Christian kingdoms but were defeated at Las Navas de Tolosa in 1212. Their empire fragmented in the 13th century. The Marinids and Hafsids took over.",
@@ -71,8 +71,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "themarinidsultanate.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "themarinidsultanate.png",
       "title": "The Marinid Sultanate",
       "para1": "The Marinids were a Zenata Berber dynasty that ruled Morocco from 1244 to 1465. They made Fez their capital and supported art, scholarship, and trade. They briefly intervened in Spain but could not stop the Reconquista.",
       "para2": "Their power declined due to internal factions and Portuguese attacks on the coast. The Wattasids replaced them. Morocco then faced increasing European pressure.",
@@ -85,8 +85,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thehafsiddynasty.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thehafsiddynasty.png",
       "title": "The Hafsid Dynasty",
       "para1": "The Hafsids were a Berber dynasty that ruled Ifriqiya, modern Tunisia and eastern Algeria, from 1229 to 1574. They claimed descent from the Almohads. They made Tunis a major Mediterranean trade center.",
       "para2": "The Hafsids often fought Spain, local tribes, and Ottoman corsairs. They became an Ottoman vassal in the 16th century. The dynasty ended when the Ottomans conquered Tunis in 1574.",
@@ -99,7 +99,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "themamluksultanate.jpg",
       "title": "The Mamluk Sultanate",
       "para1": "The Mamluk Sultanate ruled Egypt and Syria from 1250 to 1517. Its slave-soldier elites seized power and built a powerful military state. The Mamluks defeated the Mongols at Ain Jalut in 1260 and expelled the Crusaders.",
@@ -113,8 +113,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "theghanaempire.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "theghanaempire.png",
       "title": "The Ghana Empire",
       "para1": "The Ghana Empire was a West African trading state that flourished from about 300 to 1200 CE. It controlled gold and salt routes between the Sahara and the forest zone. Its capital, Kumbi Saleh, was a major commercial center.",
       "para2": "Ghana declined due to drought, rebellion, and Almoravid pressure. It was replaced by the Mali Empire. Its legacy lived on in later West African states.",
@@ -127,8 +127,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "themaliempire.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "themaliempire.png",
       "title": "The Mali Empire",
       "para1": "The Mali Empire was a powerful West African state from the 13th to 16th centuries. Founded by Sundiata Keita, it controlled gold, salt, and trade routes. Its most famous ruler, Mansa Musa, made a legendary pilgrimage to Mecca.",
       "para2": "Mali's power declined as subject states broke away. The Songhai Empire rose in its place. Mali survived in a smaller form into the 17th century.",
@@ -141,8 +141,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thesonghaiempire.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thesonghaiempire.png",
       "title": "The Songhai Empire",
       "para1": "The Songhai Empire was a major West African state centered on the Niger River. It flourished in the 15th and 16th centuries under rulers like Sunni Ali and Askia Muhammad. Timbuktu became a center of Islamic learning and trade.",
       "para2": "The empire fell to a Moroccan invasion in 1591. Its collapse fragmented the region. Smaller states and trade networks replaced it.",
@@ -155,8 +155,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thekanembornuempire.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thekanembornuempire.png",
       "title": "The Kanem-Bornu Empire",
       "para1": "The Kanem-Bornu Empire was a long-lasting state around Lake Chad. It emerged in the 9th century and adopted Islam. It controlled trans-Saharan trade routes and was known for its cavalry.",
       "para2": "The empire survived for centuries by adapting its capital and alliances. It declined in the 19th century under pressure from Sokoto and European colonizers. Its legacy shaped Chad, Niger, and Nigeria.",
@@ -169,8 +169,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thehausakingdoms.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thehausakingdoms.png",
       "title": "The Hausa Kingdoms",
       "para1": "The Hausa Kingdoms were a group of city-states in northern Nigeria, such as Kano, Katsina, and Zaria. They flourished from the 11th to 19th centuries through trade, crafts, and Islam. They were known for textiles, leather, and agriculture.",
       "para2": "The kingdoms often fought each other and were later conquered by the Sokoto Caliphate in the early 19th century. British colonial rule then absorbed the region. Hausa culture remains a major force in West Africa.",
@@ -183,7 +183,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "thekingdomofife.jpg",
       "title": "The Kingdom of Ife",
       "para1": "The Kingdom of Ife was a Yoruba city-state in southwestern Nigeria. It flourished from around the 11th to 15th centuries and is considered the spiritual homeland of the Yoruba. Its artists produced naturalistic bronze and terracotta heads.",
@@ -197,7 +197,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "thekingdomofbenin.jpg",
       "title": "The Kingdom of Benin",
       "para1": "The Kingdom of Benin was a powerful state in modern southern Nigeria. It flourished from the 13th to 19th centuries under the Oba dynasty. It was famous for bronze plaques, ivory carving, and a strong centralized government.",
@@ -211,7 +211,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "thezagwedynasty.jpg",
       "title": "The Zagwe Dynasty",
       "para1": "The Zagwe Dynasty ruled Ethiopia from about 1137 to 1270. It is best known for rock-hewn churches at Lalibela. The dynasty promoted Christianity and trade in the Ethiopian highlands.",
@@ -225,8 +225,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "theethiopianempiresolomonicdynasty.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "theethiopianempiresolomonicdynasty.png",
       "title": "The Ethiopian Empire (Solomonic Dynasty)",
       "para1": "The Solomonic dynasty ruled Ethiopia from 1270 to 1974, with some interruptions. It claimed descent from Solomon and the Queen of Sheba. It expanded the empire and defended Orthodox Christianity.",
       "para2": "The empire fought Muslim sultanates, Oromo migrations, and European colonial powers. It was modernized under Menelik II and later Haile Selassie. The monarchy ended in 1974.",
@@ -239,7 +239,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "theswahilicoastcitystateskilwamombasaetc.jpg",
       "title": "The Swahili Coast City-States (Kilwa, Mombasa, etc.)",
       "para1": "The Swahili Coast city-states were trading towns like Kilwa, Mombasa, and Zanzibar. They flourished from the 10th to 15th centuries through Indian Ocean trade. They blended African, Arab, Persian, and Indian influences and adopted Islam.",
@@ -253,8 +253,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thesultanateofadal.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thesultanateofadal.png",
       "title": "The Sultanate of Adal",
       "para1": "The Sultanate of Adal was a Muslim state in the Horn of Africa. It fought the Christian Ethiopian Empire in the 16th century. Its leader Ahmad ibn Ibrahim, called Gran, nearly conquered Ethiopia.",
       "para2": "Ethiopia, with Portuguese help, defeated Adal in 1543. The sultanate then fragmented. Its legacy includes the spread of Islam in the region.",
@@ -267,7 +267,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "thekingdomofmapungubwe.jpg",
       "title": "The Kingdom of Mapungubwe",
       "para1": "The Kingdom of Mapungubwe was a powerful Iron Age state in southern Africa, flourishing around 1075 to 1220. It was located near the Limpopo River and traded gold and ivory with the Indian Ocean world. Its elite lived on a hilltop and were buried with gold objects.",
@@ -281,7 +281,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
+      "linktoparent": "africa/africamedieval.html",
       "image": "zimbabwe.jpg",
       "title": "Zimbabwe",
       "para1": "Great Zimbabwe was a major medieval city and trading state in southeastern Africa. It flourished from about 1100 to 1450. Its stone walls and towers are the largest ancient structures in sub-Saharan Africa. It controlled gold and ivory trade with the Swahili coast.",
@@ -295,8 +295,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thekingdomofmutapa.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thekingdomofmutapa.png",
       "title": "The Kingdom of Mutapa",
       "para1": "The Kingdom of Mutapa was a Shona state that emerged after Great Zimbabwe. It controlled gold trade and the Zambezi Valley from the 15th to 18th centuries. Portuguese traders and settlers increasingly interfered in its politics.",
       "para2": "Mutapa weakened due to Portuguese pressure and internal division. It eventually fragmented into smaller states. Its history is central to Zimbabwe and Mozambique.",
@@ -309,8 +309,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africamedieval",
-      "image": "thekingdomofkongo.jpg",
+      "linktoparent": "africa/africamedieval.html",
+      "image": "thekingdomofkongo.png",
       "title": "The Kingdom of Kongo",
       "para1": "The Kingdom of Kongo was a powerful Central African state centered in modern Angola and the Democratic Republic of Congo. It flourished from the 14th to 19th centuries and adopted Christianity in the late 15th century. Its kings traded with Portugal and later suffered from the slave trade.",
       "para2": "Kongo faced civil wars, Portuguese influence, and economic decline. It fragmented in the 18th century. Its culture and language survive in the region.",

@@ -1,7 +1,7 @@
 [
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
+      "linktoparent": "northam/northammedieval.html",
       "image": "thetoltecempire.jpg",
       "title": "The Toltec Empire",
       "para1": "The Toltec Empire. The Toltec Empire was a major Postclassic Mesoamerican state centered at Tula in modern-day Hidalgo, Mexico, flourishing from roughly 900 to 1150 CE. Taking power following the decline of Teotihuacan, the Toltecs built a heavily militarized culture that deeply influenced later Mesoamerican civilizations. This empire matters because it set an elite architectural and martial standard across the region, featuring massive stone warrior pillars known as Atlantes and grand ceremonial plazas.",
@@ -15,7 +15,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
+      "linktoparent": "northam/northammedieval.html",
       "image": "postclassicmayachichenitzaandmayapan.jpg",
       "title": "Postclassic Maya (Chichén Itzá & Mayapán)",
       "para1": "Postclassic Maya (Chichén Itzá & Mayapán). Postclassic Maya civilization refers to the resilient lowland Maya societies that thrived in the northern Yucatán Peninsula from roughly 900 to 1500 CE following the Classic period collapse. Centered first at the magnificent cosmopolitan city of Chichén Itzá and later at the walled city of Mayapán, this era matters because it demonstrated remarkable cultural adaptation. The Maya restructured their political networks away from divine kingship toward shared council rule (multepal) and dynamic international maritime trade.",
@@ -29,8 +29,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
-      "image": "theaztecempiretripelalliance.jpg",
+      "linktoparent": "northam/northammedieval.html",
+      "image": "theaztecempiretripelalliance.png",
       "title": "The Aztec Empire (Triple Alliance)",
       "para1": "The Aztec Empire (Triple Alliance). The Aztec Empire was a massive, highly organized Mesoamerican state formed in 1428 through a military alliance between Tenochtitlan, Texcoco, and Tlacopan in the Valley of Mexico. Built on an island in Lake Texcoco, their extraordinary capital city of Tenochtitlan grew into one of the largest and most densely populated metropolises in the ancient world. This empire matters immensely because it developed breathtaking engineering feats, including causeways, aqueducts, and artificial agricultural islands called chinampas.",
       "para2": "The Aztecs commanded a formidable military machine that subjugated hundreds of surrounding city-states, extracting heavy tribute in gold, textiles, and food. Deeply religious, they conducted widespread human sacrifices to nourish their chief sun deity, Huitzilopochtli, and sustain the cosmic order. The empire reached its territorial zenith in the early 16th century under Moctezuma II. In 1521, a coalition of Spanish conquistadors led by Hernán Cortés and tens of thousands of indigenous allies who resented Aztec rule violently destroyed Tenochtitlan.",
@@ -43,7 +43,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
+      "linktoparent": "northam/northammedieval.html",
       "image": "themixteccivilization.jpg",
       "title": "The Mixtec Civilization",
       "para1": "The Mixtec civilization was a group of city-states in southern Mexico, especially Oaxaca. They flourished from about 900 to 1521 CE and were famous for codices, metalwork, and skilled artisans. They often competed and intermarried with the Zapotecs.",
@@ -57,7 +57,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
+      "linktoparent": "northam/northammedieval.html",
       "image": "themississippianculturecahokia.jpg",
       "title": "The Mississippian Culture (Cahokia)",
       "para1": "The Mississippian Culture (Cahokia). The Mississippian culture was an advanced Native American mound-building civilization that flourished across the Midwestern, Eastern, and Southeastern United States from roughly 800 to 1600 CE. Centered at the massive urban complex of Cahokia near modern-day St. Louis, Missouri, this culture was characterized by large-scale maize agriculture, complex chiefdoms, and monumental earthen platform mounds. This civilization matters because Cahokia grew into the largest pre-Columbian urban center north of Mexico, housing up to twenty thousand residents at its peak.",
@@ -71,8 +71,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "northam/northammedieval",
-      "image": "thehaudenosauneeiroquoisconfederacy.jpg",
+      "linktoparent": "northam/northammedieval.html",
+      "image": "thehaudenosauneeiroquoisconfederacy.png",
       "title": "The Haudenosaunee / Iroquois Confederacy",
       "para1": "The Haudenosaunee / Iroquois Confederacy. The Haudenosaunee Confederacy, also known as the Iroquois League, was a powerful political and military alliance formed around the 12th to 15th centuries in modern-day upstate New York. Originally uniting five distinct nations—the Mohawk, Oneida, Onondaga, Cayuga, and Seneca—the league was established under the Great Law of Peace (Gayanashagowa) through the diplomatic efforts of the Peacemaker and Hiawatha. This confederacy matters deeply because it created one of the world's oldest continuous participatory democracies, deeply influencing modern constitutional principles.",
       "para2": "Operating as a matrilineal society, clan mothers held the exclusive authority to select, advise, and depose male council chiefs. The confederacy lived in fortified villages of multi-family bark longhouses, sustaining themselves through communal agriculture centered on the \"Three Sisters\" (corn, beans, and squash). Their unified military strength and strategic location allowed them to dominate regional trade and diplomacy across northeastern North America for centuries, skillfully balancing competing European colonial powers against one another.",

@@ -1,8 +1,8 @@
 [
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "ancientegyptoldmiddlenewkingdoms.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "ancientegyptoldmiddlenewkingdoms.png",
       "title": "Ancient Egypt (Old, Middle, New Kingdoms)",
       "para1": "Ancient Egypt (Old, Middle, New Kingdoms). Ancient Egypt was one of the most enduring and iconic civilizations in human history, flourishing along the fertile banks of the Nile River from around 3100 BCE to 1070 BCE. Divided into three major golden ages, this monumental civilization matters deeply for its groundbreaking developments in architecture, mathematics, medicine, and writing systems like hieroglyphics. They established centralized rule under divine pharaohs and created a rich religious system centered on the afterlife, leaving behind timeless monuments like the Pyramids of Giza.",
       "para2": "Each of the three distinct eras expanded Egyptian power and artistic mastery, with the New Kingdom reaching an imperial peak that stretched deep into the Levant and Nubia. However, centuries of massive military campaigns, civil fragmentation, and severe economic strain eventually drained the state's central authority. Outside powers like the Libyans and Sea Peoples began launching constant invasions during the Bronze Age collapse. By the end of the New Kingdom, Egypt fractured into competing local dynasties, forever losing its absolute hegemony over the region.",
@@ -15,8 +15,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "ptolemaicegypt.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "ptolemaicegypt.png",
       "title": "Ptolemaic Egypt",
       "para1": "Ptolemaic Egypt. Ptolemaic Egypt was a powerful Hellenistic kingdom that ruled the Nile valley from 305 BCE to 30 BCE following the death of Alexander the Great. Founded by Alexander's Macedonian general Ptolemy I, the dynasty established its spectacular capital at Alexandria on the Mediterranean coast. This kingdom is historically vital because it created a brilliant synthesis of Greek and ancient Egyptian cultures, turning Alexandria into the undisputed intellectual center of the ancient world. They constructed the iconic Great Library and the Lighthouse of Alexandria, attracting master scholars from across the Mediterranean.",
       "para2": "While the ruling elite remained strictly Greek speaking, they adopted traditional Egyptian royal titles and heavily patronized local temples to maintain internal order. Over time, severe dynastic infighting and frequent native rebellions deeply weakened the kingdom's political foundation. The realm became increasingly dependent on the rising military power of the Roman Republic to protect its borders. The dynasty finally met its end when Queen Cleopatra VII and Mark Antony were defeated by Octavian, leading to Egypt's direct annexation as a wealthy Roman province.",
@@ -29,8 +29,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "thekingdomofkushnubia.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "thekingdomofkushnubia.png",
       "title": "The Kingdom of Kush / Nubia",
       "para1": "The Kingdom of Kush / Nubia. The Kingdom of Kush was an ancient African empire centered along the Middle Nile in modern day Sudan, flourishing from roughly 1000 BCE to 350 CE. Operating directly south of Egypt, it grew wealthy through its vast iron deposits, gold mines, and control over lucrative trade routes connecting sub-Saharan Africa to the Mediterranean. Kush matters greatly to world history because it proved that complex, highly urbanized centers could thrive in the upper Nile region completely independent of Egyptian domination. They developed their own unique Meroitic script and built hundreds of distinct, steep sided pyramids.",
       "para2": "The Kushites achieved their absolute political peak during the 8th century BCE, when King Piye led a massive army north to conquer Egypt and establish the Twenty-Fifth Dynasty. They ruled both lands as legitimate pharaohs for nearly a century before being driven back south by invading Assyrian armies. Re-establishing their capital at Meroë, the kingdom maintained its economic prosperity and architectural splendor for centuries. The state eventually faded in the 4th century CE due to environmental degradation and the rapid rise of the rival Aksumite Empire.",
@@ -43,7 +43,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
+      "linktoparent": "africa/africaclassical.html",
       "image": "carthage.jpg",
       "title": "Carthage",
       "para1": "Carthage. Carthage was a powerful ancient thalassocracy based in modern day Tunisia, founded as a Phoenician trading colony in 814 BCE. Occupying an exceptionally strategic position in the central Mediterranean, it transformed into an economic and military powerhouse that built a sprawling trade empire. Carthage is historically critical because it completely dominated Mediterranean maritime commerce for centuries, establishing colonies across North Africa, Spain, and Sicily. They commanded legendary naval fleets and controlled the flow of precious metals, agricultural goods, and luxury items throughout the western world.",
@@ -57,8 +57,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "numidia.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "numidia.png",
       "title": "Numidia",
       "para1": "Numidia. Numidia was an ancient Berber kingdom located in modern day Algeria and parts of Tunisia, flourishing from the 3rd century BCE until its annexation by Rome in 46 BCE. Originally composed of two semi-nomadic confederations, the kingdom was unified under King Masinissa following his strategic alliance with Rome during the Second Punic War. Numidia is historically important because it proved to be an indispensable regional player in the western Mediterranean. Their legendary light cavalry was widely considered the finest in the ancient world, playing a decisive role in major battles across Europe and North Africa.",
       "para2": "Under Masinissa's long reign, Numidia rapidly transformed from a loose pastoral society into a settled, urbanized agricultural power that produced massive grain surpluses. However, later dynastic struggles invited aggressive political and military interference from the Roman Senate. The famous Jugurthine War showcased widespread Roman corruption and deep Numidian tactical skill before King Jugurtha was eventually captured and executed in Rome. The kingdom was permanently broken up into smaller client states and eventually absorbed as a Roman province by Julius Caesar.",
@@ -71,7 +71,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
+      "linktoparent": "africa/africaclassical.html",
       "image": "mauretania.jpg",
       "title": "Mauretania",
       "para1": "Mauretania. Mauretania was an ancient Berber kingdom situated on the Atlantic coast of North Africa, encompassing modern day Morocco and western Algeria from the 3rd century BCE to 40 CE. Inhabited by the Mauri people, this tribal kingdom matters because it controlled crucial Atlantic and Mediterranean trade networks, supplying the ancient world with fine horses, timber, and valuable purple dyes. For much of its early history, Mauretania maintained a strong, independent identity while skillfully navigating the intense geopolitical rivalries between Carthage and Rome.",
@@ -85,8 +85,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "romannorthafrica.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "romannorthafrica.png",
       "title": "Roman North Africa",
       "para1": "Roman North Africa. Roman North Africa refers to the vast, wealthy coastal territories of the Mediterranean margin including modern Tunisia, Algeria, Libya, and Morocco under Roman rule from 146 BCE through late antiquity. Known widely as the granary of Rome, this region was vital to the empire because its massive grain yields and olive oil production literally fed the imperial capital. It became one of the most heavily urbanized and prosperous zones of the Roman world, producing breathtaking stone cities like Timgad and Leptis Magna featuring incredible aqueducts, theaters, and mosaics.",
       "para2": "Beyond its immense economic weight, the region played a pivotal role in the intellectual and religious evolution of the Roman Empire, producing world changing figures like the Christian theologian Saint Augustine and the emperor Septimius Severus. The long period of Roman stability was eventually shattered in the 5th century CE when the Vandals crossed the Strait of Gibraltar and conquered the major coastal cities. While the Byzantines briefly reclaimed parts of the region in the 6th century, Roman North Africa was permanently transformed in the 7th century by the sweeping Arab Islamic conquests.",
@@ -99,8 +99,8 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
-      "image": "thenokculture.jpg",
+      "linktoparent": "africa/africaclassical.html",
+      "image": "thenokculture.png",
       "title": "The Nok Culture",
       "para1": "The Nok Culture. The Nok Culture was an advanced Iron Age society that flourished on the Jos Plateau in modern central Nigeria from roughly 1500 BCE to 500 CE. They matter immensely to African history because they represent one of the earliest known societies in West Africa to independently develop iron smelting technology. This technological breakthrough allowed them to craft superior agricultural tools and hunting weapons, driving population growth and complex social structures across the region long before extensive outside contact.",
       "para2": "The culture is world famous today for its extraordinary, highly distinctive terracotta sculptures, featuring intricate hairstyles, detailed jewelry, and stylized expressive faces. These artistic masterpieces suggest a sophisticated religious or funerary tradition, though their exact cultural meaning remains uncertain due to a lack of written records. Around 500 CE, the Nok Culture faded away, likely due to climate shifts, severe deforestation caused by iron smelting, or changing trade routes. Despite their physical disappearance, their artistic and metallurgical traditions deeply influenced later West African civilizations like the Kingdom of Ife.",
@@ -113,7 +113,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
+      "linktoparent": "africa/africaclassical.html",
       "image": "thelandofpunt.jpg",
       "title": "The Land of Punt",
       "para1": "The Land of Punt. The Land of Punt was an ancient, highly prosperous trading kingdom located somewhere along the Horn of Africa, flourishing from roughly 2500 BCE to 1000 BCE. Revered by ancient Egyptians as God's Land, Punt matters greatly to history because it served as a major regional commercial hub connecting interior Africa to the Red Sea. They produced highly sought after luxury goods, most notably frankincense, myrrh, gold, ebony, ivory, and wild exotic animals that were eagerly imported by Egyptian pharaohs for religious rituals.",
@@ -127,7 +127,7 @@
   },
   {
     "pageData": {
-      "linktoparent": "africa/africaclassical",
+      "linktoparent": "africa/africaclassical.html",
       "image": "thekingdomofaksum.jpg",
       "title": "The Kingdom of Aksum",
       "para1": "The Kingdom of Aksum. The Kingdom of Aksum was a major trading empire centered in modern day northern Ethiopia and Eritrea that flourished from the 1st to the 8th centuries CE. Perfectly positioned along crucial Red Sea maritime routes, it connected the Roman Empire to India, turning Aksum into an internationally recognized superpower alongside Rome, Persia, and China. This state matters immensely because it adopted Christianity as its official religion in the early 4th century CE under King Ezana, establishing one of the oldest national churches in human history and issuing its own unique gold coinage.",
