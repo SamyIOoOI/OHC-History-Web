@@ -12,6 +12,12 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<style>
+    html,  body {
+        overflow: hidden;
+        height: 100%;
+    }
+</style>
 </head>
 <body>
     <audio class="sfx" loop id="identity2">
@@ -29,6 +35,24 @@
     <img src="warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>
     <div class="candywrapper">
+        <div class="table">
+            <h1 class="division">=Credits=</h1>
+            <img class="topicimage" src="portrait.png" title="Samy Mohamed">
+            <p style="font-size: larger;">Samy Mohamed</p>
+            <p style="font-size: large;">Sole Developer, Designer, & Fact-Checker of History Web</p>
+            <div style="display: flex; flex-direction: row; justify-content: center; gap:40px;"> 
+            <a href="https://www.linkedin.com/in/samy-mohamed-042607350?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><p style="font-size: larger;">LinkedIn</p></a>
+            <a href="https://www.instagram.com/samy_0__0?stkn=MWZuZm40bnhkeGliZA==" target="_blank"><p style="font-size: larger;">Instagram</p></a>
+            <a href="" target="_blank" id="clickmeorelse"><p style="font-size: larger;">Email</p></a>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 5px;">
+            <img class="topicimage" src="logo.png" title="History Web Logo (Early Development)">
+            <img class="topicimage" src="ohc.png" title="This work was created in part for the usage of STEM October Humanities Club members.">
+            </div>
+            <p style="font-size: x-large;">By a student, for all students.</p>
+            
+            
+        </div>
     <div class="sky">    
     </div>
     <div class="map" id="map" style="display: none;">
@@ -63,10 +87,17 @@
 </div>
     <div class="grainy">
     </div>
-    <div class="glitches">
-    </div>
 
 <script>
+    const email = "samymohamedgo16@gmail.com";
+    document.getElementById('clickmeorelse').addEventListener('click', function(event){
+        event.preventDefault();
+        navigator.clipboard.writeText(email).then(() => {
+            alert('The email was pasted in your clipboard.');
+        }).catch(err => {
+            console.error('Failed to copy, please try again.', err);
+        });
+    });
     const sky = document.querySelector('.sky');
     const COUNT = 60;
     const FRAME_W = 32;
