@@ -1,0 +1,58 @@
+[
+  {
+    "pageData": {
+      "linktoparent": "oceania/oceaniaclassical",
+      "image": "lapitaculture.jpg",
+      "title": "The Lapita Culture",
+      "para1": "The Lapita Culture. The Lapita culture was a prehistoric Pacific culture that flourished from roughly 1600 BCE to 500 BCE across Near and Remote Oceania, including the Bismarck Archipelago, Solomon Islands, Vanuatu, Fiji, and Samoa. Recognized as the direct ancestors of modern Polynesians and Micronesians, they matter because they engineered long-distance open-ocean navigation, spreading agriculture, domesticated animals, and distinct stamped pottery across vast expanses of the Pacific.",
+      "para2": "Their trademark ceramics feature intricate geometric patterns made with tooth-like stamps, serving as a primary archaeological trail for tracking human migration across Oceania. The Lapita people mastered double-hulled canoe design and wayfinding techniques using ocean swells, wind patterns, and star paths. As communities settled on isolated island chains, their material culture evolved, laying the direct foundation for the distinct cultural traditions of Polynesia.",
+      "source1": "https://www.britannica.com/topic/Lapita-culture",
+      "source2": "https://www.worldhistory.org/article/1586/polynesian-navigation--settlement-of-the-pacific/",
+      "source3": "https://human.libretexts.org/Bookshelves/Art/Art_History_and_Theory/Art_History_(Boundless)/26%3A_Oceania/26.01%3A_The_Rise_of_Pacific_Cultures",
+      "source4": "https://www.metmuseum.org/TOAH/HD/lapi/hd_lapi.htm",
+      "filename": "lapitaculture"
+    }
+  },
+  {
+    "pageData": {
+      "linktoparent": "oceania/oceaniaclassical",
+      "image": "indigenousaustraliafirstnations.jpg",
+      "title": "Indigenous Australia (First Nations)",
+      "para1": "Ancient Indigenous Australia (First Nations). Indigenous Australian societies represent the oldest continuous living cultures on Earth, with ancestral origins stretching back over sixty thousand years across the Australian continent and Tasmania. Developing deep spiritual and ecological connections to the land during deep antiquity, First Nations communities created complex social structures, land management practices, and rich artistic traditions centered on the Dreaming (Dreamtime).",
+      "para2": "Rather than living as simple hunter-gatherers, ancient Indigenous Australians engineered sophisticated environmental management techniques, including fire-stick farming to encourage plant growth and prevent megafires, as well as complex stone fish traps like the Brewarrina fish traps. Over two hundred distinct languages and hundreds of dialects were spoken across diverse ecological zones. Their oral histories, songlines, and rock art traditions preserved environmental memory and social law across dozens of millennia.",
+      "source1": "https://www.pbs.org/articles/get-to-know-the-first-peoples-of-australia",
+      "source2": "https://www.nationalgeographic.com/culture/article/aboriginal-australians",
+      "source3": "https://folklife.si.edu/magazine/australian-first-nations-philosophy-poetry",
+      "source4": "",
+      "filename": "indigenousaustraliafirstnations"
+    }
+  },
+  {
+    "pageData": {
+      "linktoparent": "oceania/oceaniaclassical",
+      "image": "kukearlyagriculturalsite.jpg",
+      "title": "The Kuk Early Agricultural Site",
+      "para1": "The Kuk Early Agricultural Site. The Kuk Early Agricultural Site is an ancient archaeological complex located in the Highlands of Papua New Guinea that provides evidence of independent agricultural development dating back over seven thousand years. Emerging around the same period as early farming in the Fertile Crescent and East Asia, this site matters because it proves that Indigenous Papuan societies independently invented agriculture in total isolation from the rest of the world.",
+      "para2": "Archaeological excavations at Kuk reveal sophisticated drainage networks, mounds, and ditch systems engineered to cultivate native crops like taro, bananas, and yams. The site documents the long transition from casual plant foraging to intensive wetland farming and land management across the ancient Pacific. This groundbreaking horticultural tradition sustained dense highland populations for thousands of years before extensive maritime trade connected the island to surrounding regions.",
+      "source1": "https://www.britannica.com/place/Kuk-Early-Agricultural-Site",
+      "source2": "https://www.worldhistory.org/First_Agricultural_Revolution/",
+      "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/01%3A_The_Study_of_History_and_the_Rise_of_Civilization/1.06%3A_The_Neolithic_Revolution",
+      "source4": "https://whc.unesco.org/en/list/887/",
+      "filename": "kukearlyagriculturalsite"
+    }
+  },
+  {
+    "pageData": {
+      "linktoparent": "oceania/oceaniaclassical",
+      "image": "earlypolynesianvoyaging.jpg",
+      "title": "Early Polynesian Voyaging",
+      "para1": "Early Polynesian Voyaging. Early Polynesian Voyaging refers to the initial wave of maritime expansion from roughly 1000 BCE to 500 CE, during which ancestral navigators pushed beyond the Solomon Islands into Central Polynesia, settling island groups like Tonga and Samoa. This era matters profoundly because these early seafarers developed the foundational oceanic technologies and survival strategies that enabled humanity to inhabit the world's largest body of water.",
+      "para2": "Using massive double-hulled voyaging canoes (wa'a kaulua), navigators observed subtle ocean swells, cloud formations, bird flight patterns, and star paths to cross thousands of miles of open ocean without mechanical compasses or written maps. They transported staple crops like taro, yams, and breadfruit, alongside livestock, to ensure the long-term survival of new island colonies. This early expansion laid the biological, linguistic, and cultural groundwork for the later medieval settlement of distant outposts like Hawaii and New Zealand.",
+      "source1": "https://www.britannica.com/topic/Polynesian-Voyaging-Society",
+      "source2": "https://www.worldhistory.org/article/1586/polynesian-navigation--settlement-of-the-pacific/",
+      "source3": "https://human.libretexts.org/Bookshelves/Art/SmartHistory_of_Art_2e/SmartHistory_of_Art_X_-_Oceania/01%3A_Terracotta_fragments_Lapita_people",
+      "source4": "https://timeandnavigation.si.edu/navigating-at-sea/navigating-without-a-clock/early-voyages",
+      "filename": "earlypolynesianvoyaging"
+    }
+  }
+]
