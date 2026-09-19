@@ -64,5 +64,5 @@ Reshaping History Web and putting a pricetag on it, limiting accessiblity to stu
 -------------
 ## <p align="center">License</p>
 <p align="center">
-Made, with love, by Samy Mohamed - OHC History Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence
+Made with love by Samy Mohamed - OHC History Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence
 </p>
