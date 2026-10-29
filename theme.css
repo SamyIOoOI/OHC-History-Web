@@ -7,6 +7,10 @@ html.no-chars .sky {
     display: none;
 }
 
+.candywrapper {
+    isolation: isolate;
+}
+
 .candywrapper > .sky {
     z-index: 0;
 }
@@ -237,7 +241,7 @@ html.light [style*="color:orangered" i] {
 }
 
 html.light [style*="rgba(0, 0, 0, 0.3)"] {
-    background-color: rgba(255, 248, 230, 0.6) !important;
+    background-color: #fbf3e0 !important;
 }
 
 html.light .candywrapper h1[style*="color: white"],
@@ -260,7 +264,7 @@ html.light .candywrapper h6[style*="color: orangered"] {
 
 html.light .table {
     color: #3a1208;
-    background: rgba(255, 248, 230, 0.6);
+    background: #fbf3e0;
     border-color: #5a2a14;
     text-shadow: none;
 }
@@ -324,6 +328,21 @@ html.light .hw-picker-dialog {
 
 html.light .hw-picker-error {
     color: #8f2608;
+}
+
+html.light .holdonthere {
+    color: #3a1208;
+    background: radial-gradient(circle at 50% 40%, #fbf3e0 0%, #e8d6b0 100%);
+}
+
+html.light .holdonthere h1 {
+    color: #3a1208 !important;
+}
+
+html.light #skiploading button {
+    color: #3a1208;
+    background: #e3cfa4;
+    border: 2px solid #b8975a;
 }
 
 @media (max-width: 480px) {

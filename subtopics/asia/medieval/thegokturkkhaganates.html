@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const s=localStorage,d=document.documentElement;if(s.getItem("hw_theme")==="light")d.classList.add("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")==="off")d.classList.add("no-chars")}catch(e){}})();</script>
+    <script>(()=>{try{const s=localStorage,d=document.documentElement;if(s.getItem("hw_theme")==="light")d.classList.add("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -31,10 +31,10 @@
     <div id="stickystuck">
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/asia/asiamedieval.html">Go Back</a>
-        <a href="../../../stem-curriculum.html">STEM Curriculum</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>
     <div class="candywrapper">
+        <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thegokturkkhaganates.jpg">
             <h1 style="font-size:larger;">The Göktürk Khaganates</h1>
