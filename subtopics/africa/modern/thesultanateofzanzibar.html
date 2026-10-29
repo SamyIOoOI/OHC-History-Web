@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thesultanateofzanzibar.png">
+            <img class="topicimage" src="images/thesultanateofzanzibar.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Sultanate of Zanzibar</h1>
             <p style="font-size: large;">The Sultanate of Zanzibar. The Sultanate of Zanzibar was an influential maritime empire established in 1832 when Sultan Said bin Sultan of Oman permanently moved his royal capital from Muscat to the island of Zanzibar off the East African coast. Controlling a wide commercial empire along the Swahili Coast, the sultanate grew fabulously wealthy by dominating global trade in cloves, ivory, and enslaved people. This state matters because it transformed Zanzibar into the economic and cultural capital of East Africa, spreading Swahili language and Islamic culture far into the African interior.</p>
             <p style="font-size: large;">The sultanate's massive clove plantations relied heavily on enslaved labor, creating a deeply stratified multi-ethnic society composed of Arab elites, Swahili merchants, and African laborers. Under intense diplomatic and naval pressure from Great Britain, the sultans were eventually forced to abolish the Indian Ocean slave trade in the late 19th century. As European powers carved up the adjacent mainland, Zanzibar's territorial holdings were severely reduced, culminating in the kingdom becoming a British protectorate in 1890.</p>

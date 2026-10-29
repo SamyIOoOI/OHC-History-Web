@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thesafavidempire.png">
+            <img class="topicimage" src="images/thesafavidempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Safavid Empire</h1>
             <p style="font-size: large;">The Safavid Empire. The Safavid Empire was one of the most significant ruling dynasties of Iran, dominating the region from 1501 to 1736. They established Twelver Shiism as the official state religion, permanently altering the religious landscape of the Middle East and sharply distinguishing Persia from its Sunni Ottoman neighbors. This era matters because it oversaw a massive cultural and economic revival, turning the new capital of Isfahan into a global masterpiece of architecture and trade. They heavily patronized the arts, producing world famous carpets, silk textiles, and miniature paintings.</p>
             <p style="font-size: large;">Sandwiched between the expanding Ottomans to the west and the Mughals to the east, the Safavids fought constantly to secure their borders. They reached their absolute zenith under Shah Abbas the Great, who modernized the military with gunpowder weapons and ruthlessly centralized political power. Eventually, weak and cloistered subsequent rulers let the state decay from within. The empire rapidly collapsed in 1722 when rebellious Afghan tribesmen easily besieged and captured Isfahan, plunging Persia into decades of chaotic civil war.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/frenchindochinaandbritishmalaya.png">
+            <img class="topicimage" src="images/frenchindochinaandbritishmalaya.png" fetchpriority="high">
             <h1 style="font-size:larger;">French Indochina & British Malaya</h1>
             <p style="font-size: large;">French Indochina & British Malaya. French Indochina and British Malaya were two massively profitable colonial constructs established in Southeast Asia during the late 19th century. The French violently conquered Vietnam, Cambodia, and Laos, while the British slowly absorbed the Malay Peninsula through a mix of military threats and exploitative treaties. These colonial entities matter deeply because they fundamentally transformed local economies strictly for European benefit. The British turned Malaya into the world's largest producer of rubber and tin, while the French deeply exploited Vietnamese peasants through heavy taxation and massive rice exports.</p>
             <p style="font-size: large;">Both colonial powers intentionally encouraged massive waves of immigration to provide cheap labor, deeply altering the region's demographic landscape. The French built a highly centralized, deeply oppressive bureaucracy that violently crushed any hint of Vietnamese nationalism, driving resistance movements completely underground. Meanwhile, the British ruled mostly indirectly through compliant local sultans, creating a highly stratified, export driven economy. Both of these massive colonial empires were completely shattered by the Japanese invasion during World War II, setting the direct stage for brutal post war independence struggles.</p>

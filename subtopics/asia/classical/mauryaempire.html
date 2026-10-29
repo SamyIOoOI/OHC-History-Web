@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/mauryaempire.png">
+            <img class="topicimage" src="images/mauryaempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">Maurya Empire</h1>
             <p style="font-size: large;">Maurya Empire. The Maurya Empire was a massive Iron Age state that unified almost the entire Indian subcontinent under a single government, flourishing from 322 BCE to 185 BCE. Founded by Chandragupta Maurya following Alexander the Great's campaigns, it expanded rapidly out of Magadha. The empire is incredibly significant because it established a highly sophisticated centralized administration and a massive standing army. This unprecedented internal peace allowed for booming trade, widespread agricultural development, and immense cultural flourishing.</p>
             <p style="font-size: large;">The empire reached its absolute peak under Ashoka the Great, who famously converted to Buddhism following a particularly bloody conquest. Ashoka utilized vast state resources to spread Buddhist teachings, carving his famous edicts onto towering stone pillars. After his death, the empire suffered a slow decline due to weak successors and internal rebellions. The final blow came in 185 BCE when the last Mauryan emperor was assassinated by his own general, fracturing the subcontinent back into competing regional kingdoms.</p>

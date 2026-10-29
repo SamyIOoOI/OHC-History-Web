@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theayutthayakingdom.png">
+            <img class="topicimage" src="images/theayutthayakingdom.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Ayutthaya Kingdom</h1>
             <p style="font-size: large;">The Ayutthaya Kingdom. The Ayutthaya Kingdom was a wildly wealthy and highly cosmopolitan state located in modern Thailand, thriving from 1351 until 1767. Perfectly situated on a river island connected directly to the Gulf of Thailand, it became one of the biggest and most vibrant trading hubs in Asia. This kingdom matters immensely because it successfully balanced massive international trade with highly aggressive territorial expansion against the neighboring Khmer Empire. They eagerly welcomed merchants from Japan, Persia, and Europe, creating a truly globalized, multi-ethnic capital city.</p>
             <p style="font-size: large;">The kings of Ayutthaya adopted a highly elevated, almost godlike status heavily influenced by ancient Hindu concepts of divine kingship. They commanded a massive, deeply complex bureaucracy funded entirely by their absolute monopoly on royal trade. The kingdom's golden age came to a completely devastating end during a massive conflict with the neighboring Burmese. In 1767, a massive Burmese army successfully besieged and utterly destroyed the magnificent capital city, burning its temples and libraries to the ground and officially ending the kingdom.</p>

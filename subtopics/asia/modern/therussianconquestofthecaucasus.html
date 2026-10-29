@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/therussianconquestofthecaucasus.jpg">
+            <img class="topicimage" src="images/therussianconquestofthecaucasus.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Russian Conquest of the Caucasus</h1>
             <p style="font-size: large;">The Russian Conquest of the Caucasus. The Russian Conquest of the Caucasus was a brutal, century long military campaign launched by the Russian Empire to fully absorb the mountainous region between the Black and Caspian seas. Stretching primarily across the 19th century, this aggressive expansion deeply challenged the existing Ottoman and Persian spheres of influence. This conflict matters deeply because it gave Russia secure, warm water ports and total control over highly lucrative trade routes. The sheer violence of the conquest completely permanently altered the demographic makeup of the entire region.</p>
             <p style="font-size: large;">The Russian armies faced incredibly fierce resistance from fiercely independent mountain tribes, most notably the Muslim coalition led by Imam Shamil in Dagestan and Chechnya. The Russians utilized massive artillery bombardments and widespread deforestation to slowly grind down the mountain defenses over decades. The conquest concluded in 1864 with the ethnic cleansing of the native Circassian population. Hundreds of thousands of Circassians were violently expelled from their ancestral homeland, forcing them to flee as impoverished refugees into the neighboring Ottoman Empire.</p>

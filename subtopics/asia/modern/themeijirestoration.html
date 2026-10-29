@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/themeijirestoration.jpg">
+            <img class="topicimage" src="images/themeijirestoration.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Meiji Restoration</h1>
             <p style="font-size: large;">The Meiji Restoration. The Meiji Restoration was a massively transformative political and social revolution in 1868 that officially returned actual power to the Japanese Emperor and completely dismantled the feudal shogunate. Terrified by the completely humiliating fate of neighboring China, the new Japanese leadership urgently realized they had to immediately modernize or face total colonization by Western powers. This era matters immensely because it represents the absolute fastest and most successful industrialization program in human history. The government completely abolished the samurai class, instituted universal education, and imported thousands of European experts.</p>
             <p style="font-size: large;">The state rapidly built massive railway networks, deeply modernized their legal codes, and created a highly formidable, conscripted national army strictly modeled on the Prussian military. Within a few incredibly short decades, Japan transformed from an isolated agrarian society into a terrifyingly powerful, fully industrialized empire. They completely shocked the entire world by decisively defeating the massive Russian Empire in 1905, officially proving that an Asian nation could easily beat a major European power at modern industrial warfare.</p>

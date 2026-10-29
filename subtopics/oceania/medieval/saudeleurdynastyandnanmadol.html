@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/saudeleurdynastyandnanmadol.jpg">
+            <img class="topicimage" src="images/saudeleurdynastyandnanmadol.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Saudeleur Dynasty & Nan Madol</h1>
             <p style="font-size: large;">The Saudeleur Dynasty & Nan Madol. The Saudeleur Dynasty was a centralized megalithic civilization that ruled the island of Pohnpei in Micronesia from roughly 1100 to 1628 CE. Operating from their monumental megalithic capital city of Nan Madol, the dynasty established an absolute, highly stratified feudal order across the island. This state matters because Nan Madol remains the only ancient city built atop a complex of coral reefs in open ocean water.</p>
             <p style="font-size: large;">Constructed using massive basalt columns weighing up to fifty tons, Nan Madol comprised nearly one hundred artificial islets connected by a network of tidal canals, earning it the title "Venice of the Pacific." The Saudeleur rulers centralized political and religious power by forcing regional chiefs to live in the capital under strict royal oversight. The oppressive regime eventually collapsed in the 17th century following a successful invasion by the warrior Isokelekel.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thechavinculture.png">
+            <img class="topicimage" src="images/thechavinculture.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Chavín Culture</h1>
             <p style="font-size: large;">The Chavín Culture. The Chavín culture was a major pan-Andean horizon civilization that flourished in the high valley of the Peruvian Andes from 900 BCE to 200 BCE. Centered at the monumental religious complex of Chavín de Huántar, it functioned as the primary cultural and spiritual catalyst for subsequent Andean civilizations. This culture matters because it unified vast coastal and mountain populations through a shared iconographic and religious system, spreading advanced metallurgy, textile weaving, and architectural design across Peru.</p>
             <p style="font-size: large;">Chavín de Huántar served as a major pilgrimage site, featuring intricate underground stone galleries, carved monoliths like the Lanzón, and acoustic water channels designed to induce intense spiritual experiences. Priests utilized hallucinogenic cactus rituals to reinforce social and religious authority over visiting pilgrims. Around 200 BCE, the central religious influence of Chavín faded as localized regional cultures began to emerge, though its artistic motifs deeply influenced future Andean empires.</p>

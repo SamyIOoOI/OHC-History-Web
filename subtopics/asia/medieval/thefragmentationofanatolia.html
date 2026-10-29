@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thefragmentationofanatolia.jpg">
+            <img class="topicimage" src="images/thefragmentationofanatolia.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Fragmentation of Anatolia</h1>
             <p style="font-size: large;">The Fragmentation of Anatolia. The Fragmentation of Anatolia refers to the chaotic political period following the collapse of the Seljuk Sultanate of Rum in the late 13th century CE. As Mongol authority in the region also began to wane, Anatolia shattered into a mosaic of small, highly competitive Turkic principalities known as beyliks. This era matters immensely because it served as an intense incubator for a new style of aggressive, frontier Islamic culture. These highly militarized border states constantly raided remaining Byzantine territories, drawing in nomadic warriors eager for both religious conflict and plunder.</p>
             <p style="font-size: large;">While many of these principalities grew wealthy through piracy and coastal trade, they constantly battled each other for regional supremacy. The Karamanids initially appeared to be the strongest of these factions, claiming the direct legacy of the old Seljuk sultans. However, a small and relatively obscure beylik located in the extreme northwest slowly began to outmaneuver its rivals. This minor state, founded by a leader named Osman, eventually conquered its neighbors and grew into the colossal Ottoman Empire, permanently uniting Anatolia under a single banner once again.</p>

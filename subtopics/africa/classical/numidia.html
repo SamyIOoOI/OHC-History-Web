@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/numidia.png">
+            <img class="topicimage" src="images/numidia.png" fetchpriority="high">
             <h1 style="font-size:larger;">Numidia</h1>
             <p style="font-size: large;">Numidia. Numidia was an ancient Berber kingdom located in modern day Algeria and parts of Tunisia, flourishing from the 3rd century BCE until its annexation by Rome in 46 BCE. Originally composed of two semi-nomadic confederations, the kingdom was unified under King Masinissa following his strategic alliance with Rome during the Second Punic War. Numidia is historically important because it proved to be an indispensable regional player in the western Mediterranean. Their legendary light cavalry was widely considered the finest in the ancient world, playing a decisive role in major battles across Europe and North Africa.</p>
             <p style="font-size: large;">Under Masinissa's long reign, Numidia rapidly transformed from a loose pastoral society into a settled, urbanized agricultural power that produced massive grain surpluses. However, later dynastic struggles invited aggressive political and military interference from the Roman Senate. The famous Jugurthine War showcased widespread Roman corruption and deep Numidian tactical skill before King Jugurtha was eventually captured and executed in Rome. The kingdom was permanently broken up into smaller client states and eventually absorbed as a Roman province by Julius Caesar.</p>

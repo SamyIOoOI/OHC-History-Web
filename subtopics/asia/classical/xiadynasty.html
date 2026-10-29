@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/xiadynasty.png">
+            <img class="topicimage" src="images/xiadynasty.png" fetchpriority="high">
             <h1 style="font-size:larger;">Xia Dynasty</h1>
             <p style="font-size: large;">Xia Dynasty. The Xia Dynasty is traditionally considered the first foundational dynasty of ancient China, allegedly ruling from roughly 2070 BCE to 1600 BCE. According to ancient chronicles, it was established by Yu the Great, a legendary figure famous for taming the disastrous floods of the Yellow River. The historical reality of the Xia is heavily debated since no written records survive to definitively prove their existence. However, archaeologists have uncovered widespread bronze age settlements at Erlitou that perfectly match the time and place of the supposed Xia.</p>
             <p style="font-size: large;">Whether purely mythical or a real historical entity, the concept of the Xia Dynasty served a crucial political purpose for later Chinese rulers. It established the core idea of a single legitimate succession of dynasties that dominated Chinese political thought for millennia. The dynasty allegedly ended when its final ruler lost the mythical Mandate of Heaven due to extreme cruelty. He was overthrown by a rebellion that established the definitively historical Shang Dynasty.</p>

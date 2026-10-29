@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thedzungarkhanate.png">
+            <img class="topicimage" src="images/thedzungarkhanate.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Dzungar Khanate</h1>
             <p style="font-size: large;">The Dzungar Khanate. The Dzungar Khanate was a massively powerful nomadic empire established by Oirat Mongol tribes in the 17th century, dominating the harsh territories of modern Xinjiang and western Mongolia. They were the absolute last great nomadic empire of the Eurasian steppe. This state is incredibly significant because its leaders built a formidable military machine utilizing highly effective, locally manufactured gunpowder weapons. They aggressively expanded in all directions, brutally devastating the neighboring Kazakhs and deeply terrifying the newly established Qing Dynasty in China.</p>
             <p style="font-size: large;">The Dzungars fought a series of massive, grueling wars against the Qing Empire for ultimate control of Tibet and Central Asia. A devastating outbreak of smallpox heavily crippled their population at the exact same time a massive succession crisis fractured their leadership. The Qing emperor Qianlong seized this perfect opportunity in 1755, launching a highly coordinated military campaign that utterly destroyed the khanate. The Chinese armies intentionally committed mass atrocities, entirely wiping the Dzungar people from the historical map and absorbing their lands into China.</p>

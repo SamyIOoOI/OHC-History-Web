@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/mauretania.jpg">
+            <img class="topicimage" src="images/mauretania.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Mauretania</h1>
             <p style="font-size: large;">Mauretania. Mauretania was an ancient Berber kingdom situated on the Atlantic coast of North Africa, encompassing modern day Morocco and western Algeria from the 3rd century BCE to 40 CE. Inhabited by the Mauri people, this tribal kingdom matters because it controlled crucial Atlantic and Mediterranean trade networks, supplying the ancient world with fine horses, timber, and valuable purple dyes. For much of its early history, Mauretania maintained a strong, independent identity while skillfully navigating the intense geopolitical rivalries between Carthage and Rome.</p>
             <p style="font-size: large;">The kingdom eventually entered the Roman political orbit as a loyal client state, reaching its cultural and economic peak under King Juba II and his wife Cleopatra Selene II. They transformed the capital city of Volubilis into a vibrant center of Greco-Roman and African art, architecture, and scholarship. This prosperous era came to an abrupt end in 40 CE when the paranoid Roman Emperor Caligula executed Mauretania's final king, Ptolemy. A major anti-Roman rebellion erupted shortly after, which Roman legions crushed before splitting the kingdom into two formal imperial provinces.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/srivijayaempire.jpg">
+            <img class="topicimage" src="images/srivijayaempire.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Srivijaya Empire</h1>
             <p style="font-size: large;">Srivijaya Empire. The Srivijaya Empire was a fabulously wealthy maritime confederation based on the island of Sumatra that dominated the Indonesian archipelago from the 7th to the 13th centuries CE. Instead of conquering vast inland territories, they focused entirely on controlling the incredibly strategic Strait of Malacca. This empire is historically crucial because it absolutely monopolized the vital spice trade flowing between India and China, amassing unbelievable fortunes. They also served as a massive, internationally renowned center for Buddhist learning, attracting hundreds of scholars from across the entire Asian continent.</p>
             <p style="font-size: large;">Their massive wealth relied entirely on keeping international merchants happy and suppressing local piracy. In the 11th century, the powerful Chola Empire of southern India launched a devastating surprise naval attack, deeply crippling Srivijaya's trade monopoly. This military disaster shattered their aura of invincibility, encouraging local trading ports to break away and declare independence. The empire slowly withered away as newer, aggressive regional powers like the Singhasari and the Majapahit emerged to completely dominate the island trade routes.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theqajarempire.png">
+            <img class="topicimage" src="images/theqajarempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Qajar Empire</h1>
             <p style="font-size: large;">The Qajar Empire. The Qajar Empire was a Turkmen dynasty that managed to completely reunify Iran in 1789, establishing their capital in the small northern town of Tehran. They ruled through the entirely of the 19th century and into the early 20th century. This era is historically significant because it marked Persia's painful, direct collision with aggressive European imperialism. The Qajars found themselves trapped in the Great Game, struggling to maintain their independence while being constantly squeezed by the expanding Russian and British empires.</p>
             <p style="font-size: large;">The empire suffered humiliating military defeats against Russia, losing massive swaths of their traditional territory in the Caucasus. To fund their lavish royal lifestyles and pay off foreign debts, Qajar monarchs began selling off the country's economic concessions to European companies. This widespread corruption deeply angered the Iranian public and the religious establishment. Public outrage eventually boiled over into the Constitutional Revolution of 1906, which forced the king to accept a parliament and drastically curtailed royal power before the dynasty finally collapsed in 1925.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theyuandynasty.jpg">
+            <img class="topicimage" src="images/theyuandynasty.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Yuan Dynasty</h1>
             <p style="font-size: large;">The Yuan Dynasty. The Yuan Dynasty was the first foreign led dynasty to completely conquer and rule all of China, established by the Mongol leader Kublai Khan in 1271 CE. They completely bypassed traditional Chinese centers of power to build a magnificent new capital at modern day Beijing. This era is historically significant because it forcefully integrated China into the massive, globally connected Mongol Empire, resulting in a completely unprecedented flow of international trade and technological exchange. The presence of European merchants like Marco Polo perfectly highlighted the incredibly cosmopolitan nature of the Yuan court.</p>
             <p style="font-size: large;">To maintain complete control, the Mongols instituted a highly rigid caste system that heavily discriminated against ethnic Chinese subjects, prioritizing Mongols and Central Asian administrators. This deep systemic inequality naturally bred massive resentment across the countryside. As later emperors completely mismanaged the economy and failed to handle devastating floods along the Yellow River, massive peasant rebellions erupted. The most powerful of these rebel groups, the Red Turbans, successfully drove the Mongols entirely out of China in 1368 CE, directly paving the way for the native Ming Dynasty.</p>

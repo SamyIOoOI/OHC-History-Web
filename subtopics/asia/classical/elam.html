@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/elam.png">
+            <img class="topicimage" src="images/elam.png" fetchpriority="high">
             <h1 style="font-size:larger;">Elam</h1>
             <p style="font-size: large;">Elam. Elam was an incredibly ancient civilization centered in the far southwest of modern day Iran, sharing a long and porous border with Mesopotamia. Emerging around 3200 BCE, it was perfectly positioned to control crucial trade routes connecting the Iranian plateau to the wealthy Sumerian and Akkadian cities. The Elamites are historically significant because they developed one of the world's earliest writing systems independently from their neighbors and maintained a completely distinct language and culture for thousands of years. They were a persistent military and economic force, frequently invading Mesopotamian cities and famously carrying off the Code of Hammurabi as a war trophy.</p>
             <p style="font-size: large;">The constant push and pull between Elam and the Mesopotamian empires defined their political trajectory for centuries. They reached their peak of power in the second millennium BCE before entering a slow and grinding decline. The Neo-Assyrian king Ashurbanipal dealt a devastating blow to Elam in 647 BCE, brutally sacking their magnificent capital city of Susa. The weakened Elamite state was ultimately absorbed by the rising Achaemenid Persian Empire in the 6th century BCE, though Susa continued to serve as a vital royal capital for the Persian kings.</p>

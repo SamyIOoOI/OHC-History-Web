@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thetokugawashogunateedoperiod.png">
+            <img class="topicimage" src="images/thetokugawashogunateedoperiod.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Tokugawa Shogunate (Edo Period)</h1>
             <p style="font-size: large;">The Tokugawa Shogunate (Edo Period). The Tokugawa Shogunate was a highly rigid, deeply conservative feudal military government that ruled Japan from 1603 to 1868. Following centuries of endless, utterly devastating civil wars, Tokugawa Ieyasu completely unified the country and established his absolute capital in Edo, modern day Tokyo. This era is historically crucial because it brought over two and a half centuries of total internal peace and incredibly vibrant cultural growth. The government strictly mandated the deeply hierarchical samurai class structure and heavily sponsored the development of Kabuki theater and beautiful woodblock prints.</p>
             <p style="font-size: large;">To prevent any foreign interference from destabilizing their strictly controlled society, the shogunate implemented a completely draconian isolationist policy known as Sakoku. For over two hundred years, almost all Westerners were strictly banned, and Japanese citizens were forbidden from leaving the island on pain of death. This complete isolation ended abruptly in 1853 when heavily armed American steamships arrived, demanding that Japan immediately open its ports to global trade. The shogunate's completely humiliating capitulation to these foreign demands deeply enraged the samurai class, rapidly leading to the government's total overthrow.</p>

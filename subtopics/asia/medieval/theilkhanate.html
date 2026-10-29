@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theilkhanate.jpg">
+            <img class="topicimage" src="images/theilkhanate.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Ilkhanate</h1>
             <p style="font-size: large;">The Ilkhanate. The Ilkhanate was a massive Mongol khanate established in the 13th century, encompassing modern day Iran, Iraq, and parts of the Levant. It was founded by Hulagu Khan, a grandson of Genghis Khan, who famously and brutally sacked Baghdad in 1258 CE, effectively ending the Islamic Golden Age. The Ilkhanate matters immensely because it violently forced the Middle East into the vast, interconnected Mongol global network. This integration drastically increased overland trade along the Silk Road and facilitated a massive exchange of technology, art, and administrative practices between Persia and Yuan Dynasty China.</p>
             <p style="font-size: large;">Initially ruling as violent foreign conquerors who heavily favored Buddhism and Christianity, the Ilkhanate leadership eventually assimilated into the local culture. At the end of the 13th century, ruler Ghazan Khan officially converted to Islam, heavily patronizing Persian literature and Islamic architecture. Despite their cultural assimilation, the state struggled to maintain stability and suffered from devastating economic mismanagement. The Ilkhanate fragmented completely in the 1330s following the death of Abu Said, leaving a chaotic power vacuum filled by competing regional warlords.</p>

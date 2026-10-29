@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thetoltecempire.jpg">
+            <img class="topicimage" src="images/thetoltecempire.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Toltec Empire</h1>
             <p style="font-size: large;">The Toltec Empire. The Toltec Empire was a major Postclassic Mesoamerican state centered at Tula in modern-day Hidalgo, Mexico, flourishing from roughly 900 to 1150 CE. Taking power following the decline of Teotihuacan, the Toltecs built a heavily militarized culture that deeply influenced later Mesoamerican civilizations. This empire matters because it set an elite architectural and martial standard across the region, featuring massive stone warrior pillars known as Atlantes and grand ceremonial plazas.</p>
             <p style="font-size: large;">Toltec rulers dominated regional trade routes, exchanging obsidian, textiles, and turquoise across vast distances reaching as far as the American Southwest. Their cultural prestige was so immense that subsequent groups, including the Aztecs, proudly claimed direct political descent from Toltec royalty to legitimize their own imperial rule. Around 1150 CE, internal factional conflict, combined with invasions by northern nomadic groups, led to the burning and total destruction of Tula.</p>

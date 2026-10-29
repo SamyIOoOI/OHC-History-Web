@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thebuyids.jpg">
+            <img class="topicimage" src="images/thebuyids.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Buyids</h1>
             <p style="font-size: large;">The Buyids. The Buyid dynasty was a powerful Shia Iranian confederation that essentially hijacked the central authority of the Sunni Abbasid Caliphate between 934 CE and 1062 CE. Originating from the rugged mountains of Daylam near the Caspian Sea, they conquered massive swathes of Persia and Iraq before capturing Baghdad itself. They matter significantly because their rule initiated the Iranian Intermezzo, a crucial period where native Persian culture and political systems forcefully reasserted themselves after centuries of direct Arab domination. The Buyids actively revived ancient Persian titles like Shahanshah while simultaneously expanding Shia intellectual and theological centers.</p>
             <p style="font-size: large;">Instead of completely destroying the Abbasid caliphs, the Buyids chose to keep them as convenient religious figureheads, stripping them of all actual political and military power. This created a highly complex system of shared governance where Buyid military commanders ruled the provinces while the caliph handled spiritual matters. Their confederation eventually weakened due to constant internal infighting among various royal brothers and nephews. They were ultimately swept away in the mid 11th century by the arrival of the Seljuk Turks, who eagerly restored Sunni dominance over Baghdad.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thekazakhkhanate.png">
+            <img class="topicimage" src="images/thekazakhkhanate.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Kazakh Khanate</h1>
             <p style="font-size: large;">The Kazakh Khanate. The Kazakh Khanate was a large, loosely unified nomadic state that dominated the eastern Eurasian Steppe from the late 15th to the mid 19th century. Formed by tribes breaking away from the collapsing Golden Horde, they relied entirely on a highly mobile, horse based pastoralist economy. This confederation matters because it solidified the distinct cultural and political identity of the modern Kazakh people. They controlled massive expanses of territory, utilizing a complex system of tribal alliances governed by customary law rather than a rigid central bureaucracy.</p>
             <p style="font-size: large;">The khanate constantly battled neighboring powers for control of vital oasis cities and pasturelands. Their greatest existential threat came from the aggressively expanding Dzungar Khanate, which launched a series of completely devastating invasions in the early 18th century. To survive this onslaught, the desperate Kazakh khans slowly began seeking military protection from the rapidly expanding Russian Empire. This fateful decision allowed Russian administrators and settlers to slowly creep into the steppe, completely eroding Kazakh independence and turning the region into a Russian colonial possession.</p>

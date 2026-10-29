@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theancestralpuebloans.jpg">
+            <img class="topicimage" src="images/theancestralpuebloans.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Ancestral Puebloans</h1>
             <p style="font-size: large;">The Ancestral Puebloans. The Ancestral Puebloans, historically known as the Anasazi, were an advanced Native American culture that flourished across the Four Corners region of the American Southwest from roughly 100 BCE to 1300 CE. Adapting to a challenging desert environment, they transitioned from semi-nomadic pit-house dwellers to master builders of multi-story masonry towns and spectacular cliff dwellings. This culture matters because they developed complex astronomical calendars, extensive irrigation networks, and distinctive black-on-white pottery styles.</p>
             <p style="font-size: large;">Their most famous centers include Chaco Canyon, which featured massive multi-room great houses like Pueblo Bonito, and Mesa Verde, renowned for its cliff-side settlements. They maintained long-distance trade routes reaching deep into Mesoamerica, importing scarlet macaws and chocolate. In the late 13th century, a combination of severe, decades-long droughts, resource depletion, and violent social conflict forced the Ancestral Puebloans to abandon their grand settlements, migrating south to build the historical Pueblo villages of the Rio Grande and Hopi mesas.</p>

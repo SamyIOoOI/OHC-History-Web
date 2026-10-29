@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theghanaempire.png">
+            <img class="topicimage" src="images/theghanaempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Ghana Empire</h1>
             <p style="font-size: large;">The Ghana Empire was a West African trading state that flourished from about 300 to 1200 CE. It controlled gold and salt routes between the Sahara and the forest zone. Its capital, Kumbi Saleh, was a major commercial center.</p>
             <p style="font-size: large;">Ghana declined due to drought, rebellion, and Almoravid pressure. It was replaced by the Mali Empire. Its legacy lived on in later West African states.</p>

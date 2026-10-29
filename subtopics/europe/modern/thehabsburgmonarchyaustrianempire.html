@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thehabsburgmonarchyaustrianempire.png">
+            <img class="topicimage" src="images/thehabsburgmonarchyaustrianempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Habsburg Monarchy / Austrian Empire</h1>
             <p style="font-size: large;">The Habsburg Monarchy was a multiethnic empire ruling Austria, Bohemia, Hungary, and later parts of Italy and the Balkans. It was a major European power and a center of conservative Catholicism. In 1804 it became the Austrian Empire.</p>
             <p style="font-size: large;">It fought Napoleon and later competed with Prussia for German leadership. The 1867 compromise created Austria-Hungary. The empire collapsed at the end of World War I.</p>

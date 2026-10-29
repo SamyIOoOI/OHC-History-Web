@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/themocheculture.jpg">
+            <img class="topicimage" src="images/themocheculture.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Moche Culture</h1>
             <p style="font-size: large;">The Moche Culture. The Moche culture was a sophisticated coastal civilization that dominated the arid valleys of northern Peru from 100 CE to 700 CE. Operating as a network of independent valley polities, they constructed massive adobe brick monuments, most notably the Huaca del Sol and the Huaca de la Luna. This civilization matters greatly because they produced some of the most remarkable metalwork, gold ornaments, and expressive stirrup-spout pottery in the ancient world, capturing detailed scenes of daily life, warfare, and mythology.</p>
             <p style="font-size: large;">The Moche engineered extensive canal networks to transform dry coastal river valleys into rich agricultural zones growing maize, beans, and cotton. Their religious practices involved elaborate ritual combat and human sacrifice, as dramatically evidenced by the royal, gold-laden tombs discovered at Sipán. Extreme environmental instability, characterized by severe El Niño climate cycles, mega-floods, and prolonged droughts, severely disrupted agricultural output in the 6th century, leading to civil strife and the culture's political collapse.</p>

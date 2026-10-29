@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thekingdomofaksum.jpg">
+            <img class="topicimage" src="images/thekingdomofaksum.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Kingdom of Aksum</h1>
             <p style="font-size: large;">The Kingdom of Aksum. The Kingdom of Aksum was a major trading empire centered in modern day northern Ethiopia and Eritrea that flourished from the 1st to the 8th centuries CE. Perfectly positioned along crucial Red Sea maritime routes, it connected the Roman Empire to India, turning Aksum into an internationally recognized superpower alongside Rome, Persia, and China. This state matters immensely because it adopted Christianity as its official religion in the early 4th century CE under King Ezana, establishing one of the oldest national churches in human history and issuing its own unique gold coinage.</p>
             <p style="font-size: large;">Aksum reached its absolute zenith by projecting power across the Red Sea to rule parts of the Arabian Peninsula, constructing towering granite stelae as royal burial monuments. However, the kingdom began a slow decline in the 7th century as the newly emerging Islamic caliphates gained control of Red Sea trade routes, effectively isolating Aksum economically. Environmental degradation and climate shifts further eroded their agricultural output. The capital was eventually abandoned, and the political center shifted south into the Ethiopian highlands, setting the stage for the medieval Zagwe dynasty.</p>

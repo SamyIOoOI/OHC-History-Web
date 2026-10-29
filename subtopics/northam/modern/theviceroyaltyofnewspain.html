@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theviceroyaltyofnewspain.png">
+            <img class="topicimage" src="images/theviceroyaltyofnewspain.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Viceroyalty of New Spain</h1>
             <p style="font-size: large;">The Viceroyalty of New Spain. The Viceroyalty of New Spain was a massive imperial territory established by the Spanish Empire in 1535 following the fall of Tenochtitlan, spanning modern-day Mexico, Central America, parts of the U.S. Southwest, and the Spanish West Indies. Governed by a viceroy appointed by the Spanish Crown, this administration matters deeply because it integrated the Americas into global maritime trade networks via the silver mines of Zacatecas and the Manila Galleon trade.</p>
             <p style="font-size: large;">The viceroyalty operated under a rigid, racially stratified caste system that privileged Iberian-born elites over indigenous, mestizo, and Afro-descendant populations. Roman Catholic religious orders extensively converted native groups while accumulating massive landholdings and social influence across the territory. Over three centuries, economic exploitation, royal monopolies, and growing resentment among local Creoles slowly destabilized imperial authority, culminating in widespread independence revolts in the early 19th century.</p>

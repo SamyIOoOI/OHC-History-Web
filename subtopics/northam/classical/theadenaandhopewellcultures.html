@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theadenaandhopewellcultures.jpg">
+            <img class="topicimage" src="images/theadenaandhopewellcultures.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Adena & Hopewell Cultures</h1>
             <p style="font-size: large;">The Adena & Hopewell Cultures. The Adena and Hopewell cultures were complex Woodland period societies that flourished along the river valleys of the eastern United States, primarily in the Ohio Valley, from 1000 BCE to 500 CE. They are historically famous as the Mound Builders, constructing massive geometric earthworks, burial mounds, and effigy structures like the Great Serpent Mound. These cultures matter because they established sprawling trade networks that connected communities across North America, exchanging copper, mica, obsidian, and marine shells.</p>
             <p style="font-size: large;">While maintaining a semi-nomadic lifestyle based on hunting, gathering, and early horticulture, the Hopewell created remarkable artistic works, including carved stone pipes and cold-hammered copper ornaments buried alongside honored elite ancestors. Their ceremonial centers served as periodic gathering places for dispersed populations to conduct rituals, trade goods, and arrange marriages. By 500 CE, the Hopewell trade network dissolved and mound building declined, likely due to shifting social dynamics and climate disruption.</p>

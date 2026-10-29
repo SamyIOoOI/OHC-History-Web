@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theqingdynasty.png">
+            <img class="topicimage" src="images/theqingdynasty.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Qing Dynasty</h1>
             <p style="font-size: large;">The Qing Dynasty. The Qing Dynasty was the absolute final imperial dynasty of China, established by conquering Manchu tribes from the north and lasting from 1644 to 1912. The Manchus forcefully imposed their authority over the massive ethnic Han majority, strictly mandating that all Chinese men wear the traditional queue hairstyle as a brutal sign of submission. This dynasty matters immensely because they wildly expanded China's borders to their absolute maximum historical extent, militarily absorbing Taiwan, Tibet, Xinjiang, and Mongolia to create the modern geographic footprint of China.</p>
             <p style="font-size: large;">The empire experienced over a century of massive prosperity and total stability under powerful emperors like Kangxi and Qianlong. However, the state completely stagnated in the 19th century, deeply struggling to feed a rapidly exploding population. The Qing military was utterly humiliated by highly industrialized European powers, suffering devastating defeats and completely losing control over vital coastal ports. Battered by endless, massive internal rebellions and completely failed modernization efforts, the exhausted dynasty finally collapsed during the Xinhai Revolution of 1911, ending thousands of years of imperial rule.</p>

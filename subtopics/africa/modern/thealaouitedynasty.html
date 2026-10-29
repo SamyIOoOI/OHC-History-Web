@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thealaouitedynasty.png">
+            <img class="topicimage" src="images/thealaouitedynasty.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Alaouite Dynasty</h1>
             <p style="font-size: large;">The Alaouite Dynasty. The Alaouite Dynasty is the ruling royal family of Morocco, coming to power in 1666 and remaining on the throne to the present day. Originating from the Tafilalt region, they claimed direct descent from the Prophet Muhammad, using this spiritual legitimacy to unify a deeply fractured nation. This dynasty matters because it successfully preserved Moroccan independence for centuries, fiercely repelling both Ottoman expansionist efforts from the east and European naval encroachments along the Atlantic and Mediterranean coasts.</p>
             <p style="font-size: large;">Under the long and iron-fisted rule of Sultan Ismail Ibn Sharif, Morocco built a formidable standing army,the Black Guard,and drove European garrisons out of key coastal cities like Tangier. The state developed sophisticated diplomatic ties with foreign powers, becoming the first nation to officially recognize the United States in 1777. However, 19th-century European economic pressure and military clashes eventually forced the monarchy to accept a Franco-Spanish protectorate in 1912, though the dynasty retained its symbolic throne and spearheaded eventual independence in 1956.</p>

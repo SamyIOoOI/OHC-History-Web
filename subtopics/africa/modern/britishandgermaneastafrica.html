@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/britishandgermaneastafrica.png">
+            <img class="topicimage" src="images/britishandgermaneastafrica.png" fetchpriority="high">
             <h1 style="font-size:larger;">British & German East Africa</h1>
             <p style="font-size: large;">British and German East Africa were colonial territories in the late 19th and early 20th centuries. Germany controlled Tanganyika, Rwanda, and Burundi, while Britain held Kenya and Uganda. Both used forced labor and cash crops.</p>
             <p style="font-size: large;">After World War I, Britain took over most German East Africa as Tanganyika. Independence movements later created Tanzania, Kenya, and Uganda. The colonial borders shaped modern East Africa.</p>

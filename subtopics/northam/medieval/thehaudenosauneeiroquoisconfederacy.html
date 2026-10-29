@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thehaudenosauneeiroquoisconfederacy.png">
+            <img class="topicimage" src="images/thehaudenosauneeiroquoisconfederacy.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Haudenosaunee / Iroquois Confederacy</h1>
             <p style="font-size: large;">The Haudenosaunee / Iroquois Confederacy. The Haudenosaunee Confederacy, also known as the Iroquois League, was a powerful political and military alliance formed around the 12th to 15th centuries in modern-day upstate New York. Originally uniting five distinct nations—the Mohawk, Oneida, Onondaga, Cayuga, and Seneca—the league was established under the Great Law of Peace (Gayanashagowa) through the diplomatic efforts of the Peacemaker and Hiawatha. This confederacy matters deeply because it created one of the world's oldest continuous participatory democracies, deeply influencing modern constitutional principles.</p>
             <p style="font-size: large;">Operating as a matrilineal society, clan mothers held the exclusive authority to select, advise, and depose male council chiefs. The confederacy lived in fortified villages of multi-family bark longhouses, sustaining themselves through communal agriculture centered on the "Three Sisters" (corn, beans, and squash). Their unified military strength and strategic location allowed them to dominate regional trade and diplomacy across northeastern North America for centuries, skillfully balancing competing European colonial powers against one another.</p>

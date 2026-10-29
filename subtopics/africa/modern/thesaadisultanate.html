@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thesaadisultanate.jpg">
+            <img class="topicimage" src="images/thesaadisultanate.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Saadi Sultanate</h1>
             <p style="font-size: large;">The Saadi Sultanate ruled Morocco from 1549 to 1659. It rose after defeating the Wattasids and resisted Portuguese and Ottoman expansion. Its most famous ruler, Ahmad al-Mansur, captured Timbuktu and Songhai's gold trade.</p>
             <p style="font-size: large;">After al-Mansur's death, the dynasty declined due to internal strife. The Alaouites took power in 1666. The Saadis helped shape Moroccan identity and central rule.</p>

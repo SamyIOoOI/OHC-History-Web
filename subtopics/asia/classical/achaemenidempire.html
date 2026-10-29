@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/achaemenidempire.jpg">
+            <img class="topicimage" src="images/achaemenidempire.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Achaemenid Empire</h1>
             <p style="font-size: large;">Achaemenid Empire. The Achaemenid Empire, founded by Cyrus the Great in 550 BCE, was the first true global superpower, encompassing a staggering amount of territory from the Balkans and Egypt to the Indus Valley. Centered in modern Iran, it was an incredibly diverse state that integrated a massive variety of cultures, languages, and religions under one imperial umbrella. The Achaemenids matter deeply because they pioneered the model for successful multicultural governance, utilizing a sophisticated network of provincial governors called satraps and an unparalleled system of royal roads. They also embraced Zoroastrianism, a faith that profoundly influenced the theological development of other major world religions.</p>
             <p style="font-size: large;">Despite their administrative brilliance, the empire repeatedly struggled to completely subdue the fiercely independent Greek city states on their western frontier. A series of famous military defeats at Marathon, Salamis, and Plataea severely checked their westward expansion. The empire finally met its end when Alexander the Great launched a rapid and highly aggressive invasion in 334 BCE. Within a decade, the massive Achaemenid state completely collapsed, marking a dramatic shift in global power and initiating the widespread Hellenistic era across the former Persian territories.</p>

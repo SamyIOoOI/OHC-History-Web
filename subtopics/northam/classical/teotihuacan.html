@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/teotihuacan.jpg">
+            <img class="topicimage" src="images/teotihuacan.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Teotihuacan</h1>
             <p style="font-size: large;">Teotihuacan. Teotihuacan was a monumental, highly planned metropolis located in the Valley of Mexico that flourished between 100 BCE and 550 CE. Home to an estimated population of over one hundred thousand people at its height, it was one of the largest cities in the ancient world. This city matters because it served as a major political, economic, and religious epicenter, featuring breathtaking architectural feats such as the Avenue of the Dead, the Pyramid of the Sun, and the Pyramid of the Moon.</p>
             <p style="font-size: large;">Unlike many neighboring cultures, Teotihuacan was governed by a collective or priestly elite rather than clear individual monarchs, expressing its power through standardized apartment compounds and distinctive art styles. The city commanded vast trade networks across Mesoamerica, exporting valuable green obsidian tools and vibrant ceramics. Around 550 CE, the central ceremonial center was deliberately burned and destroyed, likely by an internal violent uprising or environmental crisis, leaving behind an influential sacred ruin that later Aztecs deeply revered.</p>

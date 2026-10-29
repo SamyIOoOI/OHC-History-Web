@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/tangdynasty.jpg">
+            <img class="topicimage" src="images/tangdynasty.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Tang Dynasty</h1>
             <p style="font-size: large;">Tang Dynasty. The Tang Dynasty was a wildly powerful Chinese imperial state that ruled from 618 to 907 CE, largely considered a high point in ancient Chinese civilization. With its massive, strictly gridded capital at Chang'an, it became the most populous and cosmopolitan city in the medieval world. This era matters deeply because it produced China's greatest classical poetry, heavily patronized Buddhism, and aggressively expanded the empire's borders deep into Central Asia. Their sophisticated legal code and efficient civil service exam system were eagerly copied by neighboring states like Japan, Korea, and Vietnam.</p>
             <p style="font-size: large;">The dynasty's incredible golden age was suddenly violently shattered by the massive An Lushan Rebellion in 755 CE, a devastating civil war that killed millions. Although the Tang emperors survived the rebellion, they permanently lost control of their outer provinces to highly ambitious regional military governors. The central government slowly rotted from within due to corrupt court eunuchs and massive peasant uprisings. The dynasty finally officially collapsed in 907 CE, plunging China into the chaotic Five Dynasties and Ten Kingdoms period.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thekingdomofkushnubia.png">
+            <img class="topicimage" src="images/thekingdomofkushnubia.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Kingdom of Kush / Nubia</h1>
             <p style="font-size: large;">The Kingdom of Kush / Nubia. The Kingdom of Kush was an ancient African empire centered along the Middle Nile in modern day Sudan, flourishing from roughly 1000 BCE to 350 CE. Operating directly south of Egypt, it grew wealthy through its vast iron deposits, gold mines, and control over lucrative trade routes connecting sub-Saharan Africa to the Mediterranean. Kush matters greatly to world history because it proved that complex, highly urbanized centers could thrive in the upper Nile region completely independent of Egyptian domination. They developed their own unique Meroitic script and built hundreds of distinct, steep sided pyramids.</p>
             <p style="font-size: large;">The Kushites achieved their absolute political peak during the 8th century BCE, when King Piye led a massive army north to conquer Egypt and establish the Twenty-Fifth Dynasty. They ruled both lands as legitimate pharaohs for nearly a century before being driven back south by invading Assyrian armies. Re-establishing their capital at Meroë, the kingdom maintained its economic prosperity and architectural splendor for centuries. The state eventually faded in the 4th century CE due to environmental degradation and the rapid rise of the rival Aksumite Empire.</p>

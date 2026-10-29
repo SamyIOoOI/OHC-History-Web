@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theportugueseempire.png">
+            <img class="topicimage" src="images/theportugueseempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Portuguese Empire</h1>
             <p style="font-size: large;">Portugal built the first global maritime empire, starting with exploration in the 15th century. Vasco da Gama reached India in 1498, and Portugal controlled trade routes in Africa, Asia, and Brazil. Its empire brought great wealth but also brutal colonial rule.</p>
             <p style="font-size: large;">Portugal lost Brazil in 1822 and declined as other European powers expanded. It held African colonies until 1975. The empire's legacy shaped language, religion, and trade worldwide.</p>

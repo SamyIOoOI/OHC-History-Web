@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thebritisheastindiacompany.png">
+            <img class="topicimage" src="images/thebritisheastindiacompany.png" fetchpriority="high">
             <h1 style="font-size:larger;">The British East India Company</h1>
             <p style="font-size: large;">The British East India Company. The British East India Company was a highly aggressive, London based joint stock corporation that essentially conquered the entire Indian subcontinent. Originally formed in 1600 to participate in the lucrative spice trade, the company slowly shifted from commerce to outright imperialism. This entity matters deeply because it represents a totally unique moment in history where a private business commanded a massive private army and ruled over millions of foreign subjects. They aggressively extracted Indian wealth to fuel the British Industrial Revolution, deeply impoverishing local economies.</p>
             <p style="font-size: large;">The company used a ruthless combination of military force, bribery, and exploitative treaties to slowly absorb independent Indian states. They forced farmers to grow cash crops like opium and indigo instead of food, leading to frequent and completely devastating famines. The company's heavy handed social reforms and blatant disrespect for local customs deeply enraged their own Indian soldiers. This intense anger finally exploded into the massive Indian Rebellion of 1857, a bloody conflict that completely shocked the British public and permanently ended the company's rule.</p>

@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/ottomannorthafrica.png">
+            <img class="topicimage" src="images/ottomannorthafrica.png" fetchpriority="high">
             <h1 style="font-size:larger;">Ottoman North Africa</h1>
             <p style="font-size: large;">Ottoman North Africa. Ottoman North Africa refers to the autonomous regencies of Algiers, Tunis, and Tripoli established along the Maghreb coastline following the 16th-century conquests. Governed by local military elites, janissaries, and corsair captains, these coastal enclaves operated with near-total independence from the distant Ottoman sultan in Istanbul. This era matters because it turned the Barbary Coast into a dominant naval force that controlled Western Mediterranean trade routes and generated vast wealth through state-sponsored privateering and maritime taxation.</p>
             <p style="font-size: large;">While these regencies maintained lucrative trade networks with European powers, their reliance on corsair raids frequently triggered naval blockades and military interventions by European nations and the young United States. Internal corruption, economic isolation, and declining naval supremacy slowly eroded their regional stability during the late 18th century. The era of Ottoman control ended abruptly in the 19th century as France violently invaded Algiers in 1830, initiating a broader wave of European colonial expansion across North Africa.</p>

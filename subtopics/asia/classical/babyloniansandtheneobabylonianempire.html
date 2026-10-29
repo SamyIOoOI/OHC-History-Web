@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/babyloniansandtheneobabylonianempire.png">
+            <img class="topicimage" src="images/babyloniansandtheneobabylonianempire.png" fetchpriority="high">
             <h1 style="font-size:larger;">Babylonians & the Neo-Babylonian Empire</h1>
             <p style="font-size: large;">Babylonians & the Neo-Babylonian Empire. Babylon was an ancient cultural and political powerhouse located along the Euphrates River in modern Iraq, famously rising to prominence twice in history. The first peak occurred under King Hammurabi in the 18th century BCE, known for his comprehensive code of laws, while the Neo-Babylonian Empire emerged much later in 626 BCE to replace the fallen Assyrians. This civilization is vital to our understanding of the ancient world because of their incredible advancements in astronomy, mathematics, and monumental architecture. They established base sixty mathematics and constructed the legendary Ishtar Gate and the Hanging Gardens, which became renowned throughout the ancient Mediterranean.</p>
             <p style="font-size: large;">The Neo-Babylonian period is perhaps best known for the reign of Nebuchadnezzar II, who famously conquered Jerusalem and initiated the Babylonian captivity of the Jewish people. The empire's glory was spectacular but surprisingly brief. In 539 BCE, the Persian king Cyrus the Great marched his army into Babylon without facing a major battle, exploiting internal political divisions within the city. Babylon was absorbed into the vast Achaemenid Empire, ending its run as an independent political entity while retaining its status as a cultural capital.</p>

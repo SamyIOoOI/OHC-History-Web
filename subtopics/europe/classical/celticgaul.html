@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/celticgaul.jpg">
+            <img class="topicimage" src="images/celticgaul.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Celtic Gaul</h1>
             <p style="font-size: large;">Celtic Gaul. Celtic Gaul was a patchwork of tribal societies in modern France, Belgium, and Switzerland before Rome conquered it. They shared Celtic language and culture but rarely formed a single state. Their towns, trade networks, and druidic religion mattered across Iron Age Europe.</p>
             <p style="font-size: large;">Julius Caesar conquered Gaul in the 50s BCE, crushing resistance under Vercingetorix. Roman rule then reshaped the region into provinces, spreading Latin, cities, and Roman law. Local Celtic traditions survived in language and rural customs.</p>

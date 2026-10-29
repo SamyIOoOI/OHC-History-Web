@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theafsharidandzanddynasties.png">
+            <img class="topicimage" src="images/theafsharidandzanddynasties.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Afsharid & Zand Dynasties</h1>
             <p style="font-size: large;">The Afsharid & Zand Dynasties. The Afsharid and Zand Dynasties were two successive powers that fought to stabilize Persia following the disastrous collapse of the Safavid Empire in the 18th century. Nader Shah founded the Afsharid dynasty in 1736 by violently uniting the fractured country and building a massive, highly aggressive military machine. This period matters because Nader Shah launched spectacular invasions into India, famously sacking Delhi and carrying off immense wealth including the legendary Peacock Throne. His campaigns temporarily made Persia the most formidable military power in Asia.</p>
             <p style="font-size: large;">Nader Shah grew increasingly paranoid and tyrannical, leading to his assassination by his own officers in 1747. His empire immediately fragmented, paving the way for the Zand dynasty to take control of southern and central Iran. Founded by Karim Khan, the Zand period was characterized by relative peace, economic recovery, and a refusal to claim the title of king, favoring the term representative of the people instead. This brief era of stability ended when Karim Khan died, sparking another brutal succession crisis that allowed the Qajar tribe to seize ultimate power.</p>

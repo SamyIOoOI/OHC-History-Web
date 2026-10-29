@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thedelhisultanate.jpg">
+            <img class="topicimage" src="images/thedelhisultanate.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Delhi Sultanate</h1>
             <p style="font-size: large;">The Delhi Sultanate. The Delhi Sultanate refers to five successive short lived Islamic dynasties that ruled over large portions of the Indian subcontinent starting in 1206 CE. Founded by Turkic slave generals from Central Asia, it established its massive capital at Delhi and slowly pushed southward. This era is historically vital because it forcefully introduced Islamic political systems and Persian culture into the heart of India, creating a rich synthesis known as Indo-Islamic architecture. They also successfully and famously repelled multiple massive invasions by the Mongol Empire, saving India from complete devastation.</p>
             <p style="font-size: large;">The sultanate was characterized by extreme political volatility, frequent assassinations, and constant rebellions by ambitious provincial governors. While they reached their territorial peak in the early 14th century, poor administrative decisions quickly led to the breakaway of wealthy southern provinces. The state was fatally crippled in 1398 CE when Timur brutally sacked Delhi, leaving the city in ruins. A much weaker version of the sultanate limped along until 1526 CE, when it was finally destroyed by the invading Mughals at the Battle of Panipat.</p>

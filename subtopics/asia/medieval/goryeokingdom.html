@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/goryeokingdom.jpg">
+            <img class="topicimage" src="images/goryeokingdom.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Goryeo Kingdom</h1>
             <p style="font-size: large;">Goryeo Kingdom. The Goryeo Kingdom was a highly unified, deeply Buddhist Korean state that ruled the peninsula from 918 to 1392 CE, directly giving the modern country its western name. Founded by General Taejo, it successfully absorbed the remnants of earlier rival kingdoms to forge a strong, centralized bureaucracy. This kingdom is historically famous for producing breathtakingly beautiful celadon pottery, which was highly prized even in the sophisticated courts of Song Dynasty China. Furthermore, they revolutionized global publishing by inventing the world's first movable metal type printing press well over a century before Gutenberg.</p>
             <p style="font-size: large;">The kingdom suffered through massive internal instability due to a violent military coup that stripped the kings of actual power for nearly a century. Their biggest existential threat, however, came from the relentless Mongol Empire, which launched a series of totally devastating invasions starting in 1231 CE. After decades of brutal, exhausting resistance, Goryeo finally surrendered and survived strictly as a heavily controlled Mongol vassal state. When the Mongol Empire began collapsing in the late 14th century, a powerful Korean general successfully overthrew the Goryeo king, establishing the long lasting Joseon Dynasty.</p>

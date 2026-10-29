@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/themongolempire-6.jpg">
+            <img class="topicimage" src="images/themongolempire-6.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Mongol Empire</h1>
             <p style="font-size: large;">The Mongol Empire. The Mongol Empire was the largest contiguous land empire in human history, dramatically exploding onto the world stage in the early 13th century CE. Founded by the brilliant and ruthless Genghis Khan, it eventually stretched from the Pacific Ocean to the borders of Eastern Europe. This state fundamentally changed world history by forcefully uniting incredibly diverse regions under a single political umbrella. They implemented a highly efficient postal system and brutally enforced the Pax Mongolica, a period of unprecedented safety for merchants trading along the Silk Road.</p>
             <p style="font-size: large;">The sheer size of the empire made centralized control completely impossible over the long term. Following the death of Möngke Khan in 1259 CE, massive succession disputes permanently fractured the realm into four distinct and often hostile khanates. While these successor states continued to rule their respective regions for decades, the unified Mongol Empire ceased to exist. Their legacy completely reshaped the geopolitical borders of Asia, Russia, and the Middle East for centuries to come.</p>

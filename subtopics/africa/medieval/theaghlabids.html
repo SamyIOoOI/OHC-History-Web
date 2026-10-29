@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theaghlabids.png">
+            <img class="topicimage" src="images/theaghlabids.png" fetchpriority="high">
             <h1 style="font-size:larger;">The Aghlabids</h1>
             <p style="font-size: large;">The Aghlabids were an Arab dynasty that ruled Ifriqiya, modern Tunisia and eastern Algeria, from 800 to 909. They were nominally under the Abbasids but acted independently. They built irrigation works and founded the city of Kairouan's great mosque.</p>
             <p style="font-size: large;">They conquered Sicily and raided Italy and the western Mediterranean. Their naval power made them a major threat. They were overthrown by the Fatimids in 909.</p>

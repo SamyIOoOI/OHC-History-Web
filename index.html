@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>The History Web</title>
     <link rel='stylesheet' href='carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -17,14 +15,14 @@
     <div class="holdonthere" id="holdonthere2">
         <img class="loadingscreen" src="loadingbigokspeed.webp">
         <div class="centeredmother">
-        <h1 style="color:white; font-size: 3em;">Loading...</h1>
-    </div>
-    <div id="skiploading">
-        <button onclick="boring()">Skip Loading Screen</button>
-    </div>
+            <h1 style="color:white; font-size: 3em;">Loading...</h1>
+        </div>
+        <div id="skiploading">
+            <button onclick="boring()">Skip Loading Screen</button>
+        </div>
     </div>
     <div class="pikapoo" id="pikapoo2">
-    <audio class="sfx" loop id="identity0">
+    <audio preload="none" class="sfx" loop id="identity0">
         <source src="backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -49,7 +47,7 @@
     </div>
 </div>
     <div class="starter">
-            <img src="History Web Banner V2.png" class="banner">
+            <img src="History Web Banner V2.png" class="banner" fetchpriority="high" width="1920" height="1080">
             
             <div class="startertext" style="text-align: left;">
                 <div class="glowhover">
@@ -111,13 +109,13 @@
     const animation = document.getElementById('holdonthere2');
     const reveal = document.getElementById('pikapoo2');
     let loaded = false;
-    if(!loaded){window.addEventListener('load', function(){
+    window.addEventListener('load', function(){
         setTimeout(() => {
-            loaded = true;
-        animation.classList.add('pikapoo');
-        reveal.classList.remove('pikapoo');
-        }, 3000);
-    })}
+            if (!loaded) {
+                boring();
+            }
+        }, 1000);
+    });
     function boring(){
         loaded = true;
         animation.classList.add('pikapoo');

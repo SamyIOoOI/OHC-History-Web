@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/naraheianandkamakurajapan.jpg">
+            <img class="topicimage" src="images/naraheianandkamakurajapan.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Nara, Heian, and Kamakura Japan</h1>
             <p style="font-size: large;">Nara, Heian, and Kamakura Japan. Nara, Heian, and Kamakura Japan represent three absolutely crucial, transformative periods in Japanese medieval history stretching from 710 to 1333 CE. The Nara and Heian periods focused heavily on importing Chinese administrative systems and Buddhism, eventually producing a highly refined, cloistered aristocratic culture best captured in The Tale of Genji. This long era matters deeply because it witnessed the slow decline of the emperor's actual political power and the simultaneous, explosive rise of a completely new provincial warrior class known as the samurai.</p>
             <p style="font-size: large;">By the late 12th century, the aristocratic Heian court was entirely eclipsed by two massive, warring samurai clans. The Minamoto clan ultimately won this brutal conflict, establishing the Kamakura shogunate and officially beginning Japan's long feudal era. The new shogunate faced its ultimate test when the massive Mongol Empire launched two massive naval invasions in the late 13th century. Although intense typhoons miraculously destroyed the Mongol fleets, the massive cost of the defensive preparations completely bankrupted the Kamakura government, leading to its eventual collapse.</p>

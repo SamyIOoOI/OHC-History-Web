@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thefunankingdom.jpg">
+            <img class="topicimage" src="images/thefunankingdom.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Funan Kingdom</h1>
             <p style="font-size: large;">The Funan Kingdom. The Funan Kingdom was a prominent early Indianized state centered in the Mekong Delta of modern day Cambodia and Vietnam, thriving from the 1st to the 6th centuries CE. Acting as a vital economic hub, it connected the maritime trade routes of the Indian Ocean directly to the ports of Han Dynasty China. Funan matters greatly because it represents the first major Southeast Asian state to heavily integrate Indian political systems, writing, and religious practices. They developed highly advanced irrigation networks that transformed the swampy delta into an agricultural powerhouse.</p>
             <p style="font-size: large;">The kingdom grew rich by acting as a crucial resupply point for international merchants waiting for the seasonal monsoon winds to change direction. Chinese diplomatic records heavily praise Funan for its walled cities, sophisticated court etiquette, and immense wealth. The state slowly lost its economic dominance as newer, faster trade routes bypassed the Mekong Delta entirely. By the late 6th century, Funan was steadily eclipsed and entirely absorbed by the neighboring inland kingdom of Chenla.</p>

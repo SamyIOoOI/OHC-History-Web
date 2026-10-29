@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/theopiumwarsandcenturyofhumiliation.jpg">
+            <img class="topicimage" src="images/theopiumwarsandcenturyofhumiliation.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Opium Wars & Century of Humiliation</h1>
             <p style="font-size: large;">The Opium Wars & Century of Humiliation. The Opium Wars were two deeply devastating conflicts fought between China and Western powers in the mid 19th century, directly sparking China's Century of Humiliation. The deeply lucrative crisis began when the British Empire began illegally smuggling massive quantities of highly addictive opium into China to completely reverse a massive trade deficit. This period matters deeply because it utterly shattered the ancient illusion of Chinese global supremacy. The technologically superior British navy completely decimated the outdated Chinese coastal defenses, forcing the Qing government to surrender at gunpoint.</p>
             <p style="font-size: large;">The resulting deeply unequal treaties forced China to hand over Hong Kong, open numerous treaty ports to completely unregulated foreign trade, and grant foreign citizens immunity from Chinese law. This humiliating loss of sovereignty deeply angered the Chinese population, completely destroying their faith in the Qing government. The intense social chaos triggered massive, incredibly bloody uprisings like the Taiping Rebellion, which killed tens of millions of people. China spent the next hundred years deeply fractured, constantly bullied by foreign powers, and desperately searching for a path to modernization.</p>

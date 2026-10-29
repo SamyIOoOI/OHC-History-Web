@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/therajputkingdoms.jpg">
+            <img class="topicimage" src="images/therajputkingdoms.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Rajput Kingdoms</h1>
             <p style="font-size: large;">The Rajput Kingdoms. The Rajput Kingdoms were a collection of fiercely independent, militaristic clans that dominated northern and central India from the 7th century onwards. Claiming prestigious descent from ancient warrior castes, these patrilineal clans built massive, incredibly complex hill forts across the arid landscape of Rajasthan. They are historically significant because they acted as the primary indigenous defense against early Islamic incursions into the subcontinent for several centuries. Their society highly prized personal honor, martial prowess, and a strict code of chivalry that deeply influenced northern Indian culture.</p>
             <p style="font-size: large;">Because the Rajputs were extremely fractured and constantly feuding with one another over minor territorial disputes, they rarely formed united fronts. This intense internal disunity eventually became a fatal weakness. When heavily armored Turkic and Afghan armies began sweeping into northern India in the late 12th century, the isolated Rajput kings were defeated one by one. Despite losing their absolute political supremacy, they fiercely maintained their cultural identity and continued to rule local principalities as vassals well into the modern era.</p>

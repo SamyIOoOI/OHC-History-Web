@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/carthage.jpg">
+            <img class="topicimage" src="images/carthage.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">Carthage</h1>
             <p style="font-size: large;">Carthage. Carthage was a powerful ancient thalassocracy based in modern day Tunisia, founded as a Phoenician trading colony in 814 BCE. Occupying an exceptionally strategic position in the central Mediterranean, it transformed into an economic and military powerhouse that built a sprawling trade empire. Carthage is historically critical because it completely dominated Mediterranean maritime commerce for centuries, establishing colonies across North Africa, Spain, and Sicily. They commanded legendary naval fleets and controlled the flow of precious metals, agricultural goods, and luxury items throughout the western world.</p>
             <p style="font-size: large;">Their absolute dominance inevitably brought them into a series of catastrophic conflicts with the expanding Roman Republic, known as the Punic Wars. Despite the genius of Hannibal Barca, who famously marched elephants over the Alps to inflict crushing defeats on Roman legions, Carthage could not match Rome's relentless manpower. The Third Punic War ended in 146 BCE with the total destruction of Carthage by Roman forces. The city was completely burned, its surviving citizens were sold into slavery, and its vast territories were absorbed into the Roman Empire.</p>

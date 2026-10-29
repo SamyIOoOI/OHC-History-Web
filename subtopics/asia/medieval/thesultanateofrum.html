@@ -5,9 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preload" href="../../../fonts/MedievalSharp-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/x-icon" href="../../../favicons/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
@@ -20,7 +18,7 @@
 </style>
 </head>
 <body>
-    <audio class="sfx" loop id="identity4">
+    <audio preload="none" class="sfx" loop id="identity4">
         <source src="../../../backgroundsound.wav" type="audio/wav">
     </audio>
     <div id="dotty">
@@ -32,7 +30,7 @@
 </div>
     <div class="candywrapper">
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/thesultanateofrum.jpg">
+            <img class="topicimage" src="images/thesultanateofrum.jpg" fetchpriority="high">
             <h1 style="font-size:larger;">The Sultanate of Rum</h1>
             <p style="font-size: large;">The Sultanate of Rum. The Sultanate of Rum was a medieval Turco-Persian Sunni state established in Anatolia by members of the Seljuk dynasty between 1077 and 1308 CE. Following the Byzantine defeat at Manzikert, these Seljuk rulers carved out a massive realm directly in former Roman territory, which is exactly why they called it Rum, or Rome. This state is historically crucial because it fundamentally transformed the religious and cultural landscape of Anatolia from Greek Christian to Islamic and Turkic. They built incredible caravanserais that drastically boosted overland trade and heavily patronized brilliant scholars like the famous Sufi mystic Rumi.</p>
             <p style="font-size: large;">The sultanate reached its golden age in the early 13th century, dominating major ports on both the Black and Mediterranean seas. However, their immense prosperity was violently shattered by the arrival of the Mongol Empire. At the Battle of Köse Dağ in 1243 CE, the Mongols completely crushed the Seljuk army, forcing the once proud sultanate to become a heavily taxed vassal state. As central authority evaporated under Mongol domination, the realm fractured into dozens of small, independent Turkish principalities known as beyliks.</p>
