@@ -115,6 +115,22 @@ h1{
     position: relative; z-index: 1;
     min-height: 100vh;
 }
+@media (min-width: 769px) {
+    .period-chooser {
+        min-height: calc(100vh - 65px);
+        display: flex;
+        flex-direction: column;
+    }
+    .period-chooser .erapicker {
+        flex: 1;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .period-chooser {
+        min-height: 0;
+    }
+}
 #stickystuck{
     position: sticky;
     display: flex;
@@ -126,6 +142,9 @@ h1{
     cursor: hide;
     font-size: x-large;
     align-items: center;
+}
+#stickystuck .logo {
+    margin: 4px 4px 0 8px !important;
 }
 #stickystuck a:first-of-type {margin-left: auto;}
 #stickystuck a:last-of-type {margin-right: auto;}
