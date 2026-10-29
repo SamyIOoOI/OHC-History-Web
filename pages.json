@@ -1,0 +1,2495 @@
+[
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofpoland.html",
+        "title":  "The Kingdom of Poland",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofsicily.html",
+        "title":  "The Kingdom of Sicily",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofhungary.html",
+        "title":  "The Kingdom of Hungary",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofitalyholyromanempire.html",
+        "title":  "The Kingdom of Italy / Holy Roman Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thereconquista.html",
+        "title":  "The Reconquista",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/therepublicofgenoa.html",
+        "title":  "The Republic of Genoa",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/theostrogothicandlombardkingdoms.html",
+        "title":  "The Ostrogothic \u0026 Lombard Kingdoms",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thepapalstates.html",
+        "title":  "The Papal States",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomoffrancecapetians.html",
+        "title":  "The Kingdom of France (Capetians)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thefirstandsecondbulgarianempires.html",
+        "title":  "The First \u0026 Second Bulgarian Empires",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thefrankishkingdommerovingians.html",
+        "title":  "The Frankish Kingdom (Merovingians)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thecrownofaragon.html",
+        "title":  "The Crown of Aragon",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thecrownofcastile.html",
+        "title":  "The Crown of Castile",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofbohemia.html",
+        "title":  "The Kingdom of Bohemia",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thekingdomofenglandanglosaxonandnorman.html",
+        "title":  "The Kingdom of England (Anglo-Saxon \u0026 Norman)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thegrandduchyoflithuania.html",
+        "title":  "The Grand Duchy of Lithuania",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thegrandduchyofmoscow.html",
+        "title":  "The Grand Duchy of Moscow",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomoffrancevaloisandbourbon.html",
+        "title":  "The Kingdom of France (Valois \u0026 Bourbon)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofgreatbritainandthebritishempire.html",
+        "title":  "The Kingdom of Great Britain \u0026 the British Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/theitaliancitystatesrenaissance.html",
+        "title":  "The Italian City-States (Renaissance)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofbelgium.html",
+        "title":  "The Kingdom of Belgium",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofromania.html",
+        "title":  "The Kingdom of Romania",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofspain.html",
+        "title":  "The Kingdom of Spain",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofgreece.html",
+        "title":  "The Kingdom of Greece",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thekingdomofprussia.html",
+        "title":  "The Kingdom of Prussia",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thehabsburgmonarchyaustrianempire.html",
+        "title":  "The Habsburg Monarchy / Austrian Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/theswissconfederacy.html",
+        "title":  "The Swiss Confederacy",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thevisigothickingdom.html",
+        "title":  "The Visigothic Kingdom",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/therepublicofvenice.html",
+        "title":  "The Republic of Venice",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/theserbianempire.html",
+        "title":  "The Serbian Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thefrenchrevolutionandnapoleonicfrance.html",
+        "title":  "The French Revolution \u0026 Napoleonic France",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thegermanempire.html",
+        "title":  "The German Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/austriahungary.html",
+        "title":  "Austria-Hungary",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thedutchrepublickingdomofthenetherlands.html",
+        "title":  "The Dutch Republic / Kingdom of the Netherlands",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/thecarolingianempire.html",
+        "title":  "The Carolingian Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thespanisheastindies.html",
+        "title":  "The Spanish East Indies",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thetanzimatera.html",
+        "title":  "The Tanzimat Era",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/therussianconquestofthecaucasus.html",
+        "title":  "The Russian Conquest of the Caucasus",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thesafavidempire.html",
+        "title":  "The Safavid Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theuzbekkhanate.html",
+        "title":  "The Uzbek Khanate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/europe/europeclassical.html",
+        "title":  "Classical Europe",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/asia/modern/thetokugawashogunateedoperiod.html",
+        "title":  "The Tokugawa Shogunate (Edo Period)",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thetulippperiodandearlyreforms.html",
+        "title":  "The Tulip Period \u0026 Early Reforms",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/therussianconquestofcentralasia.html",
+        "title":  "The Russian Conquest of Central Asia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/themingdynasty.html",
+        "title":  "The Ming Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/themughalempire.html",
+        "title":  "The Mughal Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/themarathaconfederacy.html",
+        "title":  "The Maratha Confederacy",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/themeijirestoration.html",
+        "title":  "The Meiji Restoration",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theqajarempire.html",
+        "title":  "The Qajar Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theqingdynasty.html",
+        "title":  "The Qing Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theopiumwarsandcenturyofhumiliation.html",
+        "title":  "The Opium Wars \u0026 Century of Humiliation",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theottomanempire.html",
+        "title":  "The Ottoman Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thehellenistickingdoms.html",
+        "title":  "The Hellenistic Kingdoms",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/theromankingdomrepublicandempire.html",
+        "title":  "The Roman Kingdom, Republic, \u0026 Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thedacians.html",
+        "title":  "The Dacians",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/theetruscans.html",
+        "title":  "The Etruscans",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thethracians.html",
+        "title":  "The Thracians",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/medieval/kievanrus.html",
+        "title":  "Kievan Rus\u0027",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thesarmatians.html",
+        "title":  "The Sarmatians",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thescythians.html",
+        "title":  "The Scythians",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/thebosporankingdom.html",
+        "title":  "The Bosporan Kingdom",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/ancientbritain.html",
+        "title":  "Ancient Britain",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/archaicandclassicalgreece.html",
+        "title":  "Archaic \u0026 Classical Greece",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/europe/europecolonial.html",
+        "title":  "Pre/Colonial Europe",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/europe/europemedieval.html",
+        "title":  "Medieval Europe",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/europe/classical/mycenaeangreece.html",
+        "title":  "Mycenaean Greece",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/romangaulbritainandhispania.html",
+        "title":  "Roman Gaul, Britain, \u0026 Hispania",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/celtiberianiberia.html",
+        "title":  "Celtiberian Iberia",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/classical/celticgaul.html",
+        "title":  "Celtic Gaul",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/germannewguinea.html",
+        "title":  "German New Guinea",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/kingdomofhawaiiandannexation.html",
+        "title":  "The Kingdom of Hawaii \u0026 Annexation",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/europeanexplorationofthepacific.html",
+        "title":  "European Exploration of the Pacific",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/frenchpolynesia.html",
+        "title":  "French Polynesia",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/southam/southamclassical.html",
+        "title":  "Classical South America",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/southam/southamcolonial.html",
+        "title":  "Pre/Colonial South America",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/oceania/modern/kingdomoftonga.html",
+        "title":  "The Kingdom of Tonga",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/treatyofwaitangiandnewzealandwars.html",
+        "title":  "The Treaty of Waitangi \u0026 the New Zealand Wars",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/modern/colonialaustraliaandpenalsettlements.html",
+        "title":  "Colonial Australia \u0026 Penal Settlements",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/maorisettlementofaotearoa.html",
+        "title":  "Māori Settlement of Aotearoa",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/preunificationhawaiianchiefdoms.html",
+        "title":  "Pre-unification Hawaiian Chiefdoms",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/classical/kukearlyagriculturalsite.html",
+        "title":  "The Kuk Early Agricultural Site",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/classical/lapitaculture.html",
+        "title":  "The Lapita Culture",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/tuitongaempire.html",
+        "title":  "The Tu\u0027i Tonga Empire",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/yapempiremicronesia.html",
+        "title":  "The Yap Empire (Micronesia)",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/rapanuieasterislandculture.html",
+        "title":  "Rapa Nui (Easter Island) Culture",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/medieval/saudeleurdynastyandnanmadol.html",
+        "title":  "The Saudeleur Dynasty \u0026 Nan Madol",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/grancolombia.html",
+        "title":  "Gran Colombia",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/theempireofbrazil.html",
+        "title":  "The Empire of Brazil",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/medieval/themuiscaconfederation.html",
+        "title":  "The Muisca Confederation",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/colonialbrazil.html",
+        "title":  "Colonial Brazil",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/theviceroyaltyofperu.html",
+        "title":  "The Viceroyalty of Peru",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/theviceroyaltyofriodelaplata.html",
+        "title":  "The Viceroyalty of Río de la Plata",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/thespanishamericanwarsofindependence.html",
+        "title":  "The Spanish American Wars of Independence",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/modern/theviceroyaltyofnewgranada.html",
+        "title":  "The Viceroyalty of New Granada",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/medieval/theincaempiretahuantinsuyu.html",
+        "title":  "The Inca Empire (Tahuantinsuyu)",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/classical/thechavinculture.html",
+        "title":  "The Chavín Culture",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/classical/themocheculture.html",
+        "title":  "The Moche Culture",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/southam/southammedieval.html",
+        "title":  "Medieval South America",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/southam/classical/thecaralsupenortechicocivilization.html",
+        "title":  "The Caral-Supe / Norte Chico Civilization",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/medieval/theaymarakingdoms.html",
+        "title":  "The Aymara Kingdoms",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/medieval/thechimuempire.html",
+        "title":  "The Chimú Empire",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/classical/thenazcaculture.html",
+        "title":  "The Nazca Culture",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/southam/classical/thetiwanakuandwariempires.html",
+        "title":  "The Tiwanaku \u0026 Wari Empires",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/oceania/classical/indigenousaustraliafirstnations.html",
+        "title":  "Indigenous Australia (First Nations)",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/theancestralpuebloans.html",
+        "title":  "The Ancestral Puebloans",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/theclassicmaya.html",
+        "title":  "The Classic Maya",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/teotihuacan.html",
+        "title":  "Teotihuacan",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/theadenaandhopewellcultures.html",
+        "title":  "The Adena \u0026 Hopewell Cultures",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/postclassicmayachichenitzaandmayapan.html",
+        "title":  "Postclassic Maya (Chichén Itzá \u0026 Mayapán)",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/theaztecempiretripelalliance.html",
+        "title":  "The Aztec Empire (Triple Alliance)",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/theolmecivilization.html",
+        "title":  "The Olmec Civilization",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/classical/thezapotecivilization.html",
+        "title":  "The Zapotec Civilization",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/northam/northammedieval.html",
+        "title":  "Medieval North America",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/europe/modern/theportugueseempire.html",
+        "title":  "The Portuguese Empire",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/theprincipalityofserbia.html",
+        "title":  "The Principality of Serbia",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/theottomanbalkans.html",
+        "title":  "The Ottoman Balkans",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/thepolishlithuaniancommonwealthanditspartitions.html",
+        "title":  "The Polish-Lithuanian Commonwealth \u0026 its Partitions",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/northam/northamclassical.html",
+        "title":  "Classical North America",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/northam/northamcolonial.html",
+        "title":  "Pre/Colonial North America",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/europe/modern/thetsardomandempireofrussia.html",
+        "title":  "The Tsardom \u0026 Empire of Russia",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/europe/modern/theunificationofitalyrisorgimento.html",
+        "title":  "The Unification of Italy (Risorgimento)",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/thethirteencoloniesandbritishamerica.html",
+        "title":  "The Thirteen Colonies \u0026 British America",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/theviceroyaltyofnewspain.html",
+        "title":  "The Viceroyalty of New Spain",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/themexicanempireandfirstrepublic.html",
+        "title":  "The Mexican Empire \u0026 First Republic",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/themexicanwarofindependence.html",
+        "title":  "The Mexican War of Independence",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/oceania/oceaniamedieval.html",
+        "title":  "Medieval Oceania",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/oceania/classical/earlypolynesianvoyaging.html",
+        "title":  "Early Polynesian Voyaging",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/oceania/oceaniaclassical.html",
+        "title":  "Classical Oceania",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/oceania/oceaniacolonial.html",
+        "title":  "Pre/Colonial Oceania",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/northam/modern/thehaitianrevolution.html",
+        "title":  "The Haitian Revolution",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/themixteccivilization.html",
+        "title":  "The Mixtec Civilization",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/thetoltecempire.html",
+        "title":  "The Toltec Empire",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/thehaudenosauneeiroquoisconfederacy.html",
+        "title":  "The Haudenosaunee / Iroquois Confederacy",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/medieval/themississippianculturecahokia.html",
+        "title":  "The Mississippian Culture (Cahokia)",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/thecolonialcaribbeanspanishfrenchbritishdutch.html",
+        "title":  "The Colonial Caribbean (Spanish, French, British, Dutch)",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/theconfederationofcanada.html",
+        "title":  "The Confederation of Canada",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/newfrance.html",
+        "title":  "New France",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/northam/modern/theamericanrevolutionandearlyrepublic.html",
+        "title":  "The American Revolution \u0026 Early Republic",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thekonbaungkingdom.html",
+        "title":  "The Konbaung Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/britishandgermaneastafrica.html",
+        "title":  "British \u0026 German East Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/frenchnorthafrica.html",
+        "title":  "French North Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thezagwedynasty.html",
+        "title":  "The Zagwe Dynasty",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/zimbabwe.html",
+        "title":  "Zimbabwe",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/ottomannorthafrica.html",
+        "title":  "Ottoman North Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thealaouitedynasty.html",
+        "title":  "The Alaouite Dynasty",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/italiancolonizationofthehornofafrica.html",
+        "title":  "Italian Colonization of the Horn of Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/muhammadalisegypt.html",
+        "title":  "Muhammad Ali\u0027s Egypt",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/theswahilicoastcitystateskilwamombasaetc.html",
+        "title":  "The Swahili Coast City-States (Kilwa, Mombasa, etc.)",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekingdomofmutapa.html",
+        "title":  "The Kingdom of Mutapa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/themaliempire.html",
+        "title":  "The Mali Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekingdomofkongo.html",
+        "title":  "The Kingdom of Kongo",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekingdomofmapungubwe.html",
+        "title":  "The Kingdom of Mapungubwe",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thesonghaiempire.html",
+        "title":  "The Songhai Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thesultanateofadal.html",
+        "title":  "The Sultanate of Adal",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/themamluksultanate.html",
+        "title":  "The Mamluk Sultanate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/themarinidsultanate.html",
+        "title":  "The Marinid Sultanate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theoyoempire.html",
+        "title":  "The Oyo Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thesaadisultanate.html",
+        "title":  "The Saadi Sultanate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/themahdiststate.html",
+        "title":  "The Mahdist State",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/themfecane.html",
+        "title":  "The Mfecane",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thesultanateofzanzibar.html",
+        "title":  "The Sultanate of Zanzibar",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theunionofsouthafrica.html",
+        "title":  "The Union of South Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thescrambleforafrica.html",
+        "title":  "The Scramble for Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thesokotocaliphate.html",
+        "title":  "The Sokoto Caliphate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thekingdomofndongoandmatamba.html",
+        "title":  "The Kingdom of Ndongo and Matamba",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theboerrepublics.html",
+        "title":  "The Boer Republics",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thebugandakingdom.html",
+        "title":  "The Buganda Kingdom",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theashantiempire.html",
+        "title":  "The Ashanti Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thebarbarystates.html",
+        "title":  "The Barbary States",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theethiopianempiretewodrosiionward.html",
+        "title":  "The Ethiopian Empire (Tewodros II onward)",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thekingdomofdahomey.html",
+        "title":  "The Kingdom of Dahomey",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/thecapecolony.html",
+        "title":  "The Cape Colony",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/modern/theethiopianempiremenelikii.html",
+        "title":  "The Ethiopian Empire (Menelik II)",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekingdomofife.html",
+        "title":  "The Kingdom of Ife",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/africa/africacolonial.html",
+        "title":  "Pre/Colonial Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/africa/africamedieval.html",
+        "title":  "Medieval Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "southamerica.html",
+        "title":  "South America - Main",
+        "group":  {
+                      "continent":  "South America",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "erafiles/africa/africaclassical.html",
+        "title":  "Classical Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/africa/classical/mauretania.html",
+        "title":  "Mauretania",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/numidia.html",
+        "title":  "Numidia",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/ancientegyptoldmiddlenewkingdoms.html",
+        "title":  "Ancient Egypt (Old, Middle, New Kingdoms)",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/carthage.html",
+        "title":  "Carthage",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "oceania.html",
+        "title":  "Oceania - Main",
+        "group":  {
+                      "continent":  "Oceania",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "articles.html",
+        "title":  "Articles",
+        "group":  {
+                      "continent":  null,
+                      "era":  null
+                  },
+        "type":  "site"
+    },
+    {
+        "path":  "contactus.html",
+        "title":  "Credits",
+        "group":  {
+                      "continent":  null,
+                      "era":  null
+                  },
+        "type":  "site"
+    },
+    {
+        "path":  "index.html",
+        "title":  "The History Web",
+        "group":  {
+                      "continent":  null,
+                      "era":  null
+                  },
+        "type":  "site"
+    },
+    {
+        "path":  "content.html",
+        "title":  "Table of Contents",
+        "group":  {
+                      "continent":  null,
+                      "era":  null
+                  },
+        "type":  "site"
+    },
+    {
+        "path":  "europe.html",
+        "title":  "Europe - Main",
+        "group":  {
+                      "continent":  "Europe",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "northamerica.html",
+        "title":  "North America - Main",
+        "group":  {
+                      "continent":  "North America",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "africa.html",
+        "title":  "Africa - Main",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "asia.html",
+        "title":  "Asia - Main",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  null
+                  },
+        "type":  "continent"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thefatimidcaliphate.html",
+        "title":  "The Fatimid Caliphate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/theghanaempire.html",
+        "title":  "The Ghana Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thebyzantineexarchateofafrica.html",
+        "title":  "The Byzantine Exarchate of Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/theethiopianempiresolomonicdynasty.html",
+        "title":  "The Ethiopian Empire (Solomonic Dynasty)",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekanembornuempire.html",
+        "title":  "The Kanem-Bornu Empire",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thekingdomofbenin.html",
+        "title":  "The Kingdom of Benin",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thehafsiddynasty.html",
+        "title":  "The Hafsid Dynasty",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thehausakingdoms.html",
+        "title":  "The Hausa Kingdoms",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thealmoraviddynasty.html",
+        "title":  "The Almoravid Dynasty",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/thekingdomofaksum.html",
+        "title":  "The Kingdom of Aksum",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/thekingdomofkushnubia.html",
+        "title":  "The Kingdom of Kush / Nubia",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/ptolemaicegypt.html",
+        "title":  "Ptolemaic Egypt",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/romannorthafrica.html",
+        "title":  "Roman North Africa",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/theaghlabids.html",
+        "title":  "The Aghlabids",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/medieval/thealmohadcaliphate.html",
+        "title":  "The Almohad Caliphate",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/thelandofpunt.html",
+        "title":  "The Land of Punt",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/africa/classical/thenokculture.html",
+        "title":  "The Nok Culture",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thekhazarkhaganate.html",
+        "title":  "The Khazar Khaganate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thekhmerempire.html",
+        "title":  "The Khmer Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theharshaempire.html",
+        "title":  "The Harsha Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theilkhanate.html",
+        "title":  "The Ilkhanate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/therajputkingdoms.html",
+        "title":  "The Rajput Kingdoms",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/therashiduncaliphate.html",
+        "title":  "The Rashidun Caliphate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/themongolempire.html",
+        "title":  "The Mongol Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thepagankingdom.html",
+        "title":  "The Pagan Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theguptaempire.html",
+        "title":  "The Gupta Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thedelhisultanate.html",
+        "title":  "The Delhi Sultanate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theeasternromanempirethebyzantines.html",
+        "title":  "The Eastern Roman Empire (The Byzantines)",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thechampakingdoms.html",
+        "title":  "The Champa Kingdoms",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thecholaempire.html",
+        "title":  "The Chola Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thegokturkkhaganates.html",
+        "title":  "The Göktürk Khaganates",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thegoldenhorde.html",
+        "title":  "The Golden Horde",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thefatimids.html",
+        "title":  "The Fatimids",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thefragmentationofanatolia.html",
+        "title":  "The Fragmentation of Anatolia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thebritisheastindiacompany.html",
+        "title":  "The British East India Company",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thebritishraj.html",
+        "title":  "The British Raj",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theafsharidandzanddynasties.html",
+        "title":  "The Afsharid \u0026 Zand Dynasties",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/theayutthayakingdom.html",
+        "title":  "The Ayutthaya Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thejoseondynastykorea.html",
+        "title":  "The Joseon Dynasty (Korea)",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thekazakhkhanate.html",
+        "title":  "The Kazakh Khanate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thedutcheastindies.html",
+        "title":  "The Dutch East Indies",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/thedzungarkhanate.html",
+        "title":  "The Dzungar Khanate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/ottomansyriaandmesopotamia.html",
+        "title":  "Ottoman Syria and Mesopotamia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thetimuridempire.html",
+        "title":  "The Timurid Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theumayyadcaliphate.html",
+        "title":  "The Umayyad Caliphate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theseljukempire.html",
+        "title":  "The Seljuk Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thesultanateofrum.html",
+        "title":  "The Sultanate of Rum",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theyuandynasty.html",
+        "title":  "The Yuan Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/modern/frenchindochinaandbritishmalaya.html",
+        "title":  "French Indochina \u0026 British Malaya",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/theuyghurkhaganate.html",
+        "title":  "The Uyghur Khaganate",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thewesternxialiaoandjindynasties.html",
+        "title":  "The Western Xia, Liao, \u0026 Jin Dynasties",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/thebuyids.html",
+        "title":  "The Buyids",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/indusvalleycivilization.html",
+        "title":  "Indus Valley Civilization",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/mauryaempire.html",
+        "title":  "Maurya Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/cimmerians.html",
+        "title":  "Cimmerians",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/elam.html",
+        "title":  "Elam",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/shangdynasty.html",
+        "title":  "Shang Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/thefunankingdom.html",
+        "title":  "The Funan Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/philistines.html",
+        "title":  "Philistines",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/phoeniciancitystates.html",
+        "title":  "Phoenician City-States",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/babyloniansandtheneobabylonianempire.html",
+        "title":  "Babylonians \u0026 the Neo-Babylonian Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/asia/asiacolonial.html",
+        "title":  "Pre/Colonial Asia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "erafiles/asia/asiamedieval.html",
+        "title":  "Medieval Asia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/africa/modern/thezulukingdom.html",
+        "title":  "The Zulu Kingdom",
+        "group":  {
+                      "continent":  "Africa",
+                      "era":  "Pre/Colonial"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "erafiles/asia/asiaclassical.html",
+        "title":  "Classical Asia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "era"
+    },
+    {
+        "path":  "subtopics/asia/classical/ammonedomandmoab.html",
+        "title":  "Ammon, Edom, and Moab",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/assyriaandtheneoassyrianempire.html",
+        "title":  "Assyria \u0026 the Neo-Assyrian Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/achaemenidempire.html",
+        "title":  "Achaemenid Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/Akkadians.html",
+        "title":  "Akkadians",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/majapahitempire.html",
+        "title":  "Majapahit Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/naraheianandkamakurajapan.html",
+        "title":  "Nara, Heian, and Kamakura Japan",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/goryeokingdom.html",
+        "title":  "Goryeo Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/kingdomofgeorgia.html",
+        "title":  "Kingdom of Georgia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/srivijayaempire.html",
+        "title":  "Srivijaya Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/tangdynasty.html",
+        "title":  "Tang Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/palaempire.html",
+        "title":  "Pala Empire",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/medieval/songdynasty.html",
+        "title":  "Song Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Medieval"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/zhoudynasty.html",
+        "title":  "Zhou Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/theisraelitekingdoms.html",
+        "title":  "The Israelite Kingdoms",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/thenabataeankingdom.html",
+        "title":  "The Nabataean Kingdom",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/thehittites.html",
+        "title":  "The Hittites",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/theislandkingdomsofsoutheastasia.html",
+        "title":  "The Island Kingdoms of Southeast Asia",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/xiadynasty.html",
+        "title":  "Xia Dynasty",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/xiongnuconfederation.html",
+        "title":  "Xiongnu Confederation",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/thesakascythians.html",
+        "title":  "The Saka (Scythians)",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    },
+    {
+        "path":  "subtopics/asia/classical/theseleucids.html",
+        "title":  "The Seleucids",
+        "group":  {
+                      "continent":  "Asia",
+                      "era":  "Classical"
+                  },
+        "type":  "topic"
+    }
+]

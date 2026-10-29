@@ -3,8 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>(()=>{try{const s=localStorage,d=document.documentElement;if(s.getItem("hw_theme")==="light")d.classList.add("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")==="off")d.classList.add("no-chars")}catch(e){}})();</script>
     <title>Pre/Colonial Africa</title>
     <link rel='stylesheet' href='../../carthage.css'>
+    <link rel="stylesheet" href="../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
@@ -18,6 +20,7 @@
         height: 100%;
     }
 </style>
+    <script defer src="../../settings.js"></script>
 </head>
 <body>
     <audio class="sfx" loop id="identity4">
@@ -26,7 +29,7 @@
     <div id="dotty">
     </div>
     <div id="stickystuck">
-        <img src="../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" onclick="playaudio()">
+        <img src="../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../africa.html">Go Back</a>
     <img src="../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
 </div>

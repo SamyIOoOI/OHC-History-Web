@@ -1,0 +1,285 @@
+html.no-crt .glitches,
+html.no-crt .grainy {
+    display: none;
+}
+
+html.no-chars .sky {
+    display: none;
+}
+
+#hw-settings-panel,
+#hw-download-picker {
+    box-sizing: border-box;
+    color: white;
+    background: #3a1208;
+    border: 2px solid #1a0806;
+    font-family: 'MedievalSharp', cursive;
+    z-index: 9998;
+}
+
+#hw-settings-panel {
+    position: fixed;
+    width: min(21rem, calc(100vw - 16px));
+    max-height: calc(100vh - 16px);
+    overflow: auto;
+    padding: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    overscroll-behavior: contain;
+}
+
+#hw-settings-panel[hidden],
+#hw-download-picker[hidden] {
+    display: none;
+}
+
+#hw-settings-panel h2 {
+    margin: 0 0 0.75rem;
+    padding: 0;
+    color: inherit;
+    font-size: 1.35rem;
+}
+
+.hw-switch-list {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.hw-switch-row {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.hw-switch-row input,
+#hw-download-picker input {
+    accent-color: #b3400f;
+}
+
+.hw-download-section {
+    border-top: 2px solid currentColor;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+}
+
+.hw-download-section button,
+#hw-download-picker button {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: 2px solid currentColor;
+    padding: 0.45rem 0.7rem;
+}
+
+.hw-download-section button:disabled,
+#hw-download-picker button:disabled {
+    opacity: 0.55;
+}
+
+.hw-download-status {
+    margin: 0.6rem 0 0;
+}
+
+#hw-download-picker {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0;
+    padding: 12px;
+}
+
+.hw-picker-dialog {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: min(54rem, 100%);
+    max-height: 80vh;
+    color: inherit;
+    background: #3a1208;
+    border: 2px solid #1a0806;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.hw-picker-header,
+.hw-picker-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0.8rem;
+}
+
+.hw-picker-header h2 {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.hw-picker-body {
+    overflow: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+    padding: 0 0.8rem;
+}
+
+.hw-picker-footer {
+    border-top: 1px solid currentColor;
+}
+
+.hw-picker-group {
+    border-top: 1px solid currentColor;
+    padding: 0.45rem 0;
+}
+
+.hw-picker-group summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hw-picker-group-label,
+.hw-picker-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    padding: 0.3rem 0;
+}
+
+.hw-picker-nested {
+    margin-left: 1.1rem;
+}
+
+.hw-picker-progress {
+    min-height: 1.5em;
+    margin: 0;
+    padding: 0 0.8rem 0.5rem;
+}
+
+.hw-picker-error {
+    color: #ffb59d;
+    white-space: pre-wrap;
+}
+
+html.light body {
+    background: radial-gradient(circle at 50% 40%, #fbf3e0 0%, #e8d6b0 100%);
+    color: #3a1208;
+}
+
+html.light #stickystuck {
+    background: #e3cfa4;
+    border-bottom: 5px solid #b8975a;
+}
+
+html.light #stickystuck a {
+    color: #3a1208;
+}
+
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+    color: #b3400f;
+}
+
+html.light a {
+    color: #a02a08;
+}
+
+html.light [style*="rgba(0, 0, 0, 0.3)"] {
+    background-color: rgba(255, 248, 230, 0.6) !important;
+}
+
+html.light .candywrapper h1[style*="color: white"],
+html.light .candywrapper h2[style*="color: white"],
+html.light .candywrapper h3[style*="color: white"],
+html.light .candywrapper h4[style*="color: white"],
+html.light .candywrapper h5[style*="color: white"],
+html.light .candywrapper h6[style*="color: white"] {
+    color: #b3400f !important;
+}
+
+html.light .candywrapper h1[style*="color: orangered"],
+html.light .candywrapper h2[style*="color: orangered"],
+html.light .candywrapper h3[style*="color: orangered"],
+html.light .candywrapper h4[style*="color: orangered"],
+html.light .candywrapper h5[style*="color: orangered"],
+html.light .candywrapper h6[style*="color: orangered"] {
+    color: #b3400f !important;
+}
+
+html.light .table {
+    color: #3a1208;
+    background: rgba(255, 248, 230, 0.6);
+    border-color: #5a2a14;
+    text-shadow: none;
+}
+
+html.light .table a {
+    color: #a02a08;
+}
+
+html.light .continentlink {
+    fill: #a83a1c;
+    stroke: #5a2a14;
+    stroke-width: 1px;
+}
+
+html.light .continentlink:hover {
+    fill: rgb(230, 111, 0);
+}
+
+html.light .grainy {
+    opacity: 0.04;
+}
+
+html.light .glitches::before {
+    animation-name: crt-scanline-flicker-light;
+}
+
+@keyframes crt-scanline-flicker-light {
+    0%,
+    100% {
+        opacity: 0.04;
+    }
+    50% {
+        opacity: 0.0368;
+    }
+}
+
+html.light .wind {
+    background-image: url(Characters-black.png);
+}
+
+html.light #hw-settings-panel {
+    color: #3a1208;
+    background: #e3cfa4;
+    border-color: #b8975a;
+}
+
+html.light #hw-download-picker {
+    color: #3a1208;
+    background: rgba(58, 18, 8, 0.32);
+}
+
+html.light .hw-picker-dialog {
+    color: #3a1208;
+    background: #e3cfa4;
+    border-color: #b8975a;
+}
+
+html.light .hw-picker-error {
+    color: #8f2608;
+}
+
+@media (max-width: 480px) {
+    .hw-picker-dialog {
+        max-height: 80vh;
+    }
+
+    .hw-picker-footer {
+        justify-content: flex-start;
+    }
+}
