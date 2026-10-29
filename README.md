@@ -23,7 +23,7 @@
 - A touch-screen & mobile device friendly layout implemented via css rules.
 - Next to all of these the website has special css effects such as hovering animations, highlights and custom cursor. 
 
-### <p align="center">Artwork & Development are done by hand. I do not support vibecoding. Ai should for repetitive tasks or optimization. Project Bases should be fully human written for stability.</p>
+### <p align="center">Artwork & Development are done by hand. I do not support vibecoding. Ai should for repetitive tasks, optimization and cautious upgrades. Project Bases should be fully human written for stability.</p>
 ---------------
 ## <p align="center">How To Use History Web</p>
 **<p align="center">History web is designed to be straight-forward and fun to use! so almost everything is visual.</p>**
