@@ -57,6 +57,22 @@
             current_soldier = current_soldier < 16 ? current_soldier + 1 : 1;
             document.getElementById('wheel').src = `warriorwheel/${current_soldier}.png`;
         }
+        const maplink = document.getElementById('mapnav');
+        maplink.addEventListener('click', mapchecker)
+        const arewehomeyet = document.querySelector('#identity0.sfx');
+        const maptrgt = document.getElementById('map');
+        function mapchecker(event){
+            event.preventDefault();
+            mapchecker2()
+        }
+        function mapchecker2(){
+            if(arewehomeyet){
+                maptrgt.scrollIntoView({behavior: 'smooth'});
+            }
+            else{
+                window.location.assign("index.html")
+            }
+        }
         if (window.matchMedia('(pointer: fine)').matches) {
             document.addEventListener('mousemove', event => {
                 const cursor = document.getElementById('dotty');
