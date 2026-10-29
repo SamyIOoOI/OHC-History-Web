@@ -2491,5 +2491,14 @@
                       "era":  "Classical"
                   },
         "type":  "topic"
+    },
+    {
+        "path":  "stem-curriculum.html",
+        "title":  "STEM Curriculum",
+        "group":  {
+                      "continent":  null,
+                      "era":  null
+                  },
+        "type":  "site"
     }
 ]

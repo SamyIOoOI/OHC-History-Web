@@ -22,6 +22,9 @@
             <label class="hw-switch-row"><input id="hw-theme-toggle" type="checkbox"> Light mode</label>
         </div>
         <p class="hw-download-status" id="hw-persistence-status" aria-live="polite" hidden></p>
+        <div class="hw-credits-section">
+            <a href="${new URL('contactus.html', siteRoot).href}">Credits</a>
+        </div>
         <div class="hw-download-section">
             <button type="button" id="hw-download-open">Download pages</button>
             <p class="hw-download-status" id="hw-download-status" aria-live="polite"></p>

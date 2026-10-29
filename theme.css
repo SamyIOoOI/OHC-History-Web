@@ -7,6 +7,15 @@ html.no-chars .sky {
     display: none;
 }
 
+.candywrapper > .sky {
+    z-index: 0;
+}
+
+.candywrapper > :not(.sky) {
+    position: relative;
+    z-index: 1;
+}
+
 #hw-settings-panel,
 #hw-download-picker {
     box-sizing: border-box;
@@ -59,6 +68,20 @@ html.no-chars .sky {
     border-top: 2px solid currentColor;
     margin-top: 1rem;
     padding-top: 0.8rem;
+}
+
+.hw-credits-section {
+    border-top: 2px solid currentColor;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+}
+
+.hw-credits-section a {
+    display: inline-block;
+    color: inherit;
+    border: 2px solid currentColor;
+    padding: 0.45rem 0.7rem;
+    text-decoration: none;
 }
 
 .hw-download-section button,
@@ -188,6 +211,31 @@ html.light a {
     color: #a02a08;
 }
 
+html.light .candywrapper [style*="color: white" i],
+html.light .candywrapper [style*="color:white" i] {
+    color: #3a1208 !important;
+}
+
+html.light .candywrapper h1[style*="color: white" i],
+html.light .candywrapper h2[style*="color: white" i],
+html.light .candywrapper h3[style*="color: white" i],
+html.light .candywrapper h4[style*="color: white" i],
+html.light .candywrapper h5[style*="color: white" i],
+html.light .candywrapper h6[style*="color: white" i],
+html.light .candywrapper h1[style*="color:white" i],
+html.light .candywrapper h2[style*="color:white" i],
+html.light .candywrapper h3[style*="color:white" i],
+html.light .candywrapper h4[style*="color:white" i],
+html.light .candywrapper h5[style*="color:white" i],
+html.light .candywrapper h6[style*="color:white" i] {
+    color: #b3400f !important;
+}
+
+html.light [style*="color: orangered" i],
+html.light [style*="color:orangered" i] {
+    color: #b3400f !important;
+}
+
 html.light [style*="rgba(0, 0, 0, 0.3)"] {
     background-color: rgba(255, 248, 230, 0.6) !important;
 }
@@ -257,6 +305,10 @@ html.light #hw-settings-panel {
     color: #3a1208;
     background: #e3cfa4;
     border-color: #b8975a;
+}
+
+html.light .hw-credits-section a {
+    color: #a02a08;
 }
 
 html.light #hw-download-picker {

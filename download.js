@@ -425,7 +425,10 @@
         return [
             'History Web page download',
             '',
-            'How to open: extract all files, then open the HTML files from the extracted folder.',
+            'How to open your pages:',
+            'Extract the whole ZIP and keep its folder structure intact. From the extracted folder, navigate through the folders to the chosen .html file and open it in a browser.',
+            'Do not move a page away from the shared files it depends on.',
+            `Example: open ${selectedPages[0].path} from the extracted folder.`,
             '',
             'Included pages:',
             pageLines,
@@ -605,9 +608,7 @@
         });
 
         state.clear.addEventListener('click', () => {
-            state.body.querySelectorAll('input[type="checkbox"][data-page]').forEach(checkbox => {
-                checkbox.checked = false;
-            });
+            selected.clear();
             updateSelection();
         });
 

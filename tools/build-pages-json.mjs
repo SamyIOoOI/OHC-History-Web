@@ -26,7 +26,8 @@ const rootPages = [
     'europe.html',
     'northamerica.html',
     'oceania.html',
-    'southamerica.html'
+    'southamerica.html',
+    'stem-curriculum.html'
 ];
 const continentPages = new Map([
     ['africa.html', 'Africa'],
