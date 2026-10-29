@@ -211,6 +211,10 @@ html.light h6 {
     color: #b3400f;
 }
 
+html.light #site-title {
+    color: #4a1e0a !important;
+}
+
 html.light a {
     color: #a02a08;
 }
