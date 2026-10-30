@@ -642,6 +642,12 @@
                 general.forEach(page => addRow(content, page, selected, updateSelection));
             }
 
+            const stem = pages.filter(page => page.type === 'stem');
+            if (stem.length) {
+                const stemContent = addSelectableGroup(state.body, 'STEM Curriculum', stem, false);
+                stem.forEach(page => addRow(stemContent, page, selected, updateSelection));
+            }
+
             const continents = [...new Set(pages.map(page => page.group.continent).filter(Boolean))]
                 .sort((a, b) => a.localeCompare(b));
             continents.forEach(continent => {

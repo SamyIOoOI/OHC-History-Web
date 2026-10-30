@@ -2500,5 +2500,28 @@
                       "era":  null
                   },
         "type":  "site"
-    }
+    },
+{"path": "stem/thestudyofhistoryandcivilizations.html", "title": "The Study of History & the Rise of Civilizations", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/theoldkingdomofegypt.html", "title": "The Old Kingdom of Egypt", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/themiddlekingdomofegypt.html", "title": "The Middle Kingdom of Egypt", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/thenewkingdomofegypt.html", "title": "The New Kingdom of Egypt", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/sumer.html", "title": "Sumer", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/babylon.html", "title": "Babylon", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/assyria.html", "title": "Assyria", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/minoancrete.html", "title": "Minoan Crete", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/athens.html", "title": "Athens", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/sparta.html", "title": "Sparta", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/earlyjapan.html", "title": "Early Japan (Kofun & Asuka)", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/therashiduncaliphate.html", "title": "The Rashidun Caliphate", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/theumayyadcaliphate.html", "title": "The Umayyad Caliphate", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/theabbasidcaliphate.html", "title": "The Abbasid Caliphate", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/medievalegypt.html", "title": "Medieval Egypt (Fatimids, Ayyubids & Mamluks)", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/medievaliraq.html", "title": "Medieval Iraq (Abbasid Baghdad & the Mongol Fall)", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/medievalgreece.html", "title": "Medieval Greece (The Byzantine Centuries)", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/theageofthesamurai.html", "title": "The Age of the Samurai", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/precolonialegypt.html", "title": "Ottoman Egypt & the Road to Independence", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/precolonialiraq.html", "title": "Ottoman & Mandate Iraq", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/precolonialgreece.html", "title": "Ottoman Greece & the War of Independence", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/tokugawajapan.html", "title": "Tokugawa Japan & the Closed Country", "group": {"continent": null, "era": null}, "type": "stem"},
+  {"path": "stem/modernjapan.html", "title": "Modern Japan (Rise & Lessons for Egypt)", "group": {"continent": null, "era": null}, "type": "stem"}
 ]
