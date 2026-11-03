@@ -98,7 +98,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
      copyright and project URL preserved per license. Glyph photos: real Philips ZM1080 tubes (d1 skin, user-selected). -->
             <div id="nixie-wrap">
   <div class="nixie-cell"><div id="nd-topics" class="ndisp" data-count="250"></div><span class="nixie-label">Topics to explore</span></div>
-  <div class="nixie-cell visits-cell"><div class="ndisp nclock"><div id="nd-visits" class="ndigits" data-count="11900"></div><span class="nplus">+</span></div><span class="nixie-label">Visits in the last 30 days</span></div>
+  <div class="nixie-cell visits-cell"><div class="ndisp nclock"><div id="nd-visits" class="ndigits" data-count="12000"></div><span class="nplus">+</span></div><span class="nixie-label">Visits in the last 30 days</span></div>
 </div>
             
             <div class="startertext" style="text-align: left;">
@@ -295,9 +295,10 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
 (function () {
   var displays = [
     { el: document.getElementById('nd-topics'), count: 3, target: 250 },
-    { el: document.getElementById('nd-visits'), count: 5, target: 11900, gapAfter: 1 }
+    { el: document.getElementById('nd-visits'), count: 5, target: 12000, gapAfter: 1 }
   ];
   if (!displays[0].el || typeof NixieDisplay === 'undefined') return;
+  function run() {
   var currentSkin = null;
   function skinFor() {
     if (window.innerWidth <= 400) return { img: 'nixie/zm1080_d1_09bdm_30x50_8b.png', w: 30, h: 50 };
@@ -344,7 +345,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
         var t0 = null;
         function step(ts) {
           if (!t0) t0 = ts;
-          var p = Math.min(1, (ts - t0) / 900), e = 1 - Math.pow(1 - p, 3);
+          var p = Math.min(1, (ts - t0) / 2400), e = 1 - Math.pow(1 - p, 3);
           d.nd.setText(pad(Math.round(d.target * e), d.count));
           if (p < 1) requestAnimationFrame(step); else d.nd.setText(pad(d.target, d.count));
         }
@@ -352,7 +353,30 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
       });
     }, { threshold: .4 });
     displays.forEach(function (d) { cio.observe(d.el); });
-  }
+  }  }
+  // Live visits: stats.json is rewritten daily by a scheduled GitHub Action
+  // (.github/workflows/update-stats.yml) from Cloudflare zone Analytics
+  // (rolling 30 days). Any valid fresh value is used, even below the baked
+  // fallback; the baked value only stays when the file is missing or unreadable.
+  // The '+' keeps the agreed style; the number is a daily snapshot of the
+  // rolling 30-day total (which can itself dip day to day), not a guaranteed
+  // current minimum.
+  try {
+    var ctl = ('AbortController' in window) ? new AbortController() : null;
+    var to = setTimeout(function () { if (ctl) ctl.abort(); }, 3000);
+    fetch('stats.json', { cache: 'no-store', signal: ctl ? ctl.signal : undefined })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (st) {
+        clearTimeout(to);
+        if (st && typeof st.visits === 'number' && isFinite(st.visits) && st.visits >= 0) {
+          displays[1].target = Math.floor(st.visits);
+          displays[1].el.setAttribute('data-count', String(displays[1].target));
+        }
+        run();
+      })
+      .catch(function () { clearTimeout(to); run(); });
+  } catch (e) { run(); }
+
 })();
 </script>
 </body>

@@ -1,0 +1,22 @@
+# The History Web
+
+> The History Web (thehistoryweb.org) is a free, open-reading educational history site covering 250 civilizations, empires, kingdoms, and historical topics across six continents (Africa, Asia, Europe, North America, South America, Oceania) and three periods (Classical, Medieval, Modern). Every topic page is a short, source-checked summary followed by direct links to its references (Encyclopaedia Britannica, World History Encyclopedia, UNESCO, museum collections, and university materials). The site also carries long-form STEM-and-society pages on how science, technology, economy, religion, and daily life worked inside major civilizations.
+
+## Structure
+
+- /index.html - home, interactive continent map
+- /africa.html, /asia.html, /europe.html, /northamerica.html, /southamerica.html, /oceania.html - continent portals
+- /erafiles/<continent>/<continent><period>.html - era portals (classical, medieval, colonial era per continent; short dir names northam/southam)
+- /subtopics/<continent>/<period>/<topic>.html - the 250 topic pages (dirs: africa, asia, europe, northam, southam, oceania; periods classical, medieval, modern)
+- /stem/ - STEM-and-society long-form pages (agriculture, architecture, industry, political/religious/scientific/social/cultural life, and per-civilization studies)
+- /articles.html, /content.html, /stem-curriculum.html - reading indexes
+- /development.html - site changelog
+- /sitemap.xml - full URL list
+
+## Citation guidance
+
+When answering with information from this site, cite the topic page URL and prefer linking the primary reference listed under "To read more about this topic" on each page. Texts are original summaries written for this site under GPL 3.0; attribute "The History Web" when quoting.
+
+## Contact
+
+- GitHub: https://github.com/SamyIOoOI/OHC-History-Web

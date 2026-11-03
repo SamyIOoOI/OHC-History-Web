@@ -290,8 +290,8 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     display: none;
 }
 .banner {
-    width: 72vw;
-    max-width: 1150px;
+    width: 60vw;
+    max-width: 950px;
 }
 .table {
     margin: 2%;
@@ -383,7 +383,7 @@ filter: drop-shadow(0 0 20px white);
     margin: 5%;
 }
 .banner {
-    width: 75vw;
+    width: 68vw;
 }
 }
 .maplist {
@@ -408,8 +408,8 @@ filter: drop-shadow(0 0 20px white);
         margin-right: 4%;
     }
     .banner {
-        width: 94vw;
-        max-width: 94vw;
+        width: 88vw;
+        max-width: 88vw;
     }
     .topicimage {
         width: auto;
