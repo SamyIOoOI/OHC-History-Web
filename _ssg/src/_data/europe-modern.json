@@ -4,13 +4,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomoffrancevaloisandbourbon.png",
       "title": "The Kingdom of France (Valois & Bourbon)",
-      "para1": "Valois and Bourbon France built a strong centralized monarchy after the Hundred Years' War. Kings crushed noble power, expanded bureaucracy, and fought Habsburg rivals. France became Europe's leading cultural and military power.",
-      "para2": "The Bourbon dynasty began with Henry IV in 1589. Louis XIV made France the model of absolute monarchy. Financial crisis and failed reform set the stage for the French Revolution.",
+      "para1": "The Kingdom of France under the Valois and the Bourbons. When Charles IV died in 1328 without a male heir, the main Capetian line ended, and under Salic law the crown passed to his cousin Philip VI of Valois - the succession dispute that, combined with the quarrel over English-held Gascony, ignited the Hundred Years' War (1337-1453) between the Valois kings and the Plantagenet kings of England. The century brought devastating warfare, civil war between Armagnacs and Burgundians, and the Black Death, which arrived from Italy in 1348: France's population, some 18-20 million in 1328, had been cut by half or more 150 years later.",
+      "para2": "Yet France emerged victorious from the war and then plunged into the Italian Wars (1494-1559), where Spain and the Holy Roman Empire checked its ambitions. Under Francis I, the Renaissance came to France - and so did centralization: his Ordinance of Villers-Cotterets (1539) made French the language of law and administration. The Reformation split the kingdom into the Wars of Religion (1562-1598) between the Catholic majority and the Huguenots, until Henry IV of Bourbon - a Protestant turned Catholic - restored peace.",
       "source1": "https://www.britannica.com/place/France/Major-rulers-of-France",
       "source2": "https://www.metmuseum.org/toah/ht/08/euwf.html",
       "source3": "https://www.britishmuseum.org/collection/term/BIOG31237",
       "source4": "",
-      "filename": "thekingdomoffrancevaloisandbourbon"
+      "filename": "thekingdomoffrancevaloisandbourbon",
+      "para3": "The Bourbon century made France the superpower of Europe. Centralized under the Ancien Regime, France built the second-largest colonial empire in the world - over 10 million square kilometers at its peak around 1680, centered on New France in North America - and from the reign of Louis XIV to Napoleon's defeat in 1815 it was the dominant power on the continent.",
+      "para4": "But the cost of glory mounted: colonial wars with Britain stripped France of most of North America by 1763, and the expensive intervention that helped the United States win independence brought little gain. Bankruptcy summoned the Estates General in 1789 - and the Revolution abolished the monarchy in 1792, ending a kingdom that had ruled since 987. Restored briefly in 1814-1815 and again from 1815, it finally dissolved in 1848."
     }
   },
   {
@@ -18,13 +20,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thefrenchrevolutionandnapoleonicfrance.jpg",
       "title": "The French Revolution & Napoleonic France",
-      "para1": "The French Revolution began in 1789 and overthrew the monarchy, aristocracy, and church privileges. It produced the Declaration of Rights, the Reign of Terror, and years of war. Napoleon Bonaparte then seized power in 1799.",
-      "para2": "Napoleon made reforms and conquered much of Europe before his defeat in 1815. The revolution's ideas of liberty and nationalism spread widely. Europe's conservative powers tried to restore order afterward.",
+      "para1": "The French Revolution and Napoleonic France. In May 1789, a bankrupt French monarchy summoned the Estates General for the first time since 1614. The representatives of the Third Estate broke away and declared themselves a National Assembly; on 14 July Paris stormed the Bastille. Within weeks the Assembly had abolished feudalism, taken control of the Catholic Church, and issued the Declaration of the Rights of Man and of the Citizen - the charter of liberal democracy.",
+      "para2": "The revolution radicalized: the monarchy fell, the First Republic was proclaimed in September 1792, and Louis XVI was executed. From June 1793 power passed to the Jacobin-dominated Committee of Public Safety under Maximilien Robespierre: the Reign of Terror sent some 16,000 people to execution before Robespierre himself fell in July 1794. The unstable Directory that followed (1795) lasted until 9 November 1799, when General Napoleon Bonaparte seized power in the Coup of 18 Brumaire and made himself First Consul.",
       "source1": "https://www.britannica.com/topic/history-of-France/The-French-Revolution-and-Napoleon-1789-1815",
       "source2": "https://www.worldhistory.org/French_Revolution/",
       "source3": "https://www.pbs.org/empires/napoleon/n_politic/frenchrev/page_1.html",
       "source4": "https://www.bbc.co.uk/history/historic_figures/bonaparte_napoleon.shtml?basic=1",
-      "filename": "thefrenchrevolutionandnapoleonicfrance"
+      "filename": "thefrenchrevolutionandnapoleonicfrance",
+      "para3": "Napoleon consolidated the revolution's gains - and buried its republic. In December 1804 he crowned himself Emperor of the French, and for a decade his armies dominated Europe: Austerlitz in 1805 shattered the Third Coalition and dissolved the Holy Roman Empire, Jena-Auerstedt crushed Prussia in 1806, and his Napoleonic Code, public education, and equality before the law reshaped France and the lands he conquered - though he also abolished the free press and reinstated slavery in the colonies. The invasion of Russia in 1812 ended in catastrophic retreat; defeated and exiled to Elba in 1814, he escaped, ruled again for the Hundred Days, and met final defeat at Waterloo in June 1815, dying on Saint Helena in 1821.",
+      "para4": "The revolution and Napoleon together remade the world: they spread the ideas of equality before the law, popular sovereignty, and nationalism across Europe, redrew the continent's map, and established the model of the modern centralized state - while the wars that devastated Europe and Napoleon's mixed record on civil rights keep his legacy contested. France's own upheavals continued through the revolutions of 1830 and 1848."
     }
   },
   {
@@ -32,13 +36,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofgreatbritainandthebritishempire.png",
       "title": "The Kingdom of Great Britain & the British Empire",
-      "para1": "Great Britain united England and Scotland in 1707 and became a global power. It built the largest empire in history through trade, colonies, and naval strength. The Industrial Revolution began there in the late 18th century.",
-      "para2": "Britain defeated Napoleon and later dominated world finance and shipping. Its empire covered India, Canada, Australia, and much of Africa. Decolonization after World War II ended most of it.",
+      "para1": "The Kingdom of Great Britain and the British Empire. On 1 May 1707 the Acts of Union joined England and Scotland into the Kingdom of Great Britain, with Queen Anne as its first monarch; in 1800 Ireland joined the union. The new state was soon the world's leading power: already dominant in North America after wars with the Dutch and the French, Britain became a major power in India after the East India Company's victory at Plassey in 1757.",
+      "para2": "The loss of the American colonies by 1783 was only a pause: after the defeat of France in the Napoleonic Wars (1803-1815), Britain emerged as the principal naval and imperial power of the 19th century. The century of relative peace it enforced became known as the Pax Britannica: Britain completed the conquest of India by 1818, forced trade concessions from China and Japan, joined the Scramble for Africa, and dominated world trade and finance.",
       "source1": "https://www.britannica.com/place/British-Empire",
       "source2": "https://www.bbc.co.uk/bitesize/articles/zg8drmn",
       "source3": "https://en.wikipedia.org/wiki/British_Empire",
       "source4": "https://www.bbc.co.uk/bitesize/articles/zpjv3j6",
-      "filename": "thekingdomofgreatbritainandthebritishempire"
+      "filename": "thekingdomofgreatbritainandthebritishempire",
+      "para3": "At its height in the 19th and early 20th centuries, the British Empire was the largest empire in history - by 1913 ruling 412 million people, 23 percent of the world's population, and by 1920 covering 35.5 million square kilometers, 24 percent of the Earth's land: 'the empire on which the sun never sets.' Its settler colonies grew into self-governing dominions, while its constitutional, legal, and linguistic legacy spread across the globe.",
+      "para4": "Two world wars exhausted the imperial economy and shattered its prestige. India, the empire's most valuable possession, won independence in 1947, and decolonization followed across Africa and Asia; the Suez Crisis of 1956 confirmed Britain's decline as a global power, and the handover of Hong Kong in 1997 symbolized the empire's end. But most former colonies joined the Commonwealth of Nations, and the English language, common law, and parliamentary institutions remain the empire's living inheritance."
     }
   },
   {
@@ -46,13 +52,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofspain.png",
       "title": "The Kingdom of Spain",
-      "para1": "Modern Spain formed from the union of Castile and Aragon and the conquest of Granada in 1492. It built a vast American and Asian empire and became Europe's leading power under the Habsburgs. Silver from the Americas funded its wars.",
-      "para2": "Spain declined in the 17th century due to costly wars and economic problems. The Bourbon dynasty centralized the state in the 18th century. Napoleon's invasion in 1808 triggered independence movements in Spanish America.",
+      "para1": "The Kingdom of Spain. Spain was born in 1469, when the marriage of Isabella I of Castile and Ferdinand II of Aragon joined the two great crowns of Iberia. In 1492 - the critical year of Spanish history - they conquered Granada, the last Muslim emirate in Spain, ending eight centuries of Al-Andalus; they expelled Spain's Jews; and they sponsored Christopher Columbus's first voyage to America. Within decades, the conquistadors had built a Spanish colonial empire among the largest in history, and Spain was the superpower of the age.",
+      "para2": "The Habsburg century was Spain's Golden Age: under Charles I and his son Philip II, the empire reached its territorial and economic peak, Philip's palace-monastery at El Escorial the center of its power. But the strain showed: state bankruptcies, the destruction of the Armada, and the independence of the Northern Netherlands began the slow decline, continued through the Eighty Years' War and the Thirty Years' War. When the last Habsburg, Charles II, died heirless in 1700, the War of the Spanish Succession brought the French Bourbons to the throne - Philip V - and reforms under Charles III briefly revived the state.",
       "source1": "https://www.britannica.com/place/Spain/Spain-under-the-Habsburgs",
       "source2": "https://en.wikipedia.org/wiki/Habsburg_Spain",
       "source3": "",
       "source4": "",
-      "filename": "thekingdomofspain"
+      "filename": "thekingdomofspain",
+      "para3": "The 19th century brought collapse: Napoleon's invasion made Spain a French puppet state, and the wars of independence that followed cost Spain nearly all its American empire in the 1820s. A tumultuous century of alternating liberal and monarchical rule ended with the Spanish-American War, military dictatorships, and the fall of Alfonso XIII - then the Civil War, and Francisco Franco's dictatorship for nearly four decades.",
+      "para4": "Spain emerged from Franco's death into a remarkable transition: King Juan Carlos I presided over the liberalization of the country, the democratic Constitution of 1978, entry into the European Community in 1986 and the Eurozone in 1998. Juan Carlos abdicated in 2014; his son Felipe VI reigns today - a modern European democracy built on the oldest of Spain's institutions."
     }
   },
   {
@@ -60,13 +68,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "theportugueseempire.png",
       "title": "The Portuguese Empire",
-      "para1": "Portugal built the first global maritime empire, starting with exploration in the 15th century. Vasco da Gama reached India in 1498, and Portugal controlled trade routes in Africa, Asia, and Brazil. Its empire brought great wealth but also brutal colonial rule.",
-      "para2": "Portugal lost Brazil in 1822 and declined as other European powers expanded. It held African colonies until 1975. The empire's legacy shaped language, religion, and trade worldwide.",
+      "para1": "The Portuguese Empire. Portugal was the first of Europe's global empires - and the last to let go. It began in 1415, when King John I seized Ceuta in North Africa, opening the age of exploration: Portuguese sailors pushed down the African coast with new ships like the caravel, Bartolomeu Dias rounded the Cape of Good Hope in 1488, and in 1498 Vasco da Gama reached India by sea - the prize of a generation of exploration. In 1500 Pedro Alvares Cabral reached Brazil, and by 1571 a string of naval outposts connected Lisbon all the way to Nagasaki; the colonial trade came to provide about a fifth of Portugal's per-capita income.",
+      "para2": "The small kingdom could not hold its vast network forever. In 1580 Portugal fell under the Spanish crown in the Iberian Union, and Dutch and English rivals carved away its Asian trade. The Restoration War (1640-1668) recovered independence, and the empire's center of gravity shifted decisively to Brazil, whose gold financed the splendor of the 18th-century court.",
       "source1": "https://www.britannica.com/topic/Western-colonialism/Portugals-seaborne-empire",
       "source2": "https://www.worldhistory.org/Portuguese_Empire/",
       "source3": "https://human.libretexts.org/Courses/Orange_Coast_College/Modern_World_History%3A_New_Perspectives_(OCC_Version)/03%3A_Expansive_Cultures_-_1500-1650/3.02%3A_Gunpowder_Empires-_Safavids",
       "source4": "https://www.smithsonianmag.com/history/when-portugal-ruled-the-seas-161560859/",
-      "filename": "theportugueseempire"
+      "filename": "theportugueseempire",
+      "para3": "The 19th century split the empire: in 1822 Brazil declared its independence, taking with it the empire's richest possession. Portugal refocused on Africa, holding and expanding its colonies there through the Scramble for Africa - a smaller but stubborn empire, which it defended in the long Colonial War of 1961-1974.",
+      "para4": "Portugal's empire outlasted all others: the African colonies were held until the 1974 revolution at home brought independence, and the final territory, Macau, was handed back to China in 1999 - nearly six centuries after Ceuta. The Portuguese-speaking world that remains - hundreds of millions of people on four continents - is the empire's living legacy."
     }
   },
   {
@@ -74,13 +84,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thedutchrepublickingdomofthenetherlands.png",
       "title": "The Dutch Republic / Kingdom of the Netherlands",
-      "para1": "The Dutch Republic won independence from Spain in the 17th century and became a major trading power. Its East India Company dominated Asian trade, and Amsterdam was a financial center. The Dutch also built colonies in the Americas and Africa.",
-      "para2": "The republic declined after wars with Britain and France. The Kingdom of the Netherlands was formed in 1815. It later lost Belgium and most overseas colonies.",
+      "para1": "The Dutch Republic and the Kingdom of the Netherlands. The Dutch Republic was born in revolt: on 26 July 1581 the northern Netherlands renounced their Spanish king in the Act of Abjuration, and the young republic fought on for nearly seventy years before Spain accepted the Peace of Munster in 1648. The improbable little state of merchants and sailors then produced the Dutch Golden Age: Amsterdam became the world's commercial and financial capital, and the Dutch East India Company (VOC) and West India Company (GWC) made the republic a global trading empire that let it compete militarily with far larger states.",
+      "para2": "The 17th-century republic was a marvel: more tolerant of different religions and ideas than any contemporary state, it drew in refugees - Iberian Jews, Huguenots, English Dissenters, even the Pilgrim Fathers - and Amsterdam became the hub of world trade. Artists flourished - Rembrandt, Vermeer - and scientists too: Grotius, Huygens, and Leeuwenhoek. Its unique government, a republic of provinces led by its stadtholders, balanced merchant oligarchy and the House of Orange, and it fought four Anglo-Dutch Wars against its greatest rival.",
       "source1": "https://www.britannica.com/place/Netherlands/The-Kingdom-of-the-Netherlands-1814-1918",
       "source2": "https://smarthistory.org/europe-1300-1800/baroque/baroque-art-in-the-dutch-republic/",
       "source3": "https://www.metmuseum.org/toah/ht/09/euwl.html",
       "source4": "",
-      "filename": "thedutchrepublickingdomofthenetherlands"
+      "filename": "thedutchrepublickingdomofthenetherlands",
+      "para3": "The 18th century brought relative decline as Britain and France outgrew it; in 1795 the republic fell to revolutionary France in the Batavian Revolution. After Napoleon's defeat, the Congress of Vienna created the United Kingdom of the Netherlands, merging the Dutch Republic's lands with the Austrian Netherlands under King William I of Orange. The union lasted only fifteen years: the Belgian Revolution of 1830 split the south away.",
+      "para4": "The reduced Kingdom of the Netherlands built a prosperous trading state, and today it remains a constitutional monarchy and one of the world's great trading nations: the small country that once ran the world's commerce."
     }
   },
   {
@@ -88,13 +100,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofbelgium.png",
       "title": "The Kingdom of Belgium",
-      "para1": "Belgium became independent in 1830 after breaking away from the Netherlands. It was a constitutional monarchy and a center of early industrialization. Its location made it a battleground in European wars.",
-      "para2": "Belgium acquired the Congo Free State in 1885, later the Belgian Congo, and ruled it brutally. The country was invaded in both World Wars. It remains a federal state divided by language.",
+      "para1": "The Kingdom of Belgium. Belgium's lands were 'the battlefield of Europe' for centuries: part of the Burgundian Netherlands, then ruled by Habsburg Spain (1556-1714), the Austrian Habsburgs (1714-1794), and Revolutionary France (1794-1815), before the Congress of Vienna folded them into the United Kingdom of the Netherlands. The union failed fast: on 4 October 1830, after a revolution in Brussels, Belgium declared its independence.",
+      "para2": "The new kingdom installed Leopold I as king on 21 July 1831 - now Belgium's National Day - as a neutral, officially French-speaking constitutional monarchy, and then industrialized with astonishing speed: Belgium was the first country in continental Europe to industrialize, and its coal, steel, and railways made it one of the wealthiest small states in the world.",
       "source1": "https://www.britannica.com/place/Belgium",
       "source2": "https://en.wikipedia.org/wiki/History_of_Belgium",
       "source3": "https://en.wikipedia.org/wiki/Timeline_of_Belgian_history",
       "source4": "",
-      "filename": "thekingdomofbelgium"
+      "filename": "thekingdomofbelgium",
+      "para3": "Under Leopold II the Berlin Conference of 1885 ceded the vast Congo Free State to the king as his private possession; the extreme and savage treatment of the Congolese in the ivory and rubber trade became an international scandal, and in 1908 the Belgian state took over the colony. Congo and Ruanda-Urundi gained independence in 1960-1962. Belgium's 'battlefield of Europe' reputation was reinforced by both world wars.",
+      "para4": "Postwar Belgium was transformed by its internal divide: tensions between Dutch-speaking Flanders (about 60 percent of the people) and French-speaking Wallonia (about 40 percent) drove state reforms that turned the unitary kingdom into a federal state between 1970 and 1993 - today three regions and six governments, with universal suffrage won only after the general strike of 1893. Today Belgium is one of the six founding members of the European Union, with Brussels as the EU's de facto capital and the seat of NATO - a fitting crossroads for a small country in Europe's heart."
     }
   },
   {
@@ -102,13 +116,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "theitaliancitystatesrenaissance.jpg",
       "title": "The Italian City-States (Renaissance)",
-      "para1": "The Italian city-states were independent urban republics and duchies like Florence, Venice, Milan, and Rome. They flourished in the Renaissance through trade, banking, and art. Their competition produced great achievements in painting, architecture, and political thought.",
-      "para2": "Foreign invasions in the late 15th century weakened them. Spain and Austria dominated Italy for centuries. The city-states never unified into a single Italian nation until the 19th century.",
+      "para1": "The Italian City-States and the Renaissance. Between the 14th and 17th centuries, the small city-states of Italy produced the Renaissance - the 'rebirth' that carried Europe from the Middle Ages into the modern world. It began in Tuscany, centered on Florence, whose bankers financed Europe's monarchs and laid the groundwork of capitalism; it spread to Venice, whose fleets had traded with the East since the Crusades, and to Rome, largely rebuilt by Renaissance popes like Julius II and Leo X.",
+      "para2": "The achievement was total: Dante, Petrarch, and Boccaccio had already re-founded literature in the 14th century; now came Leonardo, Michelangelo, Raphael, Botticelli, and Titian in art; Brunelleschi and Palladio in architecture; Machiavelli in politics; Palestrina in music and Monteverdi at the birth of opera; Galileo in science. Venice's Aldine Press pioneered portable printed books, and Florence's wool trade and Venice's arsenal - a vast shipyard mass-producing vessels for a fleet of thousands - showed the wealth behind the beauty.",
       "source1": "https://www.britannica.com/place/Italy/The-states-of-Italy-in-the-15th-century",
       "source2": "https://human.libretexts.org/Courses/Lumen_Learning/Book%3A_Western_Civilization_I_(Lumen)/16%3A_Week_14%3A_Italian_City-states_and_Renaissance",
       "source3": "https://smarthistory.org/reframing-art-history/art-italian-renaissance-republics/",
       "source4": "https://www.khanacademy.org/humanities/renaissance-reformation/early-renaissance1/beginners-renaissance-florence/a/a-primer-for-italian-renaissance-art",
-      "filename": "theitaliancitystatesrenaissance"
+      "filename": "theitaliancitystatesrenaissance",
+      "para3": "The city-states were also Europe's diplomatic laboratory, balanced against each other in the Peace of Lodi (1454-1494). But the Italian Wars (1494-1559) made the peninsula the battleground of France and Spain, and the Renaissance's political freedom died - even as its ideas spread north to set off the Northern Renaissance. Italian explorers sailing for foreign kings - Columbus for Spain, Vespucci for Portugal, Verrazzano for France, Cabot for England - ushered in the Age of Discovery.",
+      "para4": "The Renaissance left Europe its modern face: banking and accounting, diplomacy, the printed book, the revival of Greek and Roman learning, and an ideal of human achievement that shaped the Scientific Revolution and the modern world. It was the work of a few small, quarrelsome, dazzling cities - the richest region in Europe, and for two centuries its cultural capital."
     }
   },
   {
@@ -116,13 +132,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "theunificationofitalyrisorgimento.jpg",
       "title": "The Unification of Italy (Risorgimento)",
-      "para1": "The Risorgimento was the 19th-century movement to unify Italy. Led by figures like Cavour, Garibaldi, and Mazzini, it ended foreign rule and created the Kingdom of Italy in 1861. Rome became the capital in 1870.",
-      "para2": "The new state faced regional divides, poverty, and weak institutions. It later built a colonial empire and fought in both World Wars. Unification remains a central event in Italian identity.",
+      "para1": "The Unification of Italy (Risorgimento). For centuries after the Renaissance, Italy was 'a geographical expression': a patchwork of kingdoms, duchies, and papal states; after 1815 the Austrian Empire directly controlled the Kingdom of Lombardy-Venetia and indirectly the duchies of Parma, Modena, and Tuscany. The Congress of Vienna (1815) confirmed the division, but rebellions in the 1820s and 1830s and the Revolutions of 1848 kept the dream of a united Italy alive - the movement Italians called the Risorgimento, the 'Resurgence.'",
+      "para2": "National feeling had its literary prophets too: Alessandro Manzoni's novel I Promessi Sposi (1827), a thinly veiled allegory of Austrian rule, even helped fix the Tuscan dialect as the national language. But the unification itself was the work of four very different men: Giuseppe Mazzini, the republican prophet whose writings inspired a generation; Camillo Benso, Count of Cavour, the brilliant prime minister of the Kingdom of Sardinia (Piedmont), who built the alliances and won the wars of diplomacy; Giuseppe Garibaldi, the red-shirted general whose volunteers conquered the Italian south; and King Victor Emmanuel II, the Piedmontese king who became the symbol and sovereign of the new Italy - 'Father of the Fatherland.'",
       "source1": "https://www.britannica.com/topic/unification-of-Italy",
       "source2": "https://www.bbc.co.uk/programmes/b03dfpjr",
       "source3": "https://www.nationalgeographic.com/history/history-magazine/article/verdi-operas-italy-national-identity",
       "source4": "https://en.wikipedia.org/wiki/Unification_of_Italy",
-      "filename": "theunificationofitalyrisorgimento"
+      "filename": "theunificationofitalyrisorgimento",
+      "para3": "In 1861, after Cavour's wars with Austria and Garibaldi's conquest of the south, the Kingdom of Italy was proclaimed - 17 March is still its anniversary. Venetia and Rome followed, and in 1871 Rome became the capital. But many Italian-speakers in Trentino and Venezia Giulia remained under Austria - the 'unredeemed lands' of Italian irredentism, annexed only in 1918 after the First World War.",
+      "para4": "The Risorgimento made Italy a nation-state and a great power, but the tensions it papered over - north and south, church and state, monarchy and republic - shaped Italian politics for a century. It remains the founding story of modern Italy: the moment a civilization older than Rome became a country."
     }
   },
   {
@@ -130,13 +148,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thehabsburgmonarchyaustrianempire.png",
       "title": "The Habsburg Monarchy / Austrian Empire",
-      "para1": "The Habsburg Monarchy was a multiethnic empire ruling Austria, Bohemia, Hungary, and later parts of Italy and the Balkans. It was a major European power and a center of conservative Catholicism. In 1804 it became the Austrian Empire.",
-      "para2": "It fought Napoleon and later competed with Prussia for German leadership. The 1867 compromise created Austria-Hungary. The empire collapsed at the end of World War I.",
+      "para1": "The Habsburg Monarchy and Austrian Empire. The Habsburgs built the most durable great power of Central Europe. From 1526, when they acquired Bohemia and Hungary, their realm was a 'composite monarchy': a collection of kingdoms, duchies, and counties - the Archduchy of Austria proper, Inner Austria, and Further Austria - with only partial shared laws, united by the person of the monarch and the Habsburg court itself. Under Charles V (1519-1556) the house ruled half of Europe plus the Spanish Empire - and from 1438 to 1806 the Habsburgs almost continuously wore the crown of the Holy Roman Emperors, with their dynastic capital at Vienna.",
+      "para2": "The Austrian Habsburgs became the shield of Central Europe against the Ottomans: the relief of Vienna in 1683 and the Treaty of Karlowitz (1699) pushed the frontier deep into Hungary. Bohemia became a hereditary Habsburg land after the Battle of White Mountain (1620), and Hungary after the reconquest of 1687. In the 18th century, Maria Theresa (1740-1780) and her son Joseph II (1780-1790) rebuilt the ramshackle inheritance into a governed, reformed state - while the family also briefly held the Austrian Netherlands and lands in Italy.",
       "source1": "https://www.britannica.com/place/Austria/Austria-Hungary-1867-1918",
       "source2": "https://www.metmuseum.org/TOAH/HD/habs/hd_habs.htm",
       "source3": "https://www.bbc.co.uk/bitesize/guides/zsn3b9q/revision/3",
       "source4": "",
-      "filename": "thehabsburgmonarchyaustrianempire"
+      "filename": "thehabsburgmonarchyaustrianempire",
+      "para3": "In 1804, as the Holy Roman Empire crumbled, the Habsburg lands were unified as the Austrian Empire; after Napoleon's defeat it stood at the head of the conservative order in Europe, until the revolutions of 1848 shook it and the long reign of Franz Joseph (1848-1916) began. Defeated by Prussia in 1866, the empire compromised with Hungary in 1867, becoming Austria-Hungary.",
+      "para4": "The multi-national monarchy could not survive the age of nationalism: in late 1918, facing defeat in the First World War, it disbanded as its peoples proclaimed their own states - German-Austria, Hungary, and the South Slavs. Six centuries of Habsburg rule ended in days, but the empire's cities, laws, and institutions still mark Central Europe."
     }
   },
   {
@@ -144,13 +164,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "austriahungary.png",
       "title": "Austria-Hungary",
-      "para1": "Austria-Hungary was a dual monarchy formed in 1867. It linked the Austrian Empire and the Kingdom of Hungary under one ruler. It was a patchwork of nationalities with rising nationalist tensions.",
-      "para2": "The assassination of Archduke Franz Ferdinand in 1914 helped trigger World War I. The empire fought with Germany and collapsed in 1918. Its lands became new states like Czechoslovakia, Yugoslavia, and Hungary.",
+      "para1": "Austria-Hungary. Austria-Hungary was born of defeat: after Prussia crushed Austria in 1866, the Habsburgs made their peace with the Hungarians in the Compromise of 1867, transforming the Austrian Empire into a dual monarchy - two largely self-governing states, Cisleithania and Transleithania, sharing one monarch who was both Emperor of Austria and Apostolic King of Hungary. It was the last phase in the constitutional evolution of the Habsburg monarchy, following Hungary's wars of independence against Habsburg rule, above all the revolution of 1848-1849.",
+      "para2": "Under the long reign of Franz Joseph (1867-1916), the dual monarchy was one of Europe's great powers and one of its strangest states: a dozen nations - Germans, Hungarians, Czechs, Slovaks, Poles, Ukrainians, Romanians, Croats, Serbs, Slovenes, Italians - under one crown, with a dazzling imperial capital in Vienna and a proud partner capital in Budapest. It was the second-largest country in Europe by area and the third-most populous, and it built the fourth-largest machine-building industry in the world.",
       "source1": "https://www.britannica.com/place/Austria-Hungary",
       "source2": "https://www.unesco.org/en/memory-world/telegram-austria-hungarys-declaration-war-serbia-28th-july-1914",
       "source3": "https://www.metmuseum.org/met-publications/fashions-of-the-hapsburg-era-austria-hungary",
       "source4": "",
-      "filename": "austriahungary"
+      "filename": "austriahungary",
+      "para3": "The dual structure had been born in failure: in 1848 the Hungarians' revolution for independence was crushed by the Austrian army with Russian help, and absolutist rule from Vienna only deepened the resentment that the 1867 Compromise was designed to end. The national tensions that made the monarchy colorful also made it fragile. When the heir, Archduke Franz Ferdinand, was assassinated at Sarajevo on 28 June 1914, the July Crisis ended with Austria-Hungary's declaration of war on Serbia on 28 July - the fuse of the First World War, in which the dual monarchy fought as one of the Central Powers, a war it would not survive.",
+      "para4": "Defeat and nationalist revolution dissolved the empire even before the armistice: Hungary terminated the union in October 1918, and the armistice of Villa Giusti followed on 3 November. From its lands rose Austria, Hungary, Czechoslovakia, and Yugoslavia, with territories ceded to Poland, Romania, and Italy - the map of Central Europe for the century to come."
     }
   },
   {
@@ -158,13 +180,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofprussia.png",
       "title": "The Kingdom of Prussia",
-      "para1": "Prussia rose from a small German state to the leader of German unification. Its military reforms and efficient bureaucracy made it a great power. Otto von Bismarck used diplomacy and war to defeat Denmark, Austria, and France.",
-      "para2": "In 1871, Prussia created the German Empire with the Prussian king as emperor. Prussia remained dominant within Germany. It was abolished after World War II.",
+      "para1": "The Kingdom of Prussia. The Kingdom of Prussia was the state that made Germany. It was born in 1701, when the Hohenzollern elector of Brandenburg - whose family had ruled those lands for centuries - crowned himself King Frederick I in Prussia on 18 January 1701. The kingdom took its name from the historical region of Prussia but was based in the Margraviate of Brandenburg, with its capital at Berlin.",
+      "para2": "Through the 18th century Prussia rose from a scattered collection of territories into the most militarized and efficient of the German states: its population nearly tripled, from 2.2 million in 1740 to 5.8 million in 1786, as it expanded across northern Germany and held its own against the great powers of Europe. Crushed by Napoleon in 1806 and occupied as part of the French Continental System until 1813, Prussia reformed itself in defeat, returned to lead the wars of liberation, and emerged in 1815 as a leading power of the new German Confederation.",
       "source1": "https://www.britannica.com/place/Prussia",
       "source2": "https://human.libretexts.org/Bookshelves/History/World_History/Western_Civilization_-_A_Concise_History_II_(Brooks)/10%3A_Absolutism/10.04%3A_Prussia",
       "source3": "https://www.nationalgeographic.com/history/history-magazine/article/frederick-the-great-king-prussia",
       "source4": "https://www.bbc.co.uk/programmes/b0167zl1",
-      "filename": "thekingdomofprussia"
+      "filename": "thekingdomofprussia",
+      "para3": "In the 19th century, Prussia's destiny became Germany's: its industry, its army, and its statesmen drove the unification of Germany in 1871, and the King of Prussia became the German Emperor. Though only one of the empire's four kingdoms, Prussia held about two-thirds of its population and territory, and its minister-president was also the imperial chancellor: Prussia WAS imperial Germany.",
+      "para4": "The kingdom died with the empire it created: in the revolution of November 1918 the monarchy fell, and Prussia became a Free State within the Weimar Republic. The state that had risen in three centuries from a Baltic duchy to the maker of Germany vanished into the greater Germany it had made."
     }
   },
   {
@@ -172,13 +196,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thegermanempire.png",
       "title": "The German Empire",
-      "para1": "The German Empire was founded in 1871 after Prussia's victory over France. It was a federal monarchy with a powerful military and rapid industrial growth. It became Europe's leading industrial power.",
-      "para2": "Germany's naval buildup and alliances increased tension before World War I. It lost the war and the empire collapsed in 1918. The Weimar Republic replaced it.",
+      "para1": "The German Empire. The German Empire - the Second Reich - was proclaimed in 1871 after the wars of unification, and lasted until the revolution of November 1918. It was a federation of 25 states: four constituent kingdoms, six grand duchies, duchies, principalities, and three free Hanseatic cities, each keeping its own nobility - plus the imperial territory of Alsace-Lorraine. But one state towered over the rest: Prussia held two-thirds of the empire's people and land, and the King of Prussia was, constitutionally, the German Emperor.",
+      "para2": "The empire's first chancellor, Otto von Bismarck (1871-1890), dominated its first two decades: under Kaiser Wilhelm I he built the alliance system that kept Europe's peace and made Germany the leading power on the continent. The economy boomed: by 1913 Germany was the largest economy in continental Europe and the third largest in the world, with Europe's most extensive rail network and the world's strongest army - and a navy that grew within a decade to second only to Britain's Royal Navy. German science led the world: a third of all Nobel Prizes went to German researchers.",
       "source1": "https://www.britannica.com/place/German-Empire",
       "source2": "https://www.khanacademy.org/humanities/world-history-project-ap/xb41992e0ff5e0f09:unit-5-revolutions/xb41992e0ff5e0f09:5-2nationalism-and-revolutions/a/article-bismarck-and-german-nationalism",
       "source3": "https://www.bbc.co.uk/history/historic_figures/bismarck_otto_von.shtml",
       "source4": "",
-      "filename": "thegermanempire"
+      "filename": "thegermanempire",
+      "para3": "The accession of Wilhelm II (1888-1918) changed the tone: Bismarck was dismissed in 1890, and the young kaiser's assertive diplomacy, naval building, and pursuit of overseas colonies alarmed Germany's neighbors and helped set the stage for the First World War, which Germany entered on 1 August 1914.",
+      "para4": "The war destroyed the empire. Four years of total war, blockade, and defeat brought revolution: on 3 November 1918 the German revolution began, and on 9 November Wilhelm II abdicated and the republic was proclaimed. The Second Reich, born in victory, died in defeat after 47 years - but the unified Germany it created remains the Germany of today."
     }
   },
   {
@@ -186,13 +212,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thetsardomandempireofrussia.png",
       "title": "The Tsardom & Empire of Russia",
-      "para1": "Russia grew from the Grand Duchy of Moscow into a vast empire under the tsars. Peter the Great modernized the military and founded St. Petersburg. Catherine the Great expanded south and west.",
-      "para2": "The empire became a major European power but remained economically backward. Serfdom was abolished in 1861, but unrest continued. The Russian Revolution in 1917 ended the monarchy.",
+      "para1": "The Tsardom and Empire of Russia. The Russian Empire grew out of the tsardom that Ivan III had built from the Grand Duchy of Moscow - a centralized state independent of the Great Horde - and that his grandson Ivan IV elevated when he was crowned the first Russian tsar in 1547. The expansion was relentless: between 1550 and 1700, the Russian state grew by an average of 35,000 square kilometers a year, swallowing Siberia - drawn first by its furs - and reaching the Pacific. Under Ivan IV the conquest of the khanates of Kazan and Astrakhan began the transformation of an almost mono-ethnic realm into a multi-ethnic empire; after the Time of Troubles, the Romanov dynasty took the throne.",
+      "para2": "Peter the Great transformed the tsardom into the Russian Empire, proclaimed in 1721: he fought the wars that made Russia a major European power, moved the capital from Moscow to his new model city of Saint Petersburg, and forced a cultural revolution toward a modern, scientific, Western-oriented state. Catherine the Great (1762-1796) continued his modernization and expanded the empire by conquest, colonization, and diplomacy - including the partitions of Poland.",
       "source1": "https://www.britannica.com/place/Russia/Romanov-Muscovy",
       "source2": "https://www.worldhistory.org/Peter%5Fthe%5FGreat/",
       "source3": "https://www.bbc.co.uk/programmes/b06vmlcg",
       "source4": "https://en.wikipedia.org/wiki/Tsardom_of_Russia",
-      "filename": "thetsardomandempireofrussia"
+      "filename": "thetsardomandempireofrussia",
+      "para3": "The 19th century made Russia the gendarme of Europe and exposed its weaknesses: Alexander I helped defeat Napoleon and formed the Holy Alliance, but defeat in the Crimean War (1853-1856) forced reform - above all Alexander II's emancipation of 23 million serfs in 1861. At its height the empire covered about 22.8 million square kilometers - roughly a sixth of the world's land, the third-largest empire in history - stretching from the Baltic to Alaska (colonized 1799-1867), with 126 million people by the 1897 census. Its literature, music, and science flourished even as its politics froze.",
+      "para4": "The end came fast: the Revolution of 1905 forced the October Manifesto and a semi-constitutional monarchy, but the strains of the First World War brought the empire down in 1917 under Nicholas II, the last tsar. The Revolution of 1905 forced Nicholas II to grant a national parliament, the State Duma, but ultimate power stayed with the tsar. Three centuries of Romanov rule ended in revolution - and the empire's peoples entered the Soviet century."
     }
   },
   {
@@ -200,13 +228,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thepolishlithuaniancommonwealthanditspartitions.png",
       "title": "The Polish-Lithuanian Commonwealth & its Partitions",
-      "para1": "The Polish-Lithuanian Commonwealth was a large, noble-run republic in Central Europe. It had an elected king and a weak central government. It became a major cultural and political force.",
-      "para2": "Russia, Prussia, and Austria partitioned it three times in 1772, 1793, and 1795. Poland disappeared from the map until 1918. The partitions shaped Polish nationalism for generations.",
+      "para1": "The Polish-Lithuanian Commonwealth and its Partitions. The Commonwealth was born on 1 July 1569, when the Union of Lublin fused Poland and Lithuania - joined in dynastic union since 1385 - into a single state with its capital first at Krakow, then from 1596 at Warsaw. When the childless Sigismund II Augustus died in 1572, the Jagiellonian dynasty ended, and the Commonwealth became an elective monarchy: nobles or foreign dynasts elected to the throne for life.",
+      "para2": "Its system - the Golden Liberty - was an early constitutional monarchy: the bicameral General Sejm held legislative power, the Henrician Articles bound the king, and the szlachta nobility, some 10 percent of the population, formed a kind of nobles' democracy. The Warsaw Confederation of 1573 guaranteed a religious tolerance remarkable for its age, and the Commonwealth's peoples - Poles, Lithuanians, Ruthenians, Germans, Jews - lived in unusual diversity.",
       "source1": "https://www.britannica.com/topic/Commonwealth-Polish-history",
       "source2": "https://www.worldhistory.org/article/2754/why-poland-lithuania-disappeared/",
       "source3": "https://www.bbc.co.uk/programmes/m0010f8z",
       "source4": "",
-      "filename": "thepolishlithuaniancommonwealthanditspartitions"
+      "filename": "thepolishlithuaniancommonwealthanditspartitions",
+      "para3": "Its first royal election, in 1573, saw some 40,000 nobles cast their votes - a 'nobles' democracy' without parallel in Europe. But the Golden Liberty hardened into paralysis: royal authority was bound ever tighter, the 17th century's wars devastated the state, and the great neighbors - Russia, Prussia, and Austria - learned to exploit its divisions. Under the last king, Stanislaw II August (1764-1795), the Commonwealth declined into a plaything of its neighbors.",
+      "para4": "The end came in three partitions: 1772, 1793, and 1795. In between, the Commonwealth attempted one of history's most remarkable last stands: the Constitution of 3 May 1791 - the first modern codified constitution in Europe, and the second in the world after the American - came too late to save it. Russia, Prussia, and Austria divided the country among themselves, and Poland-Lithuania vanished from the map for 123 years."
     }
   },
   {
@@ -214,13 +244,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "theottomanbalkans.jpg",
       "title": "The Ottoman Balkans",
-      "para1": "The Ottoman Balkans were the European provinces of the Ottoman Empire. They included Greece, Bulgaria, Serbia, Bosnia, and Romania. Ottoman rule brought Islam, new administration, and long periods of conflict.",
-      "para2": "Nationalist revolts in the 19th century broke the region into independent states. The Balkan Wars of 1912 to 1913 further reduced Ottoman control. World War I ended Ottoman power in Europe.",
+      "para1": "The Ottoman Balkans. The Ottomans entered Europe in the mid-14th century, seizing Gallipoli in 1354 after an earthquake emptied the city - their base for the conquest of the Balkans. Adrianople fell in 1369, Thessalonica in 1387; the Serbian-led resistance broke at Kosovo, where Sultan Murad I himself was killed; and in 1453 Mehmed the Conqueror took Constantinople, ending the Byzantine Empire. Ottoman Europe - 'Rumelia' - was born.",
+      "para2": "For two centuries the empire ruled the Balkans from the Danube to the Mediterranean: it fought Venice for four hundred years, suffering its great naval defeat at Lepanto in 1571 - then the largest naval battle in history - and its armies stood at the gates of Vienna. Only Corfu, of all the Greek islands, never fell to the Ottomans. The Balkan peoples - Greeks, Serbs, Bulgarians, Albanians, Romanians - lived under Ottoman rule for four or five centuries: Orthodox subjects of a Muslim sultan, their churches, languages, and memories preserved but their nations submerged.",
       "source1": "https://www.britannica.com/place/Balkans/The-Ottomans",
       "source2": "https://www.metmuseum.org/toah/ht/08/eusb",
       "source3": "https://www.nationalgeographic.com/history/article/why-ottoman-empire-rose-fell",
       "source4": "",
-      "filename": "theottomanbalkans"
+      "filename": "theottomanbalkans",
+      "para3": "The 19th century tore the fabric: the Serbian uprising of 1804-1817 won autonomy, the Greek Revolution of 1821-1832 won independence, and the Romanian war of 1877-1878 - fought alongside Russia - freed the Danubian principalities. The great powers, especially Russia, pressed the empire in war after war - the Holy League's Great Turkish War (1683-1699) had already begun reversing its gains - and the Balkan states pressed it from within.",
+      "para4": "The final retreat came in the Balkan Wars of 1912-1913, which drove the Ottomans almost out of Europe, and was sealed after the First World War by the Treaty of Sevres. Five centuries of Ottoman Europe ended; the borders, nations, and grievances it left behind still shape the Balkans today."
     }
   },
   {
@@ -228,13 +260,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "theprincipalityofserbia.png",
       "title": "The Principality of Serbia",
-      "para1": "The Principality of Serbia won autonomy from the Ottoman Empire in the early 19th century. It became a kingdom in 1882. Serbia sought to unite South Slavs and expand into Ottoman lands.",
-      "para2": "Its rivalry with Austria-Hungary helped trigger World War I. Serbia suffered huge losses but emerged on the winning side. It later became part of Yugoslavia.",
+      "para1": "The Principality of Serbia. Modern Serbia rose from the Serbian Revolution against Ottoman rule: Karadjordje's First Serbian Uprising of 1804 failed, but Milos Obrenovic's Second Serbian Uprising of 1815 won what war alone could not - an autonomous Serbian state, recognized by the Ottoman sultan's Hatt-i Sharif of 1830, with Milos as hereditary prince. The new principality, at first covering only the territory of the former Pashaluk of Belgrade, was still nominally Ottoman: it paid a yearly tribute of 2.3 million groschen - about a tenth of the state budget - and Ottoman garrisons remained on its soil.",
+      "para2": "The principality grew: in 1831-1833 it expanded east, south, and west; a constitution made it a constitutional monarchy from 1838; and from 1866 Serbia began building the first Balkan alliance against the Ottomans. On 18 April 1867 the last Ottoman garrison withdrew from the Belgrade fortress - Serbia's de facto independence - and a new constitution in 1869 defined it as an independent state.",
       "source1": "https://en.wikipedia.org/wiki/Principality_of_Serbia",
       "source2": "https://en.wikipedia.org/wiki/Serbian_revolution",
       "source3": "",
       "source4": "",
-      "filename": "theprincipalityofserbia"
+      "filename": "theprincipalityofserbia",
+      "para3": "Full international recognition came at the Treaty of Berlin in 1878, which also expanded Serbia to the southeast. In 1882 the principality was raised to the Kingdom of Serbia, with Milan Obrenovic IV as its first king - Serbia's first crown since the medieval empire of Dusan the Mighty.",
+      "para4": "The principality's story is the pattern of Balkan liberation: revolt, autonomy, independence, kingdom - won over seventy years against Ottoman suzerainty. Its capital had moved from Kragujevac to Belgrade in 1841; even the Ottoman flag that had flown over the Belgrade fortress alongside the Serbian one was finally lowered. Within a generation, the small principality that began as a tribute-paying Ottoman province had become a recognized European kingdom."
     }
   },
   {
@@ -242,13 +276,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofromania.png",
       "title": "The Kingdom of Romania",
-      "para1": "Romania became independent from the Ottoman Empire in 1877 and was declared a kingdom in 1881. It united Wallachia and Moldavia and later gained Transylvania after World War I. It was rich in oil and agriculture.",
-      "para2": "Romania faced political instability and fascist movements in the 1930s. It fought in World War II and then fell under communist rule. The monarchy was abolished in 1947.",
+      "para1": "The Kingdom of Romania. Romania was united before it was a kingdom: in 1859 Alexandru Ioan Cuza became prince of both Moldavia and Wallachia - the 'Little Union' - and in 1862 the two principalities formally merged as the Principality of Romania, with its capital at Bucharest, still nominally under Ottoman suzerainty. A Hohenzollern prince took the throne, and in the Russo-Turkish War of 1877-1878 - Romania's War of Independence - the country won full independence, trading southern Bessarabia for Northern Dobruja.",
+      "para2": "In 1881 Romania was proclaimed a kingdom under Carol I (1881-1914), whose reign - the 'Old Kingdom' - brought stability, a constitution, railways, and the transformation of Bucharest into a European capital. The kingdom emerged from the First World War - which at one point drove the government from Bucharest to Iasi - into 'Greater Romania': Transylvania, Bessarabia, Bukovina, and the Banat joined the Old Kingdom after 1918, in the kingdom's greatest territorial extent.",
       "source1": "https://en.wikipedia.org/wiki/Kingdom_of_Romania",
       "source2": "https://en.wikipedia.org/wiki/Monarchy_of_Romania",
       "source3": "",
       "source4": "",
-      "filename": "thekingdomofromania"
+      "filename": "thekingdomofromania",
+      "para3": "The interwar kingdom glittered and cracked: it lost most of those gains in 1940 under pressure from Nazi Germany and the Soviet Union, fell under King Carol II's royal dictatorship and then Marshal Antonescu's military regime, and fought on the Axis side in the Second World War - until King Michael's coup of August 1944 overthrew Antonescu and switched Romania to the Allies, recovering Northern Transylvania. The kingdom was a land of many peoples - Hungarians, Germans, Jews, Ukrainians, and others alongside the Romanian majority.",
+      "para4": "The monarchy did not survive the peace: under Soviet pressure, the communist-dominated government forced King Michael to abdicate, and on the last day of 1947 the People's Republic of Romania was proclaimed. The kingdom lasted 66 years; the nation it united in 1859 endures."
     }
   },
   {
@@ -256,13 +292,15 @@
       "linktoparent": "europe/europecolonial.html",
       "image": "thekingdomofgreece.png",
       "title": "The Kingdom of Greece",
-      "para1": "Greece won independence from the Ottoman Empire in 1830 after a long war. It became a kingdom under a Bavarian prince and later a Danish dynasty. It expanded by acquiring Crete, Thessaly, and other lands.",
-      "para2": "Greece fought in the Balkan Wars and World War I. It suffered a devastating defeat in the Greco-Turkish War of 1919 to 1922. The monarchy was abolished and restored several times before ending in 1974.",
+      "para1": "The Kingdom of Greece. Modern Greece was born in the War of Independence: the first revolt rose in the Danubian principalities on 6 March 1821, and by the end of that month the Peloponnese was in open rebellion. After more than a decade of war, the Treaty of Constantinople (1832) formally recognized an independent Greece and established it as a monarchy under the Bavarian prince Otto of Wittelsbach, with its capital first at Nafplio, then from 1834 at Athens. Nearly four centuries of Ottoman rule had ended.",
+      "para2": "The kingdom was born small, but it grew: Otto's absolutism was ended by the 3 September 1843 Revolution, which brought a constitution and universal male suffrage; a popular insurrection deposed Otto in 1862, and the Danish prince George I (1863-1913) began a fifty-year reign that brought the Ionian Islands from Britain in 1864 and the annexation of Thessaly in 1881. After the Goudi coup of 1909 brought Eleftherios Venizelos to power, Greece won the Balkan Wars of 1912-1913 - though King George himself was assassinated during the first of them.",
       "source1": "https://en.wikipedia.org/wiki/Kingdom_of_Greece",
       "source2": "https://en.wikipedia.org/wiki/Kingdom_of_Greece_(Gl%C3%BCcksburg)",
       "source3": "https://www.britannica.com/place/Greece/Building-the-nation-1832-1913",
       "source4": "",
-      "filename": "thekingdomofgreece"
+      "filename": "thekingdomofgreece",
+      "para3": "The First World War split the nation in the National Schism between King Constantine and Venizelos; Allied intervention brought Greece into the war and victory on the Macedonian Front. But the Asia Minor Campaign ended in disaster in 1922: the 11 September Revolution forced Constantine's abdication, the Treaty of Lausanne brought the population exchange between Greece and Turkey, and in 1924 the monarchy was abolished and the Second Hellenic Republic proclaimed.",
+      "para4": "The crown returned by a sham referendum in 1935; Metaxas's dictatorship followed in 1936, then the Axis occupation of the Second World War and the Civil War of 1946-1949, before an economic miracle under Karamanlis. The coup of 21 April 1967 brought the Regime of the Colonels, which dissolved the monarchy in 1973 - a decision the democratic referendum of 1974 definitively confirmed, establishing the Third Hellenic Republic."
     }
   }
 ]

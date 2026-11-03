@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/therajputkingdoms.jpg">
             <h1 style="font-size:larger;">The Rajput Kingdoms</h1>
-            <p style="font-size: large;">The Rajput Kingdoms. The Rajput Kingdoms were a collection of fiercely independent, militaristic clans that dominated northern and central India from the 7th century onwards. Claiming prestigious descent from ancient warrior castes, these patrilineal clans built massive, incredibly complex hill forts across the arid landscape of Rajasthan. They are historically significant because they acted as the primary indigenous defense against early Islamic incursions into the subcontinent for several centuries. Their society highly prized personal honor, martial prowess, and a strict code of chivalry that deeply influenced northern Indian culture.</p>
-            <p style="font-size: large;">Because the Rajputs were extremely fractured and constantly feuding with one another over minor territorial disputes, they rarely formed united fronts. This intense internal disunity eventually became a fatal weakness. When heavily armored Turkic and Afghan armies began sweeping into northern India in the late 12th century, the isolated Rajput kings were defeated one by one. Despite losing their absolute political supremacy, they fiercely maintained their cultural identity and continued to rule local principalities as vassals well into the modern era.</p>
+            <p style="font-size: large;">The Rajput Kingdoms. From the seventh century onward, northern and western India came to be ruled by a constellation of warrior dynasties later known as the Rajputs - a word from the Sanskrit rajaputra, "son of a king." Scholars note that most Rajput clans actually rose from peasant or pastoral communities: families that won land and renown by the sword and then claimed royal descent. By the 12th century the great clans - the Gurjara-Pratiharas of Kannauj, the Chauhans of Ajmer, the Tomaras of Delhi, the Solankis of Gujarat, the Paramaras of Malwa, the Gahadavalas, the Chandelas of Khajuraho, and the Sisodias of Mewar - held the subcontinent's heartland as rival fortressed kingdoms, bound by a shared code of honor and horsemanship.</p>
+            <p style="font-size: large;">The Rajput kingdoms stood first against the invaders from the northwest. Rajput rulers repelled the early Arab invasions that followed the conquest of Sindh, holding them at the borders of Rajasthan. In 1025 Mahmud of Ghazni smashed through to sack the great temple of Somnath - its Solanki ruler Bhimdev fled his capital - though the fortresses of Gwalior and Kalinjar held out against him. Then in 1191 Prithviraj Chauhan led a coalition of Rajput kings that defeated Muhammad of Ghor at Taraori; a year later Ghor returned with an army of mounted archers and crushed the Rajput host on the same field. Prithviraj was captured and executed, and from his ruin rose the Delhi Sultanate.</p>
+            <p style="font-size: large;">Yet the Rajputs were never conquered in spirit. From their desert forts - Chittor, Ranthambor, Jalore - they fought the sultans of Delhi for centuries: Alauddin Khalji had to sack Chittor and Ranthambor to break them, and within a generation Rana Hammir defeated a Tughluq army at Singoli in 1336 and recovered Rajasthan. In the 15th century Rana Kumbha of Mewar beat the sultans of Malwa and Gujarat alike, and his grandson Rana Sanga made Mewar one of the greatest powers in northern India, defeating three sultanates before falling to Babur's Mughals at Khanwa - Babur himself called Sanga, with Krishnadevaraya, the greatest Hindu king of the age.</p>
+            <p style="font-size: large;">With the Mughals, most Rajput states moved from war to alliance: Akbar built his empire with Rajput support, sealing it with marriage alliances - seventeen between his family and Rajput houses - and his son Jahangir and grandson Shah Jahan were both born of Rajput mothers. Proud Mewar alone refused to give daughters to the Mughals, and Rana Pratap's long defiance of Akbar made him the enduring Rajput icon of independence. When Aurangzeb abandoned his ancestors' tolerance, Rajput revolts from the 1680s helped tear the Mughal empire apart. The Rajputs' legacy is written across Rajasthan in its great hill forts - and in an epic, the Prithviraj Raso, that gave a scattered warrior people a single heroic memory.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/India/The-Rajputs" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Gurjara-Pratihara_Empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

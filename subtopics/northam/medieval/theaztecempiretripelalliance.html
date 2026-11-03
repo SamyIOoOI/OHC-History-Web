@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theaztecempiretripelalliance.png">
             <h1 style="font-size:larger;">The Aztec Empire (Triple Alliance)</h1>
-            <p style="font-size: large;">The Aztec Empire (Triple Alliance). The Aztec Empire was a massive, highly organized Mesoamerican state formed in 1428 through a military alliance between Tenochtitlan, Texcoco, and Tlacopan in the Valley of Mexico. Built on an island in Lake Texcoco, their extraordinary capital city of Tenochtitlan grew into one of the largest and most densely populated metropolises in the ancient world. This empire matters immensely because it developed breathtaking engineering feats, including causeways, aqueducts, and artificial agricultural islands called chinampas.</p>
-            <p style="font-size: large;">The Aztecs commanded a formidable military machine that subjugated hundreds of surrounding city-states, extracting heavy tribute in gold, textiles, and food. Deeply religious, they conducted widespread human sacrifices to nourish their chief sun deity, Huitzilopochtli, and sustain the cosmic order. The empire reached its territorial zenith in the early 16th century under Moctezuma II. In 1521, a coalition of Spanish conquistadors led by Hernán Cortés and tens of thousands of indigenous allies who resented Aztec rule violently destroyed Tenochtitlan.</p>
+            <p style="font-size: large;">The Aztec Empire (Triple Alliance). The last and greatest of Mexico's indigenous empires was born in 1428, when three Nahua city-states - Mexico-Tenochtitlan, Tetzcoco, and Tlacopan - formed the Triple Alliance from the victorious factions of a civil war against the city of Azcapotzalco. The Mexica of Tenochtitlan, the last of the Nahua migrants to arrive in central Mexico around 1250 - finding all the good land taken, they served as mercenaries for Culhuacan, the old refuge of the Toltecs - had founded their island city in Lake Texcoco barely a century before; within generations it was dominant over its partners and master of most of central Mexico, with outlying provinces as far as the Guatemalan border. Its people called their alliance Excān Tlahtōlōyān - we know them as the Aztec Empire.</p>
+            <p style="font-size: large;">The empire ruled indirectly: conquered cities kept their rulers so long as they paid semi-annual tribute and supplied warriors, receiving protection, stability, and access to an integrated economic network in return - a hegemonic empire, not a territorial one. But it was an empire built on resentment: when Hernan Cortes landed in 1519, he found thousands of native allies eager to march against Tenochtitlan. On 13 August 1521 the city fell to the Spaniards and their indigenous allies, and its last ruler, Cuauhtemoc, became a legend of resistance. The empire the Spaniards found was sophisticated as well as mighty: Moctezuma issued laws separating nobles and commoners, and every neighborhood had a religiously supervised school - the telpochcalli for commoners, the prestigious calmecac for the nobility and future priests. The Triple Alliance had ruled the Valley of Mexico for 93 years; its fall opened all of Mesoamerica to Spain.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/summary/Key-People-of-the-Aztec-Empire" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Aztec_Civilization/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thealmohadcaliphate.png">
             <h1 style="font-size:larger;">The Almohad Caliphate</h1>
-            <p style="font-size: large;">The Almohads were a Berber dynasty that replaced the Almoravids in the 12th century. They ruled Morocco, North Africa, and much of Islamic Spain. They promoted a strict but reformist Islamic theology.</p>
-            <p style="font-size: large;">They won major victories against Christian kingdoms but were defeated at Las Navas de Tolosa in 1212. Their empire fragmented in the 13th century. The Marinids and Hafsids took over.</p>
+            <p style="font-size: large;">The Almohads were a Berber dynasty that replaced the Almoravids in the 12th century and went on to rule Morocco, North Africa, and much of Islamic Spain. The movement began in the Atlas Mountains around 1120, where the reformer Ibn Tumart preached a strict but reformist theology built on the absolute unity of God, and in 1121 he proclaimed himself the Mahdi, the promised renewer of Islam. They matter because their empire was the largest the medieval Maghreb ever saw, and its monuments still define the skyline of Morocco and southern Spain.</p>
+<p style="font-size: large;">Under Ibn Tumart's successor, Abd al-Mu'min, the Almohads brought down the Almoravid state, capturing Marrakesh in 1147 and making it their capital, then sweeping east across North Africa. His heirs took Seville in 1172 and extended their rule over the rest of Islamic Spain, building the great Kutubiyya mosque of Marrakesh and raising Seville's Giralda tower in a style of rich Andalusian ornament.</p>
+            <p style="font-size: large;">The empire reached its height under the caliph al-Mansur, who crushed a Castilian army at Alarcos in 1195. But in 1212, at the battle of Las Navas de Tolosa, a Christian coalition drawn from Leon, Castile, Navarre, and Aragon shattered the Almohad host, a defeat from which the caliphate never recovered. Ironically, the puritan movement Ibn Tumart founded became a golden age of thought: under Almohad patronage the philosopher Averroes wrote his commentaries on Aristotle and Sufi mysticism flourished.</p>
+<p style="font-size: large;">The empire fragmented in the 13th century as the dynasty retreated to North Africa: the Hafsids seized Tunis in 1236, the Abd al-Wadids took Tlemcen in 1239, and in 1269 Marrakesh itself fell to the Marinids. The Almohads vanished, but their conception of a united Maghreb, and their towers, gates, and mosques, endured.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/biography/Abd-al-Mumin" target="_blank">Source #1</a>
             <a href="https://www.metmuseum.org/essays/the-art-of-the-almoravid-and-almohad-periods-ca-1062-1269" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

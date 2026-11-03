@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thesultanateofzanzibar.png">
             <h1 style="font-size:larger;">The Sultanate of Zanzibar</h1>
-            <p style="font-size: large;">The Sultanate of Zanzibar. The Sultanate of Zanzibar was an influential maritime empire established in 1832 when Sultan Said bin Sultan of Oman permanently moved his royal capital from Muscat to the island of Zanzibar off the East African coast. Controlling a wide commercial empire along the Swahili Coast, the sultanate grew fabulously wealthy by dominating global trade in cloves, ivory, and enslaved people. This state matters because it transformed Zanzibar into the economic and cultural capital of East Africa, spreading Swahili language and Islamic culture far into the African interior.</p>
-            <p style="font-size: large;">The sultanate's massive clove plantations relied heavily on enslaved labor, creating a deeply stratified multi-ethnic society composed of Arab elites, Swahili merchants, and African laborers. Under intense diplomatic and naval pressure from Great Britain, the sultans were eventually forced to abolish the Indian Ocean slave trade in the late 19th century. As European powers carved up the adjacent mainland, Zanzibar's territorial holdings were severely reduced, culminating in the kingdom becoming a British protectorate in 1890.</p>
+            <p style="font-size: large;">The Sultanate of Zanzibar was an influential maritime empire established in 1832, when Sultan Said bin Sultan of Oman permanently moved his royal capital from Muscat to the island of Zanzibar off the East African coast. It matters because this small island became the beating commercial heart of the western Indian Ocean, the gateway through which the wealth, and the misery, of East Africa flowed to the world.</p>
+<p style="font-size: large;">Controlling a wide commercial empire along the Swahili Coast, the sultanate grew fabulously wealthy by dominating global trade in cloves, ivory, and enslaved people: Zanzibar's plantations made it the world's greatest clove producer, while its great slave market stood, notoriously, on what is now the site of an Anglican cathedral. The trade swelled on the demand for plantation labor in the Americas, which from the late 18th century made the island the pivot of the slave and ivory routes deep into Africa. Caravans financed in Stone Town pushed a thousand miles into the interior, spreading Swahili language and Islam with them.</p>
+            <p style="font-size: large;">In 1861 Zanzibar was separated from Oman as an independent sultanate, but its golden age coincided with the European scramble for Africa: under Sultan Barghash, Britain and Germany divided nearly all its mainland domains between them. In 1890 Britain proclaimed a protectorate over the island itself, curtailing the slave trade and reducing the sultans to clients.</p>
+<p style="font-size: large;">The sultanate's most famous moment came in 1896, when Khalid ibn Barghash seized the throne without British approval and refused an ultimatum to step down: the Royal Navy bombarded his palace, and the Anglo Zanzibar War was over in under an hour, the shortest war in recorded history. The protectorate lasted until 1963, and a revolution soon after joined Zanzibar to Tanganyika to form Tanzania, though Stone Town, a World Heritage site, still breathes its sultanate past.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Sultanate-of-Zanzibar" target="_blank">Source #1</a>
             <a href="https://www.pbs.org/wonders/Episodes/Epi2/2_retel1.htm" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

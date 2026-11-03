@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")==="off")d.classList.add("no-chars")}catch(e){}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")==="off")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){}})();</script>
     <title>The History Web</title>
     <link rel='stylesheet' href='carthage.css'>
     <link rel="stylesheet" href="theme.css">
@@ -15,6 +15,46 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <script defer src="settings.js"></script>
+    <script src="nixie/nixie.js"></script>
+<style>
+#nixie-wrap {
+  display: flex; justify-content: center; align-items: flex-start; gap: 26px; flex-wrap: wrap;
+  margin: 0.9em auto 0 auto; position: relative; z-index: 2;
+  width: fit-content; max-width: calc(100% - 24px); box-sizing: border-box;
+}
+.nixie-cell {
+  text-align: center; padding: 26px 18px 24px; border: none; border-radius: 0;
+  background-color: #000;
+  background-image: url('nixie/frieze-top.png'), url('nixie/frieze-bottom.png');
+  background-repeat: repeat-x, repeat-x;
+  background-position: top center, bottom center;
+  background-size: auto 15px, auto 15px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+.ndisp { margin: 0 auto; background: #000; padding: 4px; box-sizing: content-box; }
+.ndisp.nclock { display: flex; align-items: center; width: fit-content; }
+.ndigits { display: block; }
+.nplus {
+  font-family: 'Segoe UI', sans-serif; font-weight: 300; font-size: 60px; line-height: 1;
+  color: #ff9a2e; margin-left: 6px;
+  text-shadow: #ff6a00 0 0 12px, #e74702 0 0 4px;
+}
+html.light .nplus { color: #ff9a2e; text-shadow: #ff6a00 0 0 12px, #e74702 0 0 4px; font-weight: 300; }
+.nixie-label { display: block; margin-top: 12px; font-size: 19px; letter-spacing: 0.03em; color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0.55), 0 0 20px rgba(255,90,10,0.30), 0 1px 2px rgba(0,0,0,0.6); }
+html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0.55), 0 0 20px rgba(255,90,10,0.30), 0 1px 2px rgba(0,0,0,0.6); }
+@media (max-width: 600px) {
+  #nixie-wrap { gap: 16px; }
+  .visits-cell { order: -1; }
+  .nixie-cell { padding: 22px 14px 20px; background-size: auto 13px, auto 13px; }
+  .nplus { font-size: 45px; }
+  .nixie-label { font-size: 16px; margin-top: 10px; }
+  .fakeheader { font-size: 1.2rem !important; }
+  .answer1, .answer2, .answer3 { font-size: 1.02rem !important; }
+}
+@media (max-width: 400px) {
+  .nplus { font-size: 30px; }
+}
+</style>
 </head>
 <body>
     <div class="holdonthere" id="holdonthere2">
@@ -53,6 +93,13 @@
 </div>
     <div class="starter">
             <img src="History Web Banner V2.png" class="banner">
+            <!-- Nixie tube displays: "Virtual nixie tube display" DHTML component (c) 2007-08 Cestmir Hybl,
+     http://cestmir.freeside.sk/projects/dhtml-nixie-display - free for non-commercial use,
+     copyright and project URL preserved per license. Glyph photos: real Philips ZM1080 tubes (d1 skin, user-selected). -->
+            <div id="nixie-wrap">
+  <div class="nixie-cell"><div id="nd-topics" class="ndisp" data-count="250"></div><span class="nixie-label">Topics to explore</span></div>
+  <div class="nixie-cell visits-cell"><div class="ndisp nclock"><div id="nd-visits" class="ndigits" data-count="11900"></div><span class="nplus">+</span></div><span class="nixie-label">Visits in the last 30 days</span></div>
+</div>
             
             <div class="startertext" style="text-align: left;">
                 <div class="glowhover">
@@ -112,6 +159,14 @@
             </g></a>
         </g>
         </svg>
+        <nav class="maplist" aria-label="Continents">
+            <a href="africa.html">Africa</a>
+            <a href="asia.html">Asia</a>
+            <a href="europe.html">Europe</a>
+            <a href="northamerica.html">North America</a>
+            <a href="southamerica.html">South America</a>
+            <a href="oceania.html">Oceania</a>
+        </nav>
     </div>
       <footer>
         <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
@@ -139,9 +194,14 @@
         reveal.classList.remove('pikapoo');
     }
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     maplink.addEventListener('click', mapchecker)
@@ -204,24 +264,96 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
+</script>
+<script>
+(function () {
+  var displays = [
+    { el: document.getElementById('nd-topics'), count: 3, target: 250 },
+    { el: document.getElementById('nd-visits'), count: 5, target: 11900, gapAfter: 1 }
+  ];
+  if (!displays[0].el || typeof NixieDisplay === 'undefined') return;
+  var currentSkin = null;
+  function skinFor() {
+    if (window.innerWidth <= 400) return { img: 'nixie/zm1080_d1_09bdm_30x50_8b.png', w: 30, h: 50 };
+    if (window.innerWidth <= 600) return { img: 'nixie/zm1080_d1_09bdm_46x75_8b.png', w: 46, h: 75 };
+    return { img: 'nixie/zm1080_d1_09bdm_62x100_8b.png', w: 62, h: 100 };
+  }
+  function build() {
+    var sk = skinFor();
+    if (sk.img === currentSkin) return;
+    currentSkin = sk.img;
+    displays.forEach(function (d) {
+      d.el.innerHTML = '';
+      var nd = new NixieDisplay();
+      nd.id = d.el.id;
+      nd.charCount = d.count;
+      nd.urlCharsetImage = sk.img;
+      nd.charWidth = sk.w;
+      nd.charHeight = sk.h;
+      nd.charGapWidth = 6;
+      nd.align = 'right';
+      if (typeof d.gapAfter === 'number') nd.extraGapsWidths[d.gapAfter] = 10;
+      nd.init();
+      d.nd = nd;
+    });
+  }
+  function pad(n, len) { var t = String(n); while (t.length < len) t = ' ' + t; return t; }
+  function showFinal() {
+    displays.forEach(function (d) { d.nd.setText(pad(d.target, d.count)); });
+  }
+  build();
+  showFinal();
+  var rsT;
+  window.addEventListener('resize', function () {
+    clearTimeout(rsT);
+    rsT = setTimeout(function () { build(); showFinal(); }, 200);
+  });
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        cio.unobserve(en.target);
+        var d = displays.filter(function (x) { return x.el === en.target; })[0];
+        var t0 = null;
+        function step(ts) {
+          if (!t0) t0 = ts;
+          var p = Math.min(1, (ts - t0) / 900), e = 1 - Math.pow(1 - p, 3);
+          d.nd.setText(pad(Math.round(d.target * e), d.count));
+          if (p < 1) requestAnimationFrame(step); else d.nd.setText(pad(d.target, d.count));
+        }
+        requestAnimationFrame(step);
+      });
+    }, { threshold: .4 });
+    displays.forEach(function (d) { cio.observe(d.el); });
+  }
+})();
 </script>
 </body>
 </html>

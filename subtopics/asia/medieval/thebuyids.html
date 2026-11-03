@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thebuyids.jpg">
             <h1 style="font-size:larger;">The Buyids</h1>
-            <p style="font-size: large;">The Buyids. The Buyid dynasty was a powerful Shia Iranian confederation that essentially hijacked the central authority of the Sunni Abbasid Caliphate between 934 CE and 1062 CE. Originating from the rugged mountains of Daylam near the Caspian Sea, they conquered massive swathes of Persia and Iraq before capturing Baghdad itself. They matter significantly because their rule initiated the Iranian Intermezzo, a crucial period where native Persian culture and political systems forcefully reasserted themselves after centuries of direct Arab domination. The Buyids actively revived ancient Persian titles like Shahanshah while simultaneously expanding Shia intellectual and theological centers.</p>
-            <p style="font-size: large;">Instead of completely destroying the Abbasid caliphs, the Buyids chose to keep them as convenient religious figureheads, stripping them of all actual political and military power. This created a highly complex system of shared governance where Buyid military commanders ruled the provinces while the caliph handled spiritual matters. Their confederation eventually weakened due to constant internal infighting among various royal brothers and nephews. They were ultimately swept away in the mid 11th century by the arrival of the Seljuk Turks, who eagerly restored Sunni dominance over Baghdad.</p>
+            <p style="font-size: large;">The Buyids. The Buyid dynasty (934-1062) marks the moment the Abbasid caliphs lost control of their own empire. A family of Daylamite soldiers from the mountains south of the Caspian Sea, the three sons of Buya - Imad al-Dawla, Rukn al-Dawla, and Mu'izz al-Dawla - carved out principalities across western Iran in the 930s and 940s, and in 945 the youngest, Ahmad, marched into Baghdad itself. The Abbasid caliph stayed on his throne, but as a figurehead; real power now belonged to the Buyid amirs.</p>
+            <p style="font-size: large;">The arrangement defined Middle Eastern politics for a century. The Buyids were Shia - first Zaydi, then Twelver - ruling over a majority-Sunni population and keeping the Sunni Abbasid caliph as a legitimizing ornament: he invested them with titles, they kept him under watch. Remarkably, they were tolerant rulers on both sides, supporting the caliph while patronizing Shia shrines and festivals. Historians call their era the 'Iranian Intermezzo' - the centuries between the Arab conquest and the Turkish Seljuk takeover when Iranian dynasties ruled Iran again.</p>
+            <p style="font-size: large;">And they ruled as self-conscious Persians. The Buyids revived Sasanian royal traditions: some took the ancient title Shahanshah, 'King of Kings', and they carved inscriptions into the ruins of Persepolis, which they venerated as the work of the mythical king Jamshid. Under Adud al-Dawla (r. 949-983) the dynasty reached its height - from the borders of Syria to Khorasan - and he is remembered for building projects like the Band-e Amir dam and for a court that patronized poets, scientists, and historians. Arabic remained the language of administration, but New Persian literature flourished under Buyid protection.</p>
+            <p style="font-size: large;">The dynasty never solved its central weakness: it was a family confederation, and after Adud al-Dawla's death the brothers and cousins fought over Fars, Ray, and Baghdad until the pieces were picked off one by one. The Ghaznavids and Kakuyids took the east; in 1055 the Seljuk sultan Tughril entered Baghdad, ending Buyid rule in Iraq; the last line in Fars held on until 1062. Their century, though, left a template - a Persian-Islamic synthesis of kingship, patronage, and tolerance - that the Seljuks and every later Iranian dynasty would build on.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Buyid-dynasty" target="_blank">Source #1</a>
             <a href="https://www.iranicaonline.org/articles/buyids/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

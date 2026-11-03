@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thekhmerempire.jpg">
             <h1 style="font-size:larger;">The Khmer Empire</h1>
-            <p style="font-size: large;">The Khmer Empire. The Khmer Empire was a magnificent Hindu and Buddhist state that dominated mainland Southeast Asia from the 9th to the 15th centuries CE. Centered in modern Cambodia, it grew wildly wealthy by controlling the massive agricultural potential of the Mekong River basin. This civilization is famous worldwide for constructing Angkor Wat, the largest religious monument ever built, which perfectly showcases their incredible architectural and artistic mastery. They also engineered vastly complex water management systems, using enormous reservoirs to guarantee multiple rice harvests a year.</p>
-            <p style="font-size: large;">The empire required constant, massive labor forces to maintain their temples and irrigation networks, which eventually strained the state to its breaking point. During the 14th century, a combination of severe, prolonged droughts and shifting regional trade routes heavily damaged their economy. The rising power of the neighboring Ayutthaya Kingdom added unbearable military pressure. The Khmer elite eventually abandoned the sprawling city of Angkor in the 1430s, relocating their capital further south to the site of modern Phnom Penh.</p>
+            <p style="font-size: large;">The Khmer Empire. The Khmer Empire (802-1431) was the greatest power of mainland Southeast Asia - a civilization of kings and hydraulic cities centered on what is now northern Cambodia, which at its height ruled or vassalized most of the mainland as far north as southern China. Its people called their land Kambuja. The empire is conventionally dated from 802, when the prince Jayavarman II declared himself chakravartin - universal ruler - on the sacred mountain of Phnom Kulen, founding the line of god-kings that would build Angkor.</p>
+            <p style="font-size: large;">The early kings laid Angkor's foundations: Indravarman I built at Hariharalaya, and his son Yasovarman I founded Yasodharapura, the first city of the Angkor area, raising its temple on the hill of Phnom Bakheng and digging the East Baray, a reservoir over seven kilometers long. This was the empire's secret: mastery of water. The barays and canals that stored the monsoon and fed the rice fields made Angkor's prosperity - and, as satellite imaging has revealed, made its capital region the most extensive pre-industrial urban complex in the world, with a population of some 700,000 to 900,000 at its 13th-century peak, one of the most populous cities of the medieval world.</p>
+            <p style="font-size: large;">The twelfth century brought the empire's most famous monument: under Suryavarman II (r. 1113-1150), who united the empire internally, Angkor Wat rose over thirty-seven years as a temple-mountain dedicated to Vishnu - still the largest religious monument of the pre-modern world. But the century ended in near-disaster: in 1177 a Cham fleet sailed up the Tonle Sap lake, sacked the capital, and killed the king. Salvation came with Jayavarman VII (r. 1181-1218), the last great king of Angkor, who crushed the Chams, then rebuilt his capital as Angkor Thom with the many-faced towers of the Bayon at its center. A follower of Mahayana Buddhism, he filled the empire with temples - Ta Prohm for his mother, Preah Khan for his father - and with roads, rest-houses, and 102 hospitals.</p>
+            <p style="font-size: large;">After Jayavarman VII the great building slowed; Theravada Buddhism, arriving from Sri Lanka in the 13th century, gradually displaced the old court religions. The empire's end is still debated: researchers have found that violent swings between monsoon flood and drought damaged the hydraulic system on which Angkor depended, and people drifted away from the great cities. In 1431 Angkor fell to the Siamese kingdom of Ayutthaya, and the court withdrew south. But the stones remain: Angkor Wat, the Bayon's serene faces, and a hundred temples still testify to the power, wealth, and artistry of Kambuja.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Khmer-Empire" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Khmer_Empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

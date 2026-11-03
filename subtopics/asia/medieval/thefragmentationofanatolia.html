@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thefragmentationofanatolia.jpg">
             <h1 style="font-size:larger;">The Fragmentation of Anatolia</h1>
-            <p style="font-size: large;">The Fragmentation of Anatolia. The Fragmentation of Anatolia refers to the chaotic political period following the collapse of the Seljuk Sultanate of Rum in the late 13th century CE. As Mongol authority in the region also began to wane, Anatolia shattered into a mosaic of small, highly competitive Turkic principalities known as beyliks. This era matters immensely because it served as an intense incubator for a new style of aggressive, frontier Islamic culture. These highly militarized border states constantly raided remaining Byzantine territories, drawing in nomadic warriors eager for both religious conflict and plunder.</p>
-            <p style="font-size: large;">While many of these principalities grew wealthy through piracy and coastal trade, they constantly battled each other for regional supremacy. The Karamanids initially appeared to be the strongest of these factions, claiming the direct legacy of the old Seljuk sultans. However, a small and relatively obscure beylik located in the extreme northwest slowly began to outmaneuver its rivals. This minor state, founded by a leader named Osman, eventually conquered its neighbors and grew into the colossal Ottoman Empire, permanently uniting Anatolia under a single banner once again.</p>
+            <p style="font-size: large;">The Fragmentation of Anatolia. After the Seljuk victory at Manzikert in 1071 threw Anatolia open, the peninsula filled with Turkish principalities - beyliks, territories ruled by beys, the Turkish equivalent of dukes. The first wave were frontier lordships, the uç beys or 'marcher lords' the Seljuk sultans of Rum planted on the Byzantine border to wage holy war and hold the marches: Danishmends, Saltukids, Artuqids, and others, nominally loyal to Konya but kings in all but name on their own ground.</p>
+            <p style="font-size: large;">The second and greater wave came when the Seljuk center collapsed. The Mongol victory at Köse Dağ in 1243 reduced the Sultanate of Rum to an Ilkhanid dependency, and as Mongol power in Anatolia faded after 1300, the beys declared themselves sovereign outright. By the early 14th century the map of Anatolia was a patchwork of some two dozen principalities: the Karamanids and Germiyanids in the center, the sea-roving beyliks of the Aegean coast - Karasi, Saruhan, Aydin, Mentese, Teke - whose ghazi warriors raided the Christian shipping lanes, the Candar dynasty on the Black Sea, and in the far northwest, pressed against the Byzantine frontier around the town of Sogut, one small beylik among many: the Osmanoglu, the house of Osman.</p>
+            <p style="font-size: large;">The beyliks fought everyone - the retreating Byzantines, the Genoese trading colonies, the crusading Knights, and above all each other. Yet this fractured frontier world drew constant reinforcement: ghazi warriors from Persia and Turkestan, and refugees fleeing the Mongol invasions, streamed into Anatolia, and the ghazi ethos - holy war on the frontier, rewarded with land and glory - gave the beyliks their restless energy.</p>
+            <p style="font-size: large;">The consolidation was the Ottomans' story. Osman's heirs expanded at Byzantine expense along the Sea of Marmara, absorbed the neighboring beylik of Karasi, and crossed into Europe in 1354; by the late 14th century they had bought, married, or conquered most of their rivals. Timur's crushing of the Ottomans at Ankara in 1402 briefly restored the old beyliks, but within a generation the house of Osman had swallowed them again - and the fragmented Anatolia of the beys became the heartland of the Ottoman Empire.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Anatolia" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Courses/Benedictine_University/World_History_Volume_1%3A_to_1500/03%3A_An_Age_of_Religion_5001200_CE/3.04%3A_The_Post-Roman_West_and_the_Crusading_Movement/3.4.03%3A_The_Seljuk_Migration_and_the_Call_from_the_East" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

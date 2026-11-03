@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theharshaempire.jpg">
             <h1 style="font-size:larger;">The Harsha Empire</h1>
-            <p style="font-size: large;">The Harsha Empire. The Harsha Empire was a massive, short lived realm that temporarily reunited northern India in the early 7th century CE. Following the chaotic collapse of the Guptas, a young prince named Harsha Vardhana ascended the throne of Thanesar and spent decades aggressively conquering neighboring states. This empire is historically important because it briefly restored political stability and heavily patronized both Hinduism and Buddhism. We know an incredible amount about this period thanks to the detailed travelogues of Xuanzang, a famous Chinese Buddhist monk who spent years visiting Harsha's royal court.</p>
-            <p style="font-size: large;">Harsha ruled mostly through personal charisma and constant military movement rather than building a rigid bureaucracy. Because the state relied entirely on his singular leadership, it completely lacked the institutional strength to survive without him. When Harsha died in 647 CE without leaving a clear heir, his massive empire dissolved almost overnight. The region immediately reverted back to a fractured landscape of warring regional states, marking the beginning of the long Rajput era.</p>
+            <p style="font-size: large;">The Harsha Empire. Harshavardhana (r. 606-647) was the last great emperor of ancient northern India - a philosopher-king whose court we can see with unusual clarity, because both a Chinese pilgrim and a Sanskrit poet wrote about him from life. When the Gupta Empire fell in the mid-6th century, northern India shattered into small kingdoms; from the minor kingdom of Thanesar, Harsha - who had already fought the Alchon Huns - was crowned Maharajadhiraja, 'king of great kings', at an assembly of the northern states in April 606, and welded the region from Punjab to central India into one empire, ruled from his capital at Kannauj.</p>
+            <p style="font-size: large;">Harsha's empire was Indian kingship at its most attractive. The Chinese Buddhist pilgrim Xuanzang, who visited his court and knew him as Shiladitya, praised his justice and generosity: a king who banned the slaughter of animals for food, built monasteries and thousands of stupas along the Ganges, maintained hospices for travelers and the poor on the highways, and held a great charitable assembly every five years where he gave away his accumulated wealth. The poet Banabhatta's Harshacharita records the reign from inside - the capital's defensive wall, moat, and palace with its two-storied white mansion. Harsha himself is widely believed to have written three Sanskrit plays that survive.</p>
+            <p style="font-size: large;">His reach had one hard limit: the Narmada River. When Harsha marched south to conquer the Deccan, the Chalukya emperor Pulakeshin II defeated him at the Battle of Narmada, and the river stayed the empire's southern boundary for the rest of his reign. His religious policy was the opposite of dogmatic: personally drawn to Buddhism while born into the Shaiva tradition, he patronized both, presiding over festivals where he and his vassal kings performed daily rituals before a golden statue of the Buddha.</p>
+            <p style="font-size: large;">Harsha died in 647, and the empire he had assembled outlived him only as a name: Kannauj passed to lesser kings, and northern India fragmented again. His forty-one years were a brief golden interlude between the Guptas and the Rajput age, but between Xuanzang's travelogue and Bana's biography, we know it better than almost any reign in ancient India.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/biography/Harsha" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Harsha/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

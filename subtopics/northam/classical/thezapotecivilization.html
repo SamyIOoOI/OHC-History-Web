@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thezapotecivilization.png">
             <h1 style="font-size:larger;">The Zapotec Civilization</h1>
-            <p style="font-size: large;">The Zapotec Civilization. The Zapotec civilization was an advanced Mesoamerican culture centered in the Valley of Oaxaca in southern Mexico, flourishing from roughly 500 BCE to 900 CE. Operating out of their magnificent hilltop capital at Monte Albán, they built one of the earliest urbanized state societies in the region. This civilization matters immensely because they developed one of the oldest writing systems and calendar systems in Mesoamerica, carving detailed hieroglyphs into stone monuments to record royal genealogies and military victories.</p>
-            <p style="font-size: large;">Monte Albán sat on a flattened mountain ridge, featuring grand plazas, astronomical observatories, step-pyramids, and elaborate underground tombs. The Zapotecs controlled regional trade and agricultural terraces across Oaxaca, defending their territory against surrounding rival tribes. As central authority at Monte Albán began to weaken around 700 CE, the population gradually dispersed into smaller, fragmented city-states like Mitla, leaving the region open to eventual infiltration by the neighboring Mixtec culture.</p>
+            <p style="font-size: large;">The Zapotec Civilization. The Zapotecs - who called themselves Be'ena'a, 'the People who came from the clouds' - built one of the earliest and longest-lived civilizations of Mesoamerica, flourishing in the Valley of Oaxaca from about 700 BC until the Spanish conquest in 1521: more than two thousand years, and archaeological evidence traces their culture back at least 2,500 years. Their capital was Monte Alban, founded around 700 BC on a flattened mountaintop above the valley: one of the first major cities in Mesoamerica, with monumental buildings, ball courts, tombs, and grave goods including finely worked gold jewelry - the whole great plaza carved from the flattened top of a mountain rising over the valley floor. From it, a Zapotec state dominated the territory of today's Oaxaca for a thousand years, until the capital's role passed to Mitla - whose Palace of Columns still stands - and then to Zaachila, which remained the center until the conquest.</p>
+            <p style="font-size: large;">The Zapotecs were among the pioneers of Mesoamerican civilization's defining arts: their early monuments carry some of the region's first hieroglyphic writing and calendrical dates - among the oldest texts in the Americas - and their influence reached far beyond Oaxaca in trade, art, and ideas. Remarkably, they survived as a people through every upheaval - the fall of Monte Alban around 700 AD, the rise of the Mixtecs, even the Spanish conquest that ended their state's independence in 1521. The modern Zapotec peoples of Oaxaca - still speaking their ancient language and preserving their distinct identity in the same valleys their ancestors ruled from Monte Alban - are their direct descendants, a remarkable continuity that few civilizations anywhere in the world can match.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Zapotec" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Zapotec_Civilization/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

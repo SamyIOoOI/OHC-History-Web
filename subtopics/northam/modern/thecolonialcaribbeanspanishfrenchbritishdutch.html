@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thecolonialcaribbeanspanishfrenchbritishdutch.png">
             <h1 style="font-size:larger;">The Colonial Caribbean (Spanish, French, British, Dutch)</h1>
-            <p style="font-size: large;">The colonial Caribbean was divided among Spanish, French, British, and Dutch empires. These islands produced sugar, coffee, and tobacco using enslaved African labor. They were among the most profitable colonies in the world.</p>
-            <p style="font-size: large;">The Haitian Revolution ended French rule in Saint-Domingue in 1804. Slavery was abolished across most of the Caribbean in the 19th century. Many islands later became independent nations or remained overseas territories.</p>
+            <p style="font-size: large;">The Colonial Caribbean. The colonial Caribbean - the Spanish Main and the West Indian islands - was the first American world conquered by Europe. Spain settled Puerto Rico and then Cuba in 1511, introduced cattle, horses, and mules, and created plantations growing sugar cane, just as the Portuguese had done on Atlantic islands like Madeira; native peoples were ruthlessly robbed, butchered, or enslaved, and perhaps two million African slaves were shipped to the Spanish Main in the 16th and 17th centuries. The riches were guarded jealously - Havana, from 1610, boasted the largest shipyard in the Americas - but the other empires muscled in: the English planted St. Kitts in 1623, Barbados in 1624, and Nevis, Antigua, and Montserrat by 1632, the French took Martinique and Guadeloupe in 1635, and from 1599 Dutch ships loaded salt at Araya.</p>
+            <p style="font-size: large;">The seventeenth century became the great age of the buccaneers: when the English seized Jamaica with its wonderful natural harbours in 1655, the entire Spanish Main lay open to attack, and privateers sponsored by the colonial authorities struck its ports - Henry Morgan sacked Panama in 1671 and ransomed Portobelo in 1680, pirates raided Veracruz in 1683 and made off with the loot meant for a treasure fleet, and a French naval and pirate force captured Cartagena in 1697, the last major buccaneer raid. The islands produced sugar, tobacco, coffee, and cotton through the horrific business of slavery, and they matter because their plantations bound Europe, Africa, and the Americas into a single Atlantic economy. French rule in Saint-Domingue ended in 1804 with the only successful slave revolt in history, and through the 1820s the Latin American nations declared independence from Spain, with rebel forces besieging and taking even Cartagena in 1815 and 1821.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/West-Indies-island-group-Atlantic-Ocean/The-Pre-Columbian-period" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Spanish%5FMain/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

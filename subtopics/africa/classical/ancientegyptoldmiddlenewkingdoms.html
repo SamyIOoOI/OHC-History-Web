@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -40,6 +40,10 @@
             <h1 style="font-size:larger;">Ancient Egypt (Old, Middle, New Kingdoms)</h1>
             <p style="font-size: large;">Ancient Egypt (Old, Middle, New Kingdoms). Ancient Egypt was one of the most enduring and iconic civilizations in human history, flourishing along the fertile banks of the Nile River from around 3100 BCE to 1070 BCE. Divided into three major golden ages, this monumental civilization matters deeply for its groundbreaking developments in architecture, mathematics, medicine, and writing systems like hieroglyphics. They established centralized rule under divine pharaohs and created a rich religious system centered on the afterlife, leaving behind timeless monuments like the Pyramids of Giza.</p>
             <p style="font-size: large;">Each of the three distinct eras expanded Egyptian power and artistic mastery, with the New Kingdom reaching an imperial peak that stretched deep into the Levant and Nubia. However, centuries of massive military campaigns, civil fragmentation, and severe economic strain eventually drained the state's central authority. Outside powers like the Libyans and Sea Peoples began launching constant invasions during the Bronze Age collapse. By the end of the New Kingdom, Egypt fractured into competing local dynasties, forever losing its absolute hegemony over the region.</p>
+<p style="font-size: large;">Economic life rested on the Nile and on grain. Farmers grew wheat and barley on the floodplain, paid taxes in kind to state and temple granaries, and owed labor on canals and monuments in the flood season when the fields lay under water. Around this agricultural core worked craftsmen, potters, weavers, carpenters, metalworkers, organized in palace and temple workshops, while expeditions brought gold from Nubia, copper and turquoise from Sinai, cedar from Lebanon, and incense from Punt, making Egypt rich enough to trade grain and linen across the eastern Mediterranean.</p>
+<p style="font-size: large;">Social life was layered but not frozen. Below the king came the officials, priests, and scribes; literacy was the great ladder, and a capable boy from a modest family could rise through the scribal schools. Most Egyptians were peasant families working small plots, yet their world was not joyless: beer and bread at every meal, festivals at the local temple, board games like senet, music and wrestling, and legal rights for women, who could own property, bring cases to court, and inherit, that were unusual in the ancient world. We know their daily lives unusually well from the workmen's village of Deir el-Medina, whose records include laundry lists, love songs, lawsuits, and what may be history's first recorded sit-down strike.</p>
+<p style="font-size: large;">Religion gave this society its framework of meaning. The king was responsible for ma'at, the order of the world, and the great temples, above all Amun's at Karnak, stood at the center of the country's economic as well as religious life; their festivals, like the Opet procession from Karnak to Luxor, were the public holidays of the year. Belief in the afterlife shaped Egyptian civilization from the pyramids to the painted tombs, and over time its hope widened from a royal privilege to a promise for ordinary people, a change visible in the spread of funerary texts and Osiris worship in the Middle and New Kingdoms.</p>
+<p style="font-size: large;">Cultural life was anchored in writing and its institutions. Hieroglyphs carved the record in stone while scribes wrote the same language in cursive on papyrus; scribal schools trained the administrators who ran everything. Egyptians produced wisdom instructions, tales such as Sinuhe, hymns and love poetry, and practical science in the service of real problems: a 365-day calendar tied to the flood and the star Sirius, mathematics for surveying and building, and medicine recorded in case-by-case papyri whose clinical observations still impress modern readers. Measured across its three kingdoms, Egypt's deepest achievement was this complete, durable pattern of economic, social, religious, and cultural life, one that neighboring peoples borrowed from and later ages kept rediscovering.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/list-of-dynasties-of-ancient-Egypt" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/collection/235/kingdoms-and-periods-of-ancient-egypt/" target="_blank">Source #2</a>
@@ -73,7 +77,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +87,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +157,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

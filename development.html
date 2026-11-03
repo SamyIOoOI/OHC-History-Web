@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History Web - Developments</title>
+<meta name="description" content="History Web development log.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<style>
+html{scrollbar-width:none;-ms-overflow-style:none}
+::-webkit-scrollbar{display:none}
+:root{
+ --bg:#fbf3e0; --ink:#3a1208; --title:#4a1e0a;
+ --accent:#a02a08; --accent2:#b3400f; --card:#f6ecd4; --border:#b8975a;
+ --shadow:#e3cfa4; --muted:#8a6a45; --scanline:rgba(58,18,8,.025);
+}
+html[data-theme="dark"]{
+ --bg:#160603; --ink:#fbeecd; --title:#ffcf92;
+ --accent:#ff9440; --accent2:#f0a848; --card:#2a1006; --border:#a86028;
+ --shadow:#000000; --muted:#e0bb80; --scanline:rgba(0,0,0,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.65;transition:background .3s,color .3s;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;
+ background:repeating-linear-gradient(0deg,var(--scanline) 0 2px,transparent 2px 4px)}
+.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:0 28px}
+
+header{padding:64px 0 8px}
+h1{font-family:'MedievalSharp',Georgia,serif;font-weight:400;font-size:46px;color:var(--title);line-height:1.08}
+@media(min-width:700px){h1{font-size:60px}}
+.backline{font-size:14px;margin-top:14px;color:var(--muted)}
+.backline a{color:var(--accent);text-decoration:none}
+
+.update{padding:34px 0 30px;border-top:1px solid var(--border);margin-top:34px}
+.update h2{font-family:'MedievalSharp',Georgia,serif;font-weight:400;font-size:27px;color:var(--title);margin:4px 0 14px}
+ul{list-style:none}
+li{margin:0 0 12px;max-width:60ch}
+li::before{content:"Added ";font-weight:700;color:var(--accent2)}
+li.plain::before{content:"- ";font-weight:400}
+li.p::before{content:"Planned ";font-weight:700;color:var(--muted)}
+ul.sub{margin:8px 0 6px 20px}
+ul.sub li{margin:0 0 6px;font-size:15px}
+ul.sub li::before{content:"- ";font-weight:400;color:var(--muted)}
+h2 .tag{font-family:Georgia,'Times New Roman',serif;font-size:13px;color:var(--muted);letter-spacing:.06em;margin-left:10px;vertical-align:middle}
+li a{color:var(--accent);text-decoration:none}
+li a:hover{text-decoration:underline}
+
+footer{margin:40px 0 30px;padding-top:18px;border-top:1px solid var(--border);font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--accent);text-decoration:none}
+
+@media(max-width:560px){.update{padding:26px 0 24px}}
+
+#themeToggle{position:fixed;top:16px;left:18px;background:var(--card);border:1px solid var(--border);color:var(--muted);
+ font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;padding:6px 11px;cursor:pointer;z-index:50}
+#themeToggle:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:820px){#themeToggle{position:absolute}}
+</style>
+</head>
+<body>
+
+<button id="themeToggle" type="button">DARK</button>
+
+<div class="wrap">
+
+<header>
+<h1>Developments</h1>
+<p class="backline"><a href="index.html">&larr; Back to The History Web</a> &middot; <a href="https://github.com/SamyIOoOI/OHC-History-Web">Source on GitHub</a></p>
+</header>
+
+<div class="update">
+<div>
+<h2>Early Beta<span class="tag">September 1-2, 2026</span></h2>
+<ul>
+<li>the first working version of the site: main layout, custom cursor and FAQ section</li>
+<li>the interactive continent map</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Beta<span class="tag">September 12-14, 2026</span></h2>
+<ul>
+<li>the visual identity: grain texture, floating ancient letters and the CRT effect</li>
+<li>background sound, the title font and the site icon</li>
+<li>the top navigation bar with logo, warrior wheel and credits</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Beta<span class="tag">September 14-17, 2026</span></h2>
+<ul>
+<li>era and continent navigation across the whole site</li>
+<li>portal pages for every continent and period</li>
+<li>the volume toggle on the logo and the animated loading screen</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Beta<span class="tag">September 17-18, 2026</span></h2>
+<ul>
+<li>era portals and subtopic pages for all six continents</li>
+<li>the subtopic page template and its images</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Beta<span class="tag">September 19, 2026</span></h2>
+<ul>
+<li>all topic texts published: a generator fills every topic page from the content files</li>
+<li>the articles section with a submission form, plus the Contents and Credits pages</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Beta<span class="tag">October 2026</span></h2>
+<ul>
+<li>faster loading: optimized images and a smaller background audio file</li>
+<li>clearer navigation, extra FAQ answers and phone fixes</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>V1.0<span class="tag">October 29-30, 2026 - current</span></h2>
+<ul>
+<li>the STEM Curriculum section, built around the Grade 10 STEM history syllabus</li>
+<li>the settings panel: light and dark themes, CRT effect, floating characters and sound toggles, from the top-left logo</li>
+<li>Download pages: pack any topics into a ZIP for offline reading</li>
+</ul>
+</div>
+</div>
+
+<div class="update">
+<div>
+<h2>Next update<span class="tag">planned</span></h2>
+<ul>
+<li class="p">expanded Grade 10 topics:
+<ul class="sub">
+<li>Modern Germany</li>
+<li>Political life across civilizations</li>
+<li>Social life across civilizations</li>
+<li>Religious life across civilizations</li>
+<li>Cultural and intellectual life</li>
+<li>Agriculture across civilizations</li>
+<li>Industry across civilizations</li>
+<li>Economic projects through history</li>
+<li>Scientific life</li>
+<li>Architecture across civilizations</li>
+<li>Contact and exchange between civilizations</li>
+<li>Roman Egypt</li>
+</ul>
+</li>
+<li class="p">deeper coverage of Pharaonic Egypt and the Ikhshidids in Medieval Egypt</li>
+<li class="p">an expanded overhaul of the texts of all included topics</li>
+<li class="p">search across the site</li>
+<li class="p">a sitemap and robots.txt to help search engines discover the site's pages</li>
+<li class="p">navigation and accessibility improvements</li>
+<li class="p">reading comfort: font choices for topic texts and adjustable title colors</li>
+<li class="p">map and navigation polish, including the mobile topic lists</li>
+<li class="p">more open-reading topics across the normal sections, especially Middle Eastern, Eastern and European history</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<p class="p">Homepage counters: "Virtual nixie tube display" DHTML component &copy; 2007-2008 Cestmir Hybl -
+<a href="http://cestmir.freeside.sk/projects/dhtml-nixie-display">cestmir.freeside.sk/projects/dhtml-nixie-display</a> -
+free for non-commercial use; copyright and project URL preserved per its license. Tube glyphs: Philips ZM1080 skin.</p>
+</div>
+
+<footer>
+<p style="width:100%;text-align:center;">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+ var root=document.documentElement;
+ var toggle=document.getElementById('themeToggle');
+ function setTheme(t){root.setAttribute('data-theme',t);toggle.textContent=t==='dark'?'LIGHT':'DARK';
+  try{localStorage.setItem('hw_theme',t)}catch(e){}}
+ var saved=null;try{saved=localStorage.getItem('hw_theme')}catch(e){}
+ setTheme(saved==='dark'?'dark':'light');
+ toggle.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
+})();
+</script>
+</body>
+</html>

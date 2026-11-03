@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
@@ -38,12 +38,12 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theoldkingdomofegypt.jpg">
             <h1 style="font-size:larger;">The Old Kingdom of Egypt</h1>
-            <p style="font-size: large;">The Old Kingdom of Egypt. Around 3100 BC, King Narmer of Upper Egypt united the Two Lands, the Nile Valley in the south and the Delta in the north, into a single kingdom, the first large territorial state in human history. After two dynasties of consolidation, the Old Kingdom proper began with the Third Dynasty around 2686 BC, and it is remembered above all as the age of the pyramids. King Djoser's architect Imhotep stacked six mastaba tombs into the Step Pyramid at Saqqara, the first monumental stone building in the world. In the Fourth Dynasty, Sneferu built three pyramids, experimenting with the bent and true forms, and his son Khufu raised the Great Pyramid at Giza: about 2.3 million stone blocks, aligned to the cardinal points with astonishing precision, the tallest human structure for more than 3,800 years.</p>
-<p style="font-size: large;">Khafre and Menkaure added their own pyramids beside it, guarded by the Great Sphinx. These were not tombs built by slaves, as old films suggest, but national projects carried out by rotating crews of paid laborers, fed and housed in workers' towns, organized by a state that could count, store, and redistribute grain on a vast scale. Royal authority was supported by governors called nomarchs, who administered the provinces or nomes, and by a vizier who ran the bureaucracy. Over time, however, the crown's wealth drained into temple endowments and provincial families. The unusually long reign of Pepi II, perhaps over ninety years in the Sixth Dynasty, ended with an aging court and ambitious local rulers. Around 2181 BC central authority collapsed, provincial magnates fought for power, and famine struck as Nile floods failed.</p>
-<p style="font-size: large;">Egypt fragmented into the First Intermediate Period, and the lesson was lasting: Egyptian unity depended on a strong center that could manage the river and the harvest. The unification itself is pictured on the Narmer Palette, where the king wears the crowns of both lands and smites his enemies, an image of kingship that Egyptians would repeat for three thousand years. The central government that emerged was the first true state: it assessed the land, levied the harvest, and mobilized tens of thousands for building, and its records in ink on papyrus and stone show an administration counting everything from cattle to work gangs. Pyramid building itself was economic policy as much as religion: in the flood season, when the fields lay under water, the state employed the farmers, fed them from its granaries, and bound the provinces to the crown through common work.</p>
-<p style="font-size: large;">The standard of the age was order: texts boast that the king upheld ma'at against chaos, and the bureaucracy of scribes, with its titles, seals, and archives, made Egypt the most organized society of the ancient world. When that order broke down after Pepi II, the sages who wrote the lamentations of the First Intermediate Period remembered anarchy as the Nile's gift ungiven: the land spun like a potter's wheel, they said, and the poor became rich while the rich begged, an inversion of the sacred order that Egyptians felt in their bones as catastrophe.</p>
+            <p style="font-size: large;">The Old Kingdom of Egypt. Around 3100 BC, King Narmer of Upper Egypt united the Two Lands, the Nile Valley in the south and the Delta in the north, into a single kingdom that would endure in some form for three thousand years. After two dynasties of consolidation, the Old Kingdom proper began with the Third Dynasty around 2686 BC, and it is remembered above all as the age of the pyramids. King Djoser's architect Imhotep stacked six mastaba tombs into the Step Pyramid at Saqqara, the first monumental stone building in the world. In the Fourth Dynasty, Sneferu built three pyramids, experimenting with the bent and true forms, and his son Khufu raised the Great Pyramid at Giza: about 2.3 million stone blocks, aligned to the cardinal points with astonishing precision, the tallest human structure for more than 3,800 years.</p>
+<p style="font-size: large;">Khafre and Menkaure added their own pyramids beside it, guarded by the Great Sphinx. These were not tombs built by slaves, as old films suggest: workmen's quarters and overseers' houses excavated at Giza show the work was done by Egyptians, many highly skilled, working for compensation - rotating crews fed and housed in workers' towns, organized by a state that could count, store, and redistribute grain on a vast scale. Royal authority was supported by governors called nomarchs, who administered the provinces or nomes, and by a vizier who ran the bureaucracy. Over time, however, the crown's wealth drained into temple endowments and provincial families. The unusually long reign of Pepi II, perhaps over ninety years in the Sixth Dynasty, ended with an aging court and ambitious local rulers. Around 2181 BC central authority gave way: local governors and the priesthood had grown too strong, a severe drought brought famine the government could not relieve, and the exceptionally long reign of Pepi II left succession uncertain - causes scholars still weigh against one another.</p>
+<p style="font-size: large;">Egypt fragmented into the First Intermediate Period, and the lesson was lasting: Egyptian unity depended on a strong center that could manage the river and the harvest. The unification itself is pictured on the Narmer Palette, where the king wears the crowns of both lands and smites his enemies, an image of kingship that Egyptians would repeat for three thousand years. The central government that emerged assessed the land, levied the harvest, and mobilized tens of thousands for building, and its records in ink on papyrus and stone show an administration counting everything from cattle to work gangs. Pyramid building itself was economic policy as much as religion: much of the workforce was made up of farmers the state could employ when the Nile's flood made farming impossible, fed from its granaries and bound to the crown through common work.</p>
+<p style="font-size: large;">The standard of the age was order: texts boast that the king upheld ma'at against chaos, and the bureaucracy of scribes, with its titles, seals, and archives, ran what one scholar calls a bureaucracy possibly unparalleled in world history for the amount of construction it organized. When that order broke down after Pepi II, the sages who wrote the lamentations of the First Intermediate Period remembered anarchy as the Nile's gift ungiven: the land spun like a potter's wheel, they said, and the poor became rich while the rich begged, an inversion of the sacred order that Egyptians felt in their bones as catastrophe.</p>
             <p style="font-size: large;">Old Kingdom society was shaped by the Nile. The river flooded predictably each summer, depositing rich silt; farmers planted wheat and barley as the waters receded and harvested in spring. This dependable cycle created the surplus that fed pyramid builders and priests, and it explains why Egyptians saw the world as fundamentally ordered and good. At the top stood the pharaoh, not merely a king but a living god, the son of Ra and the earthly form of Horus, responsible for maintaining ma'at, the cosmic order of justice, balance, and truth. Below him came viziers, priests, and scribes, whose mastery of hieroglyphic and cursive hieratic writing gave them control of records and therefore of power. Most people were peasant farmers who paid taxes in grain and owed labor service to the state.</p>
-<p style="font-size: large;">Religion permeated everything: Egyptians worshipped many gods, above all the sun god, and believed in an afterlife that the king's pyramid was built to secure. The Pyramid Texts inscribed in the later pyramids are the world's oldest religious writings, and the same beliefs drove mummification and the stocking of tombs with food, furniture, and servant statues. Art followed a strict canon: the human figure shown with head and legs in profile, eye and shoulders frontal, proportioned on a grid, built to last for eternity rather than to imitate a fleeting moment. Trade reached south to Nubia for gold, east to Punt for incense, and north to Byblos for Lebanese cedar. Mathematics served surveying and engineering, medicine produced some of the earliest written case studies, and a solar calendar of 365 days, divided into flood, planting, and harvest seasons, organized the year.</p>
+<p style="font-size: large;">Religion permeated everything: Egyptians worshipped many gods, above all the sun god, and believed in an afterlife that the king's pyramid was built to secure. The Pyramid Texts inscribed in the later pyramids are Egypt's earliest surviving substantial religious literature, and the same beliefs drove mummification and the stocking of tombs with food, furniture, and servant statues. Art followed a strict canon: the human figure shown with head and legs in profile, eye and shoulders frontal, proportioned on a grid, built to last for eternity rather than to imitate a fleeting moment. Trade reached south to Nubia for gold, east to Punt for incense, and north to Byblos for Lebanese cedar. Mathematics served surveying and engineering, medicine produced some of the earliest written case studies, and a solar calendar of 365 days, divided into flood, planting, and harvest seasons, organized the year.</p>
 <p style="font-size: large;">The Old Kingdom created the pattern of Egyptian civilization that later ages would look back to as their classical ideal.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/ancient-Egypt" target="_blank">Source #1</a>
@@ -78,7 +78,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -88,9 +88,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -153,24 +158,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

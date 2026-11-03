@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
@@ -39,12 +39,12 @@
             <img class="topicimage" src="images/thenewkingdomofegypt.jpg">
             <h1 style="font-size:larger;">The New Kingdom of Egypt</h1>
             <p style="font-size: large;">The New Kingdom of Egypt. Around 1550 BC, Ahmose I of Thebes drove the Hyksos out of the Delta and pursued them into Canaan, founding the Eighteenth Dynasty and the era of empire. Determined never again to be ruled by foreigners, Egypt's warrior pharaohs pushed outward. Thutmose I campaigned as far as the Euphrates River in Syria. His daughter Hatshepsut then ruled as pharaoh in her own right for about twenty years, presenting herself in statuary with the king's kilt and false beard, building her terraced mortuary temple at Deir el-Bahari, and sending a celebrated trading expedition to the land of Punt, whose ships returned loaded with incense trees, gold, and exotic animals.</p>
-<p style="font-size: large;">Her stepson Thutmose III became Egypt's greatest conqueror: in seventeen campaigns he defeated a coalition of Canaanite kings at Megiddo around 1457 BC, crossed the Euphrates, and organized an empire stretching from Nubia deep into Syria, held together by garrisons, tribute, and the sons of vassal princes raised at the Egyptian court. Under Amenhotep III the empire enjoyed a golden age of wealth and diplomacy, its capital at Thebes glittering with temples. Then came the strangest episode in Egyptian history: Amenhotep IV, renaming himself Akhenaten, suppressed the old gods, closed their temples, and proclaimed one god, the sun disk Aten, building a new capital at Amarna. The experiment collapsed with his death; the boy king Tutankhamun restored the old religion and died young, his intact tomb the greatest archaeological find of the modern age.</p>
-<p style="font-size: large;">In the Nineteenth Dynasty, Ramesses II fought the Hittite Empire at Kadesh around 1274 BC, a battle he claimed as a victory that was probably a draw, and later signed with the Hittites the world's oldest surviving peace treaty. His long reign left colossal monuments including Abu Simbel. Around 1175 BC Ramesses III repelled the Sea Peoples, but the effort exhausted the treasury, strikes hit the royal tomb builders, and the New Kingdom slowly dissolved. The empire was run as a system. In Nubia, a viceroy called the King's Son of Kush governed from fortified temple towns down to the Fourth Cataract, shipping gold north in quantities that made Egypt the richest state of the Bronze Age. In Asia, Egyptian strategy rested on the loyalty of Canaanite city-kings, bound by oaths, hostages, and gifts, and on the great fortress and granary cities that anchored the military roads.</p>
-<p style="font-size: large;">Diplomacy matched war: the Amarna Letters show the pharaoh exchanging princesses and gold with Babylon, Assyria, and the Hittites, addressed as brothers, in the first fully documented great-power system in history. Akhenaten's revolution failed partly because it neglected this system: while the king worshipped the Aten, vassal letters begged in vain for troops as the empire frayed. The Nineteenth Dynasty restored the balance, and the treaty with the Hittites after Kadesh, sealed by the marriage of Ramesses II to a Hittite princess, fixed spheres of influence in terms recognizably modern; a copy of it hangs today at the United Nations.</p>
+<p style="font-size: large;">Her stepson Thutmose III became Egypt's greatest conqueror: in seventeen campaigns he defeated a coalition of Canaanite kings at Megiddo around 1457 BC, crossed the Euphrates, and organized an empire stretching from Nubia deep into Syria, held together by garrisons, tribute, and the sons of vassal princes raised at the Egyptian court. Under Amenhotep III the empire enjoyed a golden age of wealth and diplomacy, its capital at Thebes glittering with temples. Then came the strangest episode in Egyptian history: Amenhotep IV, renaming himself Akhenaten, suppressed the old gods, closed their temples, and proclaimed one god, the sun disk Aten, building a new capital at Amarna. The experiment collapsed with his death; the boy king Tutankhamun restored the old religion and died young, his nearly intact tomb the most famous archaeological find of the modern age.</p>
+<p style="font-size: large;">In the Nineteenth Dynasty, Ramesses II fought the Hittite Empire at Kadesh around 1274 BC, a battle he claimed as a victory that was probably a draw, and later signed with the Hittites the world's oldest surviving peace treaty. His long reign left colossal monuments including Abu Simbel. Around 1175 BC Ramesses III repelled the Sea Peoples, but the effort exhausted the treasury, strikes hit the royal tomb builders, and the New Kingdom slowly dissolved. The empire was run as a system. In Nubia, a viceroy called the King's Son of Kush governed from fortified temple towns down to the Fourth Cataract, shipping gold north in quantities that filled the temples and palaces. In Asia, Egyptian strategy rested on the loyalty of Canaanite city-kings, bound by oaths, hostages, and gifts, and on the great fortress and granary cities that anchored the military roads.</p>
+<p style="font-size: large;">Diplomacy matched war: the Amarna Letters show the pharaoh exchanging princesses and gold with Babylon, Assyria, and the Hittites, addressed as brothers, in what modern historians call the Club of Great Powers. Akhenaten's revolution failed partly because it neglected this system: while the king worshipped the Aten, vassal letters begged in vain for troops as the empire frayed. The Nineteenth Dynasty restored the balance, and the treaty with the Hittites after Kadesh fixed spheres of influence in terms recognizably modern.</p>
 <p style="font-size: large;">The late New Kingdom also shows how empires die: the cost of wars, the corruption of officials, the strikes of unpaid tomb workers in Year 29 of Ramesses III, and the growing independence of the high priests of Amun, who ended by ruling Thebes as a state within the state, until the Two Lands drifted apart again into the Third Intermediate Period.</p>
-            <p style="font-size: large;">Empire transformed Egyptian society. Tribute and plunder from Nubian gold mines and Asian vassals poured into the temples of Amun at Karnak and Luxor, until the priesthood of Amun controlled vast estates and eventually rivaled the crown itself. A new class of professional soldiers rose, rewarded with land, and scribes administered an imperial bureaucracy that corresponded with Babylon, Assyria, and the Hittites in Akkadian cuneiform, the diplomatic language of the age. The Amarna Letters, clay tablets from Pharaoh's archive, preserve this correspondence, including pleading letters from Canaanite princes. Women in Egypt already enjoyed unusual legal standing for the ancient world: they could own property, initiate lawsuits, and make wills, and Hatshepsut showed a woman could even wear the double crown. Burial practice changed too.</p>
-<p style="font-size: large;">Instead of conspicuous pyramids, New Kingdom pharaohs hid their tombs in the Valley of the Kings, deep rock-cut corridors painted with funerary texts such as the Book of the Dead. Art reached new heights, from the graceful realism of Thutmose's sculpture workshops, which produced the famous bust of Nefertiti, to the strange, elongated naturalism of the Amarna style and the intimate scenes of Akhenaten playing with his daughters. We know daily life unusually well because the village of the royal tomb builders, Deir el-Medina, survives with its houses, laundry lists, love songs, legal disputes, and even records of history's first documented labor strike, when workers downed tools over late grain rations under Ramesses III. Religious life grew both grander and more personal: great festivals filled the calendar, and ordinary people prayed directly to the gods for help with sickness and injustice.</p>
+            <p style="font-size: large;">Empire transformed Egyptian society. Tribute and plunder from Nubian gold mines and Asian vassals poured into the temples of Amun at Karnak and Luxor, until the priesthood of Amun grew powerful enough to rival the crown itself. A new class of professional soldiers rose, rewarded with land, and scribes administered an imperial bureaucracy that corresponded with Babylon, Assyria, and the Hittites in Akkadian cuneiform, the diplomatic language of the age. The Amarna Letters, clay tablets from Pharaoh's archive, preserve this correspondence, including pleading letters from Canaanite princes. Women in Egypt already enjoyed unusual legal standing for the ancient world: they could own property, initiate lawsuits, and make wills, and Hatshepsut showed a woman could even wear the double crown. Burial practice changed too.</p>
+<p style="font-size: large;">Instead of conspicuous pyramids, New Kingdom pharaohs hid their tombs in the Valley of the Kings, deep rock-cut corridors painted with funerary texts such as the Book of the Dead. Art reached new heights, from the graceful realism of Thutmose's sculpture workshops, which produced the famous bust of Nefertiti, to the strange, elongated naturalism of the Amarna style and the intimate scenes of Akhenaten playing with his daughters. We know daily life unusually well because the village of the royal tomb builders, Deir el-Medina, survives with its houses, laundry lists, love songs, legal disputes, and even records of what may be history's first recorded sit-down strike, when workers downed tools over late grain rations under Ramesses III. Religious life grew both grander and more personal: great festivals filled the calendar, and ordinary people prayed directly to the gods for help with sickness and injustice.</p>
 <p style="font-size: large;">The New Kingdom was ancient Egypt at its richest and most powerful, and its decline showed that even the greatest empire depends on solvency, succession, and order at home.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/ancient-Egypt" target="_blank">Source #1</a>
@@ -79,7 +79,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -89,9 +89,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -154,24 +159,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

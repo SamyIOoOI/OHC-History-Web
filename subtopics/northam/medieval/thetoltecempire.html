@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thetoltecempire.jpg">
             <h1 style="font-size:larger;">The Toltec Empire</h1>
-            <p style="font-size: large;">The Toltec Empire. The Toltec Empire was a major Postclassic Mesoamerican state centered at Tula in modern-day Hidalgo, Mexico, flourishing from roughly 900 to 1150 CE. Taking power following the decline of Teotihuacan, the Toltecs built a heavily militarized culture that deeply influenced later Mesoamerican civilizations. This empire matters because it set an elite architectural and martial standard across the region, featuring massive stone warrior pillars known as Atlantes and grand ceremonial plazas.</p>
-            <p style="font-size: large;">Toltec rulers dominated regional trade routes, exchanging obsidian, textiles, and turquoise across vast distances reaching as far as the American Southwest. Their cultural prestige was so immense that subsequent groups, including the Aztecs, proudly claimed direct political descent from Toltec royalty to legitimize their own imperial rule. Around 1150 CE, internal factional conflict, combined with invasions by northern nomadic groups, led to the burning and total destruction of Tula.</p>
+            <p style="font-size: large;">The Toltec Empire. After Teotihuacan burned, central Mexico's next great power was the Toltecs, whose capital was Tollan-Xicocotitlan - the Tula of the Mexican chronicles - with other important cities at Tulancingo and Huapalcalco. The Toltec state existed through the Classic and Postclassic periods, gaining most of its power in the Postclassic, when its sphere of influence reached as far as the Yucatan Peninsula. The chronicles remember a theocracy founded in the year 674 that became a monarchy around 700, and the legendary priest-king Topiltzin Ce Acatl Quetzalcoatl, who ruled Tollan by the traditional account from 923 to 947 and suppressed large-scale human sacrifice. His fall unleashed a religious war between his followers and the cult of Tezcatlipoca - a conflict that flared again from 1046 to 1110 - and later a great famine (1070-1077): events that sent waves of Toltec exiles across Mesoamerica, to Uxmal and the Maya lands, where the Itza of mixed Maya-Toltec descent carried his cult as Kukulkan, and to Cholula, taken over by Toltec exiles around 1200.</p>
+            <p style="font-size: large;">How much of this is history is honestly uncertain: the status of the Toltecs as an 'empire' has been disputed, and whether Tula dominated or even directly influenced the Yucatan is debated by scholars. What is certain is the Toltec legacy: the Maya city of Chichen Itza shows striking central-Mexican styles, and centuries later the Mexica remembered the Toltecs with awe - Culhuacan, the city where the Mexica first served as mercenaries, was honored as a refuge of the Toltecs - and Maya tradition carried his cult to Yucatan under the name Kukulkan. Tula was abandoned around 1122, but its warrior columns and its legend lived on in every Mexican state that claimed its inheritance.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Toltec" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Toltec_Civilization/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

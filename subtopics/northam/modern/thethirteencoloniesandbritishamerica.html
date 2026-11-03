@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thethirteencoloniesandbritishamerica.png">
             <h1 style="font-size:larger;">The Thirteen Colonies & British America</h1>
-            <p style="font-size: large;">The Thirteen Colonies & British America. The Thirteen Colonies were a group of British colonies along the Atlantic coast of North America founded between 1607 and 1732. Divided into New England, Middle, and Southern regions, they developed distinct economies based on maritime commerce, family farming, and cash-crop plantation agriculture powered by enslaved labor. These colonies matter because they developed robust traditions of local self-governance, representative assemblies, and vibrant mercantile economies.</p>
-            <p style="font-size: large;">While operating under British imperial mercantilism and protective navigation acts, the colonies enjoyed decades of "salutary neglect" from London. However, following the expensive French and Indian War (1754–1763), the British Parliament attempted to impose direct taxes and assert tighter imperial control over the colonies. Widespread resistance to taxes like the Stamp Act and Townshend Acts fostered a shared political identity among the colonies, directly sparking the American Revolutionary War.</p>
+            <p style="font-size: large;">The Thirteen Colonies & British America. The Thirteen Colonies were the British settlements planted along the Atlantic coast of North America between 1607 and 1732. It began when the Virginia Company established Jamestown in 1607 - a colony that nearly perished in the 'Starving Time' of 1609-10, when as many as 350 of the estimated 500 colonists died - and was saved when John Rolfe's tobacco seed from Bermuda took to the fertile Chesapeake soil, Virginia soon outstripping the West Indies as the main exporter of tobacco to Europe. In 1620 the Mayflower brought 102 Puritan separatists, the 'Pilgrims', to Massachusetts, and in 1630 John Winthrop led the Puritan 'Great Migration' to New England; the chain of colonies was completed in 1732, when Georgia was established as a buffer zone between the Carolinas and the hostile Spanish. These colonies matter because they developed robust traditions of local self-governance and representative assemblies, elected by propertied citizens, which the colonists prized as the shield of their rights.</p>
+            <p style="font-size: large;">The colonies fell into three administrative categories - charter, royal, and proprietary - Virginia becoming the first royal colony when its company went bankrupt in 1624; New England was founded primarily by Puritans seeking religious freedom, while the Chesapeake drew poor young fortune-seekers seduced by the promise of the lucrative tobacco trade. From the earliest days of Jamestown the English also waged war with the Native Americans upon whose lands they were encroaching. Operating under British imperial mercantilism, the colonies long enjoyed considerable freedom from London, but the expensive French and Indian War changed the imperial mood: taxes such as the Sugar Act (1764) and the Stamp Act (1765), aimed at raising revenue from the colonies, outraged the colonists and catalyzed a resistance that forged a shared political identity among the thirteen colonies - and led directly to the American Revolutionary War.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/American-colonies" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Thirteen_Colonies/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

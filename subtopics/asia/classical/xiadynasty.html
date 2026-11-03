@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/xiadynasty.png">
             <h1 style="font-size:larger;">Xia Dynasty</h1>
-            <p style="font-size: large;">Xia Dynasty. The Xia Dynasty is traditionally considered the first foundational dynasty of ancient China, allegedly ruling from roughly 2070 BCE to 1600 BCE. According to ancient chronicles, it was established by Yu the Great, a legendary figure famous for taming the disastrous floods of the Yellow River. The historical reality of the Xia is heavily debated since no written records survive to definitively prove their existence. However, archaeologists have uncovered widespread bronze age settlements at Erlitou that perfectly match the time and place of the supposed Xia.</p>
-            <p style="font-size: large;">Whether purely mythical or a real historical entity, the concept of the Xia Dynasty served a crucial political purpose for later Chinese rulers. It established the core idea of a single legitimate succession of dynasties that dominated Chinese political thought for millennia. The dynasty allegedly ended when its final ruler lost the mythical Mandate of Heaven due to extreme cruelty. He was overthrown by a rebellion that established the definitively historical Shang Dynasty.</p>
+            <p style="font-size: large;">Xia Dynasty. The Xia dynasty (c. 2070-1600 BCE, by the conventional chronology) holds a unique place in Chinese history: it is the first dynasty of traditional Chinese historiography - and it may never have existed at all. The story as the Han historian Sima Qian and earlier classics tell it is a founding epic: when the Yellow River flooded catastrophically, the hero Yu the Great spent thirteen years taming the waters, digging channels to lead them to the sea, passing his own home three times without stopping. For this service the throne passed to him, and Yu founded the Xia - the first hereditary dynasty, replacing the age of sage-emperors who had chosen worthy successors.</p>
+            <p style="font-size: large;">The problem is evidence. There are no contemporaneous written records of the Xia; the oldest Chinese writing, the Shang dynasty's oracle bones, never mentions them. The earliest mentions come in Zhou dynasty texts, centuries later - and those texts had an agenda, using the story of the Shang righteously replacing a corrupt Xia to justify their own replacement of the Shang. The traditional king list runs through seventeen rulers, ending with the tyrant Jie, whose cruelty - the story goes - cost the dynasty the Mandate of Heaven and let Tang of Shang overthrow it at the Battle of Mingtiao.</p>
+            <p style="font-size: large;">Whether the Xia was history, legend, or something in between is one of Chinese archaeology's great open questions. Most Chinese archaeologists identify the Xia with the Erlitou culture (c. 1900-1500 BCE), whose excavated capital in Henan - with palace foundations, bronze workshops, and elite burials - was China's first state-level society, in the right place at roughly the right time. Many Western scholars remain unconvinced, noting that no Erlitou inscription names the Xia. The honest summary: a kingdom matching the traditional Xia in time and place existed; whether its people called themselves Xia is unknown.</p>
+            <p style="font-size: large;">Legend or not, the Xia matters enormously, because it created the template of Chinese political legitimacy. The dynastic cycle - a virtuous founder, generations of decline, a corrupt last ruler who forfeits heaven's mandate, a righteous replacement - was constructed around the Xia-Shang-Zhou succession and governed how every later dynasty explained itself. China's story about where its civilization began begins with Yu and the flood, and that story shaped Chinese identity for two thousand years.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Xia-dynasty" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Xia_Dynasty/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

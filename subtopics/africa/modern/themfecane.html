@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/themfecane.jpg">
             <h1 style="font-size:larger;">The Mfecane</h1>
-            <p style="font-size: large;">The Mfecane was a period of widespread warfare and migration in southern Africa in the early 19th century. It was triggered by competition over land, trade, and the rise of the Zulu kingdom under Shaka. Many communities were displaced or destroyed.</p>
-            <p style="font-size: large;">The Mfecane reshaped the region's demographics and politics. It created new states and migrations that spread across modern South Africa, Zimbabwe, and Mozambique. Historians still debate its causes and scale.</p>
+            <p style="font-size: large;">The Mfecane, the crushing, was a period of widespread warfare and forced migration that tore through southern Africa in the second and third decades of the 19th century. It was set in motion by the rise of the Zulu military kingdom under Shaka, amid drought, social unrest, and intensifying competition for the trade of Delagoa Bay, and it matters because it redrew the human map of half a subcontinent.</p>
+<p style="font-size: large;">As Zulu power expanded, tribe was set against tribe over an ever widening radius: communities were shattered, conquered peoples absorbed into new armies, and refugees fled to mountain fastnesses or across the Drakensberg, leaving devastated grasslands behind them. The disruption eased the way for white expansion into Natal and the Highveld, as Boer trekkers found lands emptied by warShaka's revolution was military as much as political: he replaced the long throwing spear with the short stabbing assegai, drilled warriors into age regiments, and perfected the encircling horns formation that made Zulu armies nearly unstoppable. .</p>
+            <p style="font-size: large;">Yet the Mfecane was also an age of state building: Among the displaced were the Mfengu, shattered peoples who fled west to beg protection from the Xhosa, arriving as landless clients in a land still whole. Yet out of the turmoil rose some of the most formidable African kingdoms ever to resist colonization, the Sotho of Moshoeshoe, the Swazi, the Ndebele of Mzilikazi, and the Gaza kingdom of Mozambique. Peoples fleeing the wars carried their languages and institutions as far as Tanzania and Malawi, and the Kololo reached Zambia.</p>
+<p style="font-size: large;">The Mfecane reshaped the region's demographics and politics for good: new nations, new borders, and new capitals replaced the old order, and the memory of the crushing, its suffering and its kingdoms, still shapes identity across southern Africa today.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/event/Mfecane" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Zulu_Kingdom/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/mauryaempire.png">
             <h1 style="font-size:larger;">Maurya Empire</h1>
-            <p style="font-size: large;">Maurya Empire. The Maurya Empire was a massive Iron Age state that unified almost the entire Indian subcontinent under a single government, flourishing from 322 BCE to 185 BCE. Founded by Chandragupta Maurya following Alexander the Great's campaigns, it expanded rapidly out of Magadha. The empire is incredibly significant because it established a highly sophisticated centralized administration and a massive standing army. This unprecedented internal peace allowed for booming trade, widespread agricultural development, and immense cultural flourishing.</p>
-            <p style="font-size: large;">The empire reached its absolute peak under Ashoka the Great, who famously converted to Buddhism following a particularly bloody conquest. Ashoka utilized vast state resources to spread Buddhist teachings, carving his famous edicts onto towering stone pillars. After his death, the empire suffered a slow decline due to weak successors and internal rebellions. The final blow came in 185 BCE when the last Mauryan emperor was assassinated by his own general, fracturing the subcontinent back into competing regional kingdoms.</p>
+            <p style="font-size: large;">Maurya Empire. The Maurya Empire was the first power to unite most of the Indian subcontinent under one rule. Founded around 321 BCE by Chandragupta Maurya, who overthrew the Nanda dynasty of Magadha and built his capital at Pataliputra, near modern Patna, the empire was guided in its early years by his brilliant adviser Kautilya, to whom tradition attributes the Arthashastra, the great ancient treatise on statecraft. When Alexander's successor Seleucus I tried to reclaim the Indus lands in 305 BCE, Chandragupta defeated him and traded him the territories for alliance and five hundred war elephants; under Chandragupta's son Bindusara the empire pushed into the Deccan.</p>
+            <p style="font-size: large;">The empire reached its height under Ashoka (c. 268-232 BCE), who ruled everything from Afghanistan to the Bay of Bengal except the deep south - a realm of perhaps 15 to 30 million people. The conquest of Kalinga in 261 BCE was so bloody that, by his own account, it broke something in him: Ashoka embraced Buddhism and nonviolence, and spread his new ethic across the empire in rock and pillar edicts written in the people's own languages - among the earliest deciphered texts in Indian history. He sent Buddhist missionaries to Sri Lanka, Central Asia, and beyond, a key reason Buddhism became a world religion.</p>
+            <p style="font-size: large;">Mauryan government was remarkably sophisticated for its age: a centralized administration, roads like the great Uttarapatha highway linking Afghanistan to the Ganges, coinage, state-supported agriculture, and a capital described by the Greek ambassador Megasthenes, whose lost account long shaped the world's picture of India. It was also an age of striking creativity in art and architecture - the polished sandstone pillars crowned with animal capitals are its signature - though scholars note the period also saw caste harden and women's rights decline in the Indo-Aryan heartland.</p>
+            <p style="font-size: large;">The empire did not long outlive Ashoka. His weaker successors lost the provinces piecemeal, and in 185 BCE the last Mauryan king, Brihadratha, was assassinated by his own general Pushyamitra Shunga, who founded the Shunga dynasty. The Mauryas left two legacies still visible today: the idea of a united India, and Ashoka himself - whose lion capital at Sarnath became the emblem of the modern Indian republic, and whose wheel of dharma turns at the center of its flag.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Mauryan-Empire" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Mauryan_Empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

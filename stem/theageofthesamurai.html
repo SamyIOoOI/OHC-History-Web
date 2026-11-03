@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
@@ -39,7 +39,7 @@
             <img class="topicimage" src="images/theageofthesamurai.jpg">
             <h1 style="font-size:larger;">The Age of the Samurai</h1>
             <p style="font-size: large;">The Age of the Samurai. Japan's medieval age was made by its warriors. The centralized court state of Nara and Heian, modeled on China, slowly decayed as tax-exempt estates, the shoen, swallowed the land and great provincial families armed themselves to defend them. Two warrior houses rose above all: the Taira and the Minamoto. Their rivalry climaxed in the Genpei War of 1180 to 1185, fought across Japan and ended at the sea battle of Dan-no-ura, where the child emperor drowned with the Taira fleet. The victor, Minamoto no Yoritomo, did not take the throne; instead he took the title of shogun, supreme military commander, in 1192, ruling from Kamakura while the emperor reigned powerlessly in Kyoto. This was the founding of the bakufu, the tent government, and the pattern of Japanese politics for nearly seven centuries: emperors legitimized, samurai ruled.</p>
-<p style="font-size: large;">Yoritomo built his power on the gokenin, housemen who held their lands in return for military service, and after his death power passed to the Hojo regents, who ruled in the shogun's name while puppet shoguns reigned. The regency faced its supreme test when Kublai Khan, Mongol master of China, demanded Japan's submission and invaded in 1274 and again in 1281 with the largest seaborne forces the world had yet seen; both times samurai resistance and typhoons, the kamikaze or divine winds, destroyed the invasion fleets. But victory brought no plunder to reward the warriors, discontent festered, and in 1333 the emperor Go-Daigo's partisans destroyed the Kamakura bakufu.</p>
+<p style="font-size: large;">Yoritomo built his power on the gokenin, housemen who held their lands in return for military service, and after his death power passed to the Hojo regents, who ruled in the shogun's name while puppet shoguns reigned. The regency faced its supreme test when Kublai Khan, Mongol master of China, demanded Japan's submission and invaded in 1274 and again in 1281 with fleets among the largest seaborne forces the world had yet seen; both times samurai resistance and typhoons, the kamikaze or divine winds, destroyed the invasion fleets. But victory brought no plunder to reward the warriors, discontent festered, and in 1333 the emperor Go-Daigo's partisans destroyed the Kamakura bakufu.</p>
 <p style="font-size: large;">Imperial restoration lasted only three years before the Ashikaga shoguns founded a new bakufu in Kyoto, ruling for two centuries amid constant factional war, while the arts they patronized, Zen gardens, tea ceremony, Noh drama, ink painting, created a classical age amid the disorder. From 1467 the Onin War, fought over shogunal succession, burned Kyoto itself and shattered central authority altogether. The following century, the Sengoku or Warring States period, saw regional lords, the daimyo, rule their castles as independent sovereigns in endless war, a time when foot soldiers with spears and then guns, peasants' leagues, and warrior-monks all contended for power.</p>
 <p style="font-size: large;">Out of that chaos rose the three unifiers: Oda Nobunaga, who broke the power of the warrior-monks and mastered firearms; Toyotomi Hideyoshi, a peasant's son who completed the conquest and launched the disastrous invasions of Korea; and Tokugawa Ieyasu, who won the final victory at Sekigahara in 1600 and founded the last and longest shogunate. The Kamakura settlement that Yoritomo built was a work of political genius: he left the emperor and court their ceremonies and their estates in Kyoto, while his bakufu at Kamakura held the military, appointed the stewards and constables in every province, and judged the disputes of the warrior class, a dual polity of prestige and power that Japanese history would repeat for six centuries.</p>
 <p style="font-size: large;">The Hojo regents who succeeded him ruled in the name of puppet shoguns while themselves serving as regents, a government of puppets pulling puppets, yet their century was stable and, by medieval standards, well judged: the Joei Code of 1232, written for warrior courts, settled disputes over land and service by practical equity rather than precedent, and remained the samurai's law for hundreds of years. The Mongol invasions were the age's supreme test and its hidden wound: the typhoon that destroyed Kublai's second fleet entered national memory as the divine wind, but defending the coast had bankrupted the bakufu, which owned no conquered land with which to reward its vassals, and discontent ripened until the emperor Go-Daigo's revolt brought the whole structure down.</p>
@@ -81,7 +81,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -91,9 +91,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -156,24 +161,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

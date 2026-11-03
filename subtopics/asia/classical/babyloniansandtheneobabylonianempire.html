@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/babyloniansandtheneobabylonianempire.png">
             <h1 style="font-size:larger;">Babylonians & the Neo-Babylonian Empire</h1>
-            <p style="font-size: large;">Babylonians & the Neo-Babylonian Empire. Babylon was an ancient cultural and political powerhouse located along the Euphrates River in modern Iraq, famously rising to prominence twice in history. The first peak occurred under King Hammurabi in the 18th century BCE, known for his comprehensive code of laws, while the Neo-Babylonian Empire emerged much later in 626 BCE to replace the fallen Assyrians. This civilization is vital to our understanding of the ancient world because of their incredible advancements in astronomy, mathematics, and monumental architecture. They established base sixty mathematics and constructed the legendary Ishtar Gate and the Hanging Gardens, which became renowned throughout the ancient Mediterranean.</p>
-            <p style="font-size: large;">The Neo-Babylonian period is perhaps best known for the reign of Nebuchadnezzar II, who famously conquered Jerusalem and initiated the Babylonian captivity of the Jewish people. The empire's glory was spectacular but surprisingly brief. In 539 BCE, the Persian king Cyrus the Great marched his army into Babylon without facing a major battle, exploiting internal political divisions within the city. Babylon was absorbed into the vast Achaemenid Empire, ending its run as an independent political entity while retaining its status as a cultural capital.</p>
+            <p style="font-size: large;">Babylon was an ancient cultural and political powerhouse on the Euphrates in modern Iraq, famously rising to prominence twice. Long a small but profitable river port under an Amorite dynasty from around 1894 BCE, its first peak came under Hammurabi (reign 1792-1750 BCE), who quietly built and trained an army, seized Isin and Uruk from his overlords in Larsa, and by 1755 BCE had united all of Mesopotamia. Babylon was by then the largest city in the world, with a population estimated at over 200,000, and so famous that all of southern Mesopotamia came to be called Babylonia. His Code of around 1772 BCE is one of the earliest law codes in the world, and he paired it with heightened walls, temples, and canals.</p>
+            <p style="font-size: large;">After Hammurabi's death his empire fell apart: the Hittites sacked Babylon in 1595 BCE, and the Kassites ruled Babylonia for over four centuries. The great ziggurat Etemenanki, begun sometime between the 14th and 9th centuries BCE, was later associated with the biblical Tower of Babel through a misreading of the Akkadian bav-il, Gate of the Gods, as the Hebrew bavel, confusion. When Babylon kept revolting under Assyrian rule, King Sennacherib had it razed in 689 BCE, an act seen as so impious that his own sons assassinated him; his successor Esarhaddon rebuilt the city.</p>
+            <p style="font-size: large;">After the Assyrian Empire fell, the Chaldean king Nabopolassar founded the Neo-Babylonian Empire in 626 BCE. His son Nebuchadnezzar II (605/604-562 BCE) renovated Babylon until it covered some 900 hectares, captured Jerusalem in 597 BCE, and began the Babylonian captivity of the Jews. His building program gave the city its famous image: the immense walls and the Ishtar Gate around 575 BCE, the completed Etemenanki, and, according to later Greek writers, the Hanging Gardens, though recent scholarship argues those were actually Sennacherib's gardens at Nineveh, since no trace of them has been found at Babylon.</p>
+            <p style="font-size: large;">The glory was spectacular but brief. In 539 BCE Cyrus the Great defeated the Babylonian army at Opis, and the Persians entered the impregnable city after diverting the Euphrates to a manageable depth. Under Persian rule Babylon flourished as a center of art and education, its mathematics and astronomy so respected that Thales of Miletus is thought to have studied there and Pythagoras to have drawn his theorem from a Babylonian model. The city passed to Alexander the Great in 331 BCE and remained a trade center under later empires, but never regained the heights it had known under Hammurabi or Nebuchadnezzar II.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Neo-Babylonian-Empire" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/babylon/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

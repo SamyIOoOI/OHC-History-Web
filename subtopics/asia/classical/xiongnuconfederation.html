@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/xiongnuconfederation.png">
             <h1 style="font-size:larger;">Xiongnu Confederation</h1>
-            <p style="font-size: large;">Xiongnu Confederation. The Xiongnu Confederation was a powerful alliance of nomadic pastoralist tribes that dominated the eastern Eurasian Steppe from the 3rd century BCE to the late 1st century CE. Centered in modern Mongolia, these incredibly skilled horse archers created the first major steppe empire in history. They matter significantly because their constant, devastating raids into northern China forced the newly unified Chinese empires to drastically adapt their foreign policy. The Xiongnu threat was the primary reason the Chinese began heavily investing in massive border fortifications that evolved into the Great Wall.</p>
-            <p style="font-size: large;">The relationship between the Xiongnu and the Chinese Han Dynasty alternated wildly between lucrative marriage alliances and brutal all out wars. The Han eventually launched a series of highly aggressive military campaigns deep into the steppe, severely weakening the nomadic confederation. Internal succession crises and harsh winters further fractured the Xiongnu leadership, splitting them into northern and southern factions. The southern faction surrendered to the Han, while the northern faction was destroyed by rival tribes.</p>
+            <p style="font-size: large;">Xiongnu Confederation. The Xiongnu were the first great nomadic empire of the eastern Eurasian steppe: a tribal confederation that, from the 3rd century BCE, dominated the Mongolian Plateau and the grasslands from Siberia to the borders of China. Known to us mainly through Chinese histories - the Han historian Sima Qian devoted a chapter of his Records of the Grand Historian to them around 100 BCE - they were a multi-ethnic confederation whose language remains debated, with proposed links to Turkic, Mongolic, Iranian, and Yeniseian families, and possibly to the Huns who later appeared in the west.</p>
+            <p style="font-size: large;">The founder of their empire was Modu Chanyu, who seized power from his father Touman in 209 BCE and welded the tribes into a disciplined state just as China itself was unified. Modu crushed the neighboring Donghu and drove out the Yuezhi - his son famously made a drinking cup from the Yuezhi king's skull - and in 200 BCE he trapped the first Han emperor, Gaozu, at Baideng with an army said to number 320,000. The humbled Han bought peace with the heqin system: princesses sent in marriage to the chanyu, annual gifts of silk, wine, and grain, and recognition of the Xiongnu as equals - in effect, tribute flowing north.</p>
+            <p style="font-size: large;">The tide turned under Emperor Wu of Han, who abandoned appeasement in 133 BCE and sent his armies deep into the steppe. The campaigns of Wei Qing and Huo Qubing between 127 and 119 BCE retook the Ordos, shattered Xiongnu power south of the Gobi, and cost both sides terribly - one Han analysis records the Xiongnu losing 80-90,000 men, while fewer than 30,000 of the 140,000 Han horses came home. Weakened, the confederation tore itself apart in a civil war of rival chanyus, and in 53 BCE the southern chanyu Huhanye submitted to the Han, coming to Chang'an in person to pay homage - the mighty 'brotherly state' reduced to an outer vassal.</p>
+            <p style="font-size: large;">The northern Xiongnu held out in the far west until Han armies and the rising Xianbei destroyed them in the late 1st century CE, and by the 7th century the Xiongnu had dissolved entirely into the peoples around them. Their descendants founded several of the Sixteen Kingdoms states in northern China, including Han-Zhao and Northern Liang. And their template - the mounted archer confederation binding the tribes into an empire that could face China as an equal - would be inherited by every steppe power that followed, down to the Turks and the Mongols.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Xiongnu" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Bookshelves/History/World_History/An_Outline_History_of_East_Asia_to_1200_(Schneewind)/04%3A_The_Han_Empire_and_Its_Neighbors/4.07%3A_The_Silk_Roads_and_the_Xiongnu_War" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

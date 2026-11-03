@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thefatimids.jpg">
             <h1 style="font-size:larger;">The Fatimids</h1>
-            <p style="font-size: large;">The Fatimids. The Fatimid Caliphate was a Ismaili Shia Islamic state that ruled over a vast swath of North Africa and the Middle East from 909 CE to 1171 CE. Claiming direct descent from the Prophet Muhammad's daughter Fatima, they aggressively challenged the religious authority of the Sunni Abbasids in Baghdad. They are incredibly significant because they founded the spectacular city of Cairo, turning it into one of the most culturally vibrant and intellectually advanced capitals in the medieval world. They also established Al-Azhar University, which remains one of the oldest and most prestigious centers of Islamic learning today.</p>
-            <p style="font-size: large;">Their empire grew wildly wealthy by dominating the highly lucrative Red Sea trade routes connecting the Indian Ocean to the Mediterranean. However, their reliance on powerful foreign mercenary armies, particularly Turkic and Sudanese soldiers, gradually eroded the actual power of the caliphs. Internal court intrigues and disastrous famines eventually crippled the state, leaving them vulnerable to outside pressures. The caliphate finally collapsed when the famous Kurdish general Saladin abolished the Fatimid government in 1171 CE, forcefully returning Egypt to the Sunni fold under his new Ayyubid dynasty.</p>
+            <p style="font-size: large;">The Fatimids. The Fatimid Caliphate (909-1171) was the great Shia rival to the Sunni caliphs of Baghdad - an empire that began with a revolutionary movement in North Africa and ended up ruling from one of the greatest cities of the medieval world, Cairo, which the Fatimids themselves founded. The dynasty claimed descent from Fatima, the Prophet Muhammad's daughter, and her husband Ali: to their Ismaili Shia followers, the Fatimid caliph was not merely a ruler but the Imam, the divinely guided leader of all Muslims.</p>
+            <p style="font-size: large;">The movement began in the early 900s, when the Ismaili missionary Abu Abdallah won over the Kutama Berbers of what is now Algeria and overthrew the Aghlabid rulers of Ifriqiya (Tunisia) in 909. From concealment in far-off Sijilmasa came Abdallah al-Mahdi, accepted as the long-awaited Imam and first caliph. For sixty years the Fatimids ruled from Tunisia, fighting off Abbasid agents, Umayyad Spain, and their own Berber rebels, while their missionaries - the da'is - quietly built networks of supporters across the Islamic east.</p>
+            <p style="font-size: large;">In 969 the general Jawhar conquered Egypt almost without a fight, and the Fatimids built their new capital beside the Nile: al-Qahira, 'the Victorious' - Cairo. Under al-Mu'izz, al-Aziz, and the long, strange reign of al-Hakim, Egypt became the richest state in the Mediterranean, its fleets dominating the sea lanes and its merchants linking the Indian Ocean trade to Europe. They founded al-Azhar mosque and its academy, still today a great center of Islamic learning, and presided over a cosmopolitan court of Sunni officials, Christian administrators, and Jewish merchants - the caliphate never managed to convert its own mostly-Sunni population to Ismailism, and mostly did not try.</p>
+            <p style="font-size: large;">The long reign of al-Mustansir (1036-1094) brought decay: army factions fought in the streets of Cairo, famine struck, and the empire lost Syria to the Seljuk Turks and then Jerusalem to the Crusaders in 1099. Viziers like Badr al-Jamali and his son propped up the shrinking state for another century, but in 1171 the last caliph's own vizier - the young Saladin - quietly abolished the dynasty, returned Egypt to the Sunni fold and the Abbasid name, and founded his own Ayyubid sultanate on the Fatimid inheritance.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Fatimid-dynasty" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Bookshelves/History/World_History/Book%3A_World_History_-_Cultures_States_and_Societies_to_1500_(Berger_et_al.)/08%3A_Islam_to_the_Mamluks/8.11%3A_The_Fatimid_Caliphate" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

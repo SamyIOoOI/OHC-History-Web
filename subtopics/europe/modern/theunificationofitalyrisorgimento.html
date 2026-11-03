@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theunificationofitalyrisorgimento.jpg">
             <h1 style="font-size:larger;">The Unification of Italy (Risorgimento)</h1>
-            <p style="font-size: large;">The Risorgimento was the 19th-century movement to unify Italy. Led by figures like Cavour, Garibaldi, and Mazzini, it ended foreign rule and created the Kingdom of Italy in 1861. Rome became the capital in 1870.</p>
-            <p style="font-size: large;">The new state faced regional divides, poverty, and weak institutions. It later built a colonial empire and fought in both World Wars. Unification remains a central event in Italian identity.</p>
+            <p style="font-size: large;">The Unification of Italy (Risorgimento). For centuries after the Renaissance, Italy was 'a geographical expression': a patchwork of kingdoms, duchies, and papal states; after 1815 the Austrian Empire directly controlled the Kingdom of Lombardy-Venetia and indirectly the duchies of Parma, Modena, and Tuscany. The Congress of Vienna (1815) confirmed the division, but rebellions in the 1820s and 1830s and the Revolutions of 1848 kept the dream of a united Italy alive - the movement Italians called the Risorgimento, the 'Resurgence.'</p>
+            <p style="font-size: large;">National feeling had its literary prophets too: Alessandro Manzoni's novel I Promessi Sposi (1827), a thinly veiled allegory of Austrian rule, even helped fix the Tuscan dialect as the national language. But the unification itself was the work of four very different men: Giuseppe Mazzini, the republican prophet whose writings inspired a generation; Camillo Benso, Count of Cavour, the brilliant prime minister of the Kingdom of Sardinia (Piedmont), who built the alliances and won the wars of diplomacy; Giuseppe Garibaldi, the red-shirted general whose volunteers conquered the Italian south; and King Victor Emmanuel II, the Piedmontese king who became the symbol and sovereign of the new Italy - 'Father of the Fatherland.'</p>
+            <p style="font-size: large;">In 1861, after Cavour's wars with Austria and Garibaldi's conquest of the south, the Kingdom of Italy was proclaimed - 17 March is still its anniversary. Venetia and Rome followed, and in 1871 Rome became the capital. But many Italian-speakers in Trentino and Venezia Giulia remained under Austria - the 'unredeemed lands' of Italian irredentism, annexed only in 1918 after the First World War.</p>
+            <p style="font-size: large;">The Risorgimento made Italy a nation-state and a great power, but the tensions it papered over - north and south, church and state, monarchy and republic - shaped Italian politics for a century. It remains the founding story of modern Italy: the moment a civilization older than Rome became a country.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/unification-of-Italy" target="_blank">Source #1</a>
             <a href="https://www.bbc.co.uk/programmes/b03dfpjr" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

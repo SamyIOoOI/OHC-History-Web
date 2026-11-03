@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thenokculture.png">
             <h1 style="font-size:larger;">The Nok Culture</h1>
-            <p style="font-size: large;">The Nok Culture. The Nok Culture was an advanced Iron Age society that flourished on the Jos Plateau in modern central Nigeria from roughly 1500 BCE to 500 CE. They matter immensely to African history because they represent one of the earliest known societies in West Africa to independently develop iron smelting technology. This technological breakthrough allowed them to craft superior agricultural tools and hunting weapons, driving population growth and complex social structures across the region long before extensive outside contact.</p>
-            <p style="font-size: large;">The culture is world famous today for its extraordinary, highly distinctive terracotta sculptures, featuring intricate hairstyles, detailed jewelry, and stylized expressive faces. These artistic masterpieces suggest a sophisticated religious or funerary tradition, though their exact cultural meaning remains uncertain due to a lack of written records. Around 500 CE, the Nok Culture faded away, likely due to climate shifts, severe deforestation caused by iron smelting, or changing trade routes. Despite their physical disappearance, their artistic and metallurgical traditions deeply influenced later West African civilizations like the Kingdom of Ife.</p>
+            <p style="font-size: large;">The Nok Culture was an advanced Iron Age society that flourished on the Jos Plateau in modern central Nigeria during the second and first millennia BCE. Long-running archaeological fieldwork dates the culture's emergence to about 1500 BCE and its fading to around the turn of the era, while its famous terracotta art belongs mainly to the centuries after 900 BCE, dated by the Metropolitan Museum to about 500 BCE-200 CE. They matter immensely to African history because they were among the earliest known societies in West Africa to master iron smelting, jumping straight from the Stone Age to the Iron Age without the long bronze working stage seen elsewhere. Whether that knowledge arrived from Carthage, from Nubia, or was a purely local invention remains one of African archaeology's open questions. Iron agricultural tools and hunting weapons drove population growth and complex social structures across the region long before extensive outside contact.</p>
+<p style="font-size: large;">At Taruga, the oldest known Nok settlement, archaeologists uncovered the remains of no fewer than thirteen iron smelting furnaces. Iron hoes, axes, and cleavers boosted farm output, letting Nok farmers raise sorghum and vegetables across a territory that may have covered 78,000 square kilometers, about the size of Portugal, though stone tools never disappeared, a sign that metal stayed precious.</p>
+            <p style="font-size: large;">The culture is world famous today for its extraordinary, highly distinctive terracotta sculptures, featuring intricate hairstyles, detailed jewelry, and stylized expressive faces, the earliest known art of its kind in West Africa. The first of them surfaced by accident in the 20th century, tossed up by tin mining near the village of Nok that gave the culture its modern name. These artistic masterpieces suggest a sophisticated religious or funerary tradition, though their exact cultural meaning remains uncertain due to a lack of written records.</p>
+<p style="font-size: large;">The culture faded around the turn of the era: its characteristic pottery drops sharply from the archaeological record, and climate shifts, deforestation from iron smelting, or pressure from rival peoples may all have played a part. Despite their physical disappearance, their artistic and metallurgical traditions deeply influenced later West African civilizations like the Kingdom of Ife.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Nok-culture" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Nok_Culture/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

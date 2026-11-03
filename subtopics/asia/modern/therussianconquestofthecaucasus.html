@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/therussianconquestofthecaucasus.jpg">
             <h1 style="font-size:larger;">The Russian Conquest of the Caucasus</h1>
-            <p style="font-size: large;">The Russian Conquest of the Caucasus. The Russian Conquest of the Caucasus was a brutal, century long military campaign launched by the Russian Empire to fully absorb the mountainous region between the Black and Caspian seas. Stretching primarily across the 19th century, this aggressive expansion deeply challenged the existing Ottoman and Persian spheres of influence. This conflict matters deeply because it gave Russia secure, warm water ports and total control over highly lucrative trade routes. The sheer violence of the conquest completely permanently altered the demographic makeup of the entire region.</p>
-            <p style="font-size: large;">The Russian armies faced incredibly fierce resistance from fiercely independent mountain tribes, most notably the Muslim coalition led by Imam Shamil in Dagestan and Chechnya. The Russians utilized massive artillery bombardments and widespread deforestation to slowly grind down the mountain defenses over decades. The conquest concluded in 1864 with the ethnic cleansing of the native Circassian population. Hundreds of thousands of Circassians were violently expelled from their ancestral homeland, forcing them to flee as impoverished refugees into the neighboring Ottoman Empire.</p>
+            <p style="font-size: large;">The Russian Conquest of the Caucasus. The Russian conquest of the Caucasus was one of the longest and bloodiest colonial wars of the 19th century - a half-century struggle (1817-1864) that brought the mountain peoples of the North Caucasus under the Tsar at a terrible human cost. Russia's advance began with the kingdoms south of the mountains: in 1801 it annexed the Georgian kingdom of Kartli-Kakheti, and two victorious wars with Qajar Persia - sealed by the treaties of Gulistan (1813) and Turkmenchay (1828) - gave it the whole South Caucasus, from Dagestan to Armenia.</p>
+            <p style="font-size: large;">The mountains themselves were another matter. The Caucasian War pitted the Russian Imperial Army and Cossack settlers against the Adyghe (Circassians), Chechens, Dagestanis, Abazins, and Ubykhs. In the east, the mountaineers found a leader of genius in Imam Shamil, who from 1834 held the empire at bay for a quarter-century - in 1843 capturing nearly every Russian outpost in Avaria in a single month, in 1845 withstanding Prince Vorontsov's great offensive. It took an army of 250,000 under General Baryatinsky to break the resistance; Shamil was captured in 1859 and exiled to central Russia.</p>
+            <p style="font-size: large;">In the west, the war against the Circassians continued to 1864 - and ended in catastrophe for its victims. The conquest was accompanied by what is now called the Circassian genocide: the massacre, expulsion, and exile of the Circassian people to the Ottoman Empire. Kabardia's population fell from some 350,000 before the war to 50,000; at the Ottoman port of Samsun alone, up to 110,000 refugees huddled in camps where hundreds died daily. Cossack and Russian colonists were settled on the confiscated lands, remaking the region's ethnic map. On 21 May 1864, Tsar Alexander II declared the war over.</p>
+            <p style="font-size: large;">The conquest left deep scars - a Circassian diaspora scattered across the Middle East, and grievances that erupted again in the 20th century. It also entered world literature: Pushkin's 'Prisoner of the Caucasus,' Lermontov's poems, and Tolstoy's tales of war were all born in those mountains.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.iranicaonline.org/articles/russia-i-relations/" target="_blank">Source #1</a>
             <a href="https://www.smithsonianmag.com/history/150-years-ago-Sochi-was-the-site-horrific-ethnic-cleansing-180949675/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

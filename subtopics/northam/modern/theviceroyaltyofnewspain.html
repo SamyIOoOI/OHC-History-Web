@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theviceroyaltyofnewspain.png">
             <h1 style="font-size:larger;">The Viceroyalty of New Spain</h1>
-            <p style="font-size: large;">The Viceroyalty of New Spain. The Viceroyalty of New Spain was a massive imperial territory established by the Spanish Empire in 1535 following the fall of Tenochtitlan, spanning modern-day Mexico, Central America, parts of the U.S. Southwest, and the Spanish West Indies. Governed by a viceroy appointed by the Spanish Crown, this administration matters deeply because it integrated the Americas into global maritime trade networks via the silver mines of Zacatecas and the Manila Galleon trade.</p>
-            <p style="font-size: large;">The viceroyalty operated under a rigid, racially stratified caste system that privileged Iberian-born elites over indigenous, mestizo, and Afro-descendant populations. Roman Catholic religious orders extensively converted native groups while accumulating massive landholdings and social influence across the territory. Over three centuries, economic exploitation, royal monopolies, and growing resentment among local Creoles slowly destabilized imperial authority, culminating in widespread independence revolts in the early 19th century.</p>
+            <p style="font-size: large;">The Viceroyalty of New Spain. The Viceroyalty of New Spain was the first of the four viceroyalties that Spain created to govern its conquered lands in the New World. Established in 1535, fourteen years after the fall of Tenochtitlan, it initially embraced all Spanish-controlled land north of the Isthmus of Panama, and later grew to take in upper and lower California, the future southwestern United States, the Gulf coast eastward to Florida, Spain's Caribbean possessions, and from 1565 even the newly conquered Philippines. Administered from Mexico City for three centuries, this administration matters deeply because it was the first great template of Spanish rule in the Americas, integrating the hemisphere into global commerce through an economy based almost entirely on mining and ranching, while its viceroys sponsored the conversion of the Native population to Christianity and built an array of educational institutions.</p>
+            <p style="font-size: large;">The viceroy, appointed by the Spanish Crown, was technically the supreme authority, yet in practice the considerable independence of governors and royal audiencias in the subordinate regions confined his real power largely to central and southern Mexico. The first viceroy, Antonio de Mendoza, who ruled from 1535 to 1549, dispatched Francisco Coronado on his expedition northward while ameliorating some of the worst abuses of the conquistadores and supporting the church's work with the Native population. That mission came at a terrible cost: during the first hundred years of Spanish rule, the Indigenous population of New Spain collapsed from an estimated 25 million to 1 million through maltreatment, disease, and the disruption of their cultures, while a casta hierarchy - famously catalogued in the viceroyalty's paintings - stratified society by ancestry. After a period of decline in the late seventeenth century, distinguished viceroys such as Bucareli and Revillagigedo revived the administration and pushed settlement overland into California to counter Russian and British interest; the viceroyalty weathered the early independence risings of Hidalgo and Morelos, only to succumb to Agustin de Iturbide's coalition in 1821.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Viceroyalty-of-New-Spain" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/image/16081/viceroyalty-of-new-spain-c-1800/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

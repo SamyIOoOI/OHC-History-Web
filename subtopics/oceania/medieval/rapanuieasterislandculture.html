@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/rapanuieasterislandculture.jpg">
             <h1 style="font-size:larger;">Rapa Nui (Easter Island) Culture</h1>
-            <p style="font-size: large;">Rapa Nui (Easter Island) Culture. Rapa Nui culture was an isolated Polynesian society that developed on a remote volcanic island in the southeastern Pacific Ocean, flourishing from roughly 1200 CE onward. Famous worldwide for carving massive stone statues called moai, the Rapa Nui people created a highly organized ceremonial culture centered around ancestor veneration and chiefdom competition. This society matters because its artistic achievements and subsequent ecological pressures provide a compelling study in human adaptation and resilience.</p>
-            <p style="font-size: large;">The islanders carved nearly one thousand moai out of volcanic tuff, transporting them miles to elevate them onto massive stone platforms (ahu) facing inland to protect villages. Overreliance on palm forests for moving statues, combined with rat infestations and environmental isolation, severely depleted the island's timber resources. Despite these severe ecological strains and social transformations—such as the emergence of the Tangata Manu (Birdman) cult—the Rapa Nui culture endured until European contact and catastrophic 19th-century slave raids.</p>
+            <p style="font-size: large;">Rapa Nui (Easter Island) Culture. Rapa Nui is one of the most remote inhabited places on Earth - a volcanic island in the southeastern Pacific, some 1,400 miles west of South America. The date of its first settlement is actively debated: older accounts placed colonization between 400 and 800 AD, but newer radiocarbon analyses of the earliest layers - notably the work of Terry Hunt and Carl Lipo - point to settlement around 1200 AD, a shorter chronology reinforced by a meta-analysis of more than 1,400 dates across East Polynesia, though some researchers still question the dismissal of the older dates. What is agreed is that colonists from an unidentified homeland in Eastern Polynesia reached the island after sailing in a southeasterly direction for many weeks. There they created a highly organized ceremonial culture centered on ancestor veneration, famous worldwide for the moai: colossal stone figures carved as images of ancestral chiefs whose supernatural power protected the community. This society matters because its artistic achievements - and the pressures that later transformed it - offer one of the most compelling studies in human adaptation and resilience in the entire Pacific.</p>
+            <p style="font-size: large;">Most moai were carved from soft volcanic tuff at Rano Raraku, an extinct crater that served as the primary statue quarry, then moved to their final destinations on wooden sleds or rollers - a feat modern archaeologists have experimentally recreated - and erected on temple platforms (ahu) along the coast, facing inland to keep watch over the local communities; they range from 8 feet to an unfinished example over 70 feet high. When Europeans arrived in 1722 the moai tradition was already in decline, and by the mid-nineteenth century all the statues had fallen. The islanders also invented rongorongo, a system of writing first described by the missionary Eugene Eyraud in 1864 and never deciphered - research suggests it was invented independently, without influence from European writing systems. A devastating Peruvian slave raid in 1862, followed by smallpox epidemics, reduced the population catastrophically; the island passed under Chilean administration, and by 1965 the Easter Islanders had become full Chilean citizens - yet within a single generation they responded to complete acculturation without losing their pride in their own ancestors.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Easter-Island/People" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Courses/Palo_Verde_College/Introduction_to_Art/06%3A_The_Sophisticated_Art_of_Cultures_(200_CE__1400_CE)/6.14%3A_Rapa_Nui_Island_(7th_CE_est.__ongoing)" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

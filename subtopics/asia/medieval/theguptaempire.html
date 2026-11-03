@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theguptaempire.jpg">
             <h1 style="font-size:larger;">The Gupta Empire</h1>
-            <p style="font-size: large;">The Gupta Empire. The Gupta Empire was an ancient Indian state that covered much of the subcontinent from the early 4th to late 6th centuries CE. Although it falls chronologically earlier than most medieval states, it serves as a crucial transition point into the classical Indian medieval period. This era matters deeply because it is widely celebrated as the Golden Age of India, marked by extraordinary advancements in mathematics, astronomy, and literature. Scholars during this period invented the concept of zero and the decimal system, discoveries that completely revolutionized global mathematics.</p>
-            <p style="font-size: large;">The empire maintained a highly decentralized structure, relying on a complex network of local vassal kings rather than strict imperial control. This loose system worked well during periods of peace but proved highly vulnerable to external pressure. In the late 5th century, the White Huns launched devastating and repeated invasions from the northwest, completely exhausting the imperial treasury. The central Gupta authority eventually collapsed entirely, leaving northern India fractured into numerous smaller kingdoms.</p>
+            <p style="font-size: large;">The Gupta Empire. The Gupta Empire (c. 320-550) ruled northern India during what many historians call India's Golden Age - a label some modern scholars dispute, but one the age's achievements make hard to resist. Founded by Chandragupta I, crowned in 320 at Pataliputra, the dynasty rose from a local Magadha kingdom - its position strengthened by his marriage to the Licchavi princess Kumaradevi - to an empire spanning most of the northern subcontinent.</p>
+            <p style="font-size: large;">Its greatest conqueror, Samudragupta (c. 335-375), is known to us largely through his own court poet's panegyric, the Allahabad Pillar inscription, which claims he uprooted eight kings of the north, defeated twelve rulers of the south, and received tribute from the forest tribes and the frontier kingdoms from Nepal to Assam - claims modern historians read with care, since the inscription dressed diplomacy as submission. He performed the ancient horse sacrifice of imperial sovereignty and minted gold coins showing him playing the veena: a 'king of poets' as well as a conqueror.</p>
+            <p style="font-size: large;">Under Samudragupta's son Chandragupta II and grandson Kumaragupta I, the empire enjoyed its Pax Gupta. The age's culture set the standards of Indian art and thought for a thousand years: the Mahabharata and Ramayana took their classical written form, the Puranas were compiled, Kalidasa wrote the works that remain Sanskrit literature's summit, while Aryabhata, Varahamihira, and Vatsyayana made their lasting advancements in scholarship. Hindu in allegiance - the Guptas patronized Brahmanical ritual - the empire was tolerant of other faiths, and its art 'set standards of form and taste that determined the whole subsequent course of art, not only in India but far beyond her borders'.</p>
+            <p style="font-size: large;">The end came from the steppe. From the late 5th century the Huna peoples - the Kidarite and Alchon Huns of Central Asia - broke through the northwest frontier, and the empire's own feudatories carved away its territory; by around 550 the Guptas were gone and India fragmented again into regional kingdoms. But the template endured: for later Indians, the Gupta age remained the classical standard of kingship, art, and learning - the age against which all later Indian civilization measured itself.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Gupta-dynasty" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Gupta_Empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

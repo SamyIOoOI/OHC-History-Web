@@ -297,6 +297,11 @@ html.light .continentlink {
 
 html.light .continentlink:hover {
     fill: rgb(230, 111, 0);
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 8px rgb(230, 111, 0)) drop-shadow(0 0 20px rgb(230, 111, 0));
+}
+html.light .maplist a {
+    color: #a02a08;
 }
 
 html.light .grainy {
@@ -369,4 +374,33 @@ html.light #skiploading button {
     .hw-picker-footer {
         justify-content: flex-start;
     }
+}
+
+/* Reading font + title color (settings panel) */
+html.hw-custom-font .table p,
+html.hw-custom-font .table li {
+    font-family: var(--hw-reading-font) !important;
+}
+html.hw-custom-titlecolor h1,
+html.hw-custom-titlecolor h2,
+html.hw-custom-titlecolor #site-title {
+    color: var(--hw-title-color) !important;
+}
+.hw-font-section, .hw-titlecolor-section { margin: 10px 0; }
+.hw-font-label { display: block; color: #e8c890; font-size: 0.85em; margin-bottom: 4px; }
+#hw-font-select { width: 100%; background: #24100a; color: white; border: 1px solid #6b3418; padding: 6px 8px; font-family: inherit; }
+.hw-titlecolor-row { display: flex; gap: 6px; }
+.hw-titlecolor { width: 24px; height: 24px; border: 2px solid #000; cursor: pointer; padding: 0; }
+.hw-titlecolor-active { outline: 2px solid #e8c890; outline-offset: 1px; }
+.hw-dev-section { margin-top: 10px; }
+
+/* Contrast guard: panel labels legible on the light (cream) panel */
+html.light .hw-font-label { color: #3a1208; }
+
+/* Mobile footer: inline text-indent pushed the centered line off the right edge */
+.pagefooter {
+    text-indent: 0 !important;
+    padding: 4px 8px 6px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }

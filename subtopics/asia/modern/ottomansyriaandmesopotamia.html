@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/ottomansyriaandmesopotamia.png">
             <h1 style="font-size:larger;">Ottoman Syria and Mesopotamia</h1>
-            <p style="font-size: large;">Ottoman Syria and Mesopotamia. Ottoman Syria and Mesopotamia refer to the massive Arab majority territories in the Levant and modern Iraq that fell under direct Ottoman rule starting in the early 16th century. By decisively defeating the Safavids and the Mamluks, the Ottoman Empire secured these immensely wealthy and strategically vital provinces for four hundred years. This era matters deeply because the Ottomans integrated these regions into a massive global economic network, standardizing the legal systems while allowing local religious minorities to govern their own internal affairs through the millet system.</p>
-            <p style="font-size: large;">For centuries, these provinces enjoyed relative stability and economic growth, though real political power often rested with deeply entrenched local families and ambitious governors rather than the distant sultan in Istanbul. As the broader Ottoman Empire began to weaken in the 19th century, European powers began heavily interfering in the region's economy and politics. The centuries of Ottoman control finally ended completely during the chaos of World War I. Following the war, Britain and France arbitrarily partitioned these territories into artificial modern nation states.</p>
+            <p style="font-size: large;">Ottoman Syria and Mesopotamia. For four centuries, from 1516 to 1918, the Arab lands of Syria and Mesopotamia were provinces of the Ottoman Empire - an era that shaped their cities, their sectarian geography, and ultimately their modern borders. The era began with Sultan Selim I's lightning campaign of 1516-1517: victory over the Mamluks at Marj Dabiq near Aleppo gave him Syria; the following year Egypt itself fell, and the Arab heartlands passed from Cairo to Constantinople.</p>
+            <p style="font-size: large;">Ottoman Syria - the whole country between the Taurus mountains and Sinai - was governed from Damascus, then divided into the eyalets of Aleppo, Tripoli, and Sidon; Mount Lebanon won special autonomous status as early as 1667. The 19th century brought both reform and tragedy: the Tanzimat decrees of 1839 and 1856 declared Muslims and non-Muslims equal, but the old hierarchy's collapse fed sectarian violence - massacres of Christians at Aleppo in 1850 and, worst of all, in Damascus and Mount Lebanon in 1860. European pressure then forced the creation of the Mount Lebanon Mutasarrifate in 1861, an autonomous Christian-governed province - the seed of modern Lebanon. By the 1870s the region was organized into the vilayets of Syria, Aleppo, and Beirut, with Jerusalem an autonomous mutasarrifate.</p>
+            <p style="font-size: large;">Mesopotamia followed its own rhythm. Suleiman the Magnificent conquered Baghdad from the Safavids in 1534, and for three centuries Iraq was the contested frontier of the Ottoman-Persian wars - Baghdad even fell to the Safavids from 1623 to 1638 before the Ottomans recovered it. From 1749 to 1831 the region was governed by a semi-autonomous dynasty of Georgian Mamluks ruling in the sultan's name; after their removal, the reforming governor Midhat Pasha modernized the provinces of Mosul, Baghdad, and Basra.</p>
+            <p style="font-size: large;">The First World War ended Ottoman rule in both lands: British forces took Baghdad in 1917 and swept through Palestine and Syria in 1918. The empire's Arab provinces became British and French mandates - Iraq, Palestine, Syria, and Lebanon - and the borders drawn in those years are the borders on the map today.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/summary/Ottoman-Empire-Timeline" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Ottoman%5FEmpire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

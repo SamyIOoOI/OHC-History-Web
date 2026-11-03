@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thenabataeankingdom.png">
             <h1 style="font-size:larger;">The Nabataean Kingdom</h1>
-            <p style="font-size: large;">The Nabataean Kingdom. The Nabataean Kingdom was an incredibly wealthy Arab state that thrived in the harsh desert environments of modern day Jordan, Israel, and Saudi Arabia from the 4th century BCE to 106 CE. Their magnificent capital city of Petra was famously carved directly into the sheer red sandstone cliffs of the region. The Nabataeans are historically crucial because they entirely monopolized the highly lucrative incense trade routes, transporting frankincense and myrrh from southern Arabia to the Mediterranean coast. They were also masterful water engineers, developing complex systems of dams, cisterns, and aqueducts that allowed them to build thriving urban centers in bone dry deserts.</p>
-            <p style="font-size: large;">Their immense wealth and strategic location eventually attracted the unwanted attention of the expanding Roman Republic and later the Roman Empire. The Nabataeans managed to maintain their independence for a remarkably long time by acting as a highly useful client state to Rome, frequently providing auxiliary troops for Roman military campaigns. However, their independence quietly ended in 106 CE when the Roman Emperor Trajan peacefully annexed the kingdom. The territory was seamlessly integrated into the Roman province of Arabia Petraea, bringing an end to Nabataean sovereignty.</p>
+            <p style="font-size: large;">The Nabataean Kingdom. The Nabataeans were an Arab people who began as nomads of the Arabian desert and built, by the mid-3rd century BCE, one of the most remarkable trading kingdoms of the ancient world. From their rock-carved capital at Petra, with the cities of Hegra (Mada'in Salih) in the Hejaz and Bosra in the north, they controlled the caravan routes that carried frankincense, myrrh, and spices from southern Arabia to the Mediterranean port of Gaza - and grew fabulously rich on the tolls. Their language was Arabic, their official script Aramaic, and their kingdom stretched at its zenith from the Hejaz to Damascus, which they held from 85 to 71 BCE.</p>
+            <p style="font-size: large;">Their secret was water. Greek writers marveled that the Nabataeans survived in a waterless desert by digging hidden cisterns marked with signs only they could read, vanishing into the sands while invading armies died of thirst - a trick they used to annihilate the 4,000-strong raiding force the Macedonian general Antigonus sent against their rock stronghold in 312 BCE. Diodorus recorded that 'neither the Assyrians of old, nor the kings of the Medes and Persians, nor yet those of the Macedonians have been able to enslave them.'</p>
+            <p style="font-size: large;">By the 1st century BCE the kingdom was a power to be courted and feared: King Obodas I crushed the Hasmonean king Alexander Jannaeus at Gadara in 93 BCE and slew the Seleucid king Antiochus XII in battle at Cana in 84, and was worshipped as a god after his death; under Aretas III and Aretas IV the realm reached its territorial and commercial zenith. But Rome was closing in: in 62 BCE Aretas III paid tribute to a Roman army at the gates of Petra, and the kingdom survived another century and a half as a wealthy Roman client state.</p>
+            <p style="font-size: large;">The end came quietly: in 106 CE the emperor Trajan annexed the kingdom as the province of Arabia Petraea, and the caravan trade that had made the Nabataeans rich gradually shifted to other routes. Their legacy is written in stone - the treasury and tombs of Petra, carved whole from rose-red cliffs, and the waterworks that made a desert bloom - and in their script, which over the following centuries evolved into the Arabic alphabet used across the world today.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Nabataean-people" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Bookshelves/Art/Art_History_and_Theory/SmartHistory_of_Art/02%3A_Ancient_Mediterranean/2.06%3A_Nabataean" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

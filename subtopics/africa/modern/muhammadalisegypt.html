@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/muhammadalisegypt.png">
             <h1 style="font-size:larger;">Muhammad Ali's Egypt</h1>
-            <p style="font-size: large;">Muhammad Ali's Egypt. Muhammad Ali's Egypt refers to the state created by the Ottoman Albanian military commander who seized power in Egypt following the retreat of Napoleon's French forces in 1805. Widely regarded as the founder of modern Egypt, Muhammad Ali eliminated the ancient Mamluk political class and instituted sweeping administrative, agricultural, and industrial reforms. This period is historically crucial because it rapidly transformed an impoverished Ottoman province into a self-sustaining, heavily industrialized regional superpower with a modern conscript military.</p>
-            <p style="font-size: large;">Muhammad Ali introduced large-scale cotton cultivation to fund his ambitious state projects, built massive naval fleets, and expanded Egyptian military control across Sudan, the Levant, and parts of Arabia. His aggressive expansion directly threatened the survival of the Ottoman Empire itself, forcing European powers to intervene militarily to check his power in 1841. Although his dynasty was forced to scale back its territorial ambitions, his descendants continued to rule Egypt through the modern era, setting the stage for the country's profound political and social influence in the Arab world.</p>
+            <p style="font-size: large;">Muhammad Ali's Egypt refers to the state created by the Ottoman Albanian military commander who seized power in Egypt following the retreat of Napoleon's French forces, ruling as the sultan's viceroy from 1805 to 1848. Born in Kavala in Macedonia, he arrived in Egypt in 1801 with an Albanian regiment sent to expel the French, and by sheer political skill had himself named governor within four years. He is widely regarded as the founder of modern Egypt.</p>
+<p style="font-size: large;">Muhammad Ali eliminated the ancient Mamluk political class, most brutally in 1811, when he invited their leaders to a celebration at the Cairo citadel and had them cut down. Then he rebuilt the state from the ground up: by 1815 most farmland had become state land, irrigation was renewed, new cash crops like cotton spread across the Delta, and factories, docks, and a modern army of conscripted Egyptian peasants, officered by Turks and trained by Europeans, rose on the proceeds.</p>
+            <p style="font-size: large;">His ambitions reached far beyond Egypt: his armies campaigned in Arabia, conquered the Sudan in search of gold and recruits, and nearly toppled the sultan himself, winning Syria after 1831 and crushing the Ottoman army at Nizip in 1839. Only the European powers stopped him: they destroyed his fleet at Navarino in 1827 and forced him out of Syria in 1840, settling him instead with the hereditary rule of Egypt and Sudan.</p>
+<p style="font-size: large;">This period matters because it rapidly transformed an impoverished Ottoman province into a self-sustaining regional power with a modern conscript military, Western style schools, and Europe's closest thing to an industrial economy outside Europe itself. Though many reforms faded after his death in 1849, his dynasty ruled Egypt until 1952, and he had cleared the path for an independent Egyptian state.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Egypt/Muhammad-Ali-and-his-successors-1805-82" target="_blank">Source #1</a>
             <a href="https://www.khanacademy.org/humanities/whp-origins/x23c41635548726c4:the-long-nineteenth-century/x23c41635548726c4:comparing-industrialization-in-egypt-and-japan-7-6/a/article-muhammad-ali-egypts-industrial-revolution" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

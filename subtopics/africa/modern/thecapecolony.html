@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thecapecolony.png">
             <h1 style="font-size:larger;">The Cape Colony</h1>
-            <p style="font-size: large;">The Cape Colony was founded by the Dutch East India Company in 1652 at Cape Town. Britain took it in 1806 and expanded its borders through wars and treaties. It became a settler colony with a large enslaved and indigenous population.</p>
-            <p style="font-size: large;">The Cape Colony later joined the Union of South Africa in 1910. Its racial laws and economy helped shape apartheid. It remains a key part of South African history.</p>
+            <p style="font-size: large;">The Cape Colony was founded by the Dutch East India Company in 1652, when Jan van Riebeeck planted a refreshment station at Cape Town to feed the company's ships rounding Africa to Asia. From that garden grew a settler society: Dutch, French, and German colonists, the ancestors of the Afrikaners, along with enslaved people brought from Asia and Africa, and the Khoikhoi and San peoples whose lands were steadily swallowed.</p>
+<p style="font-size: large;">Britain seized the Cape in 1806, during the Napoleonic wars, and held it for over a century, expanding the colony's borders through wars and treaties against the Xhosa kingdoms on its eastern frontier. British rule brought English law and settlers, the abolition of slavery in the 1830s, which helped provoke the Boer Great Trek into the interior, the founding epic of Afrikaner nationhood: between 1835 and the early 1840s some 12,000 to 14,000 Boers, whole parties of kinfolk and neighbors, crossed the Orange River with their wagons and fought their way past the kingdoms of the interior with horses, guns, and laagered camps, and eventually diamonds and gold, which made the Cape the richest corner of Africa.</p>
+            <p style="font-size: large;">The colony matters because so much of South Africa's later history was drafted there: a society built on land dispossession and racial hierarchy, a booming mining economy run on cheap African labor, and a qualified franchise that let some Black men vote, a flicker of inclusion snuffed out after union.</p>
+<p style="font-size: large;">In 1910 the Cape Colony joined Natal, the Transvaal, and the Orange Free State to form the Union of South Africa, becoming the Cape Province. Its racial laws and labor systems helped shape the apartheid that followed, and its story, from van Riebeeck's garden to Mandela's walk to freedom in Cape Town, remains the key to understanding South Africa.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Cape-Colony" target="_blank">Source #1</a>
             <a href="https://www.britishmuseum.org/collection/term/x117198" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

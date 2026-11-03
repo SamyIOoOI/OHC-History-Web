@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,11 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thebyzantineexarchateofafrica.png">
             <h1 style="font-size:larger;">The Byzantine Exarchate of Africa</h1>
-            <p style="font-size: large;">The Byzantine Exarchate of Africa was a province centered on Carthage after Rome's western fall. It preserved Roman administration and Orthodox Christianity in North Africa. It was a base for resisting Berber and later Arab attacks.</p>
-            <p style="font-size: large;">The exarchate fell to the Arab conquest in the late 7th century. Carthage was captured in 698. North Africa then gradually became part of the Islamic world.</p>
+            <p style="font-size: large;">The Byzantine Exarchate of Africa was a semi autonomous province of the Byzantine Empire centered on Carthage, established in the late 6th century by the emperor Maurice as a military command over the empire's North African territories, lands occupied largely by independent Berber peoples. It matters because it preserved Roman administration and Orthodox Christianity in North Africa for more than a century after Rome's western fall, and it served as the model for the theme system that would organize the whole Byzantine state.</p>
+<p style="font-size: large;">The exarch, appointed directly by the emperor, combined unlimited military and civil power in one office, and such concentrated authority could turn a governor into a rival. In 610 the exarch of Carthage sent a fleet under his own son, Heraclius, to Constantinople, where it overthrew the emperor Phocas and founded a new imperial dynasty.</p>
+            <p style="font-size: large;">For decades the exarchate held the line: its armies and Berber allies repulsed the first Arab raids from Egypt in the early 7th century, and the brief revolt of the exarch Gregory around 647 showed how far Carthage's confidence still ran. But pressure mounted year by year as Arab armies pushed west, taking the exarchate's inland strongholds one by one.</p>
+<p style="font-size: large;">The exarchate fell to the Arab conquest in the late 7th century: Carthage itself was captured in 698, and its elites and churchmen fled to Sicily and Constantinople. North Africa then gradually became part of the Islamic world, though the exarchate's century of Roman rule left its mark in the region's churches, mosaics, and Latin speaking towns.</p>
+<p style="font-size: large;">The exarchate's story began with reconquest: in 533 the emperor Justinian's general Belisarius had taken North Africa back from the Vandals, restoring it to Roman rule after a century of Germanic occupation. Under the exarchs, African grain and olive oil once again flowed east to Constantinople, and Latin remained the language of government and church long after it had faded elsewhere in the west.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Exarchate-of-Carthage" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/carthage/" target="_blank">Source #2</a>
@@ -73,7 +76,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +86,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +156,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

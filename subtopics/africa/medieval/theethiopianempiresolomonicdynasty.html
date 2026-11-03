@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theethiopianempiresolomonicdynasty.png">
             <h1 style="font-size:larger;">The Ethiopian Empire (Solomonic Dynasty)</h1>
-            <p style="font-size: large;">The Solomonic dynasty ruled Ethiopia from 1270 to 1974, with some interruptions. It claimed descent from Solomon and the Queen of Sheba. It expanded the empire and defended Orthodox Christianity.</p>
-            <p style="font-size: large;">The empire fought Muslim sultanates, Oromo migrations, and European colonial powers. It was modernized under Menelik II and later Haile Selassie. The monarchy ended in 1974.</p>
+            <p style="font-size: large;">The Solomonic dynasty ruled Ethiopia from 1270 to 1974, with interruptions, one of the longest lived royal houses in world history. Founded by Yekuno Amlak after he overthrew the Zagwe kings, it grounded its legitimacy in a magnificent claim: descent from King Solomon and the Queen of Sheba, whose union, in Ethiopian tradition, produced Menelik I, the first emperor. It matters because under this line Ethiopia kept its independence, its church, and its identity through seven centuries of siege and change.</p>
+<p style="font-size: large;">The early Solomonic emperors expanded the empire deep into the highlands and defended Ethiopian Orthodox Christianity against the Muslim sultanates on their borders, chronicling their wars in royal chronicles that remain priceless historical sources. The greatest test came in the 16th century, when the armies of Ahmad Gran of Adal overran most of the empire, and only Portuguese muskets, and the death of Gran in 1543, saved it.</p>
+            <p style="font-size: large;">After that near death, the dynasty rebuilt: emperors founded a splendid capital at Gondar, whose castles still stand, expelled foreign missionaries who pressed too hard, and weathered the great Oromo migrations that reshaped the horn. In later centuries central power ebbed into the era of warring princes, until the emperors of the 19th century, above all Menelik II, reunified and modernized the state and smashed an Italian invasion at Adwa in 1896, the victory that kept Ethiopia free when all Africa was being colonized.</p>
+<p style="font-size: large;">The last emperor, Haile Selassie, ruled for much of the 20th century, a global symbol of African dignity who modernized his country and survived Italian occupation. Deposed in 1974 by a military committee, he saw the ancient monarchy end with him, yet the Solomonic legend, and the independence it guarded, remain at the heart of Ethiopian identity.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Solomonid-dynasty" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/article/1875/solomonic-descent-in-ethiopian-history/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/mycenaeangreece.png">
             <h1 style="font-size:larger;">Mycenaean Greece</h1>
-            <p style="font-size: large;">Mycenaean Greece was a Bronze Age civilization centered on fortified palaces like Mycenae and Pylos. It flourished from about 1600 to 1100 BCE and left behind Linear B records, massive walls, and rich shaft graves. Its warriors and trade contacts inspired later Greek legends.</p>
-            <p style="font-size: large;">The palaces collapsed around 1200 BCE during the wider Bronze Age collapse. Mycenaean power faded, writing disappeared, and Greece entered a dark age. Later Greeks remembered the era through myths of Troy and Agamemnon.</p>
+            <p style="font-size: large;">Mycenaean Greece. Mycenaean Greece (c. 1750-1050 BC) was the first great civilization of the Greek mainland - the Greece of Agamemnon, Achilles, and the Trojan War, or at least of the real Bronze Age kings behind the legends. From fortified palace-citadels at Mycenae, Tiryns, Pylos, and Thebes, a warrior elite of kings (the wanax) ruled palace-centered states with rigid hierarchies, massive 'Cyclopean' walls, and tombs filled with gold.</p>
+            <p style="font-size: large;">The Mycenaeans learned much from Minoan Crete and soon surpassed it: they took over Crete in the Late Bronze Age and came to dominate Aegean trade, their settlements spreading to Cyprus and the coast of Asia Minor, their pottery reaching from Italy to the Levant. They were engineers - builders of roads, bridges, drainage works, and the Lion Gate of Mycenae - and they were literate: their Linear B tablets, deciphered in 1952, are the oldest written Greek, and already name several gods later found in the Olympic pantheon - the first written evidence of Greek religion.</p>
+            <p style="font-size: large;">Then, around 1200-1050 BC, the world of the palaces collapsed. Within a generation the great citadels burned, Linear B vanished, and Greece entered a four-century Dark Age. Why, no one knows: invading 'Sea Peoples,' Dorian migrants, internal revolt, drought, and systems collapse have all been blamed - probably in combination.</p>
+            <p style="font-size: large;">The Mycenaeans were forgotten - but not quite. Their age lived on in memory, sung by Homer as the age of heroes: the Trojan War, if it happened, was a Mycenaean war. When Schliemann dug at Mycenae and Troy in the 1870s and found the gold, he proved that behind the legends stood a real and splendid civilization - the first chapter of Greek history.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Mycenaean-civilization" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Mycenaean_Civilization/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

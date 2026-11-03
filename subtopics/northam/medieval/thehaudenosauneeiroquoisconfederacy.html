@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thehaudenosauneeiroquoisconfederacy.png">
             <h1 style="font-size:larger;">The Haudenosaunee / Iroquois Confederacy</h1>
-            <p style="font-size: large;">The Haudenosaunee / Iroquois Confederacy. The Haudenosaunee Confederacy, also known as the Iroquois League, was a powerful political and military alliance formed around the 12th to 15th centuries in modern-day upstate New York. Originally uniting five distinct nations—the Mohawk, Oneida, Onondaga, Cayuga, and Seneca—the league was established under the Great Law of Peace (Gayanashagowa) through the diplomatic efforts of the Peacemaker and Hiawatha. This confederacy matters deeply because it created one of the world's oldest continuous participatory democracies, deeply influencing modern constitutional principles.</p>
-            <p style="font-size: large;">Operating as a matrilineal society, clan mothers held the exclusive authority to select, advise, and depose male council chiefs. The confederacy lived in fortified villages of multi-family bark longhouses, sustaining themselves through communal agriculture centered on the "Three Sisters" (corn, beans, and squash). Their unified military strength and strategic location allowed them to dominate regional trade and diplomacy across northeastern North America for centuries, skillfully balancing competing European colonial powers against one another.</p>
+            <p style="font-size: large;">The Haudenosaunee (Iroquois Confederacy). The Haudenosaunee - 'those who build the longhouse,' known to history as the Iroquois - are the great indigenous confederacy of northeastern North America: originally five nations, the Mohawk, Oneida, Onondaga, Cayuga, and Seneca - the Mohawk the 'Keepers of the Eastern Door' of the metaphorical longhouse, the Seneca the 'Keepers of the Western Door' - joined after 1722 by the Tuscarora as the Six Nations. Their oral history tells how the Great Peacemaker, with Hiawatha and Jigonhsasee, ended the wars between the nations and founded the confederacy under a constitution known as the Great Law of Peace - dated anywhere between 1142 and 1660 - one of the oldest continuing constitutions in the world, governing through the Grand Council.</p>
+            <p style="font-size: large;">The confederacy was a superpower of the colonial-era woodlands: its unity gave the five nations military and diplomatic weight far beyond their numbers, and its matrilineal clans, longhouse religion, and wampum diplomacy made it a distinctive civilization in its own right. Armed with muskets from the fur trade, the Haudenosaunee fought the Beaver Wars and defeated or assimilated most neighboring nations; at their peak around 1700 their power reached from the lower Great Lakes south to Virginia and the Ohio Valley. For nearly 200 years they held the balance of power between the French and British colonies, aligning with Britain under the Covenant Chain. The American Revolution split the confederacy - Oneida and Tuscarora sided with the Patriots, the rest with Britain - but it never died: the Haudenosaunee reestablished their Grand Council after the war, still consider themselves sovereign, issue their own passports, and in 1923 even attempted to join the League of Nations - the oldest living experiment in federal democracy on the continent.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Haudenosaunee-Confederacy" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/article/1656/origins-of-the-haudenosaunee-iroquois-confederacy/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

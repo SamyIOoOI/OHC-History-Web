@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thesafavidempire.png">
             <h1 style="font-size:larger;">The Safavid Empire</h1>
-            <p style="font-size: large;">The Safavid Empire. The Safavid Empire was one of the most significant ruling dynasties of Iran, dominating the region from 1501 to 1736. They established Twelver Shiism as the official state religion, permanently altering the religious landscape of the Middle East and sharply distinguishing Persia from its Sunni Ottoman neighbors. This era matters because it oversaw a massive cultural and economic revival, turning the new capital of Isfahan into a global masterpiece of architecture and trade. They heavily patronized the arts, producing world famous carpets, silk textiles, and miniature paintings.</p>
-            <p style="font-size: large;">Sandwiched between the expanding Ottomans to the west and the Mughals to the east, the Safavids fought constantly to secure their borders. They reached their absolute zenith under Shah Abbas the Great, who modernized the military with gunpowder weapons and ruthlessly centralized political power. Eventually, weak and cloistered subsequent rulers let the state decay from within. The empire rapidly collapsed in 1722 when rebellious Afghan tribesmen easily besieged and captured Isfahan, plunging Persia into decades of chaotic civil war.</p>
+            <p style="font-size: large;">The Safavid Empire. The Safavid Empire (1501-1736) is where modern Iran begins - the dynasty that made Iran a Shia Muslim nation and one of the great 'gunpowder empires' of the early modern world. In 1501 the young Shah Ismail I, carried to power by his fanatical Qizilbash - the 'red-head' Turkoman tribesmen - proclaimed Twelver Shi'ism the official religion of his empire. It was one of the great turning points in the history of Islam: Iran, until then largely Sunni, became the heartland of the Shia, and the sectarian geography of the Middle East was fixed into our own time.</p>
+            <p style="font-size: large;">The early shahs warred constantly with the Sunni Ottomans and Uzbeks on their borders. Under Shah Tahmasp the empire began a profound transformation: to break the Qizilbash's grip on the army, the shahs imported hundreds of thousands of Georgians, Circassians, and Armenians from the Caucasus as ghulams - royal slaves trained for war and government, much like the Ottoman janissaries - who rose to the highest offices of the state.</p>
+            <p style="font-size: large;">The dynasty's zenith came under Shah Abbas the Great (r. 1588-1629). He completed the ghulam army, built an artillery corps with European help, moved his capital to Isfahan, and revived the Silk Road through Iran, opening direct trade with England and the Netherlands in silk, carpets, and textiles. Isfahan under Abbas became one of the showpieces of the world, and Safavid Persia an economic stronghold between East and West, its court a rich mix of Turkoman lords, Persian bureaucrats, and Caucasian soldiers and courtiers.</p>
+            <p style="font-size: large;">The end came with shocking speed: in 1722 Afghan tribesmen besieged and took Isfahan itself, and the once-mighty empire collapsed. The conqueror Nader Shah drove out the Afghans and briefly restored the Safavids as puppets before taking the throne himself in 1736. But the Safavid imprint on Iran was permanent: the Shia faith, the efficient state, and the architectural glories of Isfahan remain the dynasty's living legacy.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Safavid-dynasty" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Bookshelves/History/World_History/World_History_II%3A_From_1400_(OpenStax)/01%3A_Connections_Across_Continents_15001800/04%3A_The_Islamic_World/4.04%3A_The_Safavid_Empire" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

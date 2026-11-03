@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/phoeniciancitystates.png">
             <h1 style="font-size:larger;">Phoenician City-States</h1>
-            <p style="font-size: large;">Phoenician City-States. The Phoenician City-States were a collection of independent coastal trade hubs located primarily in modern day Lebanon, thriving between 1500 BCE and 300 BCE. Cities like Tyre, Sidon, and Byblos operated independently rather than forming a unified empire, bound together by a shared language and culture. The Phoenicians were the master seafarers and merchants of the ancient Mediterranean, famous for trading a highly prized purple dye extracted from murex snails. Most importantly, they invented the first phonetic alphabet, a revolutionary system that drastically simplified writing and formed the direct basis for the Greek and Roman alphabets used today.</p>
-            <p style="font-size: large;">As they expanded their trading networks, the Phoenicians established numerous wealthy colonies across the Mediterranean coast, with Carthage in North Africa becoming the most famous and powerful. Their dominance in maritime trade slowly waned as they fell under the successive control of the Assyrian, Babylonian, and Persian empires. The final blow to their independence came in 332 BCE when Alexander the Great famously besieged and destroyed the island city of Tyre, permanently shifting the region's cultural trajectory toward Hellenism.</p>
+            <p style="font-size: large;">The Phoenician City-States were independent coastal trading hubs strung along modern Lebanon, cities like Tyre, Sidon, and Byblos, bound by a shared language and culture rather than united in an empire. Their cities began to take form as early as 3200 BCE, and Phoenicia thrived as a maritime trader and manufacturing center from about 1500 to 332 BCE, famed for shipbuilding, glass making, and luxury goods of every kind.</p>
+<p style="font-size: large;">Their signature product was the purple dye of Tyre, extracted from murex snails, which became the standard adornment of royalty from Mesopotamia to Rome; the Greeks named the whole people for it, Phoinikes, the purple people, and said the dye stained the workers' skin. Sidon was so skilled in glass that later ages thought its people had invented it, and Phoenician workshops seem to have pioneered mass production, turning out near identical goods for markets across the sea.</p>
+            <p style="font-size: large;">The Phoenicians' greatest gift was the alphabet: Herodotus names Phoenicia as its birthplace, carried to Greece by the Phoenician Kadmus, and their script is the ancestor of most western alphabets today. Even the word Bible runs through them: their city of Byblos exported so much Egyptian papyrus that the Greeks called books ta biblia after it, and Byblos was where the curved hull of seagoing ships was first perfected.</p>
+<p style="font-size: large;">Where they traded, they settled: their colonies dotted the Mediterranean, with Carthage in North Africa becoming the most famous and powerful, and as carriers of other nations' goods they became the ancient world's great middlemen of culture. Greater empires dominated them in turn, and in 332 BCE Alexander the Great besieged and took island Tyre, after which the region turned steadily toward Hellenism.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Phoenician" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Phoenician_Government/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

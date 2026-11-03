@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/themarinidsultanate.png">
             <h1 style="font-size:larger;">The Marinid Sultanate</h1>
-            <p style="font-size: large;">The Marinids were a Zenata Berber dynasty that ruled Morocco from 1244 to 1465. They made Fez their capital and supported art, scholarship, and trade. They briefly intervened in Spain but could not stop the Reconquista.</p>
-            <p style="font-size: large;">Their power declined due to internal factions and Portuguese attacks on the coast. The Wattasids replaced them. Morocco then faced increasing European pressure.</p>
+            <p style="font-size: large;">The Marinids were a Zenata Berber dynasty that ruled Morocco from 1244 to 1465, heirs to the wreckage of the Almohad empire. Established in eastern Morocco for generations, they rose under their chief Abu Yahya, who captured Fez in 1248 and made it the Marinid capital, and under Abu Yusuf Ya'qub, who took Marrakesh from the last Almohads in 1269 and became master of Morocco. They matter because they made Fez one of the great cities of the Islamic world and fought the last great Moroccan campaigns in Spain.</p>
+<p style="font-size: large;">Fez flowered under their patronage: the sultans founded a belt of madrasas, colleges of law and theology, whose carved courtyards remain among the glories of Moroccan art, and the city's scholars, merchants, and crafts made it the intellectual capital of the Maghreb. Art, scholarship, and trade all thrived under Marinid rule.</p>
+            <p style="font-size: large;">The Marinids declared jihad in Spain and campaigned there until the mid 14th century, helping the Nasrid kingdom of Granada hold its ground and slowing the Christian advance toward the Strait of Gibraltar, though they recaptured no lost territory. Their greatest sultan, Abu al-Hasan, seized Tlemcen in 1337 and briefly reunited much of the Maghreb, but neither he nor his successor Abu Inan could break Hafsid rule in Tunisia, and the endless campaigns depleted the dynasty's strength. The disaster came at the Battle of Rio Salado in 1340, where a Castilian-Portuguese army destroyed the Marinid host and ended Moroccan power in Spain for good; Abu Inan was murdered by his own vizier in 1358, and the sultanate slid toward anarchy.</p>
+<p style="font-size: large;">Their power declined through internal factions and, in the 15th century, Portuguese attacks on the coast, beginning with the fall of Ceuta in 1415. In 1465 a collateral branch, the Wattasids, took over what remained, and Morocco entered a long struggle with growing European pressure along its shores.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.metmuseum.org/toah/ht/07/afw" target="_blank">Source #1</a>
             <a href="https://www.iranicaonline.org/articles/delhi-sultanate/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

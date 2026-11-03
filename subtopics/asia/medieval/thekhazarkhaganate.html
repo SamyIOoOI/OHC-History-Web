@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thekhazarkhaganate.jpg">
             <h1 style="font-size:larger;">The Khazar Khaganate</h1>
-            <p style="font-size: large;">The Khazar Khaganate. The Khazar Khaganate was a major commercial and political power that controlled the crucial steppes between the Black and Caspian seas from the 7th to the 10th centuries CE. They acted as a vital geographic buffer, successfully halting the northern expansion of the early Arab Islamic empires into Eastern Europe. This state is exceptionally famous in history because its ruling elite and a significant portion of its population famously converted to Judaism. This unique religious choice allowed them to remain neutral intermediaries between the competing Christian Byzantines and the Islamic caliphates.</p>
-            <p style="font-size: large;">Their massive wealth came directly from taxing the vibrant trade traveling along the Volga River, connecting northern forests to southern markets. Their absolute dominance began to slip in the late 9th century as new nomadic groups like the Pechenegs pushed into their territory. The fatal blow arrived in the 960s when the rising power of Kievan Rus launched a devastating military campaign. The Rus completely sacked the Khazar capital of Atil, permanently destroying the khaganate.</p>
+            <p style="font-size: large;">The Khazar Khaganate. The Khazar Khaganate (c. 650-965) was the great trading empire of the western steppe - and home to one of the most remarkable religious choices in medieval history: its ruling elite converted to Judaism. The Khazars, a Turkic tribal confederation, emerged as the most powerful state from the breakup of the Western Turkic Khaganate, dominating the grasslands from the Volga-Don steppes to the Crimea and the northern Caucasus.</p>
+            <p style="font-size: large;">Khazaria's power was geography. Astride the routes between Eastern Europe, the Islamic world, and China, it commanded the western marches of the Silk Road, and its capital Atil, at the Volga delta, grew rich taxing the trade of three continents. For three centuries the khagans stood as the indispensable buffer of the early medieval world: first as Byzantium's proxy against Sasanian Persia, then as the barrier between the Umayyad and Abbasid caliphates and the endless steppe. Its peoples were as mixed as its trade: Turkic tribes, pagans, Muslims, Christians, and Jews, ruled with notable tolerance.</p>
+            <p style="font-size: large;">Then, in the 8th century, the Khazar court did something no other state has done before or since: the khagan Bulan and his elite adopted Rabbinic Judaism - a third faith, belonging to neither of the great powers pressing on Khazaria, Christian Byzantium and the Islamic caliphate. How far the conversion spread beyond the ruling class remains genuinely uncertain; the sources are sparse, and the state stayed multireligious. The khagan Joseph's famous letter to Hasdai ibn Shaprut, the Jewish minister of Cordoba, remains our best window into this Jewish steppe kingdom, which corresponded in Hebrew while speaking a Turkic tongue.</p>
+            <p style="font-size: large;">Khazaria's end came when the balance shifted against it. Around 900 Byzantium, no longer needing its buffer, encouraged new enemies against it, and by 969 Sviatoslav of Kiev stormed and destroyed Atil; the khaganate disintegrated by the mid-11th century, its peoples absorbed by Cumans, Rus', and others. One caution for the modern reader: the 19th-century theory that most Ashkenazi Jews descend from the Khazars is a myth - linguistic and genetic studies do not support it, most scholars reject it, and it has often been put to antisemitic uses. The real Khazars need no myth: a Jewish court ruling the Silk Road's western gate is remarkable enough.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Khazar" target="_blank">Source #1</a>
             <a href="https://www.iranicaonline.org/articles/khazars/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theaymarakingdoms.png">
             <h1 style="font-size:larger;">The Aymara Kingdoms</h1>
-            <p style="font-size: large;">The Aymara kingdoms were a group of powerful states around Lake Titicaca after the fall of Tiwanaku. They flourished from about 1150 to 1450 CE. They were known for military organization, agriculture, and fortified hilltop towns.</p>
-            <p style="font-size: large;">The Inca Empire conquered most of them in the 15th century. Their language and culture survived under Inca and later Spanish rule. They remain a major indigenous group in Bolivia and Peru.</p>
+            <p style="font-size: large;">The Aymara Kingdoms. The Aymara kingdoms - also called the lake kingdoms - developed between 1150 and 1477 CE in the high plateau around Lake Titicaca, in the region Andeans called Qullaw, after the disappearance of Tiwanaku left a political vacuum. In its wake, a number of Aymara-speaking, independent, and rival kingdoms emerged, among them the Lupaca, the Colla, the Pacajes, and the Azangaros. Their world was divided between Urcosuyu - 'male, fire' - on the western side of the lake and Umasuyu - 'female, water' - on the eastern side, and their societies often had two leaders apiece; most of these kingdoms buried their leaders in tower-shaped mausoleums, and each held lands at different altitudes in what scholars call a 'vertical archipelago'. These kingdoms matter because they kept the Andean altiplano's ancient ways alive through the centuries between empires, and their lords would play decisive roles in the fate of the Inca.</p>
+            <p style="font-size: large;">The kingdoms warred constantly - above all the rivalry between the Aymara kurakas of Chucuito, of the Lupaca kingdom, and Hatunqulla, of the Colla kingdom. When the Inca pressed south, the Lupaca leader Cari faced the Colla leader Chuqui Capac, who attacked the Lupacas near Paucarcolla before the Inca army arrived; after a long battle near Hatunqulla, Chuqui Capac was taken prisoner, and the Colla lands were subdued - some by force, others peacefully. Destroyed towns were repopulated with mitmakunas, resettled colonists, and the Aymara kingdoms accepted the dominion of Cuzco while keeping their lands and their far-off colonies in the eastern mountains. That arrangement survived until the first years of the Spanish conquest, when the kingdoms' territorial and political dismemberment began.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Colla" target="_blank">Source #1</a>
             <a href="https://americanindian.si.edu/inkaroad/ancestors/beginningsoftheroad/tiwanaku.html" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

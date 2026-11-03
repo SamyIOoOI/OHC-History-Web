@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thehittites.png">
             <h1 style="font-size:larger;">The Hittites</h1>
-            <p style="font-size: large;">The Hittites. The Hittite Empire was an ancient Anatolian power that dominated modern day Turkey and northern Syria between 1600 BCE and 1180 BCE. They established a formidable kingdom with its capital at Hattusa, perched high in the rugged central Anatolian plateau. The Hittites are crucial to history because they were pioneers in the manufacture and use of iron goods, giving them a significant technological edge over their bronze wielding neighbors. They also developed a highly sophisticated legal system that focused heavily on financial compensation rather than the brutal physical punishments favored by other ancient societies.</p>
-            <p style="font-size: large;">The empire reached its absolute peak during the 14th century BCE, famously clashing with the Egyptian Empire at the monumental Battle of Kadesh. This epic conflict eventually led to one of the oldest surviving written peace treaties in human history. The Hittite state eventually collapsed during the mysterious Late Bronze Age collapse, fracturing into smaller independent Neo Hittite city states. Their massive capital was mysteriously abandoned and burned, marking the definitive end of their unified dominance in the region.</p>
+            <p style="font-size: large;">The Hittite Empire was an ancient Anatolian power that dominated modern-day Turkey and northern Syria between about 1650 and 1190 BCE, ruled from its capital at Hattusa, high on the rugged central Anatolian plateau. The Hittites were an Indo-European people who settled in north-central Anatolia early in the 2nd millennium BCE and absorbed the earlier Hattian inhabitants, from whom they took the name of both their land and their capital. Older scholarship credited them with pioneering iron smelting and monopolizing ironworking, giving them an edge over bronze-wielding neighbors, but that view is now contested: Bronze Age iron objects from Anatolia are no more numerous than those from Egypt or Mesopotamia, and most appear to be meteoritic. The Hittite military did make successful use of chariots.</p>
+            <p style="font-size: large;">The Hittites also developed a distinctive legal system. Under their law code, crimes such as murder and theft, which were capital offenses in other southwest Asian kingdoms, were punished mainly by restitution, with the thief repaying what was stolen. And where Egypt's pharaohs were worshipped as living gods, the early Hittite king was a first among equals; only after about 1400 BCE did the kingship become centralized and powerful.</p>
+            <p style="font-size: large;">The empire reached its peak in the mid-14th century BCE under Suppiluliuma I, when it encompassed most of Anatolia, parts of northern Syria, and Upper Mesopotamia. Hittite prosperity depended on controlling trade routes and metal sources, and that brought collision with the expanding Egypt of Ramesses II at the Battle of Kadesh around 1274 BCE, a hard-fought clash with no clear winner. With Assyria rising as a threat to both, King Hattusili III concluded a peace and alliance with Ramesses around 1258 BCE: the Treaty of Kadesh, among the oldest surviving written peace treaties in history, sealed by the marriage of a Hittite princess to the pharaoh.</p>
+            <p style="font-size: large;">In the end it was Assyria and new migrating peoples that broke the kingdom. Much of the empire was annexed by the Middle Assyrian Empire while the remainder was sacked by Phrygian newcomers, and Hattusa itself was abandoned around 1190 BCE during the Late Bronze Age collapse. The Hittites fractured into smaller independent Syro-Hittite states, some of which survived until the 8th century BCE before succumbing to the Neo-Assyrian Empire.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Anatolia/The-rise-and-fall-of-the-Hittites" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/hittite/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

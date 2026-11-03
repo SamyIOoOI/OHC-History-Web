@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thespanisheastindies.png">
             <h1 style="font-size:larger;">The Spanish East Indies</h1>
-            <p style="font-size: large;">The Spanish East Indies. The Spanish East Indies refers to the massive collection of territories in the Asia Pacific region directly controlled by the Spanish Empire from 1565 to 1898. Centered almost entirely in the Philippine archipelago, the colony was governed primarily out of Manila. This era matters deeply because the Spanish intentionally transformed the Philippines into Asia's only predominantly Catholic nation, building massive stone churches and establishing the oldest universities in the region. They also completely integrated the islands into the global economy via the wildly lucrative Manila galleon trade.</p>
-            <p style="font-size: large;">For centuries, massive galleon ships shuttled Mexican silver across the Pacific to trade for highly prized Chinese silk and porcelain in Manila. The local population suffered heavily under the brutal encomienda system, constantly paying heavy taxes and performing forced labor for Spanish friars and officials. Deep, simmering resentment over racial discrimination and total lack of political representation sparked a massive independence movement in the late 19th century. The Spanish era ended abruptly in 1898 when the United States completely destroyed the Spanish fleet and annexed the islands.</p>
+            <p style="font-size: large;">The Spanish East Indies. The Spanish East Indies - Spain's Asian empire, centered on the Philippines - lasted 333 years, from 1565 to 1898, the longest European colonial rule in Southeast Asia. Ferdinand Magellan had reached the islands in 1521 and died at Mactan; the conquest itself began in 1565, when Miguel Lopez de Legazpi sailed from Mexico, took Cebu, and in 1571 founded Manila as the capital. The whole archipelago was named for King Philip II of Spain.</p>
+            <p style="font-size: large;">The Philippines were ruled from across the Pacific: for over 250 years the islands belonged to the Viceroyalty of New Spain, governed from Mexico City, and were tied to America by the Manila galleon - the great annual ships that crossed the Pacific between Manila and Acapulco for two and a half centuries, carrying Mexican silver east and Chinese silk, porcelain, and spices west, in one of history's first truly global trade routes.</p>
+            <p style="font-size: large;">Spanish rule was thin - a small Spanish population ruling through friars and local chiefs - but its cultural impact was enormous: it converted most of the islands to Catholicism, built towns and universities, and welded hundreds of scattered chiefdoms into a single colony. The colony was even a financial drain on Spain, kept alive by an annual silver subsidy from Mexico.</p>
+            <p style="font-size: large;">The end came in 1896-1898: a Philippine revolution rose against Spain, and then the United States defeated Spain in the Spanish-American War. By the Treaty of Paris of December 1898, Spain sold the Philippines to the United States for twenty million dollars. Three centuries of Spanish rule ended - and the Filipinos, who had already proclaimed their independence, found themselves fighting a new colonizer instead.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Philippines/The-Spanish-period" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/article/2017/colonial-government-in-the-spanish-empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

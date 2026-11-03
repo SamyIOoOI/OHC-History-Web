@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theqajarempire.png">
             <h1 style="font-size:larger;">The Qajar Empire</h1>
-            <p style="font-size: large;">The Qajar Empire. The Qajar Empire was a Turkmen dynasty that managed to completely reunify Iran in 1789, establishing their capital in the small northern town of Tehran. They ruled through the entirely of the 19th century and into the early 20th century. This era is historically significant because it marked Persia's painful, direct collision with aggressive European imperialism. The Qajars found themselves trapped in the Great Game, struggling to maintain their independence while being constantly squeezed by the expanding Russian and British empires.</p>
-            <p style="font-size: large;">The empire suffered humiliating military defeats against Russia, losing massive swaths of their traditional territory in the Caucasus. To fund their lavish royal lifestyles and pay off foreign debts, Qajar monarchs began selling off the country's economic concessions to European companies. This widespread corruption deeply angered the Iranian public and the religious establishment. Public outrage eventually boiled over into the Constitutional Revolution of 1906, which forced the king to accept a parliament and drastically curtailed royal power before the dynasty finally collapsed in 1925.</p>
+            <p style="font-size: large;">The Qajar Empire. The Qajar dynasty (1789-1925) ruled Iran through the age of European empire - a reign of glittering courts and shrinking borders, in which Iran lost the Caucasus to Russia, escaped colonization by a hair's breadth, and ended by giving itself a constitution. It was founded by the formidable Agha Mohammad Khan, chieftain of the Qajar tribe, who defeated every rival of the Zand and Afsharid age, made his capital at Tehran, and was crowned Shah in 1796 - only to be assassinated the following year.</p>
+            <p style="font-size: large;">His nephew Fath-Ali Shah inherited a fatal contest: Russia was advancing into the Caucasus, which Iran had ruled for centuries. Two disastrous wars settled it. By the Treaty of Gulistan (1813) Iran ceded Georgia, Dagestan, and most of Azerbaijan; by the Treaty of Turkmenchay (1828), after Russia took Tabriz, it gave up the entire South Caucasus, and the border was fixed on the Aras River - where it remains. Iran's attempt to recover Herat in Afghanistan ended with the Treaty of Paris (1857), dictated by Britain.</p>
+            <p style="font-size: large;">The long 19th century was the era of the Great Game: Russia pressing from the north, Britain from the Gulf and India, both extracting concessions while Qajar Iran maintained a precarious independence. Pressure produced change: in 1906 the Constitutional Revolution forced the Shah to grant the National Consultative Assembly - the Majlis - and Iran became a constitutional monarchy. The great powers answered in 1907 by formally dividing the country into Russian and British spheres of influence.</p>
+            <p style="font-size: large;">The dynasty, weakened by war and the turmoil that followed, did not survive the aftermath of the First World War. In 1925 the Constituent Assembly deposed the last Qajar shah, Ahmad Shah, and transferred the crown to Reza Khan, founder of the Pahlavi dynasty. The Qajar age closed - but it left modern Iran its capital, its borders, and its constitution.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Iran/The-Qajar-dynasty-1796-1925" target="_blank">Source #1</a>
             <a href="https://human.libretexts.org/Bookshelves/History/World_History/Western_Civilization_3e%3A_A_Concise_History_III/07%3A_Imperialism/7.08%3A_Qajar_Persia" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

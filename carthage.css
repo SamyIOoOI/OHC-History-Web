@@ -114,6 +114,8 @@ h1{
 .candywrapper{
     position: relative; z-index: 1;
     min-height: 100vh;
+    padding-bottom: 4.5em;
+    box-sizing: border-box;
 }
 @media (min-width: 769px) {
     .period-chooser {
@@ -288,7 +290,8 @@ filter: drop-shadow(0 0 10px rgb(161, 39, 2));
     display: none;
 }
 .banner {
-    width: 50vw;
+    width: 72vw;
+    max-width: 1150px;
 }
 .table {
     margin: 2%;
@@ -382,4 +385,65 @@ filter: drop-shadow(0 0 20px white);
 .banner {
     width: 75vw;
 }
+}
+.maplist {
+    display: none;
+    text-align: center;
+    margin: 1em auto 2em;
+    padding: 0;
+}
+.maplist a {
+    display: block;
+    font-size: 1.6rem;
+    padding: 0.45em;
+    color: orangered;
+    text-decoration: none;
+}
+.maplist a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .table {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .banner {
+        width: 94vw;
+        max-width: 94vw;
+    }
+    .topicimage {
+        width: auto;
+        max-width: 78vw;
+        max-height: 42vh;
+        transform: none;
+        display: block;
+        margin: 1em auto 0;
+    }
+    .erapicker img {
+        width: 72%;
+        height: auto;
+    }
+    .maplist {
+        display: block;
+    }
+}
+.pagefooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin: 0;
+    padding: 4px 0 6px;
+}
+
+/* Phone polish (approved v14 preview): single-line nav, calmer floating glyphs */
+@media (max-width: 480px) {
+    #stickystuck a { font-size: 12px; padding: 10px 0.3em; white-space: nowrap; }
+    #stickystuck { padding-left: 0.25em; padding-right: 0.25em; }
+    #stickystuck .soldier { height: 1.5em; }
+    .wind { opacity: 0.55 !important; }
+}
+@media (max-width: 365px) {
+    #stickystuck a { font-size: 11px; }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/assyriaandtheneoassyrianempire.png">
             <h1 style="font-size:larger;">Assyria & the Neo-Assyrian Empire</h1>
-            <p style="font-size: large;">Assyria & the neo-assyrian empire. Assyria was a major Mesopotamian kingdom that evolved into one of the most terrifyingly effective military powers in the ancient world, dominating the Middle East from the 10th to the 7th centuries BCE. Centered around cities like Ashur and Nineveh in modern northern Iraq, the Neo-Assyrian Empire controlled a vast territory stretching from Egypt to the Persian Gulf. They are historically significant for creating the first truly professional standing army and implementing highly advanced siege warfare tactics. The Assyrians also built incredible libraries, most notably the Library of Ashurbanipal, which preserved countless invaluable texts including the Epic of Gilgamesh.</p>
-            <p style="font-size: large;">Their reliance on brutal conquest and forced mass deportations of conquered peoples ultimately created deep resentments across their empire. A massive coalition of Babylonians, Medes, and Scythians finally successfully rebelled against them. In 612 BCE, this alliance sacked the mighty capital of Nineveh, completely shattering the Assyrian state. The empire dissolved rapidly after this defeat, leaving their once glorious cities buried under the desert sands for millennia until modern archaeologists unearthed them.</p>
+            <p style="font-size: large;">Assyria was the region of the ancient Near East that grew into one of the most effective military powers in history, dominating the Middle East under the Neo-Assyrian Empire from 912 to 612 BCE. It began modestly at the city of Ashur in northern Mesopotamia, whose merchants grew wealthy trading in Anatolia; the city took its name from the god Ashur, and the land from the city. Subjugated by Hammurabi of Babylon around 1792 BCE, Assyria reasserted itself after his empire fell apart, and by the 13th century BCE Tukulti-Ninurta I could defeat the Hittites at the Battle of Nihriya and sack Babylon itself. In the 11th century BCE Tiglath Pileser I revitalized the kingdom, and his care for preserving cuneiform tablets became the model for Ashurbanipal's famous library.</p>
+            <p style="font-size: large;">The Assyrian army became the most effective military force in history up to that time and a model for future armies in organization, tactics, and training; the Assyrians were the first to make extensive use of iron weaponry, which could be mass-produced to equip very large armies. Tiglath Pileser III (745-727 BCE) reorganized the military, replacing conscription with a manpower levy imposed on each province and demanding contingents from vassal states, reconquered the Mediterranean seaboard, and subjugated Babylon. Sargon II founded the final Sargonid dynasty, Sennacherib moved the capital to Nineveh and built 'the Palace without a Rival', and Esarhaddon conquered Egypt.</p>
+            <p style="font-size: large;">The last great king, Ashurbanipal (668-627 BCE), assembled at Nineveh the largest collection of cuneiform tablets in the world at that time, preserving the written works of Mesopotamia, among them the Epic of Gilgamesh. Conquered peoples were relocated in mass deportations, scribes and scholars chosen carefully and sent to urban centres to serve the bureaucracy. The empire's reputation was fearsome: one historian wrote that Assyria must surely have among the worst press notices of any state in history.</p>
+            <p style="font-size: large;">That resentment caught up with them. When Ashurbanipal died in 627 BCE, revolts broke out across the empire, and over the next fifteen years Medes, Babylonians, Persians, Cimmerians, Scythians, and Chaldeans sacked the Assyrian cities. In 612 BCE Nineveh, Ashur, and Kalhu were destroyed, and the empire dissolved. Ashurbanipal's library was buried beneath the burning walls of his palace, but the fire only hardened its clay tablets, preserving them until the excavations of Layard and Rassam and the translations of George Smith brought them to light in the 19th century.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Neo-Assyrian-Empire" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Neo-Assyrian_Empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

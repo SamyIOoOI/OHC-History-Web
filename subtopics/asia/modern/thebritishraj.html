@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thebritishraj.jpg">
             <h1 style="font-size:larger;">The British Raj</h1>
-            <p style="font-size: large;">The British Raj. The British Raj refers to the period of direct colonial rule by the British Crown over the Indian subcontinent between 1858 and 1947. Following the chaotic collapse of the East India Company, the British government stepped in to directly administer the massive, highly lucrative territory. This era is heavily significant because the British built massive railway networks and a modern legal system entirely designed to extract Indian resources as efficiently as possible. They intentionally cultivated a deep, highly educated Indian middle class to help administer the vast bureaucracy.</p>
-            <p style="font-size: large;">The colonial government relied heavily on a rigid policy of divide and rule, intentionally stoking religious tensions between Hindus and Muslims to prevent unified resistance. Despite these tactics, a massive, highly organized nationalist movement began to slowly take shape in the late 19th century. Led by figures like Mahatma Gandhi, the independence movement used nonviolent civil disobedience to completely paralyze the colonial administration. Exhausted and totally bankrupt following World War II, the British finally abandoned the subcontinent in 1947, brutally partitioning the land into India and Pakistan.</p>
+            <p style="font-size: large;">The British Raj. The British Raj (1858-1947) was the ninety years when the British Crown ruled India directly - the final, most complete, and most consequential chapter of European empire in Asia. It began after the great rebellion of 1857: by the Government of India Act of 1858, the East India Company's vast conquests passed to Queen Victoria, who in 1876 was proclaimed Empress of India. A viceroy governed from Calcutta - after 1911 from the new imperial capital of New Delhi - ruling both the directly administered provinces of British India and, through 'paramountcy,' the hundreds of princely states whose maharajas kept their thrones under British suzerainty.</p>
+            <p style="font-size: large;">The Raj was an empire of superlatives and contradictions. It unified the subcontinent under one administration, one army, and one railway network; it also drained India's wealth to Britain - as Indian nationalists charged - through unfair trade, restraint of Indian industry, and taxes paying British salaries. At its greatest extent it embraced nearly all of today's India, Pakistan, Bangladesh, and Myanmar, with Aden and the Persian Gulf states attached at various times.</p>
+            <p style="font-size: large;">Indian nationalism grew up inside the Raj's own institutions: the Indian National Congress, founded in Bombay in 1885 by Western-educated professionals, moved from loyal petition to the demand for self-rule; the Muslim League followed in 1906; and after the First World War the freedom struggle became a mass movement that no viceroy could contain.</p>
+            <p style="font-size: large;">The end came at midnight on 14-15 August 1947: the Raj was partitioned into two dominions, India and Pakistan, and independence came with the catastrophe of Partition - millions uprooted, and hundreds of thousands dead in communal violence. Burma had already been separated in 1937. The Raj's legacy still defines South Asia: its borders, its English language and institutions - and the unresolved wounds of 1947.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/event/British-raj" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/timeline/British_Raj/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

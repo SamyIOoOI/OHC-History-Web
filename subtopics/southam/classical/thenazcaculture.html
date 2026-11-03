@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,8 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thenazcaculture.png">
             <h1 style="font-size:larger;">The Nazca Culture</h1>
-            <p style="font-size: large;">The Nazca Culture. The Nazca culture was an ancient coastal civilization that flourished along the desert valleys of southern Peru from roughly 100 BCE to 800 CE. Centered near the ceremonial pilgrimage center of Cahuachi, they adapted remarkably well to one of the driest environments on Earth. This culture is world-famous for creating the Nazca Lines—massive geoglyphs etched into the desert floor depicting geometric shapes, animals, and plants that can only be fully appreciated from above.</p>
-            <p style="font-size: large;">To survive in their hyper-arid environment, the Nazca engineered underground aqueducts known as puquios, which tapped into subterranean water tables to irrigate crops. They produced vibrant, polychrome ceramics featuring intricate mythical creatures and developed advanced textile traditions. Like many coastal Andean cultures, the Nazca suffered heavily from environmental degradation, severe deforestation of native huarango trees, and catastrophic El Niño flooding, which ultimately destabilized their society by 800 CE.</p>
+            <p style="font-size: large;">The Nazca Culture. The Nazca culture was an ancient civilization that flourished on the southern coast of Peru between 200 BCE and 600 CE, settling the Nazca valley and its neighbors - the Pisco, Chincha, Ica, Palpa, and Acari valleys - with their principal religious and urban sites at Cahuachi and Ventilla. Cahuachi, on the south bank of the Nazca River fifty kilometers inland, was a site of pilgrimage and the Nazca religious capital, where postholes suggest canopies once protected worshippers from the sun and textile scenes link religious gatherings to harvest festivals. The culture matters above all for the Nazca Lines: great geoglyphs etched into the desert floor - geometric shapes, or animals such as the hummingbird, the spider, even a killer whale - including straight lines up to twenty kilometers long whose exact purpose remains debated, perhaps connecting sacred sites or pointing to water sources.</p>
+            <p style="font-size: large;">To survive under the present threat of drought, the Nazca built an extensive network of underground aqueducts, galleries, and cisterns to ensure a good water supply during the dry months. Their pottery is polychrome, sometimes modeled in the culture's later phases, and counted amongst the finest of ancient Peru, decorated with mythical transformational creatures - especially felines - and with trophy-heads, which also appear as miniature border decorations in their textiles; the presence of highland vicuna wool in those textiles is evidence of established trade with the highland cultures. Fine pottery and textiles were buried with the dead, with no particular distinction between male and female graves. In their ceramics, their featherwork, and their vast desert drawings, the Nazca left one of the most distinctive artistic legacies of the ancient Andes.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Nazca" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Nazca_Civilization/" target="_blank">Source #2</a>
@@ -73,7 +73,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +83,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +153,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

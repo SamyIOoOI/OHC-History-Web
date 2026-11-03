@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thetanzimatera.png">
             <h1 style="font-size:larger;">The Tanzimat Era</h1>
-            <p style="font-size: large;">The Tanzimat Era. The Tanzimat Era was a period of intense, sweeping modernization reforms in the Ottoman Empire that lasted from 1839 to 1876. Driven by a desperate need to survive mounting European pressure and internal nationalist uprisings, Ottoman bureaucrats attempted to completely overhaul the state apparatus. This era matters immensely because it introduced profound changes like a modern postal system, telegraph networks, and a secular legal code heavily inspired by French law. Most importantly, the government officially guaranteed equality before the law for all subjects regardless of their religion.</p>
-            <p style="font-size: large;">These massive reforms successfully centralized power and modernized the military, but they completely failed to stop the steady loss of imperial territory in the Balkans. The intense financial cost of these new institutions, combined with constant warfare, forced the empire to borrow heavily from European banks, eventually leading to a humiliating state bankruptcy. The era culminated in the drafting of the very first Ottoman constitution in 1876. However, the new sultan quickly suspended the constitution and the parliament, returning the empire to absolute autocratic rule.</p>
+            <p style="font-size: large;">The Tanzimat Era. The Tanzimat - the 'Reorganization' (1839-1876) - was the Ottoman Empire's great attempt to save itself by reinventing itself: four decades in which reforming sultans and statesmen tried to build a modern, centralized, law-governed state on European lines, while holding a multinational empire together. It began on November 3, 1839, when the young Sultan Abdulmejid I issued the Edict of Gulhane, promising all his subjects - Muslim, Christian, and Jew alike - security of life, honor, and property, fair taxation and conscription, and public trials, and abolishing the notorious system of tax farming.</p>
+            <p style="font-size: large;">The driving force was a generation of reformist statesmen - Mustafa Resid Pasha, Ali Pasha, and Fuad Pasha - who had served as ambassadors in London and Paris and believed European institutions could restore Ottoman power. Under them the empire gained ministries, secular Nizamiye courts alongside the religious ones, a modern school system capped by the Darulfunun, its first telegraph lines and railways, and codified laws for the millets, the empire's religious communities. The Imperial Reform Edict of 1856 went further still, proclaiming full legal equality for non-Muslims - the principle of Ottomanism, one citizenship for all the sultan's subjects.</p>
+            <p style="font-size: large;">Reform had its price. The changes met resistance from conservative clerics, sharpened ethnic tensions in the Balkans, and were paid for with foreign loans - the first borrowed in 1858 to finance the Crimean War - that saddled the empire with crippling debt. Yet the momentum carried to its logical end: in 1876, amid the Great Eastern Crisis, Midhat Pasha and his allies deposed Sultan Abdulaziz and proclaimed the Ottoman constitution, opening the First Constitutional Era.</p>
+            <p style="font-size: large;">The Tanzimat's legacy is still contested: some historians credit it with creating a powerful modern state and a new Ottoman identity; others argue it accelerated the empire's fragmentation. What is certain is that it transformed the empire's government, law, and daily life - and that every later Ottoman and Turkish reform, down to the Republic itself, built on its foundations.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.metmuseum.org/toah/ht/10/waa.html" target="_blank">Source #1</a>
             <a href="https://en.wikipedia.org/wiki/Tanzimat" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

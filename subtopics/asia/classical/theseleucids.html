@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theseleucids.jpg">
             <h1 style="font-size:larger;">The Seleucids</h1>
-            <p style="font-size: large;">The Seleucids. The Seleucid Empire was a massive Hellenistic state carved out of the chaotic aftermath of Alexander the Great's death in 323 BCE. Founded by Alexander's general Seleucus I Nicator, it encompassed the bulk of the former Persian Empire, stretching from modern day Turkey all the way to the borders of India. The Seleucids are historically significant because they served as the primary engine for Hellenization in the Near East, aggressively founding Greek style cities and blending classical Greek administration with ancient Persian traditions. This cultural fusion heavily influenced the art, architecture, and religion of the entire region for centuries.</p>
-            <p style="font-size: large;">Managing such an incredibly vast and culturally fragmented territory proved to be a persistent nightmare for the Seleucid monarchs. They faced constant, draining wars against the rival Ptolemaic Empire in Egypt and suffered major territorial losses to the rising Parthian Empire in the east. Internal dynastic squabbles further weakened the state, allowing the Romans to easily defeat them at the Battle of Magnesia in 190 BCE. The once mighty empire slowly withered away into a minor local power in Syria before the Roman general Pompey finally annexed it completely in 63 BCE.</p>
+            <p style="font-size: large;">The Seleucids. The Seleucid Empire was the great Greek successor state of Alexander the Great's conquests in Asia, founded in 312 BCE by Seleucus I Nicator, one of Alexander's generals, amid the Wars of the Diadochi that tore the dead conqueror's empire apart. From Babylonia, which he received in the partition of 321 and had to retake by force in 312, Seleucus built a realm stretching at its height from Anatolia to Central Asia and the borders of India - nearly four million square kilometers and over thirty million people. Victory at Ipsus in 301 BCE secured his Asian empire, ruled from the new cities he founded: Seleucia on the Tigris, then Antioch in Syria.</p>
+            <p style="font-size: large;">The empire was the heartland of Hellenistic civilization: Greek was the official language, Greek settlers filled scores of new cities named for kings and queens, and an urban Greek elite formed the ruling class, while local traditions - Babylonian, Persian, Jewish - were generally tolerated beneath. Yet the empire faced both ways and strained at both ends. In the east, war with Chandragupta Maurya of India ended in 305 BCE with the cession of Alexander's Indus territories in exchange for alliance and war elephants; in the west, generations of Syrian Wars with Ptolemaic Egypt bled the kingdom for control of the Levant.</p>
+            <p style="font-size: large;">The turning point came with Antiochus III the Great, who restored much of the empire's former reach but then marched into Greece and collided with Rome: defeated at Magnesia in 190 BCE, the Seleucids surrendered all lands west of the Taurus Mountains and paid crushing reparations. Worse, his successor Antiochus IV's attempt to force Greek customs on Judea provoked the Maccabean Revolt of 167 BCE, and while the kingdom was distracted, Mithridates I of Parthia swallowed its eastern heartlands, taking Babylon itself between 141 and 129 BCE, while the Greco-Bactrian kingdom flourished on its own in the northeast.</p>
+            <p style="font-size: large;">Reduced by civil wars to a rump state in Syria, the once-great kingdom ended not with a bang but a signature: Tigranes the Great of Armenia took what was left in 83 BCE, and when the Roman general Pompey arrived in 63 BCE he simply annexed the remnants as the province of Syria. The Seleucid world outlived its dynasty, though - its Greek cities, its language, and its blend of Greek and Eastern cultures remained the fabric of the Near East for centuries, the world into which Rome stepped and in which much of later history would be written.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.worldhistory.org/Seleucid_Empire/" target="_blank">Source #1</a>
             <a href="https://www.iranicaonline.org/articles/seleucid-empire/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

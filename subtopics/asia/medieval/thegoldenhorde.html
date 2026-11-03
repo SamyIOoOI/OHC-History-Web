@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thegoldenhorde.jpg">
             <h1 style="font-size:larger;">The Golden Horde</h1>
-            <p style="font-size: large;">The Golden Horde. The Golden Horde was the northwestern sector of the fractured Mongol Empire, dominating the vast steppes of modern Russia, Ukraine, and Kazakhstan from the 13th to the 15th centuries CE. Established by Batu Khan, this state relied heavily on a massive, highly mobile cavalry force to exact brutal tribute from the subjugated Slavic principalities of Kievan Rus. They are historically significant because their absolute control effectively isolated Russia from the cultural developments of Western Europe for centuries. They also actively fostered massive trade hubs along the Volga River that connected northern furs to Mediterranean markets.</p>
-            <p style="font-size: large;">While they maintained incredible military power for over a century, the Horde eventually suffered from severe internal succession crises. Their strength was permanently crippled in the late 14th century when the conqueror Timur launched a devastating invasion and burned their capital to the ground. The weakened state slowly broke apart into smaller, competing khanates like Crimea and Kazan. This fragmentation allowed the rising Grand Duchy of Moscow to finally throw off the Tatar yoke in the late 15th century.</p>
+            <p style="font-size: large;">The Golden Horde. The Golden Horde - the Ulus of Jochi, its rulers called it - was the northwestern quarter of the Mongol Empire, and for two centuries the master of Russia. It grew from the lands assigned to Jochi, Genghis Khan's eldest son, but its real founder was Jochi's son Batu, whose great western campaign with the general Subutai conquered Volga Bulgaria and then the Russian principalities - Ryazan fell in December 1237, Kiev was sacked in the winter of 1240-41 - before his armies smashed the Poles and Hungarians at Legnica and Mohi in 1241. From his new capital at Sarai on the lower Volga, Batu and his heirs ruled from Siberia to the Danube - and collected tribute from every Russian prince.</p>
+            <p style="font-size: large;">The Russian principalities kept their own rulers and their Orthodox faith; the Horde demanded submission and tribute, and its word was law: the princes of Rus' traveled to Sarai to acknowledge the khan's supremacy and renew their patents of rule. The khans themselves changed faith and language: Batu's brother Berke, enthroned in 1257, was a convert to Islam, and under Özbeg Khan (1312-1341) - who made Islam the state religion - the Horde reached its peak, its Mongol ruling class by then thoroughly Turkicized, speaking the Kipchak tongue of their steppe subjects.</p>
+            <p style="font-size: large;">Sarai itself was a cosmopolitan capital where the khans licensed churches as well as mosques. But the mid-14th century brought the 'Great Troubles' (1359-1381), a generation of civil war between rival khans. Tokhtamysh briefly reunited the Horde (1381-1395), only for Timur's invasion of 1396 to shatter it for good: the khanate broke into smaller khanates that declined steadily in power.</p>
+            <p style="font-size: large;">The wreck broke into successor khanates - Kazan, Astrakhan, Crimea, the Nogai and Uzbek hordes - while the shrunken 'Great Horde' on the Volga clung to its claims until 1480, when the famous 'stand on the Ugra River' ended with the khan's army simply turning away: the traditional end of the 'Tatar yoke' over Russia. In 1502 the Crimean khan sacked Sarai itself. Yet the Horde's shadow was long: the Crimean Khanate, its last heir, survived until 1783 - five and a half centuries after Batu rode west.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Golden-Horde" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Golden_Horde/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

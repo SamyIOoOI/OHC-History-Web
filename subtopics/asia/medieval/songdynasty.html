@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/songdynasty.jpg">
             <h1 style="font-size:larger;">Song Dynasty</h1>
-            <p style="font-size: large;">Song Dynasty. The Song Dynasty was an incredibly wealthy and technologically advanced Chinese dynasty that ruled from 960 to 1279 CE. While they completely failed to reclaim the massive northern and western territories held by the previous Tang Dynasty, they compensated by building a booming, highly commercialized economy. This era is historically crucial because it witnessed monumental innovations like the invention of gunpowder weapons, the magnetic compass, and the world's first government issued paper money. They also saw a massive revival of Confucian philosophy, creating a rigid intellectual framework that dominated China for centuries.</p>
-            <p style="font-size: large;">Because the Song emperors deeply distrusted the military, their armies were consistently weak compared to the nomadic empires on their northern borders. They were eventually forced to abandon the entire northern half of China to the invading Jin Dynasty, relocating their capital south to Hangzhou. This Southern Song state thrived commercially through massive maritime trade but faced an even greater existential threat. After decades of brutal, highly destructive siege warfare, the entire dynasty was completely conquered by the relentless Mongol Empire in 1279 CE.</p>
+            <p style="font-size: large;">The Song Dynasty. The Song dynasty (960-1279) ruled China during one of the most inventive eras in human history. Founded in 960 by Emperor Taizu, a general who ended the chaos of the Five Dynasties and Ten Kingdoms, the Song never matched the Tang's military reach - but it surpassed every dynasty before it in wealth, technology, and learning. China's population doubled to some 90 million, cities swelled, and the economy of 12th-century China dwarfed that of contemporary Europe.</p>
+            <p style="font-size: large;">The Song age was an age of firsts: the world's first government-issued paper money, China's first permanent standing navy, the first surviving records of the gunpowder formula and gunpowder weapons - fire arrows, bombs, and the fire lance - the first use of the compass to find true north at sea, the pound lock for canals, and great astronomical clocks. Expanded rice cultivation with early-ripening strains fed the boom; printing spread books and learning; the examination system made the scholar-official the ruler of China.</p>
+            <p style="font-size: large;">Yet the Song lived under siege. It never controlled the northern steppe and fought long wars with the Khitan Liao, the Tangut Western Xia, and then the Jurchen Jin - who in 1127 captured the capital Kaifeng and the emperor himself in the Jingkang catastrophe. The dynasty survived south of the Yangtze: the Southern Song, ruled from Lin'an (modern Hangzhou), remained a rich and populous state on its productive southern lands for another century and a half.</p>
+            <p style="font-size: large;">The end came with the Mongols. After destroying the Jin in 1234, they turned south; Kublai Khan proclaimed the Yuan dynasty in 1271, took Lin'an in 1276, and annihilated the last Song loyalists at the naval Battle of Yamen in 1279. China was unified again - but under foreign rule. The Song legacy is subtler and perhaps greater: the commercial revolution, the printed book, the scholar's China, and technologies - gunpowder, compass, paper money - that would remake the world.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/topic/Song-dynasty" target="_blank">Source #1</a>
             <a href="https://www.worldhistory.org/Song_Dynasty/" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

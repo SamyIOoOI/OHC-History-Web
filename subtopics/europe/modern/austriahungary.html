@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/austriahungary.png">
             <h1 style="font-size:larger;">Austria-Hungary</h1>
-            <p style="font-size: large;">Austria-Hungary was a dual monarchy formed in 1867. It linked the Austrian Empire and the Kingdom of Hungary under one ruler. It was a patchwork of nationalities with rising nationalist tensions.</p>
-            <p style="font-size: large;">The assassination of Archduke Franz Ferdinand in 1914 helped trigger World War I. The empire fought with Germany and collapsed in 1918. Its lands became new states like Czechoslovakia, Yugoslavia, and Hungary.</p>
+            <p style="font-size: large;">Austria-Hungary. Austria-Hungary was born of defeat: after Prussia crushed Austria in 1866, the Habsburgs made their peace with the Hungarians in the Compromise of 1867, transforming the Austrian Empire into a dual monarchy - two largely self-governing states, Cisleithania and Transleithania, sharing one monarch who was both Emperor of Austria and Apostolic King of Hungary. It was the last phase in the constitutional evolution of the Habsburg monarchy, following Hungary's wars of independence against Habsburg rule, above all the revolution of 1848-1849.</p>
+            <p style="font-size: large;">Under the long reign of Franz Joseph (1867-1916), the dual monarchy was one of Europe's great powers and one of its strangest states: a dozen nations - Germans, Hungarians, Czechs, Slovaks, Poles, Ukrainians, Romanians, Croats, Serbs, Slovenes, Italians - under one crown, with a dazzling imperial capital in Vienna and a proud partner capital in Budapest. It was the second-largest country in Europe by area and the third-most populous, and it built the fourth-largest machine-building industry in the world.</p>
+            <p style="font-size: large;">The dual structure had been born in failure: in 1848 the Hungarians' revolution for independence was crushed by the Austrian army with Russian help, and absolutist rule from Vienna only deepened the resentment that the 1867 Compromise was designed to end. The national tensions that made the monarchy colorful also made it fragile. When the heir, Archduke Franz Ferdinand, was assassinated at Sarajevo on 28 June 1914, the July Crisis ended with Austria-Hungary's declaration of war on Serbia on 28 July - the fuse of the First World War, in which the dual monarchy fought as one of the Central Powers, a war it would not survive.</p>
+            <p style="font-size: large;">Defeat and nationalist revolution dissolved the empire even before the armistice: Hungary terminated the union in October 1918, and the armistice of Villa Giusti followed on 3 November. From its lands rose Austria, Hungary, Czechoslovakia, and Yugoslavia, with territories ceded to Poland, Romania, and Italy - the map of Central Europe for the century to come.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/Austria-Hungary" target="_blank">Source #1</a>
             <a href="https://www.unesco.org/en/memory-world/telegram-austria-hungarys-declaration-war-serbia-28th-july-1914" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>

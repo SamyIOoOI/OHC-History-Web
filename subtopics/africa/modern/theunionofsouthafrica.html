@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars")}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
+    <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Topic</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
@@ -38,8 +38,10 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theunionofsouthafrica.png">
             <h1 style="font-size:larger;">The Union of South Africa</h1>
-            <p style="font-size: large;">The Union of South Africa was formed in 1910 by uniting the Cape Colony, Natal, Transvaal, and Orange Free State. It was a self-governing dominion within the British Empire. Only whites had full political rights.</p>
-            <p style="font-size: large;">The union imposed segregation and later apartheid. It left the Commonwealth in 1961 and became a republic. Apartheid ended in 1994 with majority rule.</p>
+            <p style="font-size: large;">The Union of South Africa was formed in 1910 by uniting four colonies, the Cape, Natal, the Transvaal, and the Orange Free State, into a single self governing dominion within the British Empire. Born of a peace that reconciled Briton and Boer, it did so by shutting everyone else out: only whites enjoyed full political rights, and the Black majority, the vast majority, was written out of citizenship in its own land.</p>
+<p style="font-size: large;">The new state moved fast to entrench racial rule: the Natives Land Act of 1913 confined Black South Africans to a small fraction of the land, passes policed their movement, and the mines and farms ran on their cheap, controlled labor. Afrikaner nationalism, humiliated in war, triumphed at the ballot box, and in 1948 the National Party formalized the system as apartheid. Apartheid was a machine of laws: the Population Registration Act of 1950 sorted every South African by race, the Group Areas Act of 1950 tore nonwhite communities from neighborhoods now marked for whites, and in 1970 the homelands policy stripped Black South Africans of their citizenship altogether, assigning each to a Bantustan many had never seen. Together with the earlier Land Acts, the end result was more than 80 percent of the country set aside for the white minority.</p>
+            <p style="font-size: large;">South Africa left the Commonwealth in 1961 and became a republic, defying mounting world condemnation. The struggle against apartheid, from the Defiance Campaign to Sharpeville, Soweto, and the townships of the 1980s, made the country a global cause, and its prisoners, above all Nelson Mandela, into symbols.</p>
+<p style="font-size: large;">Apartheid ended in 1994 with the first election open to all races, which made Mandela president. The union formed in 1910 endures as the Republic of South Africa, still wrestling with the inequalities its founders built into the ground itself.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/place/South-Africa/Reconstruction-union-and-segregation-1902-29" target="_blank">Source #1</a>
             <a href="http://www.pbs.org/commandingheights/lo/countries/za/za_full.html" target="_blank">Source #2</a>
@@ -73,7 +75,7 @@
         </svg>
     </div>
       <footer>
-        <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
+        <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
     <div class="grainy">
@@ -83,9 +85,14 @@
 
 <script>
     const sky = document.querySelector('.sky');
-    const COUNT = 60;
     const FRAME_W = 32;
-    const SHEET_SCALE = 1.5;
+    function skyParams(){
+        const VW = window.innerWidth, VH = window.innerHeight;
+        return {
+            COUNT: Math.max(10, Math.min(60, Math.round(60 * (VW * VH) / (1440 * 900)))),
+            SHEET_SCALE: Math.max(0.9, Math.min(1.5, 1.5 * VW / 1440))
+        };
+    }
     let current_soldier = 1;
     const maplink = document.getElementById('mapnav');
     if (maplink) maplink.addEventListener('click', mapchecker);
@@ -148,24 +155,32 @@
             arrowpointer.textContent= 'v';
         }
     }
-    for (let i = 0; i < COUNT; i++){
+    function spawnSky(){
+        if (!sky) return;
+        const p = skyParams();
+        sky.innerHTML = '';
+        for (let i = 0; i < p.COUNT; i++){
         const swirly = document.createElement('div');
         swirly.className = 'wind';
         const randframe = Math.floor(Math.random() * 20);
-        const w = 32 * SHEET_SCALE;
+        const w = 32 * p.SHEET_SCALE;
         swirly.style.top = Math.random() * 100 + '%';
         swirly.style.height = w + 'px';
         swirly.style.width = w + 'px';
-        swirly.style.backgroundSize = (960 * SHEET_SCALE) + 'px ' + (32 * SHEET_SCALE) + 'px';
+        swirly.style.backgroundSize = (960 * p.SHEET_SCALE) + 'px ' + (32 * p.SHEET_SCALE) + 'px';
         swirly.style.backgroundPositionX = -(randframe * w) + 'px';
         swirly.style.opacity = (0.8 + Math.random() * 0.15).toFixed(2);
         swirly.style.animation = `move ${15 + Math.random() * 20}s linear infinite`;
         swirly.style.animationDelay = -Math.random() * 30 + 's';
-
-
-
         sky.appendChild(swirly);
+        }
     }
+    spawnSky();
+    let skyResizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(skyResizeTimer);
+        skyResizeTimer = setTimeout(spawnSky, 300);
+    });
 </script>
 </body>
 </html>
