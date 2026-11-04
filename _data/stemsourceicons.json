@@ -6,9 +6,9 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/topic/civilization",
-      "label": "Britannica: Civilization",
-      "icon": "britannica.com.png"
+      "url": "https://www.worldhistory.org/urbanization/",
+      "label": "World History Encyclopedia: Urbanization",
+      "icon": "worldhistory.org.png"
     },
     {
       "url": "https://www.worldhistory.org/civilization/",
@@ -60,8 +60,8 @@
       "icon": "worldhistory.org.png"
     },
     {
-      "url": "https://www.worldhistory.org/Mentuhotep_II/",
-      "label": "World History Encyclopedia: Mentuhotep II",
+      "url": "https://www.worldhistory.org/First_Intermediate_Period_of_Egypt/",
+      "label": "World History Encyclopedia: First Intermediate Period of Egypt",
       "icon": "worldhistory.org.png"
     }
   ],
@@ -148,8 +148,8 @@
       "icon": "worldhistory.org.png"
     },
     {
-      "url": "https://www.worldhistory.org/Assyrian_Empire/",
-      "label": "World History Encyclopedia: Assyrian Empire",
+      "url": "https://www.worldhistory.org/Neo-Assyrian_Empire/",
+      "label": "World History Encyclopedia: Neo-Assyrian Empire",
       "icon": "worldhistory.org.png"
     }
   ],
@@ -170,8 +170,8 @@
       "icon": "worldhistory.org.png"
     },
     {
-      "url": "https://www.worldhistory.org/Minoan_Religion/",
-      "label": "World History Encyclopedia: Minoan Religion",
+      "url": "https://www.worldhistory.org/Minoan_Art/",
+      "label": "World History Encyclopedia: Minoan Art",
       "icon": "worldhistory.org.png"
     }
   ],
@@ -192,8 +192,8 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.worldhistory.org/Classical_Greece/",
-      "label": "World History Encyclopedia: Classical Greece",
+      "url": "https://www.worldhistory.org/greece/",
+      "label": "World History Encyclopedia: Ancient Greece",
       "icon": "worldhistory.org.png"
     }
   ],
@@ -302,9 +302,9 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.worldhistory.org/Harun_al-Rashid/",
-      "label": "World History Encyclopedia: Harun al Rashid",
-      "icon": "worldhistory.org.png"
+      "url": "https://kids.britannica.com/scholars/article/H%C4%81r%C5%ABn-al-Rash%C4%ABd/39414",
+      "label": "Britannica: Harun al-Rashid",
+      "icon": "britannica.com.png"
     }
   ],
   "medievalegypt": [
@@ -319,7 +319,7 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/topic/Mamluk",
+      "url": "https://kids.britannica.com/scholars/article/Mamluk/50404",
       "label": "Britannica: Mamluk",
       "icon": "britannica.com.png"
     },
@@ -358,9 +358,9 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/event/Fourth-Crusade",
-      "label": "Britannica: Fourth Crusade",
-      "icon": "britannica.com.png"
+      "url": "https://www.worldhistory.org/Fourth_Crusade/",
+      "label": "World History Encyclopedia: Fourth Crusade",
+      "icon": "worldhistory.org.png"
     },
     {
       "url": "https://www.worldhistory.org/Byzantine_Empire/",
@@ -451,8 +451,8 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/biography/Alexander-Ypsilantis",
-      "label": "Britannica: Alexander Ypsilantis",
+      "url": "https://kids.britannica.com/scholars/article/Philik%C3%AD-Etaire%C3%ADa/59655",
+      "label": "Britannica: Philiki Etaireia",
       "icon": "britannica.com.png"
     },
     {
@@ -555,28 +555,28 @@
     },
     {
       "url": "https://www.worldhistory.org/Roman_Republic/",
-      "label": "World History Encyclopedia: Sparta",
+      "label": "World History Encyclopedia: Roman Republic",
       "icon": "worldhistory.org.png"
     },
     {
       "url": "https://www.britannica.com/biography/Louis-IX",
-      "label": "World History Encyclopedia: Sparta",
-      "icon": "worldhistory.org.png"
+      "label": "Britannica: Louis IX",
+      "icon": "britannica.com.png"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Battle_of_Mu%27tah",
-      "label": "World History Encyclopedia: Sparta",
-      "icon": "worldhistory.org.png"
+      "label": "Wikipedia: Battle of Mu'tah",
+      "icon": ""
     },
     {
       "url": "https://www.britannica.com/topic/qadi",
-      "label": "World History Encyclopedia: Sparta",
-      "icon": "worldhistory.org.png"
+      "label": "Britannica: Qadi",
+      "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/topic/diwan-Islamic-government",
-      "label": "World History Encyclopedia: Sparta",
-      "icon": "worldhistory.org.png"
+      "url": "https://kids.britannica.com/scholars/article/divan/30671",
+      "label": "Britannica: Divan (government bureau)",
+      "icon": "britannica.com.png"
     }
   ],
   "sociallife": [
@@ -591,8 +591,8 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.worldhistory.org/Egyptian_Society/",
-      "label": "World History Encyclopedia: Egyptian Society",
+      "url": "https://www.worldhistory.org/article/1123/social-structure-in-ancient-egypt/",
+      "label": "World History Encyclopedia: Social Structure in Ancient Egypt",
       "icon": "worldhistory.org.png"
     },
     {
@@ -652,8 +652,8 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.worldhistory.org/Egyptian_Agriculture/",
-      "label": "World History Encyclopedia: Egyptian Agriculture",
+      "url": "https://www.worldhistory.org/article/997/ancient-egyptian-agriculture/",
+      "label": "World History Encyclopedia: Ancient Egyptian Agriculture",
       "icon": "worldhistory.org.png"
     },
     {

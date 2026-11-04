@@ -48,11 +48,14 @@ permalink: "{{  pageData.pageData.filename  }}.html"
             <h1 style="font-size:larger;" data-pagefind-meta="title">{{pageData.pageData.title}}</h1>
             <p style="font-size: large;">{{pageData.pageData.para1}}</p>
             <p style="font-size: large;">{{pageData.pageData.para2}}</p>
-            <h1 style="font-size:large;">To read more about this topic:</h1>
+            {% if pageData.sources %}<h1 style="font-size:large;">To read more about this topic:</h1>
+            {% for source in pageData.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{% if source.icon != '' %}<img class="srcicon" src="../../../sourceicons/{{ source.icon }}" alt=""> {% endif %}{{ source.label }}</a>{% endfor %}
+        {% else %}<h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="{{pageData.pageData.source1}}" target="_blank"><img class="srcicon" src="../sourceicons/{{pageData.pageData.source1icon}}" alt=""> {{pageData.pageData.source1label}}</a>
             <a href="{{pageData.pageData.source2}}" target="_blank"><img class="srcicon" src="../sourceicons/{{pageData.pageData.source2icon}}" alt=""> {{pageData.pageData.source2label}}</a>
             <a href="{{pageData.pageData.source3}}" target="_blank"><img class="srcicon" src="../sourceicons/{{pageData.pageData.source3icon}}" alt=""> {{pageData.pageData.source3label}}</a>
             <a href="{{pageData.pageData.source4}}" target="_blank" style="margin-bottom:10px;"><img class="srcicon" src="../sourceicons/{{pageData.pageData.source4icon}}" alt=""> {{pageData.pageData.source4label}}</a>
+        {% endif %}
         </div>
     <div class="map" id="map" style="display: none;">
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
