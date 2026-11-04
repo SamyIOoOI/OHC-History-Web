@@ -1,8 +1,10 @@
 import json
+import math
 import os
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 
 def main():
@@ -12,77 +14,73 @@ def main():
         print('Diagnostic skipped: required credentials are not configured.')
         return 1
     try:
-        with open('stats.json', encoding='utf-8') as fh:
-            snapshot = json.load(fh)
+        snapshot = json.loads(Path('stats.json').read_text(encoding='utf-8'))
         end = datetime.strptime(snapshot['updated'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=timezone.utc)
-        production = snapshot['visits']
-        if not isinstance(production, (int, float)) or isinstance(production, bool):
-            raise ValueError()
-    except Exception:
-        print('Diagnostic skipped: no valid production snapshot timestamp/count.')
-        return 1
-    start = end - timedelta(days=30)
-    stamp = lambda dt: dt.strftime('%Y-%m-%dT%H:%M:%SZ')
-    print('Read-only visit diagnostic. Production stats.json is not changed.')
-    print('Metric: sum(visits); requestSource: eyeball; bounds: start inclusive, end exclusive.')
-    print('UTC window:', stamp(start), 'to', stamp(end))
-    print('Existing production snapshot:', production)
-    query = '''query ($zoneTag: string, $since: Time, $until: Time) {
-      viewer { zones(filter: {zoneTag: $zoneTag}) {
-        httpRequestsAdaptiveGroups(limit: 1, filter: {
-          requestSource: "eyeball", datetime_geq: $since, datetime_lt: $until
-        }) { sum { visits } avg { sampleInterval } }
-      } }
-    }'''
+        production = number(snapshot['visits'])
+        start = end - timedelta(days=30)
+        stamp = lambda dt: dt.strftime('%Y-%m-%dT%H:%M:%SZ')
+        print('Read-only dashboard-query comparison. Production stats.json is not changed.')
+        print('UTC window:', stamp(start), 'to', stamp(end))
+        print('Metric: sum(visits); requestSource: eyeball; start inclusive, end exclusive.')
+        print('Existing production snapshot:', production)
 
-    def fetch(a, b):
-        body = json.dumps({'query': query, 'variables': {
-            'zoneTag': zone, 'since': stamp(a), 'until': stamp(b)
-        }}).encode()
-        req = urllib.request.Request('https://api.cloudflare.com/client/v4/graphql', data=body,
-            headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'})
-        with urllib.request.urlopen(req, timeout=45) as response:
-            payload = json.load(response)
-        if payload.get('errors'):
-            raise ValueError()
-        groups = payload['data']['viewer']['zones'][0]['httpRequestsAdaptiveGroups']
-        if not isinstance(groups, list) or len(groups) > 1:
-            raise ValueError()
-        total = 0
-        intervals = []
-        for group in groups:
-            value = group['sum']['visits']
-            if value is None:
-                value = 0
-            if isinstance(value, bool) or not isinstance(value, (int, float)) or value < 0:
+        def request(body):
+            req = urllib.request.Request('https://api.cloudflare.com/client/v4/graphql',
+                data=json.dumps(body).encode(), headers={
+                    'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'})
+            with urllib.request.urlopen(req, timeout=60) as response:
+                payload = json.load(response)
+            if payload.get('errors'):
                 raise ValueError()
-            total += value
-            sample = group.get('avg', {}).get('sampleInterval')
-            if isinstance(sample, (int, float)) and not isinstance(sample, bool):
-                intervals.append(sample)
-        return total, intervals
+            return payload['data']['viewer']
 
-    try:
-        aggregate, intervals = fetch(start, end)
-        print('Repeat 30-day aggregate:', aggregate, '| avg sampleInterval:', intervals or 'not returned')
-        daily_sum = 0
-        for day in range(30):
-            a = start + timedelta(days=day)
-            b = a + timedelta(days=1)
-            visits, samples = fetch(a, b)
-            daily_sum += visits
-            print('Slice', day + 1, stamp(a), stamp(b), '| visits:', visits,
-                '| avg sampleInterval:', samples or 'not returned')
-        print('Sum of all 30 non-overlapping 24-hour slices:', daily_sum)
-        print('Daily sum minus repeat 30-day aggregate:', daily_sum - aggregate)
-        print('Repeat aggregate minus production snapshot:', aggregate - production)
-        print('No metric selection or production count has been changed.')
-        print('Differences alone do not prove dashboard parity or its exact query.')
+        minimal = {'query': '''query ($zoneTag: string, $since: Time, $until: Time) {
+          viewer { zones(filter: {zoneTag: $zoneTag}) {
+            httpRequestsAdaptiveGroups(limit: 1, filter: {
+              requestSource: "eyeball", datetime_geq: $since, datetime_lt: $until
+            }) { sum { visits } }
+          } }
+        }''', 'variables': {'zoneTag': zone, 'since': stamp(start), 'until': stamp(end)}}
+        groups = request(minimal)['zones'][0]['httpRequestsAdaptiveGroups']
+        minimal_total = total(groups)
+        print('Minimal production-shaped query visits:', minimal_total)
+        body = json.loads(Path(__file__).with_name('dashboard-stats-query.json').read_text(encoding='utf-8'))
+        for key, value in body['variables'].items():
+            if key.endswith('zoneTag'):
+                body['variables'][key] = zone
+            elif isinstance(value, dict):
+                value['datetime_geq'] = stamp(start)
+                value['datetime_lt'] = stamp(end)
+        result = request(body)['scope_0'][0]
+        dashboard_total = total(result['c0_total'])
+        sparkline_total = total(result['c0_sparkline'], single=False)
+        samples = [number(row['avg']['sampleInterval']) for row in result['c0_total']]
+        print('Captured dashboard-shaped total visits:', dashboard_total)
+        print('Dashboard total avg sampleInterval:', samples)
+        print('Dashboard sparkline visits sum:', sparkline_total)
+        print('Dashboard sparkline rows:', len(result['c0_sparkline']))
+        print('Dashboard total minus minimal query:', dashboard_total - minimal_total)
+        print('Dashboard total minus sparkline sum:', dashboard_total - sparkline_total)
+        print('Dashboard total minus production snapshot:', dashboard_total - production)
+        print('Production formula/count unchanged. This tests query shape, not unsampled exactness.')
+        print('Compare with the dashboard at the same interval; later traffic can change its display.')
+        return 0
     except Exception:
-        print('Diagnostic incomplete: an API/network/schema check failed. No raw response or credentials logged.')
+        print('Diagnostic incomplete: API/network/schema check failed; no raw response or credentials logged.')
         print('Production stats.json remains unchanged by this diagnostic.')
         return 1
-    return 0
+
+
+def number(value):
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0:
+        raise ValueError()
+    return value
+
+
+def total(groups, single=True):
+    if not isinstance(groups, list) or (single and len(groups) > 1):
+        raise ValueError()
+    return sum(number(row['sum']['visits'] or 0) for row in groups)
 
 
 if __name__ == '__main__':

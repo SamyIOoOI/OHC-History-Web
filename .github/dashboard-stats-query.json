@@ -1,0 +1,119 @@
+{
+  "query": "query BatchedDashboardQuery($c0_zoneTag: string) {\n  viewer {\n    scope_0: zones(filter: {zoneTag: $c0_zoneTag}) {\n      c0_total: httpRequestsAdaptiveGroups(filter: $c0_filter, limit: 1) {\n        count\n        sum {\n          edgeResponseBytes\n          visits\n        }\n        avg {\n          sampleInterval\n        }\n      }\n      c0_sparkline: httpRequestsAdaptiveGroups(filter: $c0_filter, limit: 5000, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n        sum {\n          edgeResponseBytes\n          visits\n        }\n      }\n      c3_numerator: httpRequestsAdaptiveGroups(filter: $c3_numeratorFilter, limit: 1) {\n        count\n      }\n      c3_sparklineNumerator: httpRequestsAdaptiveGroups(filter: $c3_numeratorFilter, limit: 5000, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n      }\n      c4_numerator: httpRequestsAdaptiveGroups(filter: $c4_numeratorFilter, limit: 1) {\n        count\n      }\n      c4_sparklineNumerator: httpRequestsAdaptiveGroups(filter: $c4_numeratorFilter, limit: 5000, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n      }\n      c7_ts_series_0: httpRequestsAdaptiveGroups(limit: 5000, filter: $c7_ts_series_filter_0, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n      }\n      c7_ts_series_0_total: httpRequestsAdaptiveGroups(limit: 1, filter: $c7_ts_series_filter_0) {\n        count\n      }\n      c7_ts_series_1: httpRequestsAdaptiveGroups(limit: 5000, filter: $c7_ts_series_filter_1, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n      }\n      c7_ts_series_1_total: httpRequestsAdaptiveGroups(limit: 1, filter: $c7_ts_series_filter_1) {\n        count\n      }\n      c7_ts_series_2: httpRequestsAdaptiveGroups(limit: 5000, filter: $c7_ts_series_filter_2, orderBy: [date_ASC]) {\n        count\n        dimensions {\n          ts: date\n        }\n      }\n      c7_ts_series_2_total: httpRequestsAdaptiveGroups(limit: 1, filter: $c7_ts_series_filter_2) {\n        count\n      }\n      c8_topN: httpRequestsAdaptiveGroups(filter: $c8_filter, limit: 5, orderBy: [count_DESC]) {\n        count\n        dimensions {\n          metric_0: cacheStatus\n        }\n      }\n      c9_topN: httpRequestsAdaptiveGroups(filter: $c9_filter, limit: $c9_limit, orderBy: [count_DESC]) {\n        count\n        dimensions {\n          metric_0: clientRequestPath\n        }\n      }\n    }\n  }\n}\n",
+  "variables": {
+    "c0_zoneTag": "__ZONE__",
+    "c0_filter": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c3_numeratorFilter": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "OR": [
+            {
+              "cacheStatus": "hit"
+            },
+            {
+              "cacheStatus": "stale"
+            },
+            {
+              "cacheStatus": "revalidated"
+            },
+            {
+              "cacheStatus": "updating"
+            }
+          ]
+        },
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c4_numeratorFilter": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "edgeResponseStatus_geq": 500
+        },
+        {
+          "edgeResponseStatus_leq": 599
+        },
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c7_ts_series_filter_0": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "edgeResponseStatus_geq": 200
+        },
+        {
+          "edgeResponseStatus_leq": 299
+        },
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c7_ts_series_filter_1": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "edgeResponseStatus_geq": 300
+        },
+        {
+          "edgeResponseStatus_leq": 399
+        },
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c7_ts_series_filter_2": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "edgeResponseStatus_geq": 400
+        },
+        {
+          "edgeResponseStatus_leq": 499
+        },
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c8_filter": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    },
+    "c9_limit": 20,
+    "c9_filter": {
+      "datetime_geq": "__START__",
+      "datetime_lt": "__END__",
+      "AND": [
+        {
+          "requestSource": "eyeball"
+        }
+      ]
+    }
+  }
+}
