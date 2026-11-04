@@ -48,8 +48,8 @@
         <div class="hw-font-section">
             <label class="hw-font-label" for="hw-cursor-normal">Normal cursor</label>
             <select id="hw-cursor-normal">
-                <option value="dotty">Dotty (default)</option>
-                <option value="blackink">Black Ink</option>
+                <option value="dotty">Dotty</option>
+                <option value="blackink">Black Ink (default)</option>
                 <option value="fireink">Fire Ink</option>
                 <option value="longsword">Longsword</option>
                 <option value="emissary">Emissary</option>
@@ -189,6 +189,7 @@
     const cursorNormalSelect = panel.querySelector('#hw-cursor-normal');
     const cursorLinkSelect = panel.querySelector('#hw-cursor-link');
     function applyCursorNormal(value) {
+        if (value === 'blackink' && !document.documentElement.classList.contains('light')) value = 'fireink';
         const root = document.documentElement;
         root.classList.remove(...CURSOR_NORMAL_CLASSES.map(name => `hw-cursor-${name}`));
         if (value !== 'dotty' && CURSOR_NORMAL_CLASSES.includes(value)) {
@@ -205,14 +206,14 @@
             root.classList.remove('hw-on-link');
         }
     }
-    let savedCursorNormal = 'dotty', savedCursorLink = 'herald';
+    let savedCursorNormal = 'blackink', savedCursorLink = 'herald';
     try {
-        savedCursorNormal = localStorage.getItem('hw_cursor_normal') || 'dotty';
+        savedCursorNormal = localStorage.getItem('hw_cursor_normal') || 'blackink';
         savedCursorLink = localStorage.getItem('hw_cursor_link') || 'herald';
     } catch (error) {
         reportStorageFailure(error);
     }
-    if (!['dotty', ...CURSOR_NORMAL_CLASSES].includes(savedCursorNormal)) savedCursorNormal = 'dotty';
+    if (!['dotty', ...CURSOR_NORMAL_CLASSES].includes(savedCursorNormal)) savedCursorNormal = 'blackink';
     if (!['herald', 'system'].includes(savedCursorLink)) savedCursorLink = 'herald';
     cursorNormalSelect.value = savedCursorNormal;
     cursorLinkSelect.value = savedCursorLink;
@@ -227,38 +228,123 @@
         store('hw_cursor_link', cursorLinkSelect.value);
     });
 
-    // Link hover state + click unroll animation
-    const whatamilookingat = 'a[href], button, [role="button"], .fakeheader, .continentlink';
-    document.addEventListener('pointerover', event => {
-        if (document.documentElement.classList.contains('hw-link-herald')
-                && event.target.closest(whatamilookingat)) {
-            document.documentElement.classList.add('hw-on-link');
+    let openchoices;
+    panel.querySelectorAll('select').forEach(select => {
+        const wrap = document.createElement('div');
+        wrap.className = 'hw-choice';
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'hw-choice-toggle';
+        button.setAttribute('role', 'combobox');
+        button.setAttribute('aria-haspopup', 'listbox');
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-label', panel.querySelector(`label[for="${select.id}"]`)?.textContent || select.id);
+        const list = document.createElement('div');
+        list.className = 'hw-choice-list';
+        list.id = `${select.id}-choices`;
+        list.setAttribute('role', 'listbox');
+        list.hidden = true;
+        button.setAttribute('aria-controls', list.id);
+        select.before(wrap);
+        wrap.append(button, list, select);
+        select.hidden = true;
+        let active = select.selectedIndex;
+        function paint() {
+            button.textContent = select.options[select.selectedIndex].textContent + ' ▾';
+            [...list.children].forEach((item, index) => {
+                item.setAttribute('aria-selected', String(index === select.selectedIndex));
+                item.classList.toggle('hw-choice-active', index === active);
+            });
         }
+        function close() {
+            list.hidden = true;
+            button.setAttribute('aria-expanded', 'false');
+            if (openchoices === close) openchoices = null;
+        }
+        function show() {
+            if (openchoices) openchoices();
+            active = select.selectedIndex;
+            list.hidden = false;
+            button.setAttribute('aria-expanded', 'true');
+            openchoices = close;
+            paint();
+        }
+        function choose(index) {
+            select.selectedIndex = index;
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+            active = index;
+            paint();
+            close();
+            button.focus();
+        }
+        [...select.options].forEach((option, index) => {
+            const item = document.createElement('div');
+            item.className = 'hw-choice-option';
+            item.id = `${list.id}-${index}`;
+            item.setAttribute('role', 'option');
+            item.textContent = option.textContent;
+            item.addEventListener('click', () => choose(index));
+            item.addEventListener('pointerover', () => { active = index; paint(); });
+            list.append(item);
+        });
+        button.addEventListener('click', () => list.hidden ? show() : close());
+        button.addEventListener('keydown', event => {
+            if (event.key === 'Escape') { close(); return; }
+            if (event.key === 'Tab') { close(); return; }
+            if (['ArrowDown', 'ArrowUp', 'Home', 'End', 'Enter', ' '].includes(event.key)) {
+                event.preventDefault();
+                if (list.hidden) { show(); return; }
+                if (event.key === 'Enter' || event.key === ' ') { choose(active); return; }
+                active = event.key === 'Home' ? 0 : event.key === 'End' ? select.options.length - 1 : Math.max(0, Math.min(select.options.length - 1, active + (event.key === 'ArrowDown' ? 1 : -1)));
+                button.setAttribute('aria-activedescendant', `${list.id}-${active}`);
+                paint();
+                list.children[active].scrollIntoView({ block: 'nearest' });
+            }
+        });
+        document.addEventListener('pointerdown', event => { if (!wrap.contains(event.target)) close(); });
+        select.addEventListener('change', paint);
+        paint();
+    });
+
+    const littlepointer = document.getElementById('dotty');
+    if (littlepointer) {
+        document.body.appendChild(littlepointer);
+        document.addEventListener('pointermove', event => {
+            littlepointer.style.left = `${event.clientX}px`;
+            littlepointer.style.top = `${event.clientY}px`;
+        });
+    }
+    const whatamilookingat = 'a[href], .continentlink, .erapicker img[onclick]';
+    const handtargets = whatamilookingat + ', .fakeheader, button, [role="button"], .hw-choice-toggle, .hw-choice-option';
+    const notthose = '#stickystuck .logo, #wheel, .soldier, #hw-settings-panel';
+    const writinghere = 'textarea, input:not([type]), input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], [contenteditable="true"]';
+    document.addEventListener('pointerover', event => document.documentElement.classList.toggle('hw-writing', !!event.target.closest(writinghere)));
+    document.addEventListener('pointerout', event => { if (event.target.closest(writinghere)) document.documentElement.classList.remove('hw-writing'); });
+    document.addEventListener('pointerover', event => {
+        document.documentElement.classList.toggle('hw-on-link', !!event.target.closest(handtargets));
     });
     document.addEventListener('pointerout', event => {
-        if (event.target.closest(whatamilookingat)) {
-            document.documentElement.classList.remove('hw-on-link');
-        }
+        if (event.target.closest(handtargets)) document.documentElement.classList.remove('hw-on-link');
     });
+    let scrolltimer;
     document.addEventListener('click', event => {
         if (!document.documentElement.classList.contains('hw-link-herald')) return;
-        if (!event.target.closest(whatamilookingat)) return;
-        if (event.button !== 0) return;
-        const fx = document.createElement('div');
-        fx.className = 'hw-scroll-click';
-        fx.style.left = `${event.clientX}px`;
-        fx.style.top = `${event.clientY}px`;
-        document.body.appendChild(fx);
+        if (!event.target.closest(whatamilookingat) || event.target.closest(notthose)) return;
+        if (event.button !== 0 || !littlepointer) return;
+        clearInterval(scrolltimer);
+        document.documentElement.classList.add('hw-scroll-playing');
         let step = 0;
-        const timer = setInterval(() => {
+        littlepointer.style.backgroundPosition = '0px 0px';
+        scrolltimer = setInterval(() => {
             step += 1;
             if (step >= 9) {
-                clearInterval(timer);
-                fx.remove();
+                clearInterval(scrolltimer);
+                littlepointer.style.backgroundPosition = '';
+                document.documentElement.classList.remove('hw-scroll-playing');
                 return;
             }
-            fx.style.backgroundPosition = `${-32 * step}px 0`;
-        }, 90);
+            littlepointer.style.backgroundPosition = `${-32 * step}px 0`;
+        }, 45);
     });
 
     crtToggle.checked = !document.documentElement.classList.contains('no-crt');
@@ -358,6 +444,7 @@
     themeToggle.addEventListener('change', () => {
         document.documentElement.classList.toggle('light', themeToggle.checked);
         store('hw_theme', themeToggle.checked ? 'light' : 'dark');
+        applyCursorNormal(cursorNormalSelect.value);
         applyTitleColor(currentTitleColor);
     });
 

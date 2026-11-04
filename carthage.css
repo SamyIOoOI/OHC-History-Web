@@ -458,8 +458,8 @@ html.hw-cursor-img #dotty{
     image-rendering: pixelated;
     box-shadow: none;
 }
-html.hw-cursor-blackink #dotty{ background-image: url(cursor-blackink.png); transform: translate(-4px, -28px); }
-html.hw-cursor-fireink #dotty{ background-image: url(cursor-fireink.png); transform: translate(-4px, -28px); }
+html.hw-cursor-blackink #dotty{ background-image: url(cursor-blackink.png); transform: translate(-1px, -29px); }
+html.hw-cursor-fireink #dotty{ background-image: url(cursor-fireink.png); transform: translate(-1px, -29px); }
 html.hw-cursor-longsword #dotty{ background-image: url(cursor-longsword.png); transform: translate(-2px, -2px); }
 html.hw-cursor-emissary #dotty{ background-image: url(cursor-emissary.png); transform: translate(-16px, -16px); }
 html.hw-on-link.hw-link-herald #dotty{
@@ -478,7 +478,7 @@ html.hw-on-link.hw-link-herald #dotty{
     position: fixed;
     width: 32px;
     height: 32px;
-    margin: -4px 0 0 -16px;
+    margin: -16px 0 0 -16px;
     background-image: url(cursor-herald-unroll.png);
     background-repeat: no-repeat;
     image-rendering: pixelated;
@@ -488,3 +488,39 @@ html.hw-on-link.hw-link-herald #dotty{
 html.hw-on-link.hw-link-system #dotty{ opacity: 0; }
 html.hw-link-system a, html.hw-link-system button,
 html.hw-link-system .fakeheader, html.hw-link-system .continentlink{ cursor: pointer !important; }
+
+
+
+@media (pointer: fine) {
+    html body, html body * { cursor: none !important; }
+    html.hw-link-system body a[href], html.hw-link-system body a[href] *,
+    html.hw-link-system body .continentlink, html.hw-link-system body .continentlink *,
+    html.hw-link-system body .erapicker img[onclick], html.hw-link-system body .fakeheader, html.hw-link-system body .fakeheader *, html.hw-link-system body button, html.hw-link-system body [role="button"] { cursor: pointer !important; }
+    html.hw-on-link.hw-link-system #dotty { visibility: hidden !important; }
+    html.hw-scroll-playing #dotty {
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 32px; height: 32px;
+        border-radius: 0; background-color: transparent;
+        background-image: url(cursor-herald-unroll.png) !important;
+        background-size: auto 32px; background-repeat: no-repeat;
+        box-shadow: none; transform: translate(-16px,-16px);
+    }
+}
+
+.hw-choice{position:relative;width:100%;margin:4px 0 10px;}
+.hw-choice-toggle{width:100%;text-align:left;background:#24100a;color:white;border:1px solid #6b3418;padding:6px 8px;font:inherit;}
+.hw-choice-list{position:absolute;left:0;right:0;top:100%;max-height:220px;overflow:auto;background:#24100a;color:white;border:1px solid #6b3418;z-index:10001;box-shadow:0 3px 8px #0008;}
+.hw-choice-list[hidden]{display:none;}
+.hw-choice-option{padding:6px 8px;font:inherit;}
+.hw-choice-active,.hw-choice-option:hover{background:#6b3418;}
+html.light .hw-choice-toggle,html.light .hw-choice-list{background:#e3d0a0;color:#3a1208;border-color:#6b3418;}
+html.light .hw-choice-active,html.light .hw-choice-option:hover{background:#c6a66f;}
+@media(pointer:fine){
+ html.hw-link-system body .hw-choice-option,html.hw-link-system body .hw-choice-toggle{cursor:pointer!important;}
+ html.hw-link-herald body #hw-settings-panel *,html.hw-link-herald body #hw-download-picker *{cursor:none!important;}
+}
+
+@media(pointer:fine){html.hw-writing #dotty{visibility:visible!important;opacity:1!important;width:32px;height:32px;border-radius:0;background-color:transparent;background-image:url(cursor-writing.png)!important;background-size:32px 32px;background-position:0 0!important;background-repeat:no-repeat;box-shadow:none;transform:translate(-1px,-23px)!important;}}
+
+@media(pointer:fine){html:not(.light).hw-writing #dotty{background-image:url(cursor-writing-fire.png)!important;}}

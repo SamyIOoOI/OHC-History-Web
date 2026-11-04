@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+<script>try{if(sessionStorage.getItem("hw_loaded"))document.documentElement.classList.add("hw-loaded")}catch(e){}</script>
+<style>html.hw-loaded #holdonthere2{display:none!important}html.hw-loaded #pikapoo2{display:block!important}</style>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="description" content="The History Web is a free educational history site: 500 civilizations, empires and historical topics across six continents and three eras, with source references on every topic page.">
@@ -189,16 +191,20 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
 <script>
     const animation = document.getElementById('holdonthere2');
     const reveal = document.getElementById('pikapoo2');
-    let loaded = false;
+    let loaded = document.documentElement.classList.contains("hw-loaded");
+    function beenhere(){try{sessionStorage.setItem("hw_loaded","yes")}catch(e){}}
+    if(loaded){animation.classList.add("pikapoo");reveal.classList.remove("pikapoo")}
     if(!loaded){window.addEventListener('load', function(){
         setTimeout(() => {
             loaded = true;
+            beenhere();
         animation.classList.add('pikapoo');
         reveal.classList.remove('pikapoo');
         }, 1000);
     })}
     function boring(){
         loaded = true;
+        beenhere();
         animation.classList.add('pikapoo');
         reveal.classList.remove('pikapoo');
     }
@@ -303,7 +309,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
 <script>
 (function () {
   var displays = [
-    { el: document.getElementById('nd-topics'), count: 3, target: 250 },
+    { el: document.getElementById('nd-topics'), count: 3, target: 500 },
     { el: document.getElementById('nd-visits'), count: 5, target: 12000, gapAfter: 1 }
   ];
   if (!displays[0].el || typeof NixieDisplay === 'undefined') return;
