@@ -10,7 +10,15 @@
       "source2": "https://www.britannica.com/topic/civilization",
       "source3": "https://www.worldhistory.org/civilization/",
       "source4": "https://www.loc.gov/programs/teachers/getting-started-with-primary-sources/",
-      "filename": "thestudyofhistoryandcivilizations"
+      "filename": "thestudyofhistoryandcivilizations",
+      "source1label": "Britannica: Historiography",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Civilization",
+      "source2icon": "britannica.com.png",
+      "source3label": "World History Encyclopedia: Civilization",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "Library of Congress: Getting started with primary sources",
+      "source4icon": "loc.gov.png"
     }
   },
   {
@@ -24,7 +32,15 @@
       "source2": "https://www.worldhistory.org/Old_Kingdom_of_Egypt/",
       "source3": "https://www.britannica.com/topic/Pyramids-of-Giza",
       "filename": "theoldkingdomofegypt",
-      "source4": "https://www.worldhistory.org/Great_Pyramid_of_Giza/"
+      "source4": "https://www.worldhistory.org/Great_Pyramid_of_Giza/",
+      "source1label": "Britannica: Ancient Egypt",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Old Kingdom of Egypt",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Pyramids of Giza",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Great Pyramid of Giza",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -38,7 +54,15 @@
       "source2": "https://www.worldhistory.org/Middle_Kingdom_of_Egypt/",
       "source3": "https://www.worldhistory.org/Senusret_III/",
       "filename": "themiddlekingdomofegypt",
-      "source4": "https://www.worldhistory.org/Mentuhotep_II/"
+      "source4": "https://www.worldhistory.org/Mentuhotep_II/",
+      "source1label": "Britannica: Ancient Egypt",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Middle Kingdom of Egypt",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Senusret III",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Mentuhotep II",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -52,7 +76,15 @@
       "source2": "https://www.worldhistory.org/New_Kingdom_of_Egypt/",
       "source3": "https://www.britannica.com/biography/Tutankhamun",
       "source4": "https://www.worldhistory.org/hatshepsut/",
-      "filename": "thenewkingdomofegypt"
+      "filename": "thenewkingdomofegypt",
+      "source1label": "Britannica: Ancient Egypt",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: New Kingdom of Egypt",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Tutankhamun",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Hatshepsut",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -66,7 +98,15 @@
       "source2": "https://www.worldhistory.org/Sumer/",
       "source3": "https://www.worldhistory.org/gilgamesh/",
       "source4": "https://www.britannica.com/topic/cuneiform",
-      "filename": "sumer"
+      "filename": "sumer",
+      "source1label": "Britannica: Sumer",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Sumer",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Gilgamesh",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "Britannica: Cuneiform",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -80,7 +120,15 @@
       "source2": "https://www.britannica.com/biography/Hammurabi",
       "source3": "https://www.worldhistory.org/Code_of_Hammurabi/",
       "filename": "babylon",
-      "source4": "https://www.worldhistory.org/Hammurabi/"
+      "source4": "https://www.worldhistory.org/Hammurabi/",
+      "source1label": "World History Encyclopedia: Babylon",
+      "source1icon": "worldhistory.org.png",
+      "source2label": "Britannica: Hammurabi",
+      "source2icon": "britannica.com.png",
+      "source3label": "World History Encyclopedia: Code of Hammurabi",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Hammurabi",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -94,7 +142,15 @@
       "source2": "https://www.worldhistory.org/assyria/",
       "source3": "https://www.worldhistory.org/Ashurbanipal/",
       "filename": "assyria",
-      "source4": "https://www.worldhistory.org/Assyrian_Empire/"
+      "source4": "https://www.worldhistory.org/Assyrian_Empire/",
+      "source1label": "Britannica: Assyria",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Assyria",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Ashurbanipal",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Assyrian Empire",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -108,7 +164,15 @@
       "source2": "https://www.worldhistory.org/Minoan_Civilization/",
       "source3": "https://www.worldhistory.org/Knossos/",
       "filename": "minoancrete",
-      "source4": "https://www.worldhistory.org/Minoan_Religion/"
+      "source4": "https://www.worldhistory.org/Minoan_Religion/",
+      "source1label": "Britannica: Minoan civilization",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Minoan Civilization",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Knossos",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Minoan Religion",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -122,7 +186,15 @@
       "source2": "https://www.worldhistory.org/Athens/",
       "source3": "https://www.britannica.com/topic/ancient-Greece",
       "filename": "athens",
-      "source4": "https://www.worldhistory.org/Classical_Greece/"
+      "source4": "https://www.worldhistory.org/Classical_Greece/",
+      "source1label": "Britannica: Athens",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Athens",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Ancient Greece",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Classical Greece",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -136,7 +208,15 @@
       "source2": "https://www.worldhistory.org/Sparta/",
       "source3": "https://www.britannica.com/event/Peloponnesian-War",
       "filename": "sparta",
-      "source4": "https://www.worldhistory.org/Thermopylae/"
+      "source4": "https://www.worldhistory.org/Thermopylae/",
+      "source1label": "Britannica: Sparta",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Sparta",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Peloponnesian War",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Thermopylae",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -150,7 +230,15 @@
       "source1": "https://www.britannica.com/event/Asuka-period",
       "source2": "https://www.worldhistory.org/Asuka_Period/",
       "source3": "https://www.worldhistory.org/Kofun_Period/",
-      "source4": "https://www.britannica.com/place/Japan"
+      "source4": "https://www.britannica.com/place/Japan",
+      "source1label": "Britannica: Asuka period",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Asuka Period",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Kofun Period",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "Britannica: Japan",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -164,7 +252,15 @@
       "source2": "https://www.worldhistory.org/Rashidun_Caliphate/",
       "source3": "https://www.britannica.com/biography/Abu-Bakr",
       "source4": "https://www.britannica.com/biography/Umar-I",
-      "filename": "therashiduncaliphate"
+      "filename": "therashiduncaliphate",
+      "source1label": "Britannica: Rashidun",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Rashidun Caliphate",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Abu Bakr",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Umar I",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -178,7 +274,15 @@
       "source2": "https://www.worldhistory.org/Umayyad_Caliphate/",
       "source3": "https://www.britannica.com/topic/Dome-of-the-Rock",
       "source4": "https://www.britannica.com/place/Damascus",
-      "filename": "theumayyadcaliphate"
+      "filename": "theumayyadcaliphate",
+      "source1label": "Britannica: Umayyad dynasty",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Umayyad Caliphate",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Dome of the Rock",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Damascus",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -192,7 +296,15 @@
       "source2": "https://www.worldhistory.org/Abbasid_Caliphate/",
       "source3": "https://www.britannica.com/place/Baghdad",
       "filename": "theabbasidcaliphate",
-      "source4": "https://www.worldhistory.org/Harun_al-Rashid/"
+      "source4": "https://www.worldhistory.org/Harun_al-Rashid/",
+      "source1label": "Britannica: Abbasid caliphate",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Abbasid Caliphate",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Baghdad",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Harun al Rashid",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -206,7 +318,15 @@
       "source1": "https://www.britannica.com/topic/Fatimid-dynasty",
       "source2": "https://www.britannica.com/topic/Ayyubid-dynasty",
       "source3": "https://www.britannica.com/topic/Mamluk",
-      "source4": "https://www.worldhistory.org/Islamic_Caliphates/"
+      "source4": "https://www.worldhistory.org/Islamic_Caliphates/",
+      "source1label": "Britannica: Fatimid dynasty",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: The Ayyubid Dynasty",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Mamluk",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Islamic Caliphates",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -220,7 +340,15 @@
       "source1": "https://www.britannica.com/place/Baghdad",
       "source2": "https://www.britannica.com/topic/Abbasid-caliphate",
       "source3": "https://www.britannica.com/biography/al-Khwarizmi",
-      "source4": "https://www.britannica.com/biography/Hulegu"
+      "source4": "https://www.britannica.com/biography/Hulegu",
+      "source1label": "Britannica: Baghdad",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Abbasid caliphate",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Al Khwarizmi",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Hulegu",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -234,7 +362,15 @@
       "source1": "https://www.britannica.com/place/Byzantine-Empire",
       "source2": "https://www.britannica.com/event/Fourth-Crusade",
       "source3": "https://www.worldhistory.org/Byzantine_Empire/",
-      "source4": "https://www.worldhistory.org/Mystras/"
+      "source4": "https://www.worldhistory.org/Mystras/",
+      "source1label": "Britannica: Byzantine Empire",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Fourth Crusade",
+      "source2icon": "britannica.com.png",
+      "source3label": "World History Encyclopedia: Byzantine Empire",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Mystras",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -248,7 +384,15 @@
       "source1": "https://www.britannica.com/topic/samurai",
       "source2": "https://www.worldhistory.org/Samurai/",
       "source3": "https://www.worldhistory.org/Heian_Period/",
-      "source4": "https://www.britannica.com/topic/bushido"
+      "source4": "https://www.britannica.com/topic/bushido",
+      "source1label": "Britannica: Samurai",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Samurai",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "World History Encyclopedia: Heian Period",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "Britannica: Bushido",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -262,7 +406,15 @@
       "source1": "https://www.britannica.com/biography/Muhammad-Ali-pasha-and-viceroy-of-Egypt",
       "source2": "https://www.britannica.com/topic/Suez-Canal",
       "source3": "https://www.britannica.com/place/Egypt",
-      "source4": "https://www.britannica.com/biography/Gamal-Abdel-Nasser"
+      "source4": "https://www.britannica.com/biography/Gamal-Abdel-Nasser",
+      "source1label": "Britannica: Muḥammad ʿAlī",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Suez Canal",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Egypt",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Gamal Abdel Nasser",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -276,7 +428,15 @@
       "source1": "https://www.britannica.com/place/Iraq",
       "source2": "https://www.worldhistory.org/Ottoman_Empire/",
       "source3": "https://www.britannica.com/biography/Faysal-I",
-      "source4": "https://www.britannica.com/event/Sykes-Picot-Agreement"
+      "source4": "https://www.britannica.com/event/Sykes-Picot-Agreement",
+      "source1label": "Britannica: Iraq",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Ottoman Empire",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Faysal I",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Sykes Picot Agreement",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -290,7 +450,15 @@
       "source1": "https://www.britannica.com/event/War-of-Greek-Independence",
       "source2": "https://www.britannica.com/event/Battle-of-Navarino",
       "source3": "https://www.britannica.com/biography/Alexander-Ypsilantis",
-      "source4": "https://www.worldhistory.org/Ottoman_Empire/"
+      "source4": "https://www.worldhistory.org/Ottoman_Empire/",
+      "source1label": "Britannica: War of Greek Independence",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Battle of Navarino",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Alexander Ypsilantis",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Ottoman Empire",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -304,7 +472,15 @@
       "source2": "https://www.britannica.com/biography/Matthew-C-Perry",
       "source3": "https://www.britannica.com/place/Japan",
       "filename": "tokugawajapan",
-      "source4": "https://www.worldhistory.org/Edo_Period/"
+      "source4": "https://www.worldhistory.org/Edo_Period/",
+      "source1label": "Britannica: Tokugawa period",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Matthew C Perry",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Japan",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Edo Period",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -318,7 +494,15 @@
       "source1": "https://www.britannica.com/event/Meiji-Restoration",
       "source2": "https://www.worldhistory.org/Meiji_Restoration/",
       "source3": "https://www.britannica.com/event/Russo-Japanese-War",
-      "source4": "https://www.britannica.com/place/Japan"
+      "source4": "https://www.britannica.com/place/Japan",
+      "source1label": "Britannica: Meiji Restoration",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Meiji Restoration",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Russo-Japanese War",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Japan",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -332,7 +516,15 @@
       "source1": "https://www.britannica.com/place/Germany",
       "source2": "https://www.britannica.com/biography/Otto-von-Bismarck",
       "source3": "https://www.britannica.com/topic/Max-Planck-Society-for-the-Advancement-of-Science",
-      "source4": ""
+      "source4": "",
+      "source1label": "Britannica: Germany",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Otto von Bismarck",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Max Planck Society for the Advancement of Science",
+      "source3icon": "britannica.com.png",
+      "source4label": "Library of Congress: ",
+      "source4icon": "loc.gov.png"
     }
   },
   {
@@ -353,7 +545,15 @@
       "source8": "https://www.britannica.com/biography/Louis-IX",
       "source9": "https://en.wikipedia.org/wiki/Battle_of_Mu%27tah",
       "source10": "https://www.britannica.com/topic/qadi",
-      "source11": "https://www.britannica.com/topic/diwan-Islamic-government"
+      "source11": "https://www.britannica.com/topic/diwan-Islamic-government",
+      "source1label": "Britannica: Pharaoh",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Code of Hammurabi",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Thutmose III",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Khalid ibn al Walid",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -367,7 +567,15 @@
       "source1": "https://www.britannica.com/biography/Hatshepsut",
       "source2": "https://www.britannica.com/biography/Zenobia",
       "source3": "https://www.worldhistory.org/Egyptian_Society/",
-      "source4": "https://www.worldhistory.org/article/1036/games-sports--recreation-in-ancient-egypt/"
+      "source4": "https://www.worldhistory.org/article/1036/games-sports--recreation-in-ancient-egypt/",
+      "source1label": "Britannica: Hatshepsut",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Zenobia",
+      "source2icon": "britannica.com.png",
+      "source3label": "World History Encyclopedia: Egyptian Society",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "World History Encyclopedia: Games, Sports & Recreation in Ancient Egypt",
+      "source4icon": "worldhistory.org.png"
     }
   },
   {
@@ -381,7 +589,15 @@
       "source1": "https://www.britannica.com/topic/ancient-Egyptian-religion",
       "source2": "https://www.worldhistory.org/amun/",
       "source3": "https://www.britannica.com/topic/ziggurat",
-      "source4": "https://www.britannica.com/topic/Greek-religion"
+      "source4": "https://www.britannica.com/topic/Greek-religion",
+      "source1label": "Britannica: Ancient Egyptian religion",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Amun",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Ziggurat",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Greek religion",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -395,7 +611,15 @@
       "source1": "https://www.britannica.com/topic/writing",
       "source2": "https://www.britannica.com/topic/cuneiform",
       "source3": "https://www.britannica.com/topic/Library-of-Alexandria",
-      "source4": "https://www.britannica.com/topic/Bayt-al-Hikmah"
+      "source4": "https://www.britannica.com/topic/Bayt-al-Hikmah",
+      "source1label": "Britannica: Writing",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Cuneiform",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Library of Alexandria",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Bayt al Hikmah",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -409,7 +633,15 @@
       "source1": "https://www.britannica.com/place/Nile-River",
       "source2": "https://www.worldhistory.org/Egyptian_Agriculture/",
       "source3": "https://www.britannica.com/topic/Egyptian-calendar",
-      "source4": "https://www.britannica.com/technology/irrigation"
+      "source4": "https://www.britannica.com/technology/irrigation",
+      "source1label": "Britannica: Nile River",
+      "source1icon": "britannica.com.png",
+      "source2label": "World History Encyclopedia: Egyptian Agriculture",
+      "source2icon": "worldhistory.org.png",
+      "source3label": "Britannica: Egyptian calendar",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Irrigation",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -423,7 +655,15 @@
       "source1": "https://www.britannica.com/technology/papyrus-writing-material",
       "source2": "https://www.britannica.com/topic/Tyrian-purple",
       "source3": "https://www.worldhistory.org/phoenicia/",
-      "source4": "https://www.britannica.com/biography/Abu-Musa-Jabir-ibn-Hayyan"
+      "source4": "https://www.britannica.com/biography/Abu-Musa-Jabir-ibn-Hayyan",
+      "source1label": "Britannica: Papyrus writing material",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Tyrian purple",
+      "source2icon": "britannica.com.png",
+      "source3label": "World History Encyclopedia: Phoenicia",
+      "source3icon": "worldhistory.org.png",
+      "source4label": "Britannica: Abu Musa Jabir ibn Hayyan",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -437,7 +677,15 @@
       "source1": "https://www.britannica.com/place/Suez-Canal",
       "source2": "https://www.britannica.com/topic/Aswan-High-Dam",
       "source3": "https://www.britannica.com/topic/Silk-Road-trade-route",
-      "source4": "https://www.britannica.com/topic/Appian-Way"
+      "source4": "https://www.britannica.com/topic/Appian-Way",
+      "source1label": "Britannica: Suez Canal",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Aswan High Dam",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Silk Road trade route",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Appian Way",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -451,7 +699,15 @@
       "source1": "https://www.britannica.com/topic/Library-of-Alexandria",
       "source2": "https://www.britannica.com/biography/Avicenna",
       "source3": "https://www.britannica.com/biography/Hippocrates",
-      "source4": "https://www.britannica.com/biography/Imhotep"
+      "source4": "https://www.britannica.com/biography/Imhotep",
+      "source1label": "Britannica: Library of Alexandria",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Avicenna",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Hippocrates",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Imhotep",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -465,7 +721,15 @@
       "source1": "https://www.worldhistory.org/Abu_Simbel/",
       "source2": "https://www.britannica.com/topic/Parthenon",
       "source3": "https://www.britannica.com/topic/Colosseum",
-      "source4": "https://www.britannica.com/topic/Dome-of-the-Rock"
+      "source4": "https://www.britannica.com/topic/Dome-of-the-Rock",
+      "source1label": "World History Encyclopedia: Abu Simbel",
+      "source1icon": "worldhistory.org.png",
+      "source2label": "Britannica: Parthenon",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Colosseum",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Dome of the Rock",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -479,7 +743,15 @@
       "source1": "https://www.britannica.com/topic/Hellenistic-Age",
       "source2": "https://www.britannica.com/topic/Isis-Egyptian-goddess",
       "source3": "https://www.britannica.com/topic/Silk-Road-trade-route",
-      "source4": "https://www.britannica.com/biography/Jean-Francois-Champollion"
+      "source4": "https://www.britannica.com/biography/Jean-Francois-Champollion",
+      "source1label": "Britannica: Hellenistic age",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Isis Egyptian goddess",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Silk Road trade route",
+      "source3icon": "britannica.com.png",
+      "source4label": "Britannica: Jean Francois Champollion",
+      "source4icon": "britannica.com.png"
     }
   },
   {
@@ -493,7 +765,15 @@
       "source1": "https://www.britannica.com/place/ancient-Egypt",
       "source2": "https://www.britannica.com/biography/Augustus-Roman-emperor",
       "source3": "https://www.britannica.com/place/Alexandria-Egypt",
-      "source4": "https://www.worldhistory.org/Roman_Egypt/"
+      "source4": "https://www.worldhistory.org/Roman_Egypt/",
+      "source1label": "Britannica: Ancient Egypt",
+      "source1icon": "britannica.com.png",
+      "source2label": "Britannica: Augustus Roman emperor",
+      "source2icon": "britannica.com.png",
+      "source3label": "Britannica: Alexandria Egypt",
+      "source3icon": "britannica.com.png",
+      "source4label": "World History Encyclopedia: Roman Egypt",
+      "source4icon": "worldhistory.org.png"
     }
   }
 ]

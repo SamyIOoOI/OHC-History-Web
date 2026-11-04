@@ -12,6 +12,7 @@ function blocks(pd, prefix, fmt) {
   return s;
 }
 module.exports = function (eleventyConfig) {
+  require("./tools/paint-stem-sources.cjs")();
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false });
   eleventyConfig.addFilter("parasBlock", (pd) =>
     blocks(pd, "para", (v) => `<p style="font-size: large;">${v}</p>`));

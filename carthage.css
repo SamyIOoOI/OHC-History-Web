@@ -524,3 +524,5 @@ html.light .hw-choice-active,html.light .hw-choice-option:hover{background:#c6a6
 @media(pointer:fine){html.hw-writing #dotty{visibility:visible!important;opacity:1!important;width:32px;height:32px;border-radius:0;background-color:transparent;background-image:url(cursor-writing.png)!important;background-size:32px 32px;background-position:0 0!important;background-repeat:no-repeat;box-shadow:none;transform:translate(-1px,-23px)!important;}}
 
 @media(pointer:fine){html:not(.light).hw-writing #dotty{background-image:url(cursor-writing-fire.png)!important;}}
+
+@media(pointer:fine){html.hw-link-system #hw-download-picker label,html.hw-link-system #hw-download-picker input[type="checkbox"],html.hw-link-system #hw-download-picker summary{cursor:pointer!important;}}

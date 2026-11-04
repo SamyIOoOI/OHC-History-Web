@@ -314,7 +314,7 @@
             littlepointer.style.top = `${event.clientY}px`;
         });
     }
-    const whatamilookingat = 'a[href], .continentlink, .erapicker img[onclick]';
+    const whatamilookingat = 'a[href], .continentlink, .erapicker img[onclick], #hw-download-picker label, #hw-download-picker input[type="checkbox"], #hw-download-picker summary, #hw-download-picker button:not([disabled])';
     const handtargets = whatamilookingat + ', .fakeheader, button, [role="button"], .hw-choice-toggle, .hw-choice-option';
     const notthose = '#stickystuck .logo, #wheel, .soldier, #hw-settings-panel';
     const writinghere = 'textarea, input:not([type]), input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], [contenteditable="true"]';
