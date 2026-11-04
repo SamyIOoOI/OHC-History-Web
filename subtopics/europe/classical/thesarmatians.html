@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Sarmatians - The History Web</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/europe/europeclassical.html">Go Back</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thesarmatians.jpg">
-            <h1 style="font-size:larger;">The Sarmatians</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Sarmatians</h1>
             <p style="font-size: large;">The Sarmatians. The Sarmatians - first mentioned, as 'Sairima', in the Zoroastrian Avesta - were the successors of the Scythians - the Iranian nomad confederation that ruled the Pontic steppe from around the 5th century BC to the 4th century AD, six hundred years of steppe empire. Like the Scythians, they were horse archers and cattle herders; their confederation brought together the great tribes of the steppe: the Aorsi, the Roxolani, the Iazyges, and above all the Alans.</p>
             <p style="font-size: large;">Moving west from the steppes between the Urals and the Don, the Sarmatians overwhelmed the Scythians by about 200 BC, and at their greatest extent, around 100 BC, their tribes ranged from the Danube to the Volga. Moving ever westward, they absorbed or drove out the peoples before them: the Iazyges settled on the Tisza plain in modern Hungary, the Roxolani on the lower Danube, and the Alans built a confederation stretching from the Caucasus toward the Urals.</p>
             <p style="font-size: large;">From the 1st century AD, Sarmatian tribes pressed against Rome's Danube frontier - the Iazyges and Roxolani attacked Moesia and Thrace, and Roman governors fought to hold the river line. But the steppe world was ending: the Goths broke Sarmatian power in the 3rd century, and the Hunnic invasions of the 4th finished it. Many Sarmatians then joined the Goths and other Germanic peoples and rode west into the falling Roman Empire.</p>
@@ -48,7 +48,7 @@
             <a href="https://www.livius.org/articles/people/sarmatians/" target="_blank">Source #3</a>
             <a href="" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -74,7 +74,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

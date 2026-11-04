@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>Celtic Gaul - The History Web</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/europe/europeclassical.html">Go Back</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/celticgaul.jpg">
-            <h1 style="font-size:larger;">Celtic Gaul</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">Celtic Gaul</h1>
             <p style="font-size: large;">Celtic Gaul. Celtic Gaul was the land of the Gauls - the Celtic peoples who, in the centuries before Rome, dominated Western Europe from the Atlantic to the Rhine. Emerging with the La Tene culture around the 5th century BC, they spread over modern France, Belgium, Switzerland, and beyond, controlling the great river trade routes of the Rhone, Seine, Rhine, and Danube. Gaul was never a single state: it was a patchwork of dozens of tribes, each with its own chiefs, fortified towns (oppida like Bibracte), and coinage - sharing a language, a religion overseen by druids, and a warrior culture that made their name feared across the ancient world.</p>
             <p style="font-size: large;">At their peak in the 4th and 3rd centuries BC, the Gauls exploded outward. They settled northern Italy and, under the war leader Brennus, crushed a Roman army and sacked Rome itself in 390 BC - a humiliation Rome never forgot. Others crossed into the Balkans, threatened Delphi in 278 BC, and finally settled in central Anatolia, where they became the Galatians of the New Testament.</p>
             <p style="font-size: large;">The tide turned at Telamon in 225 BC, and a century later came the reckoning: Julius Caesar's Gallic Wars (58-50 BC). Tribe by tribe, Caesar subdued Gaul in eight brutal campaigns; the great coalition raised by the Arvernian chief Vercingetorix nearly stopped him, but broke at the siege of Alesia in 52 BC. Gaul became a Roman province - the conquest that made Caesar's career and, by Roman accounts, cost a million Gallic lives.</p>
@@ -48,7 +48,7 @@
             <a href="https://www.livius.org/articles/person/caesar/caesar-04/" target="_blank">Source #3</a>
             <a href="https://www.nationalgeographic.com/history/history-magazine/article/who-were-the-celts" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -74,7 +74,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

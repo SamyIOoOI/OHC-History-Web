@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>Political Life Across Civilizations - The History Web</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../stem-curriculum.html">Go Back</a>
     <img src="../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/politicallife.jpg">
-            <h1 style="font-size:larger;">Political Life Across Civilizations</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">Political Life Across Civilizations</h1>
             <p style="font-size: large;">Political Life Across Civilizations. Every civilization had to answer the same questions: who rules, who advises, who judges, and who enforces. Pharaonic Egypt answered with one of the longest-lived centralized monarchies in history. The king stood at the top as the living guarantee of order, and beneath him the vizier headed the administration as chief justice, head of the treasury, and overseer of all records. Scribes recorded everything, because a state that could not count its grain could not govern it, while governors called nomarchs administered the provinces. Justice was local and practical, settled by councils of elders and officials rather than by professional lawyers.</p>
 <p style="font-size: large;">The Greeks invented a radically different answer. Athens, after reforms by Solon, Cleisthenes, and Pericles, was governed by its citizens directly: the Assembly of all adult male citizens voted on war, peace, and laws; a Council of Five Hundred, chosen by lot, prepared business; and huge citizen juries decided court cases. Sparta chose the opposite model, two hereditary kings watched by overseers called ephors and a council of elders, with the whole society organized for military discipline. Rome blended monarchy, aristocracy, and democracy into a republic: two consuls elected yearly held executive power, the Senate of former officials guided policy, and assemblies of citizens passed laws and elected magistrates. When the republic became an empire, one man, the emperor, held these powers together, ruling the provinces through appointed governors.</p>
 <p style="font-size: large;">Islamic civilization developed its own institutions as the caliphate grew from Medina into a world power. The caliph combined political and religious leadership; the vizier emerged under the Abbasids as the head of administration; and the state was organized into diwans, government departments for the army, taxation, and official correspondence, a paperwork empire run from Baghdad. Justice had its own lasting institution: the qadi, the judge, applied the law in open court, and the office spread with Islam from Spain to India. Each system fitted its society, and each left something behind: Egypt's centralized administration, Athens' citizen assembly, Rome's written law, and the Islamic world's qadi courts all still echo in modern government.</p>
@@ -57,7 +57,7 @@
             <a href="https://www.britannica.com/topic/qadi" target="_blank">Source #10</a>
             <a href="https://www.britannica.com/topic/diwan-Islamic-government" target="_blank" style="margin-bottom:10px;">Source #11</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -83,7 +83,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

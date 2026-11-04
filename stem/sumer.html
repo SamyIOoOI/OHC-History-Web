@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>Sumer - The History Web</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../stem-curriculum.html">Go Back</a>
     <img src="../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/sumer.jpg">
-            <h1 style="font-size:larger;">Sumer</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">Sumer</h1>
             <p style="font-size: large;">Sumer. In the southern plain of Iraq, between and below the Tigris and Euphrates rivers, the world's earliest known civilization took shape. The land was flat and dry, but the rivers flooded unpredictably, so survival depended on cooperation: communities that dug and maintained canals could turn the plain into rich farmland. By around 4000 BC villages were growing into towns, and by 3300 BC Uruk had become something entirely new, a true city of perhaps 40,000 people, centered on great temples such as the White Temple raised on its platform. Sumer was never a single kingdom but a patchwork of independent city-states: Uruk, Ur, Lagash, Kish, Umma, Nippur, Eridu, and others, each with its own patron god, its own temple estates, and its own ruler, who styled himself en or lugal and led both war and worship.</p>
 <p style="font-size: large;">During the Early Dynastic period, roughly 2900 to 2350 BC, these cities competed fiercely for land, water, and prestige. The conflict between Lagash and Umma over a border field is recorded across generations of inscriptions, including the Stele of the Vultures, which shows King Eannatum's soldiers marching over their enemies. The Standard of Ur, a mosaic box found in the royal graves there, shows the two sides of city-state life on its two panels: war, with chariots and prisoners, and peace, with banquets, herds, and musicians. Around 2334 BC Sargon of Akkad, a Semitic-speaking ruler from the north, conquered the Sumerian cities one by one and forged the world's first territorial empire, which his grandson Naram-Sin pushed to its height. Akkadian rule lasted about a century and a half before collapsing under pressure from Gutian tribes.</p>
 <p style="font-size: large;">Sumer rose once more in the Third Dynasty of Ur, when Ur-Nammu and his son Shulgi ran a tightly organized bureaucratic state, built the great ziggurat of Ur, and issued law codes. Around 2004 BC Elamites from Iran sacked Ur and carried off its king, and Sumerian political independence ended forever, though its culture outlived it. The archaeology of the plain tells the same story the tablets do. At Eridu, seventeen temples were built one on top of another across three thousand years, one of the oldest sacred sites in the region, showing how the shrine grew into the city. At Uruk, excavators found mass-produced pottery, beveled-rim bowls used to ration grain to workers, proof that the city fed a labor force on an industrial scale.</p>
@@ -52,7 +52,7 @@
             <a href="https://www.worldhistory.org/gilgamesh/" target="_blank">Source #3</a>
             <a href="https://www.britannica.com/topic/cuneiform" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -78,7 +78,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

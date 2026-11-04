@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Republic of Venice - The History Web</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/europe/europemedieval.html">Go Back</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/therepublicofvenice.png">
-            <h1 style="font-size:larger;">The Republic of Venice</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Republic of Venice</h1>
             <p style="font-size: large;">The Republic of Venice. The Republic of Venice - La Serenissima, 'the Most Serene' - was the longest-lived republic in history: eleven centuries (697-1797) under elected doges, from a huddle of lagoon refugees to the greatest commercial power of the Mediterranean. Born as a Byzantine outpost in the lagoons, Venice made the sea its walls and its road: its merchants monopolized the trade in spices, silk, and luxury between Europe and the East, and from 1109 its doges titled themselves lords of Dalmatia and Croatia as well as Venice.</p>
             <p style="font-size: large;">Venice's empire was a maritime one: the Dalmatian coast, Crete, Cyprus, and a chain of islands and ports across the eastern Mediterranean. Its defining moment came in 1204, when Venice diverted the Fourth Crusade to sack Constantinople - the greatest Christian city on earth - and took as its share the title 'Lord of a quarter and a half of the Eastern Roman Empire,' with Crete, ports in the Morea, and islands across the Aegean - the maritime empire Venice called the Stato da Mar.</p>
             <p style="font-size: large;">The republic was an oligarchy of merchant families, but a stable one: the Serrata of 1297 locked power into the Great Council's families, and the dreaded Council of Ten, created after the Tiepolo conspiracy of 1310, repressed any threat to the state - including Doge Marino Faliero himself, executed for his own coup in 1355. Venice saw off its greatest rival in the War of Chioggia (1378-1381), after which Genoa quit the contest for Mediterranean supremacy.</p>
@@ -48,7 +48,7 @@
             <a href="https://festival.si.edu/2002/the-silk-road/venice-geography-and-history/smithsonian" target="_blank">Source #3</a>
             <a href="https://whc.unesco.org/en/list/394/" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -74,7 +74,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

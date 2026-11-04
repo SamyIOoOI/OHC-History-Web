@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Umayyad Caliphate - The History Web</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../stem-curriculum.html">Go Back</a>
     <img src="../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theumayyadcaliphate.jpg">
-            <h1 style="font-size:larger;">The Umayyad Caliphate</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Umayyad Caliphate</h1>
             <p style="font-size: large;">The Umayyad Caliphate. When Muawiya ibn Abi Sufyan became caliph in 661, he moved the capital from Medina to Damascus, his longtime power base as governor of Syria, and founded Islam's first dynasty, ruling until 750. Muawiya governed with patient pragmatism: he kept the experienced Arab tribal armies of Syria loyal, left the old Byzantine tax administration in place, and built the caliphate into a durable state. His most fateful act came at the end: he secured the succession for his son Yazid, turning the caliphate into a hereditary monarchy. Yazid's reign was scarred by the event that has echoed through Islamic memory ever since. In 680, Husayn, the Prophet's grandson, set out to claim the caliphate and was intercepted at Karbala in Iraq, where he and his small band of relatives and followers were killed by Umayyad forces.</p>
 <p style="font-size: large;">The martyrdom of Husayn became the founding grief of Shia Islam, mourned to this day. After a second civil war, the Umayyads recovered under Abd al-Malik, caliph from 685 to 705, the true organizer of the empire. He made Arabic the language of administration, replacing Greek and Persian; minted the first distinctively Islamic coinage, bearing Quranic verses instead of images; and crowned Jerusalem with the Dome of the Rock, completed in 691, the oldest surviving monument of Islamic architecture, built over the rock sacred to Jews and Muslims. His son al-Walid carried the empire to its greatest extent. Between 711 and 718 Muslim armies conquered most of Spain, crossed the Pyrenees, took Transoxiana beyond the Oxus river, and reached the Indus valley in Sind.</p>
 <p style="font-size: large;">In barely a century the caliphate had grown from Arabia into the largest empire the world had yet seen, stretching from the Atlantic to the borders of China. But expansion carried its own undoing. The empire was run by and for the Arab Muslim military aristocracy, while the growing numbers of non-Arab converts to Islam, the mawali, found themselves treated as second-class Muslims, still taxed like subjects. Resentment burned hottest in Iraq and Iran, and Umayyad armies were worn down fighting Berbers in North Africa and Byzantines on the Anatolian frontier. In 750 the Abbasid revolution, launched from eastern Iran under the black banners, destroyed the dynasty; only one prince, Abd al-Rahman I, escaped, fleeing across North Africa to found a new Umayyad emirate in Spain, which would flourish there for centuries.</p>
@@ -53,7 +53,7 @@
             <a href="https://www.britannica.com/topic/Dome-of-the-Rock" target="_blank">Source #3</a>
             <a href="https://www.britannica.com/place/Damascus" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -79,7 +79,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

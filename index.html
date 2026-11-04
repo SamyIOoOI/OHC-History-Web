@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="The History Web is a free educational history site: 250 civilizations, empires and historical topics across six continents and three eras, with source references on every topic page.">
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")==="off")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){}})();</script>
     <title>The History Web</title>
     <link rel='stylesheet' href='carthage.css'>
@@ -57,7 +58,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
 </style>
 </head>
 <body>
-    <div class="holdonthere" id="holdonthere2">
+    <div class="holdonthere" id="holdonthere2" data-pagefind-ignore>
         <img class="loadingscreen" src="loadingbigokspeed.webp">
         <div class="centeredmother">
         <h1 style="color:white; font-size: 3em;">Loading...</h1>
@@ -72,7 +73,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
     <a href="index.html">Home</a>
     <a href="#map" id="mapnav">Map</a>
@@ -101,7 +102,15 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
   <div class="nixie-cell visits-cell"><div class="ndisp nclock"><div id="nd-visits" class="ndigits" data-count="12000"></div><span class="nplus">+</span></div><span class="nixie-label">Visits in the last 30 days</span></div>
 </div>
             
-            <div class="startertext" style="text-align: left;">
+            <div id="hw-search">
+                <label id="hw-search-label" for="hw-search-input">Search the archives</label>
+                <p id="hw-search-hint">Searches the titles and full text of every topic - related words, broad ideas and small typos all work.</p>
+                <div id="hw-search-field">
+                    <input id="hw-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try 'Carthage', 'Mongols', 'pharaoh'...">
+                    <div id="hw-search-results" role="listbox" aria-label="Search results" hidden></div>
+                </div>
+            </div>
+<div class="startertext" style="text-align: left;">
                 <div class="glowhover">
                     <div style="color: white; font-size: 1.5em; margin-bottom: 15px; margin-top: 0px;">
                         <btn class="fakeheader" id="usage" onclick="throwacoinatmyface('answer1','arrow1')"><span class="arrow1">></span> How to use this website?</btn>
@@ -134,7 +143,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
                 <p class="answer3 answer5" style="color: white; font-size: 1.2rem;  text-align: center;">OHC or October Humanities Club is a student-led organization focused on humanities, philosophy, debate and history with a friendly community & is one of the few Humanities clubs in all of Egypt.</p>
             </div>
     </div>
-    <div class="map" id="map">
+    <div class="map" id="map" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -168,7 +177,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
             <a href="oceania.html">Oceania</a>
         </nav>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p style="text-indent: 1em; color: orangered;" align="center">Made by Samy Mohamed - OHC History Director &amp; Mentor - SamyIOoOI on Github - under the GPL 3.0 Licence</p>
     </footer>
 </div>
@@ -377,6 +386,235 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
       .catch(function () { clearTimeout(to); run(); });
   } catch (e) { run(); }
 
+})();
+</script>
+<script>
+(function () {
+    var input = document.getElementById('hw-search-input');
+    var box = document.getElementById('hw-search-results');
+    if (!input || !box) return;
+    var loading = null, titlesLoading = null, TITLES = null;
+    var timer = null, activeIndex = -1, currentLinks = [];
+
+    function loadIndex() {
+        if (!loading) loading = import('/pagefind/pagefind.js').catch(function () { return null; });
+        return loading;
+    }
+    function loadTitles() {
+        if (!titlesLoading) titlesLoading = fetch('/search-titles.json').then(function (r) { return r.json(); }).then(function (j) { TITLES = j; }).catch(function () { TITLES = []; });
+        return titlesLoading;
+    }
+    function norm(u) { return u.replace(/\/$/, ''); }
+
+    function whereFromUrl(url) {
+        var parts = url.split('/').filter(Boolean);
+        if (parts[0] === 'subtopics' && parts.length >= 3) {
+            var continents = { africa: 'Africa', asia: 'Asia', europe: 'Europe', northam: 'North America', southam: 'South America', oceania: 'Oceania' };
+            var eras = { classical: 'Ancient era', medieval: 'Medieval era', modern: 'Precolonial era' };
+            return (continents[parts[1]] || parts[1]) + ' \u00b7 ' + (eras[parts[2]] || parts[2]);
+        }
+        if (parts[0] === 'stem') return 'STEM Curriculum';
+        if (parts[0] === 'erafiles' && parts.length >= 3) {
+            var continents2 = { africa: 'Africa', asia: 'Asia', europe: 'Europe', northam: 'North America', southam: 'South America', oceania: 'Oceania' };
+            var era2 = parts[2].replace('.html', '').replace(parts[1], '');
+            var eras2 = { classical: 'Ancient era', medieval: 'Medieval era', colonial: 'Precolonial era' };
+            return (continents2[parts[1]] || parts[1]) + ' \u00b7 ' + (eras2[era2] || era2) + ' menu';
+        }
+        return 'History Web';
+    }
+
+    // Collapse a leading run of the topic's own title (heading repeats) down to one,
+    // so the snippet starts with the sentence, not "Title. Title. Title was...".
+    function dedupeExcerpt(html, title) {
+        if (!title) return html;
+        var esc = title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        var pat = esc.replace(/\s+/g, '(?:</mark>)?\\s+(?:<mark>)?');
+        var one = '(?:<mark>)?' + pat + '(?:</mark>)?';
+        var re = new RegExp('^\\s*(' + one + '[\\s.,:;\\u2013\\u2014-]*){2,}', 'i');
+        var m = html.match(re);
+        if (!m) return html;
+        var lastRe = new RegExp(one + '[\\s.,:;\\u2013\\u2014-]*$', 'i');
+        var lm = m[0].match(lastRe);
+        var out = (lm ? lm[0] : '') + html.slice(m[0].length);
+        if (out.replace(/<[^>]+>/g, '').trim().length < 15) return html;
+        return out;
+    }
+
+    function lev(a, b, cap) {
+        var m = a.length, n = b.length, i, j;
+        if (Math.abs(m - n) > cap) return cap + 1;
+        var prev = [], cur = [];
+        for (j = 0; j <= n; j++) prev[j] = j;
+        for (i = 1; i <= m; i++) {
+            cur[0] = i;
+            var rowMin = i;
+            for (j = 1; j <= n; j++) {
+                var cost = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+                cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+                if (cur[j] < rowMin) rowMin = cur[j];
+            }
+            if (rowMin > cap) return cap + 1;
+            var t = prev; prev = cur; cur = t;
+        }
+        return prev[n];
+    }
+
+    function fuzzyTitles(query) {
+        if (!TITLES || !TITLES.length) return [];
+        var q = query.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(function (w) { return w.length > 1; });
+        if (!q.length) return [];
+        var scored = [];
+        TITLES.forEach(function (item) {
+            var words = item.t.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+            var total = 0, ok = true;
+            for (var i = 0; i < q.length && ok; i++) {
+                var qw = q[i], best = 99;
+                var allowed = qw.length <= 6 ? 1 : 2;
+                for (var j = 0; j < words.length; j++) {
+                    var tw = words[j], d;
+                    if (tw === qw) d = 0;
+                    else if (tw.indexOf(qw) === 0 || (qw.length >= 5 && tw.indexOf(qw) !== -1)) d = 1;
+                    else if (tw.charAt(0) !== qw.charAt(0)) d = allowed + 1;
+                    else d = lev(qw, tw, allowed);
+                    if (d < best) best = d;
+                    if (best === 0) break;
+                }
+                if (best > allowed) ok = false; else total += best;
+            }
+            if (ok) scored.push({ item: item, score: total, words: words.length });
+        });
+        scored.sort(function (a, b) { return a.score - b.score || a.words - b.words; });
+        return scored.slice(0, 5);
+    }
+
+    function render(items, query, note) {
+        box.innerHTML = '';
+        activeIndex = -1;
+        currentLinks = [];
+        if (!query) { box.hidden = true; return; }
+        if (!items.length) {
+            var d = document.createElement('div');
+            d.className = 'hw-search-empty';
+            d.textContent = 'No topics found for "' + query + '" - try a broader word.';
+            box.appendChild(d);
+            box.hidden = false;
+            return;
+        }
+        if (note) {
+            var n = document.createElement('div');
+            n.className = 'hw-search-note';
+            n.textContent = note;
+            box.appendChild(n);
+        }
+        items.forEach(function (item) {
+            var a = document.createElement('a');
+            a.className = 'hw-result';
+            a.href = item.url;
+            var title = (item.meta && item.meta.title) ? item.meta.title : 'Topic';
+            var t = document.createElement('span');
+            t.className = 'hw-result-title';
+            t.textContent = title;
+            var w = document.createElement('span');
+            w.className = 'hw-result-where';
+            w.textContent = whereFromUrl(item.url);
+            a.appendChild(t); a.appendChild(w);
+            if (item.excerpt) {
+                var e = document.createElement('span');
+                e.className = 'hw-result-excerpt';
+                e.innerHTML = dedupeExcerpt(item.excerpt, title);
+                a.appendChild(e);
+            }
+            box.appendChild(a);
+            currentLinks.push(a);
+        });
+        box.hidden = false;
+    }
+
+    // Pagefind sometimes falls back to loose partial tokens (e.g. "monggols" matching "Mon").
+    // Treat its results as confident only when marked words share a real prefix with each query word.
+    function pagefindConfident(datas, q) {
+        var words = q.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 1; });
+        if (!words.length) return true;
+        var marks = [];
+        datas.forEach(function (d) {
+            if (!d.excerpt) return;
+            (d.excerpt.match(/<mark>([\s\S]*?)<\/mark>/g) || []).forEach(function (m) {
+                marks.push(m.replace(/<\/?mark>/g, '').toLowerCase());
+            });
+        });
+        if (!marks.length) return false;
+        return words.every(function (qw) {
+            var need = Math.min(4, qw.length);
+            return marks.some(function (mw) {
+                var i = 0;
+                while (i < qw.length && i < mw.length && qw.charAt(i) === mw.charAt(i)) i++;
+                return i >= need;
+            });
+        });
+    }
+
+    async function runSearch(q) {
+        var mod = await loadIndex();
+        loadTitles();
+        var res = mod ? await mod.search(q) : { results: [] };
+        if (input.value.trim() !== q) return;
+        var datas = await Promise.all(res.results.slice(0, 7).map(function (r) { return r.data(); }));
+        if (input.value.trim() !== q) return;
+        var seen = {};
+        datas.forEach(function (d) { seen[norm(d.url)] = true; });
+        // Strong title matches (exact or small typo) jump to the top, above body-text matches.
+        var fz = fuzzyTitles(q);
+        var strong = fz.filter(function (f) { return f.score <= 2 && !seen[norm(f.item.u)]; }).slice(0, 3);
+        strong.forEach(function (f) { seen[norm(f.item.u)] = true; });
+        var combined = strong.map(function (f) { return { url: f.item.u, meta: { title: f.item.t }, excerpt: '' }; });
+        var note = '';
+        if (strong.length && !pagefindConfident(datas, q)) {
+            // Confident title correction exists and body results are loose partial matches: hide the noise.
+            note = 'No exact matches - closest topics:';
+        } else {
+            combined = combined.concat(datas);
+        }
+        if (combined.length === 0 && fz.length) {
+            combined = fz.slice(0, 5).map(function (f) { return { url: f.item.u, meta: { title: f.item.t }, excerpt: '' }; });
+            note = 'No exact matches - closest topics:';
+        }
+        render(combined.slice(0, 8), q, note);
+    }
+
+    input.addEventListener('input', function () {
+        var q = input.value.trim();
+        clearTimeout(timer);
+        if (q.length < 2) { render([], q); return; }
+        timer = setTimeout(function () { runSearch(q); }, 180);
+    });
+    input.addEventListener('focus', function () {
+        loadIndex(); loadTitles();
+        if (input.value.trim().length >= 2) runSearch(input.value.trim());
+    });
+    input.addEventListener('keydown', function (ev) {
+        if (box.hidden) return;
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+            ev.preventDefault();
+            if (!currentLinks.length) return;
+            activeIndex = (activeIndex + (ev.key === 'ArrowDown' ? 1 : -1) + currentLinks.length) % currentLinks.length;
+            currentLinks.forEach(function (l, i) { l.classList.toggle('hw-active', i === activeIndex); });
+            currentLinks[activeIndex].scrollIntoView({ block: 'nearest' });
+        } else if (ev.key === 'Enter') {
+            if (currentLinks.length) {
+                ev.preventDefault();
+                var target = (activeIndex >= 0 && currentLinks[activeIndex]) ? currentLinks[activeIndex] : currentLinks[0];
+                window.location.assign(target.href);
+            }
+        } else if (ev.key === 'Escape') {
+            box.hidden = true;
+        }
+    });
+    document.addEventListener('click', function (ev) {
+        if (!box.hidden && !ev.target.closest('#hw-search')) box.hidden = true;
+    });
+
+    var q0 = new URLSearchParams(window.location.search).get('q');
+    if (q0) { input.value = q0; runSearch(q0.trim()); }
 })();
 </script>
 </body>

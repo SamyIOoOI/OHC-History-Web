@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Age of the Samurai - The History Web</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../stem-curriculum.html">Go Back</a>
     <img src="../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/theageofthesamurai.jpg">
-            <h1 style="font-size:larger;">The Age of the Samurai</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Age of the Samurai</h1>
             <p style="font-size: large;">The Age of the Samurai. Japan's medieval age was made by its warriors. The centralized court state of Nara and Heian, modeled on China, slowly decayed as tax-exempt estates, the shoen, swallowed the land and great provincial families armed themselves to defend them. Two warrior houses rose above all: the Taira and the Minamoto. Their rivalry climaxed in the Genpei War of 1180 to 1185, fought across Japan and ended at the sea battle of Dan-no-ura, where the child emperor drowned with the Taira fleet. The victor, Minamoto no Yoritomo, did not take the throne; instead he took the title of shogun, supreme military commander, in 1192, ruling from Kamakura while the emperor reigned powerlessly in Kyoto. This was the founding of the bakufu, the tent government, and the pattern of Japanese politics for nearly seven centuries: emperors legitimized, samurai ruled.</p>
 <p style="font-size: large;">Yoritomo built his power on the gokenin, housemen who held their lands in return for military service, and after his death power passed to the Hojo regents, who ruled in the shogun's name while puppet shoguns reigned. The regency faced its supreme test when Kublai Khan, Mongol master of China, demanded Japan's submission and invaded in 1274 and again in 1281 with fleets among the largest seaborne forces the world had yet seen; both times samurai resistance and typhoons, the kamikaze or divine winds, destroyed the invasion fleets. But victory brought no plunder to reward the warriors, discontent festered, and in 1333 the emperor Go-Daigo's partisans destroyed the Kamakura bakufu.</p>
 <p style="font-size: large;">Imperial restoration lasted only three years before the Ashikaga shoguns founded a new bakufu in Kyoto, ruling for two centuries amid constant factional war, while the arts they patronized, Zen gardens, tea ceremony, Noh drama, ink painting, created a classical age amid the disorder. From 1467 the Onin War, fought over shogunal succession, burned Kyoto itself and shattered central authority altogether. The following century, the Sengoku or Warring States period, saw regional lords, the daimyo, rule their castles as independent sovereigns in endless war, a time when foot soldiers with spears and then guns, peasants' leagues, and warrior-monks all contended for power.</p>
@@ -54,7 +54,7 @@
             <a href="https://www.worldhistory.org/Heian_Period/" target="_blank">Source #3</a>
             <a href="https://www.britannica.com/topic/bushido" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -80,7 +80,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

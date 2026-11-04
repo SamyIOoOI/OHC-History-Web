@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>Athens - The History Web</title>
     <link rel='stylesheet' href='../carthage.css'>
     <link rel="stylesheet" href="../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../stem-curriculum.html">Go Back</a>
     <img src="../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/athens.jpg">
-            <h1 style="font-size:larger;">Athens</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">Athens</h1>
             <p style="font-size: large;">Classical Athens. In the fifth century BC, a small Greek city-state produced an explosion of political experiment, art, and thought that has shaped the world ever since. Athens had already pioneered reform: Solon's laws in 594 BC canceled debts and ended debt slavery, and Cleisthenes in 508 BC reorganized the citizens into new tribes and created the Council of Five Hundred, laying the foundation of democracy. The Persian Wars made Athens a great power. When the Persian Empire invaded Greece, the Athenians defeated Darius at Marathon in 490 BC, and ten years later, under Themistocles, their new fleet destroyed Xerxes' navy at Salamis, the decisive battle of the war.</p>
 <p style="font-size: large;">Afterward Athens led the Delian League, a voluntary alliance of Greek cities formed to keep fighting Persia, but gradually turned the alliance into an empire: the treasury was moved from Delos to Athens, allies who tried to leave were forced back, and tribute paid for Athenian ships and buildings. Under Pericles, the dominant statesman from about 461 to 429 BC, democracy reached its fullest form. Every male citizen could speak and vote in the Assembly, which met about forty times a year; juries of hundreds, chosen by lot and paid for their service, judged cases; most officials were selected by lottery rather than election, on the principle that any citizen could govern. Pericles used league funds to rebuild the Acropolis, crowned by the Parthenon between 447 and 432 BC, a temple to Athena of perfect proportions filled with sculpture directed by Phidias.</p>
 <p style="font-size: large;">Democracy and empire together funded the golden age of Athenian culture. But imperial arrogance bred enemies, and in 431 BC the long rivalry with Sparta erupted into the Peloponnesian War. Pericles' strategy of withdrawing behind the city walls packed refugees into Athens, where plague killed perhaps a quarter of the population, including Pericles himself. The war ground on for twenty-seven years, marked by the disastrous Sicilian expedition of 415 to 413 BC, in which Athens lost an entire army and fleet. In 404 BC Athens surrendered to Sparta, its walls demolished and its empire gone, though its democracy, twice overthrown by oligarchic coups, was twice restored, and its cultural influence only grew after its political fall. The democracy's machinery deserves close attention, because it was perhaps the most participatory government of the ancient world.</p>
@@ -53,7 +53,7 @@
             <a href="https://www.britannica.com/topic/ancient-Greece" target="_blank">Source #3</a>
             <a href="https://www.worldhistory.org/Classical_Greece/" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -79,7 +79,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

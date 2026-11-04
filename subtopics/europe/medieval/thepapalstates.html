@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Papal States - The History Web</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/europe/europemedieval.html">Go Back</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thepapalstates.png">
-            <h1 style="font-size:larger;">The Papal States</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Papal States</h1>
             <p style="font-size: large;">The Papal States. The Papal States were the popes' earthly kingdom: the band of territory across central Italy that the Bishop of Rome ruled as a sovereign prince for over eleven centuries (756-1870). They began with the 'Donation of Pepin' in 756, when the Frankish king Pepin, having defeated the Lombards, granted the pope the lands of central Italy - making the pope a territorial ruler and cementing the Frankish-papal alliance that would crown Charlemagne.</p>
             <p style="font-size: large;">A kingdom ruled by a churchman was a strange state, and its fortunes swung wildly. At its height, medieval popes were Europe's powerbrokers; at its low points the papacy was the plaything of Roman mobs, Roman barons, or foreign kings - most famously during the 'Babylonian Captivity' (1309-1376), when the popes abandoned Rome for Avignon under French influence. Renaissance popes like Alexander VI and Julius II - the 'Warrior Pope' who fought on his state's behalf - rebuilt papal power into one of Italy's principal secular lordships, though much of their territory long remained only nominally theirs, ruled by local princes.</p>
             <p style="font-size: large;">The states were always an anomaly: an elective theocracy with a flag, an army, and taxes. Italian nationalists saw them as the central obstacle to unification: by 1860 the Kingdom of Sardinia had taken most of them into the new Kingdom of Italy, and in 1870 Italian troops took Rome itself (20 September), leaving Pius IX holding only the Vatican - the self-styled 'prisoner in the Vatican.'</p>
@@ -48,7 +48,7 @@
             <a href="" target="_blank">Source #3</a>
             <a href="" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -74,7 +74,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>

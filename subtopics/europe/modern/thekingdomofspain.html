@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
-    <title>Topic</title>
+    <title>The Kingdom of Spain - The History Web</title>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     </audio>
     <div id="dotty">
     </div>
-    <div id="stickystuck">
+    <div id="stickystuck" data-pagefind-ignore>
         <img src="../../../tinylogo.png" class="logo" style="width: auto; height: 2.5em; margin-left: 5px;" role="button" tabindex="0" aria-expanded="false">
         <a href="../../../erafiles/europe/europecolonial.html">Go Back</a>
     <img src="../../../warriorwheel/1.png" class="soldier" onclick="rollit()" id="wheel">
@@ -37,7 +37,7 @@
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/thekingdomofspain.png">
-            <h1 style="font-size:larger;">The Kingdom of Spain</h1>
+            <h1 style="font-size:larger;" data-pagefind-meta="title">The Kingdom of Spain</h1>
             <p style="font-size: large;">The Kingdom of Spain. Spain was born in 1469, when the marriage of Isabella I of Castile and Ferdinand II of Aragon joined the two great crowns of Iberia. In 1492 - the critical year of Spanish history - they conquered Granada, the last Muslim emirate in Spain, ending eight centuries of Al-Andalus; they expelled Spain's Jews; and they sponsored Christopher Columbus's first voyage to America. Within decades, the conquistadors had built a Spanish colonial empire among the largest in history, and Spain was the superpower of the age.</p>
             <p style="font-size: large;">The Habsburg century was Spain's Golden Age: under Charles I and his son Philip II, the empire reached its territorial and economic peak, Philip's palace-monastery at El Escorial the center of its power. But the strain showed: state bankruptcies, the destruction of the Armada, and the independence of the Northern Netherlands began the slow decline, continued through the Eighty Years' War and the Thirty Years' War. When the last Habsburg, Charles II, died heirless in 1700, the War of the Spanish Succession brought the French Bourbons to the throne - Philip V - and reforms under Charles III briefly revived the state.</p>
             <p style="font-size: large;">The 19th century brought collapse: Napoleon's invasion made Spain a French puppet state, and the wars of independence that followed cost Spain nearly all its American empire in the 1820s. A tumultuous century of alternating liberal and monarchical rule ended with the Spanish-American War, military dictatorships, and the fall of Alfonso XIII - then the Civil War, and Francisco Franco's dictatorship for nearly four decades.</p>
@@ -48,7 +48,7 @@
             <a href="" target="_blank">Source #3</a>
             <a href="" target="_blank" style="margin-bottom:10px;">Source #4</a>
         </div>
-    <div class="map" id="map" style="display: none;">
+    <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 170 500 330" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" id="map">
             <g >
@@ -74,7 +74,7 @@
         </g>
         </svg>
     </div>
-      <footer>
+      <footer data-pagefind-ignore>
         <p class="pagefooter" style="text-indent: 1em; color: orangered;" align="center">The History Web 2026-2027 - under the GPL 3.0 Licence</p>
     </footer>
 </div>
