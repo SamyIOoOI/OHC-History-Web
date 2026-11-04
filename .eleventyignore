@@ -1,0 +1,11 @@
+_site
+node_modules
+pagefind
+ImageStorage
+EraPortals
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.wav
+.github

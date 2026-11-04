@@ -15,9 +15,27 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../../favicons/apple-touch-icon.png">
 <style>
-    html,  body {
-        overflow: hidden;
-        height: 100%;
+    .candywrapper {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+    .table {
+        height: auto;
+        overflow: visible;
+        padding: 0.5em 1.5em 1.4em;
+    }
+    .pagefooter {
+        position: static;
+    }
+    .table a[target="_blank"] {
+        margin: 0.4em 0;
+    }
+    .srcicon {
+        height: 1em;
+        width: 1em;
+        vertical-align: -0.12em;
+        margin-right: 0.45em;
+        border-radius: 3px;
     }
 </style>
     <script defer src="../../../settings.js"></script>
@@ -43,10 +61,10 @@
             <p style="font-size: large;">The empire died with its maker. Dusan died suddenly in 1355, and under his son Uros 'the Weak' the great lords tore the empire apart; it effectively ended by 1371. From its ruins, Moravian Serbia emerged as the largest Serbian state under the Lazarevic dynasty - until it met the Ottomans at the legendary Battle of Kosovo in 1389, the battle that became the founding myth of Serbian nationhood.</p>
             <p style="font-size: large;">Serbia spent centuries under Ottoman rule. But Dusan's empire and Kosovo's memory - patriarchate, code, and battle - kept the idea of Serbia alive and drove its rebirth in the 19th century: the dream of the Balkan empire that lasted one man's lifetime.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
-            <a href="https://www.britannica.com/event/Battle-of-Kosovo-1389-Balkans" target="_blank">Source #1</a>
-            <a href="https://human.libretexts.org/Bookshelves/History/World_History/Book%3A_World_History_-_Cultures_States_and_Societies_to_1500_(Berger_et_al.)/12%3A_Western_Europe_and_Byzantium_circa_1000-1500_CE/12.24%3A_Southeastern_Europe_in_the_Late_Middle_Ages" target="_blank">Source #2</a>
-            <a href="https://www.nationalgeographic.com/magazine/article/serbs" target="_blank">Source #3</a>
-            <a href="https://www.bbc.co.uk/history/worldwars/wwone/yugoslavia_01.shtml" target="_blank" style="margin-bottom:10px;">Source #4</a>
+            <a href="https://www.britannica.com/event/Battle-of-Kosovo-1389-Balkans" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Battle of Kosovo (1389)</a>
+            <a href="https://human.libretexts.org/Bookshelves/History/World_History/Book%3A_World_History_-_Cultures_States_and_Societies_to_1500_(Berger_et_al.)/12%3A_Western_Europe_and_Byzantium_circa_1000-1500_CE/12.24%3A_Southeastern_Europe_in_the_Late_Middle_Ages" target="_blank"><img class="srcicon" src="../../../sourceicons/human.libretexts.org.png" alt=""> Humanities LibreTexts: 12.24: Southeastern Europe in the Late Middle Ages</a>
+            <a href="https://www.nationalgeographic.com/magazine/article/serbs" target="_blank"><img class="srcicon" src="../../../sourceicons/nationalgeographic.com.png" alt=""> National Geographic: Serbs Face the Future</a>
+            <a href="https://www.bbc.co.uk/history/worldwars/wwone/yugoslavia_01.shtml" target="_blank" style="margin-bottom:10px;"><img class="srcicon" src="../../../sourceicons/bbc.co.uk.png" alt=""> BBC: History - World Wars: Yugoslavia: 1918 - 2003</a>
         </div>
     <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>

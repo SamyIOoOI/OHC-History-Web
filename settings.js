@@ -45,6 +45,23 @@
                 <button type="button" class="hw-titlecolor" data-color="#e8d5a3" style="background:#e8d5a3" aria-label="Parchment (best on dark theme)" title="Parchment (best on dark theme)"></button>
             </div>
         </div>
+        <div class="hw-font-section">
+            <label class="hw-font-label" for="hw-cursor-normal">Normal cursor</label>
+            <select id="hw-cursor-normal">
+                <option value="dotty">Dotty (default)</option>
+                <option value="blackink">Black Ink</option>
+                <option value="fireink">Fire Ink</option>
+                <option value="longsword">Longsword</option>
+                <option value="emissary">Emissary</option>
+            </select>
+        </div>
+        <div class="hw-font-section">
+            <label class="hw-font-label" for="hw-cursor-link">Link cursor (when hovering links)</label>
+            <select id="hw-cursor-link">
+                <option value="herald">Herald</option>
+                <option value="system">System hand</option>
+            </select>
+        </div>
         <div class="hw-credits-section hw-dev-section">
             <a href="${new URL('development.html', siteRoot).href}">Development</a>
         </div>
@@ -165,6 +182,83 @@
         if (!btn) return;
         applyTitleColor(btn.dataset.color);
         store('hw_titlecolor', btn.dataset.color);
+    });
+
+    // Cursor options (Sword n'Scroll)
+    const CURSOR_NORMAL_CLASSES = ['blackink', 'fireink', 'longsword', 'emissary'];
+    const cursorNormalSelect = panel.querySelector('#hw-cursor-normal');
+    const cursorLinkSelect = panel.querySelector('#hw-cursor-link');
+    function applyCursorNormal(value) {
+        const root = document.documentElement;
+        root.classList.remove(...CURSOR_NORMAL_CLASSES.map(name => `hw-cursor-${name}`));
+        if (value !== 'dotty' && CURSOR_NORMAL_CLASSES.includes(value)) {
+            root.classList.add('hw-cursor-img', `hw-cursor-${value}`);
+        } else {
+            root.classList.remove('hw-cursor-img');
+        }
+    }
+    function applyCursorLink(value) {
+        const root = document.documentElement;
+        root.classList.toggle('hw-link-herald', value === 'herald');
+        root.classList.toggle('hw-link-system', value === 'system');
+        if (value !== 'herald') {
+            root.classList.remove('hw-on-link');
+        }
+    }
+    let savedCursorNormal = 'dotty', savedCursorLink = 'herald';
+    try {
+        savedCursorNormal = localStorage.getItem('hw_cursor_normal') || 'dotty';
+        savedCursorLink = localStorage.getItem('hw_cursor_link') || 'herald';
+    } catch (error) {
+        reportStorageFailure(error);
+    }
+    if (!['dotty', ...CURSOR_NORMAL_CLASSES].includes(savedCursorNormal)) savedCursorNormal = 'dotty';
+    if (!['herald', 'system'].includes(savedCursorLink)) savedCursorLink = 'herald';
+    cursorNormalSelect.value = savedCursorNormal;
+    cursorLinkSelect.value = savedCursorLink;
+    applyCursorNormal(savedCursorNormal);
+    applyCursorLink(savedCursorLink);
+    cursorNormalSelect.addEventListener('change', () => {
+        applyCursorNormal(cursorNormalSelect.value);
+        store('hw_cursor_normal', cursorNormalSelect.value);
+    });
+    cursorLinkSelect.addEventListener('change', () => {
+        applyCursorLink(cursorLinkSelect.value);
+        store('hw_cursor_link', cursorLinkSelect.value);
+    });
+
+    // Link hover state + click unroll animation
+    const whatamilookingat = 'a[href], button, [role="button"], .fakeheader, .continentlink';
+    document.addEventListener('pointerover', event => {
+        if (document.documentElement.classList.contains('hw-link-herald')
+                && event.target.closest(whatamilookingat)) {
+            document.documentElement.classList.add('hw-on-link');
+        }
+    });
+    document.addEventListener('pointerout', event => {
+        if (event.target.closest(whatamilookingat)) {
+            document.documentElement.classList.remove('hw-on-link');
+        }
+    });
+    document.addEventListener('click', event => {
+        if (!document.documentElement.classList.contains('hw-link-herald')) return;
+        if (!event.target.closest(whatamilookingat)) return;
+        if (event.button !== 0) return;
+        const fx = document.createElement('div');
+        fx.className = 'hw-scroll-click';
+        fx.style.left = `${event.clientX}px`;
+        fx.style.top = `${event.clientY}px`;
+        document.body.appendChild(fx);
+        let step = 0;
+        const timer = setInterval(() => {
+            step += 1;
+            if (step >= 9) {
+                clearInterval(timer);
+                fx.remove();
+                return;
+            }
+            fx.style.backgroundPosition = `${-32 * step}px 0`;
+        }, 90);
     });
 
     crtToggle.checked = !document.documentElement.classList.contains('no-crt');

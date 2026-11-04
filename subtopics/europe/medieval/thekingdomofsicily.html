@@ -15,9 +15,27 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../../favicons/apple-touch-icon.png">
 <style>
-    html,  body {
-        overflow: hidden;
-        height: 100%;
+    .candywrapper {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+    .table {
+        height: auto;
+        overflow: visible;
+        padding: 0.5em 1.5em 1.4em;
+    }
+    .pagefooter {
+        position: static;
+    }
+    .table a[target="_blank"] {
+        margin: 0.4em 0;
+    }
+    .srcicon {
+        height: 1em;
+        width: 1em;
+        vertical-align: -0.12em;
+        margin-right: 0.45em;
+        border-radius: 3px;
     }
 </style>
     <script defer src="../../../settings.js"></script>
@@ -43,10 +61,10 @@
             <p style="font-size: large;">The turning point was 1282: the Sicilian Vespers, the great uprising that massacred the island's French Angevin rulers and handed Sicily over to the Crown of Aragon. The island and the mainland split - Sicily under Aragon, the mainland ('Naples') under Angevins and then Aragon too - and Sicily spent four centuries as a Mediterranean dependency: Aragonese, Spanish, briefly Savoyard and Austrian, and finally Bourbon.</p>
             <p style="font-size: large;">In 1816 the island and Naples merged into the Kingdom of the Two Sicilies, which lasted until Italian unification. But the Norman kingdom's imprint endures in Sicily's layered Greek-Arab-Norman identity - the memory of medieval Europe's most multicultural kingdom.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
-            <a href="https://www.britannica.com/place/Kingdom-of-Sicily" target="_blank">Source #1</a>
-            <a href="https://www.worldhistory.org/Roger_I_of_Sicily/" target="_blank">Source #2</a>
-            <a href="https://www.khanacademy.org/humanities/medieval-world/byzantine1/x4b0eb531:middle-byzantine/a/the-visual-culture-of-norman-sicily" target="_blank">Source #3</a>
-            <a href="https://whc.unesco.org/en/list/1487/" target="_blank" style="margin-bottom:10px;">Source #4</a>
+            <a href="https://www.britannica.com/place/Kingdom-of-Sicily" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Kingdom of Sicily</a>
+            <a href="https://www.worldhistory.org/Roger_I_of_Sicily/" target="_blank"><img class="srcicon" src="../../../sourceicons/worldhistory.org.png" alt=""> World History Encyclopedia: Roger I of Sicily</a>
+            <a href="https://www.khanacademy.org/humanities/medieval-world/byzantine1/x4b0eb531:middle-byzantine/a/the-visual-culture-of-norman-sicily" target="_blank"><img class="srcicon" src="../../../sourceicons/khanacademy.org.png" alt=""> Khan Academy: Client Challenge</a>
+            <a href="https://whc.unesco.org/en/list/1487/" target="_blank" style="margin-bottom:10px;"><img class="srcicon" src="../../../sourceicons/whc.unesco.org.png" alt=""> UNESCO World Heritage Centre: Arab-Norman&#x20;Palermo&#x20;and&#x20;the&#x20;Cathedral&#x20;Churches&#x20;of&#x20;Cefal&amp;uacute&#x3b;&#x20;and&#x20;Monreale</a>
         </div>
     <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>

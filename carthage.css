@@ -447,3 +447,44 @@ filter: drop-shadow(0 0 20px white);
 @media (max-width: 365px) {
     #stickystuck a { font-size: 11px; }
 }
+
+/* Sword n'Scroll cursor options */
+html.hw-cursor-img #dotty{
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    box-shadow: none;
+}
+html.hw-cursor-blackink #dotty{ background-image: url(cursor-blackink.png); transform: translate(-4px, -28px); }
+html.hw-cursor-fireink #dotty{ background-image: url(cursor-fireink.png); transform: translate(-4px, -28px); }
+html.hw-cursor-longsword #dotty{ background-image: url(cursor-longsword.png); transform: translate(-2px, -2px); }
+html.hw-cursor-emissary #dotty{ background-image: url(cursor-emissary.png); transform: translate(-16px, -16px); }
+html.hw-on-link.hw-link-herald #dotty{
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url(cursor-herald.png);
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    box-shadow: none;
+    transform: translate(-16px, -16px);
+}
+.hw-scroll-click{
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    margin: -4px 0 0 -16px;
+    background-image: url(cursor-herald-unroll.png);
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    pointer-events: none;
+    z-index: 9999;
+}
+html.hw-on-link.hw-link-system #dotty{ opacity: 0; }
+html.hw-link-system a, html.hw-link-system button,
+html.hw-link-system .fakeheader, html.hw-link-system .continentlink{ cursor: pointer !important; }

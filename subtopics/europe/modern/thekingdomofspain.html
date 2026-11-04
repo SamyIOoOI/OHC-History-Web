@@ -15,9 +15,27 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../../favicons/apple-touch-icon.png">
 <style>
-    html,  body {
-        overflow: hidden;
-        height: 100%;
+    .candywrapper {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+    .table {
+        height: auto;
+        overflow: visible;
+        padding: 0.5em 1.5em 1.4em;
+    }
+    .pagefooter {
+        position: static;
+    }
+    .table a[target="_blank"] {
+        margin: 0.4em 0;
+    }
+    .srcicon {
+        height: 1em;
+        width: 1em;
+        vertical-align: -0.12em;
+        margin-right: 0.45em;
+        border-radius: 3px;
     }
 </style>
     <script defer src="../../../settings.js"></script>
@@ -43,10 +61,10 @@
             <p style="font-size: large;">The 19th century brought collapse: Napoleon's invasion made Spain a French puppet state, and the wars of independence that followed cost Spain nearly all its American empire in the 1820s. A tumultuous century of alternating liberal and monarchical rule ended with the Spanish-American War, military dictatorships, and the fall of Alfonso XIII - then the Civil War, and Francisco Franco's dictatorship for nearly four decades.</p>
             <p style="font-size: large;">Spain emerged from Franco's death into a remarkable transition: King Juan Carlos I presided over the liberalization of the country, the democratic Constitution of 1978, entry into the European Community in 1986 and the Eurozone in 1998. Juan Carlos abdicated in 2014; his son Felipe VI reigns today - a modern European democracy built on the oldest of Spain's institutions.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
-            <a href="https://www.britannica.com/place/Spain/Spain-under-the-Habsburgs" target="_blank">Source #1</a>
-            <a href="https://en.wikipedia.org/wiki/Habsburg_Spain" target="_blank">Source #2</a>
-            <a href="" target="_blank">Source #3</a>
-            <a href="" target="_blank" style="margin-bottom:10px;">Source #4</a>
+            <a href="https://www.britannica.com/place/Spain/Spain-under-the-Habsburgs" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Spain - Reconquista, Inquisition, Monarchy</a>
+            <a href="https://en.wikipedia.org/wiki/Habsburg_Spain" target="_blank"><img class="srcicon" src="../../../sourceicons/en.wikipedia.org.png" alt=""> Wikipedia: Habsburg Spain</a>
+            <a href="https://www.britannica.com/biography/Philip-II-king-of-Spain-and-Portugal" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Philip II</a>
+            <a href="https://www.britannica.com/place/Spain/The-Bourbons" target="_blank" style="margin-bottom:10px;"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Spain</a>
         </div>
     <div class="map" id="map" style="display: none;" data-pagefind-ignore>
         <h2 style="color: orangered; margin-top: 200px; font-size:xx-large">Click on a continent & dive into the depths of history...</h2>
