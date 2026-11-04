@@ -503,7 +503,7 @@ html.hw-link-system .fakeheader, html.hw-link-system .continentlink{ cursor: poi
         width: 32px; height: 32px;
         border-radius: 0; background-color: transparent;
         background-image: url(cursor-herald-unroll.png) !important;
-        background-size: auto 32px; background-repeat: no-repeat;
+        background-size: 288px 32px !important; background-repeat: no-repeat;
         box-shadow: none; transform: translate(-16px,-16px);
     }
 }
