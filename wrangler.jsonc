@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ohc-history-web",
+  "compatibility_date": "2026-11-03",
+  "observability": {
+    "enabled": true
+  },
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./_site"
+  }
+}

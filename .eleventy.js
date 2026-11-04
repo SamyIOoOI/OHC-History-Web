@@ -30,10 +30,10 @@ module.exports = function (eleventyConfig) {
    "index.html","africa.html","asia.html","europe.html","northamerica.html","southamerica.html","oceania.html",
    "articles.html","contactus.html","content.html","development.html","stem-curriculum.html",
    "book.json","pages.json","search-titles.json","stats.json","sitemap.xml","robots.txt","llms.txt",
-   "LICENSE","README.md","_headers",".assetsignore",
+   "LICENSE","ATTRIBUTION.csv","_headers",".assetsignore",
    "*.png","*.webp","*.wav","*.svg","*.ico","*.txt",
-   "favicons","fonts","vendor","sourceicons","nixie","stem","tools","warriorwheel",
-   "EraPortals","ImageStorage","erafiles","pagefind","_ssg",
+   "favicons","fonts","vendor","sourceicons","nixie","stem","warriorwheel",
+   "EraPortals","ImageStorage","erafiles","pagefind",
    "subtopics/**/*.jpg","subtopics/**/*.png"
   ].forEach(p => eleventyConfig.addPassthroughCopy(p));
   return { dir: { input: ".", output: "_site", includes: "_includes", data: "_data" },

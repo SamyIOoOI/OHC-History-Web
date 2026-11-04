@@ -1,0 +1,13 @@
+{
+  "name": "history-web",
+  "version": "1.8.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8",
+    "wrangler": "4.157.0"
+  }
+}
