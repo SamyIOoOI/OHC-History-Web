@@ -1,6 +1,6 @@
 # The History Web
 
-> The History Web (thehistoryweb.org) is a free, open-reading educational history site covering 250 civilizations, empires, kingdoms, and historical topics across six continents (Africa, Asia, Europe, North America, South America, Oceania) and three periods (Classical, Medieval, Modern). Every topic page is a short, source-checked summary followed by direct links to its references (Encyclopaedia Britannica, World History Encyclopedia, UNESCO, museum collections, and university materials). The site also carries long-form STEM-and-society pages on how science, technology, economy, religion, and daily life worked inside major civilizations.
+> The History Web (thehistoryweb.org) is a free, open-reading educational history site covering 500 civilizations, empires, kingdoms, and historical topics across six continents (Africa, Asia, Europe, North America, South America, Oceania) and three periods (Classical, Medieval, Modern). Every topic page is a short, source-checked summary followed by direct links to its references (Encyclopaedia Britannica, World History Encyclopedia, UNESCO, museum collections, and university materials). The site also carries long-form STEM-and-society pages on how science, technology, economy, religion, and daily life worked inside major civilizations.
 
 ## Structure
 

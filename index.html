@@ -369,13 +369,9 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
     }, { threshold: .4 });
     displays.forEach(function (d) { cio.observe(d.el); });
   }  }
-  // Live visits: stats.json is rewritten daily by a scheduled GitHub Action
-  // (.github/workflows/update-stats.yml) from Cloudflare zone Analytics
-  // (rolling 30 days). Any valid fresh value is used, even below the baked
-  // fallback; the baked value only stays when the file is missing or unreadable.
-  // The '+' keeps the agreed style; the number is a daily snapshot of the
-  // rolling 30-day total (which can itself dip day to day), not a guaranteed
-  // current minimum.
+  // Manual visits: edit the numeric visits value in root stats.json, then Commit + Sync.
+  // The scheduled counter workflow stays disabled. Both portfolio pages use this JSON too.
+  // A valid count may increase or decrease; missing/invalid data keeps the existing fallback.
   try {
     var ctl = ('AbortController' in window) ? new AbortController() : null;
     var to = setTimeout(function () { if (ctl) ctl.abort(); }, 3000);
@@ -383,7 +379,7 @@ html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (st) {
         clearTimeout(to);
-        if (st && typeof st.visits === 'number' && isFinite(st.visits) && st.visits >= 0) {
+        if (st && typeof st.visits === 'number' && Number.isSafeInteger(st.visits) && st.visits >= 0) {
           displays[1].target = Math.floor(st.visits);
           displays[1].el.setAttribute('data-count', String(displays[1].target));
         }

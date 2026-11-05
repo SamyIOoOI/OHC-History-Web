@@ -12,6 +12,11 @@ function blocks(pd, prefix, fmt) {
   return s;
 }
 module.exports = function (eleventyConfig) {
+  // stats.json is the single manually edited visit count; visits.txt is not used.
+  const stats = JSON.parse(require('fs').readFileSync('stats.json', 'utf8').replace(/^\uFEFF/, ''));
+  if (!Number.isSafeInteger(stats.visits) || stats.visits < 0) {
+    throw new Error('stats.json: visits must be a non-negative whole number within the safe integer range.');
+  }
   require("./tools/paint-stem-sources.cjs")();
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false });
   eleventyConfig.addFilter("parasBlock", (pd) =>
