@@ -34,9 +34,12 @@ module.exports = function (eleventyConfig) {
    "LICENSE","ATTRIBUTION.csv","_headers",".assetsignore",
    "*.png","*.webp","*.wav","*.svg","*.ico","*.txt",
    "favicons","fonts","vendor","sourceicons","nixie","stem","warriorwheel",
-   "EraPortals","ImageStorage","erafiles","pagefind",
-   "subtopics/**/*.jpg","subtopics/**/*.png"
-  ].forEach(p => eleventyConfig.addPassthroughCopy(p));
+   "EraPortals","ImageStorage","erafiles","pagefind"
+  ].forEach(p => eleventyConfig.addPassthroughCopy(p, { concurrency: 2 }));
+  // Copy topic images through one bounded directory queue, not one task per glob match.
+  eleventyConfig.addPassthroughCopy("subtopics", {
+    filter: ["**/*.jpg", "**/*.png"], concurrency: 2
+  });
   return { dir: { input: ".", output: "_site", includes: "_includes", data: "_data" },
            htmlTemplateEngine: "njk", templateFormats: ["njk"], passthroughFileCopy: true };
 };
