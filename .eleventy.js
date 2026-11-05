@@ -45,6 +45,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("subtopics", {
     filter: ["**/*.jpg", "**/*.png"], concurrency: 2
   });
+  // Compatibility pages must survive clean builds without reintroducing retired topics.
+  ["subtopics/africa/modern/thealgerianwar.html", "subtopics/africa/modern/themaumauuprising.html", "subtopics/africa/modern/theapartheidstate.html", "subtopics/africa/modern/thesuezcrisis.html", "subtopics/africa/modern/thecongocrisis.html", "subtopics/africa/modern/theegyptianrevolutionof1952.html"].forEach(p => eleventyConfig.addPassthroughCopy(p));
   return { dir: { input: ".", output: "_site", includes: "_includes", data: "_data" },
            htmlTemplateEngine: "njk", templateFormats: ["njk"], passthroughFileCopy: true };
 };

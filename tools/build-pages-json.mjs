@@ -115,6 +115,7 @@ for (const [directory, continentName] of continentDirs) {
     for (const [eraDirectoryName, eraName] of eraDirs) {
         const topicDirectory = path.join(root, 'subtopics', directory, eraDirectoryName);
         for (const file of htmlFiles(topicDirectory)) {
+            if (fs.readFileSync(file, 'utf8').includes('data-compatibility-redirect')) continue;
             pages.push({
                 path: relativePath(file),
                 title: pageTitle(file),
@@ -123,6 +124,10 @@ for (const [directory, continentName] of continentDirs) {
             });
         }
     }
+}
+
+for (const file of htmlFiles(path.join(root, 'stem'))) {
+    pages.push({path: relativePath(file), title: pageTitle(file), group: {continent: null, era: null}, type: 'stem'});
 }
 
 pages.sort((a, b) => a.path.localeCompare(b.path));

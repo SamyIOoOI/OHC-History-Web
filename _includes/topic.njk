@@ -54,7 +54,7 @@
     <div class="candywrapper">
         <div class="sky"></div>
         <div class="table" style="gap: 10px;">
-            <img class="topicimage" src="images/{{ pageData.image }}">
+            <img class="topicimage" src="images/{{ pageData.image }}"{% if pageData.imagealt %} alt="{{ pageData.imagealt }}"{% endif %}>
             <h1 style="font-size:larger;" data-pagefind-meta="title">{{ pageData.title | safe }}</h1>
             {{ pageData | parasBlock | safe }}
             <h1 style="font-size:large;">To read more about this topic:</h1>

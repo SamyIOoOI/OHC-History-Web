@@ -410,11 +410,6 @@
       "url": "https://www.britannica.com/place/Egypt",
       "label": "Britannica: Egypt",
       "icon": "britannica.com.png"
-    },
-    {
-      "url": "https://www.britannica.com/biography/Gamal-Abdel-Nasser",
-      "label": "Britannica: Gamal Abdel Nasser",
-      "icon": "britannica.com.png"
     }
   ],
   "precolonialiraq": [
@@ -424,18 +419,13 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.worldhistory.org/Ottoman_Empire/",
-      "label": "World History Encyclopedia: Ottoman Empire",
-      "icon": "worldhistory.org.png"
-    },
-    {
-      "url": "https://www.britannica.com/biography/Faysal-I",
-      "label": "Britannica: Faysal I",
+      "url": "https://www.britannica.com/place/Iraq/British-occupation-and-the-mandatory-regime",
+      "label": "Britannica: British occupation and the mandatory regime",
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/event/Sykes-Picot-Agreement",
-      "label": "Britannica: Sykes Picot Agreement",
+      "url": "https://www.britannica.com/biography/Faysal-I",
+      "label": "Britannica: Faisal I",
       "icon": "britannica.com.png"
     }
   ],
@@ -485,8 +475,8 @@
   ],
   "modernjapan": [
     {
-      "url": "https://www.britannica.com/event/Meiji-Restoration",
-      "label": "Britannica: Meiji Restoration",
+      "url": "https://kids.britannica.com/students/article/Meiji/275770",
+      "label": "Britannica: Meiji",
       "icon": "britannica.com.png"
     },
     {
@@ -495,20 +485,15 @@
       "icon": "worldhistory.org.png"
     },
     {
-      "url": "https://www.britannica.com/event/Russo-Japanese-War",
-      "label": "Britannica: Russo-Japanese War",
-      "icon": "britannica.com.png"
-    },
-    {
-      "url": "https://www.britannica.com/place/Japan",
-      "label": "Britannica: Japan",
+      "url": "https://kids.britannica.com/scholars/article/Taish%C5%8D-period/473443",
+      "label": "Britannica: Taisho period",
       "icon": "britannica.com.png"
     }
   ],
   "moderngermany": [
     {
-      "url": "https://www.britannica.com/place/Germany",
-      "label": "Britannica: Germany",
+      "url": "https://kids.britannica.com/scholars/article/German-Empire/630990",
+      "label": "Britannica: German Empire",
       "icon": "britannica.com.png"
     },
     {
@@ -517,8 +502,8 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/topic/Max-Planck-Society-for-the-Advancement-of-Science",
-      "label": "Britannica: Max Planck Society for the Advancement of Science",
+      "url": "https://kids.britannica.com/scholars/article/Weimar-Republic/76450",
+      "label": "Britannica: Weimar Republic",
       "icon": "britannica.com.png"
     }
   ],
@@ -696,18 +681,18 @@
       "icon": "britannica.com.png"
     },
     {
-      "url": "https://www.britannica.com/topic/Aswan-High-Dam",
-      "label": "Britannica: Aswan High Dam",
+      "url": "https://www.britannica.com/topic/Appian-Way",
+      "label": "Britannica: Appian Way",
       "icon": "britannica.com.png"
+    },
+    {
+      "url": "https://www.worldhistory.org/qanat/",
+      "label": "World History Encyclopedia: Qanat",
+      "icon": "worldhistory.org.png"
     },
     {
       "url": "https://www.britannica.com/topic/Silk-Road-trade-route",
-      "label": "Britannica: Silk Road trade route",
-      "icon": "britannica.com.png"
-    },
-    {
-      "url": "https://www.britannica.com/topic/Appian-Way",
-      "label": "Britannica: Appian Way",
+      "label": "Britannica: Silk Road",
       "icon": "britannica.com.png"
     }
   ],
