@@ -783,5 +783,49 @@
       "label": "World History Encyclopedia: Roman Egypt",
       "icon": "worldhistory.org.png"
     }
+  ],
+  "rome": [
+    {
+      "url": "https://www.britannica.com/topic/ancient-Rome",
+      "label": "Britannica: Ancient Rome",
+      "icon": "britannica.com.png"
+    },
+    {
+      "url": "https://www.britannica.com/topic/Roman-Republic",
+      "label": "Britannica: Roman Republic",
+      "icon": "britannica.com.png"
+    },
+    {
+      "url": "https://www.worldhistory.org/rome/",
+      "label": "World History Encyclopedia: Ancient Rome",
+      "icon": "worldhistory.org.png"
+    },
+    {
+      "url": "https://www.worldhistory.org/Roman_Empire/",
+      "label": "World History Encyclopedia: Roman Empire",
+      "icon": "worldhistory.org.png"
+    }
+  ],
+  "theislamicfinancialsystem": [
+    {
+      "url": "https://www.britannica.com/topic/kharaj",
+      "label": "Britannica: Kharaj",
+      "icon": "britannica.com.png"
+    },
+    {
+      "url": "https://www.britannica.com/topic/jizya",
+      "label": "Britannica: Jizyah",
+      "icon": "britannica.com.png"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bayt_al-mal",
+      "label": "Wikipedia: Bayt al-mal",
+      "icon": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zakat",
+      "label": "Wikipedia: Zakat",
+      "icon": ""
+    }
   ]
 }

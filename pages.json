@@ -459,6 +459,15 @@
     "type": "stem"
   },
   {
+    "path": "stem/rome.html",
+    "title": "Rome - The History Web",
+    "group": {
+      "continent": null,
+      "era": null
+    },
+    "type": "stem"
+  },
+  {
     "path": "stem/scientificlife.html",
     "title": "Scientific Life Across Civilizations - The History Web",
     "group": {
@@ -506,6 +515,15 @@
   {
     "path": "stem/theageofthesamurai.html",
     "title": "The Age of the Samurai - The History Web",
+    "group": {
+      "continent": null,
+      "era": null
+    },
+    "type": "stem"
+  },
+  {
+    "path": "stem/theislamicfinancialsystem.html",
+    "title": "The Islamic Financial System - The History Web",
     "group": {
       "continent": null,
       "era": null
