@@ -628,3 +628,16 @@ html.light .hw-report-go:hover {
     outline-offset: 1px;
     border-radius: 0;
 }
+
+@media (max-width: 480px) {
+    #stickystuck .soldier {
+        height: 2.5em;
+        padding-right: 0.6em;
+    }
+}
+
+@media (max-width: 365px) {
+    #stickystuck .soldier {
+        height: 2em;
+    }
+}
