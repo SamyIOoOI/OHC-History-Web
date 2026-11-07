@@ -479,3 +479,152 @@ html.light .hw-search-empty { color: #3a1208; }
     #hw-search-label { font-size: 1.25em; }
     #hw-search-results { max-height: 55vh; }
 }
+
+.hw-report-links {
+    display: block;
+    height: 0;
+}
+
+.hw-report-links button {
+    position: absolute;
+    top: 0.5rem;
+    z-index: 4;
+    display: inline-flex;
+    padding: 0.34rem;
+    border: 1.5px solid currentColor;
+    border-radius: 0;
+    cursor: pointer;
+    color: #e6a34a;
+    background: rgba(58, 18, 8, 0.78);
+}
+
+.hw-report-links button.hw-report-left {
+    left: 0.6rem;
+}
+
+.hw-report-links button.hw-report-right {
+    right: 0.6rem;
+}
+
+.hw-report-links button:hover {
+    background: rgba(58, 18, 8, 0.95);
+}
+
+.hw-report-links svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    display: block;
+}
+
+.hw-report-pop {
+    position: absolute;
+    top: 2.7rem;
+    z-index: 5;
+    width: 15rem;
+    max-width: calc(100% - 1.2rem);
+    padding: 0.6rem 0.7rem;
+    border: 2px solid currentColor;
+    border-radius: 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    text-align: center;
+    color: #f3e2c2;
+    background: #3a1208;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.hw-report-pop.hw-pop-left {
+    left: 0.6rem;
+}
+
+.hw-report-pop.hw-pop-right {
+    right: 0.6rem;
+}
+
+.hw-report-pop p {
+    margin: 0 1.2rem 0.55rem 0;
+    text-align: left;
+}
+
+.hw-report-close {
+    position: absolute;
+    top: 0.15rem;
+    right: 0.3rem;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: inherit;
+    font-size: 1.05rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.15rem 0.3rem;
+}
+
+.hw-report-go {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border: 1.5px solid currentColor;
+    border-radius: 0;
+    text-decoration: none;
+    color: #e6a34a;
+}
+
+.hw-report-go:hover {
+    transform: none;
+    filter: none;
+    background: rgba(230, 163, 74, 0.15);
+}
+
+html.light .hw-report-links button {
+    color: #a02a08;
+    background: rgba(251, 243, 224, 0.92);
+}
+
+html.light .hw-report-links button:hover {
+    background: #fbf3e0;
+}
+
+html.light .hw-report-pop {
+    color: #3a1208;
+    background: #fbf3e0;
+    box-shadow: 0 4px 14px rgba(58, 18, 8, 0.3);
+}
+
+html.light .hw-report-go {
+    color: #a02a08;
+}
+
+html.light .hw-report-go:hover {
+    background: rgba(160, 42, 8, 0.1);
+}
+
+@media (max-width: 700px) {
+    .hw-report-links {
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+    }
+
+    .hw-report-links button {
+        position: static;
+    }
+
+    .hw-report-pop {
+        position: relative;
+        width: auto;
+        max-width: none;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.hw-report-links button:focus,
+.hw-report-links button:focus-visible,
+.hw-report-go:focus,
+.hw-report-go:focus-visible,
+.hw-report-close:focus,
+.hw-report-close:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 1px;
+    border-radius: 0;
+}

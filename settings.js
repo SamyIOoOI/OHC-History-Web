@@ -68,6 +68,9 @@
         <div class="hw-credits-section">
             <a href="${new URL('contactus.html', siteRoot).href}">Credits</a>
         </div>
+        <div class="hw-credits-section">
+            <a href="${new URL('license.html', siteRoot).href}">License &amp; Policy</a>
+        </div>
         <div class="hw-download-section">
             <button type="button" id="hw-download-open">Download pages</button>
             <p class="hw-download-status" id="hw-download-status" aria-live="polite"></p>
@@ -512,4 +515,95 @@
             downloadButton.disabled = false;
         }
     });
+
+    // see a bug or a fib? tattle
+    const bugdoodle = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="13.5" rx="4.5" ry="5.5"/><circle cx="12" cy="6.5" r="2.2"/><path d="M10.8 4.8 9 2.5"/><path d="M13.2 4.8 15 2.5"/><path d="M12 8.5V19"/><path d="M7.6 10.5 4 8.5"/><path d="M7.2 13.5H3"/><path d="M7.6 16.5 4 18.5"/><path d="M16.4 10.5 20 8.5"/><path d="M16.8 13.5H21"/><path d="M16.4 16.5 20 18.5"/></svg>';
+    const tornpage = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5H16.5L19.5 5.5V14.6L17.5 15.8L15.5 14.6L13.5 15.8L11.5 14.6L9.5 15.8L7.5 14.6L6 15.4Z"/><path d="M16.5 2.5V5.5H19.5"/><path d="M6 17.2L8 16.2L10 17.4L12 16.2L14 17.4L16 16.2L19.5 17.2V21.5H6Z"/><path d="M10 7.4C10 5.8 10.9 4.8 12.1 4.8C13.4 4.8 14.2 5.8 14.2 7C14.2 8.5 13.1 9.1 12.4 9.8C11.9 10.3 11.9 10.8 11.9 11.8" stroke-width="2"/><circle cx="11.9" cy="13.5" r="0.95" fill="currentColor" stroke="none"/></svg>';
+    const telltales = [
+        {
+            say: 'Report a bug',
+            why: 'If something on this page is broken or not working right, let me know and I will fix it.',
+            corner: 'left',
+            doodle: bugdoodle,
+            form: 'PASTE_BUG_FORM_URL_HERE',
+            entry: 'entry.0000000001'
+        },
+        {
+            say: 'Report inaccuracy',
+            why: 'If something in this topic is wrong or should be rewritten, tell me and I will check it.',
+            corner: 'right',
+            doodle: tornpage,
+            form: 'PASTE_INACCURACY_FORM_URL_HERE',
+            entry: 'entry.0000000001'
+        }
+    ];
+    const talecard = document.querySelector('.table');
+    if (talecard && talecard.querySelector('.topicimage')) {
+        const liveones = telltales.filter(t => t.form.indexOf('PASTE_') !== 0);
+        if (liveones.length) {
+            if (getComputedStyle(talecard).position === 'static') talecard.style.position = 'relative';
+            const cornerbox = document.createElement('div');
+            cornerbox.className = 'hw-report-links';
+            talecard.insertBefore(cornerbox, talecard.firstChild);
+            const pagetag = encodeURIComponent(document.title + ' - ' + location.href);
+            let popped = null;
+            for (const t of liveones) {
+                const corner = t.corner === 'left' ? 'left' : 'right';
+                const whinebtn = document.createElement('button');
+                whinebtn.type = 'button';
+                whinebtn.className = 'hw-report-' + corner;
+                whinebtn.innerHTML = t.doodle;
+                whinebtn.title = t.say;
+                whinebtn.setAttribute('aria-label', t.say);
+                whinebtn.setAttribute('aria-haspopup', 'dialog');
+                cornerbox.appendChild(whinebtn);
+
+                const soapbox = document.createElement('div');
+                soapbox.className = 'hw-report-pop hw-pop-' + corner;
+                soapbox.setAttribute('role', 'dialog');
+                soapbox.setAttribute('aria-label', t.say);
+                soapbox.hidden = true;
+                soapbox.innerHTML = '<button type="button" class="hw-report-close" aria-label="Close">\u00d7</button>'
+                    + '<p>' + t.why + '</p>'
+                    + '<a class="hw-report-go" target="_blank" rel="noopener">' + t.say + '</a>';
+                soapbox.querySelector('.hw-report-go').href = t.form + (t.form.indexOf('?') === -1 ? '?' : '&')
+                    + 'usp=pp_url&' + t.entry + '=' + pagetag;
+                soapbox.querySelector('.hw-report-close').addEventListener('click', shutit);
+                cornerbox.insertAdjacentElement('afterend', soapbox);
+
+                whinebtn.addEventListener('click', () => {
+                    if (popped && popped.box === soapbox) {
+                        shutit();
+                        return;
+                    }
+                    shutit();
+                    soapbox.hidden = false;
+                    popped = { box: soapbox, btn: whinebtn };
+                    document.addEventListener('click', missedthepop, true);
+                    document.addEventListener('keydown', escslam);
+                    soapbox.querySelector('.hw-report-go').focus();
+                });
+            }
+            function shutit() {
+                if (!popped) return;
+                const old = popped;
+                popped = null;
+                old.box.hidden = true;
+                document.removeEventListener('click', missedthepop, true);
+                document.removeEventListener('keydown', escslam);
+                old.btn.focus();
+            }
+            function missedthepop(event) {
+                if (!popped) return;
+                if (popped.box.contains(event.target) || popped.btn.contains(event.target)) return;
+                shutit();
+            }
+            function escslam(event) {
+                if (event.key === 'Escape') {
+                    event.stopPropagation();
+                    shutit();
+                }
+            }
+        }
+    }
 })();
