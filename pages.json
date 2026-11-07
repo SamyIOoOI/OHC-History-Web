@@ -3375,8 +3375,89 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/medieval/alfredandthedanelaw.html",
+    "title": "Alfred the Great and the Danelaw - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/dalriata.html",
+    "title": "Dal Riata and the Gaelic West - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/gaelicireland.html",
+    "title": "Gaelic Ireland: Kings, Clans and Tara - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/medieval/kievanrus.html",
     "title": "Kievan Rus' - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/lordshipofireland.html",
+    "title": "The Lordship of Ireland and the Pale - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/magnacarta.html",
+    "title": "Magna Carta and the Barons' Wars - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/monasticireland.html",
+    "title": "Monastic Ireland: Saints and Scholars - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/normaninvasionofireland.html",
+    "title": "The Norman Invasion of Ireland - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/owainglyndwr.html",
+    "title": "Owain Glyndwr's Rebellion - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/scottishwarsofindependence.html",
+    "title": "The Wars of Scottish Independence - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Medieval"
@@ -3618,6 +3699,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/medieval/theheptarchy.html",
+    "title": "The Heptarchy and the Rise of Wessex - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/medieval/thehundredyearswar.html",
     "title": "The Hundred Years' War - The History Web",
     "group": {
@@ -3807,6 +3897,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/medieval/thenormanconquest.html",
+    "title": "The Norman Conquest of England - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/medieval/theostrogothicandlombardkingdoms.html",
     "title": "The Ostrogothic & Lombard Kingdoms - The History Web",
     "group": {
@@ -3818,6 +3917,24 @@
   {
     "path": "subtopics/europe/medieval/thepapalstates.html",
     "title": "The Papal States - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/thepeasantsrevolt.html",
+    "title": "The Peasants' Revolt of 1381 - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/thepictsandalba.html",
+    "title": "The Picts and the Birth of Alba - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Medieval"
@@ -3872,6 +3989,15 @@
   {
     "path": "subtopics/europe/medieval/theserbiankingdom.html",
     "title": "The Serbian Kingdom before the Empire - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/thestewartdynasty.html",
+    "title": "The Stewart Dynasty - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Medieval"
@@ -3942,6 +4068,24 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/medieval/thewelshkingdoms.html",
+    "title": "The Welsh Kingdoms and the Marcher Lords - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/medieval/vikingdublin.html",
+    "title": "Viking Dublin and the Norse Towns of Ireland - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/medieval/wallachiaandmoldavia.html",
     "title": "Wallachia and Moldavia - The History Web",
     "group": {
@@ -3951,8 +4095,152 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/modern/actofunion1801.html",
+    "title": "The Act of Union, 1801 - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/angloirishwar.html",
+    "title": "The Anglo-Irish War and the Irish Free State - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/modern/austriahungary.html",
     "title": "Austria-Hungary - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/britaininwwi.html",
+    "title": "Britain in the First World War - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/catholicemancipation.html",
+    "title": "O'Connell and Catholic Emancipation - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/chartism.html",
+    "title": "Chartism and the Reform Acts - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/confederateireland.html",
+    "title": "Confederate Ireland and the Cromwellian Conquest - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/elizabethanengland.html",
+    "title": "Elizabethan England and the Spanish Armada - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/flightoftheearls.html",
+    "title": "The Flight of the Earls and the Plantation of Ulster - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/georgianbritain.html",
+    "title": "Georgian Britain and the Regency - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/highlandclearances.html",
+    "title": "The Highland Clearances - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/industrialwales.html",
+    "title": "Industrial Wales: Coal, Iron and Slate - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/jacobiterisings.html",
+    "title": "The Jacobite Risings - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/maryqueenofscots.html",
+    "title": "Mary Queen of Scots and the Scottish Reformation - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/nineyearswar.html",
+    "title": "The Nine Years' War in Ireland - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/penallaws.html",
+    "title": "The Penal Laws and the Protestant Ascendancy - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/scottishenlightenment.html",
+    "title": "The Scottish Enlightenment - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -3996,6 +4284,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/modern/thecovenanters.html",
+    "title": "The Covenanters - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/modern/thecrimeanwar.html",
     "title": "The Crimean War - The History Web",
     "group": {
@@ -4007,6 +4304,15 @@
   {
     "path": "subtopics/europe/modern/thedutchrepublickingdomofthenetherlands.html",
     "title": "The Dutch Republic / Kingdom of the Netherlands - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/theeasterrising.html",
+    "title": "The Easter Rising, 1916 - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -4034,6 +4340,15 @@
   {
     "path": "subtopics/europe/modern/theenlightenmentandabsolutism.html",
     "title": "Enlightened Absolutism - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/thefenians.html",
+    "title": "The Fenians and the Rising of 1867 - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -4077,6 +4392,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/modern/thegreatfamine.html",
+    "title": "The Great Famine - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/modern/thegreatnorthernwar.html",
     "title": "The Great Northern War - The History Web",
     "group": {
@@ -4097,6 +4421,24 @@
   {
     "path": "subtopics/europe/modern/thehabsburgmonarchyaustrianempire.html",
     "title": "The Habsburg Monarchy / Austrian Empire - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/thehomerulecrisis.html",
+    "title": "The Home Rule Crisis - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/theindustrialrevolution.html",
+    "title": "The Industrial Revolution - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -4176,6 +4518,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/europe/modern/thelandwar.html",
+    "title": "The Land War and Parnell - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/europe/modern/theottomanbalkans.html",
     "title": "The Ottoman Balkans - The History Web",
     "group": {
@@ -4214,6 +4565,15 @@
   {
     "path": "subtopics/europe/modern/theprincipalityofserbia.html",
     "title": "The Principality of Serbia - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/therestoration.html",
+    "title": "The Restoration - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -4304,6 +4664,60 @@
   {
     "path": "subtopics/europe/modern/thewarofthespanishsuccession.html",
     "title": "The War of the Spanish Succession - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/tudorconquestofireland.html",
+    "title": "The Tudor Conquest of Ireland - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/tudorengland.html",
+    "title": "Tudor England: Henry VII and Henry VIII - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/unionofthecrowns.html",
+    "title": "The Union of the Crowns, 1603 - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/unitedirishmen.html",
+    "title": "The United Irishmen and the 1798 Rebellion - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/victorianbritain.html",
+    "title": "Victorian Britain - The History Web",
+    "group": {
+      "continent": "Europe",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/europe/modern/williamitewar.html",
+    "title": "The Williamite War and the Battle of the Boyne - The History Web",
     "group": {
       "continent": "Europe",
       "era": "Pre/Colonial"
@@ -4554,6 +4968,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/cattledrives.html",
+    "title": "The Cattle Drives and the Open Range - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/childlaborreform.html",
     "title": "Child Labor and the Campaign for Reform - The History Web",
     "group": {
@@ -4680,6 +5103,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/dorotheadixreform.html",
+    "title": "Dorothea Dix and the Reform of Asylums and Prisons - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/dredscottjohnbrownandthecrisis.html",
     "title": "Dred Scott, John Brown and the Crisis of the Union - The History Web",
     "group": {
@@ -4725,8 +5157,26 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/federalreserveandamendments.html",
+    "title": "The Federal Reserve and the Progressive Amendments - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/foodfarmingandlandinthecolonies.html",
     "title": "Food, Farming and Landholding in the British Colonies - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/greatsiouxwar.html",
+    "title": "The Great Sioux War and the Little Bighorn - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -4754,6 +5204,15 @@
   {
     "path": "subtopics/northam/modern/hamiltonjeffersonandthefirstparties.html",
     "title": "Hamilton, Jefferson and the First Party System - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/haymarketaffair.html",
+    "title": "The Haymarket Affair - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -4797,6 +5256,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/irishandgermanimmigration.html",
+    "title": "Irish and German Immigration and the Know-Nothings - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/jacksoniandemocracy.html",
     "title": "Jacksonian Democracy and White Male Suffrage - The History Web",
     "group": {
@@ -4815,6 +5283,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/jaysandpinckneystreaties.html",
+    "title": "Jay's Treaty and Pinckney's Treaty - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/kansasnebraskaactandbleedingkansas.html",
     "title": "The Kansas-Nebraska Act and Bleeding Kansas - The History Web",
     "group": {
@@ -4826,6 +5303,15 @@
   {
     "path": "subtopics/northam/modern/kingphilipswar.html",
     "title": "King Philip's War - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/knightsoflaborandafl.html",
+    "title": "The Knights of Labor and the American Federation of Labor - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -4914,6 +5400,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/natturnersrebellion.html",
+    "title": "Nat Turner's Rebellion - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/newfrance.html",
     "title": "New France - The History Web",
     "group": {
@@ -4925,6 +5420,15 @@
   {
     "path": "subtopics/northam/modern/newnetherland.html",
     "title": "New Netherland and the Dutch Atlantic - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/niagaramovementandnaacp.html",
+    "title": "The Niagara Movement and the Founding of the NAACP - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -4986,6 +5490,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/radioandbroadcasting.html",
+    "title": "Radio and the Birth of Broadcasting - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/railroadsandstandardtime.html",
     "title": "Railroads, Standard Time and the National Market - The History Web",
     "group": {
@@ -5015,6 +5528,15 @@
   {
     "path": "subtopics/northam/modern/rooseveltconservationandnationalparks.html",
     "title": "Theodore Roosevelt, Conservation and the National Parks - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/saccoandvanzetti.html",
+    "title": "Sacco and Vanzetti - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5058,6 +5580,33 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/tammanyhall.html",
+    "title": "Tammany Hall and Urban Machine Politics - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/teapotdome.html",
+    "title": "Teapot Dome and the Harding Scandals - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/tecumsehsconfederacy.html",
+    "title": "Tecumseh's Confederacy - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/tenementsandurbanreform.html",
     "title": "Tenements, Public Health and Urban Reform - The History Web",
     "group": {
@@ -5069,6 +5618,15 @@
   {
     "path": "subtopics/northam/modern/theacadianexpulsion.html",
     "title": "The Acadian Expulsion - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thealienandseditionacts.html",
+    "title": "The Alien and Sedition Acts - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5114,6 +5672,15 @@
   {
     "path": "subtopics/northam/modern/thebankwarandpanicof1837.html",
     "title": "The Bank War and the Panic of 1837 - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thebarbarywars.html",
+    "title": "The Barbary Wars - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5184,6 +5751,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/theclosingofthefrontier.html",
+    "title": "The Closing of the Frontier - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/thecolonialcaribbeanspanishfrenchbritishdutch.html",
     "title": "The Colonial Caribbean (Spanish, French, British, Dutch) - The History Web",
     "group": {
@@ -5220,8 +5796,35 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/thedawesact.html",
+    "title": "The Dawes Act and the Allotment Era - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/theelectionof1800.html",
+    "title": "The Election of 1800 - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/theendofreconstructionandjimcrow.html",
     "title": "The End of Reconstruction and the Rise of Jim Crow - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/theeraofgoodfeelings.html",
+    "title": "The Era of Good Feelings - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5249,6 +5852,15 @@
   {
     "path": "subtopics/northam/modern/thefreedmensbureau.html",
     "title": "The Freedmen's Bureau and the Struggle for Land and Education - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thefrenchandindianwar.html",
+    "title": "The French and Indian War - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5328,6 +5940,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/theklansrevival.html",
+    "title": "The Ku Klux Klan's Revival in the 1920s - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/themarketrevolution.html",
     "title": "The Market Revolution: Canals, Roads and Commerce - The History Web",
     "group": {
@@ -5382,6 +6003,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/theminingfrontier.html",
+    "title": "The Mining Frontier: From the Comstock to the Black Hills - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/themonroedoctrine.html",
     "title": "The Monroe Doctrine and Early US Foreign Policy - The History Web",
     "group": {
@@ -5400,8 +6030,35 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/themormonmigration.html",
+    "title": "The Mormon Migration and the Settlement of Utah - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/themuckrakers.html",
     "title": "Muckrakers, Food Safety and Consumer Protection - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thenewsouthandsharecropping.html",
+    "title": "The New South and the Sharecropping System - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thenorthwestordinance.html",
+    "title": "The Northwest Ordinance - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5526,6 +6183,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/thesalemwitchtrials.html",
+    "title": "The Salem Witch Trials - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/thesecondgreatawakeningandreform.html",
     "title": "The Second Great Awakening and Antebellum Reform - The History Web",
     "group": {
@@ -5564,6 +6230,33 @@
   {
     "path": "subtopics/northam/modern/thestonorebellion.html",
     "title": "The Stono Rebellion and Resistance to Colonial Slavery - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thetelegraph.html",
+    "title": "The Telegraph and the Communications Revolution - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thetemperancemovement.html",
+    "title": "The Temperance Movement - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/thetexasrevolution.html",
+    "title": "The Texas Revolution and the Republic of Texas - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5643,6 +6336,42 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/northam/modern/thexyzaffairandthequasiwar.html",
+    "title": "The XYZ Affair and the Quasi-War - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/transcendentalism.html",
+    "title": "Transcendentalism and the American Literary Renaissance - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/triangleshirtwaistfire.html",
+    "title": "The Triangle Shirtwaist Fire - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/tulsaracemassacre.html",
+    "title": "The Tulsa Race Massacre, 1921 - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/northam/modern/washingtonanddubois.html",
     "title": "Black Education and Politics: Booker T. Washington and W.E.B. Du Bois - The History Web",
     "group": {
@@ -5699,6 +6428,15 @@
   {
     "path": "subtopics/northam/modern/womenworkandfamilyincolonialamerica.html",
     "title": "Women, Work and Family in Colonial America - The History Web",
+    "group": {
+      "continent": "North America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/northam/modern/woundedknee.html",
+    "title": "The Ghost Dance and Wounded Knee, 1890 - The History Web",
     "group": {
       "continent": "North America",
       "era": "Pre/Colonial"
@@ -5949,6 +6687,24 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/classical/elparaiso.html",
+    "title": "El Paraiso and the First Coastal Temples - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Classical"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/classical/sanagustinculture.html",
+    "title": "San Agustin and the Upper Magdalena - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Classical"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/classical/thecaralsupenortechicocivilization.html",
     "title": "The Caral-Supe / Norte Chico Civilization - The History Web",
     "group": {
@@ -5960,6 +6716,33 @@
   {
     "path": "subtopics/southam/classical/thechavinculture.html",
     "title": "The Chavín Culture - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Classical"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/classical/thechinchorroculture.html",
+    "title": "The Chinchorro Culture - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Classical"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/classical/thelimaculture.html",
+    "title": "The Lima Culture - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Classical"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/classical/themarajoaraculture.html",
+    "title": "The Marajoara Culture of Amazonia - The History Web",
     "group": {
       "continent": "South America",
       "era": "Classical"
@@ -6048,8 +6831,35 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/medieval/thediaguita.html",
+    "title": "The Diaguita of the Southern Andes - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/medieval/theguarani.html",
+    "title": "The Guarani Peoples - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/medieval/theincaempiretahuantinsuyu.html",
     "title": "The Inca Empire (Tahuantinsuyu) - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/medieval/thekingdomofquito.html",
+    "title": "The Kingdom of Quito - The History Web",
     "group": {
       "continent": "South America",
       "era": "Medieval"
@@ -6075,6 +6885,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/medieval/thepeoplesofpatagonia.html",
+    "title": "The Peoples of Patagonia - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/medieval/thetairona.html",
     "title": "The Tairona and the Sierra Nevada Chiefdoms - The History Web",
     "group": {
@@ -6084,8 +6903,53 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/medieval/thetupinamba.html",
+    "title": "The Tupinamba of the Brazilian Coast - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Medieval"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/amazonrubberboom.html",
+    "title": "The Amazon Rubber Boom - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/araucowar.html",
     "title": "The Mapuche-Spanish Frontier and the Arauco War - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/artigasandthebandaoriental.html",
+    "title": "Artigas and the Banda Oriental - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/ayacucho.html",
+    "title": "Ayacucho and the End of Spanish Rule - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/bolivarliberationofthenorth.html",
+    "title": "Bolivar and the Liberation of the North - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6120,8 +6984,26 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/chilecivilwar1891.html",
+    "title": "Chile's Civil War of 1891 - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/chileparliamentaryrepublic.html",
     "title": "Chile's Parliamentary Republic and the Nitrate Economy - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/chinchaislandswar.html",
+    "title": "The Chincha Islands War - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6156,8 +7038,26 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/ecuadorliberalrevolution.html",
+    "title": "Ecuador's Liberal Revolution of 1895 - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/grancolombia.html",
     "title": "Gran Colombia - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/independenceofbrazil.html",
+    "title": "The Independence of Brazil and Pedro I - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6183,6 +7083,15 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/peruboliviaconfederation.html",
+    "title": "The Peru-Bolivia Confederation and Its War - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/potosi.html",
     "title": "Potosi, Silver Mining and the Colonial Mita - The History Web",
     "group": {
@@ -6201,8 +7110,53 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/sanmartincrossingoftheandes.html",
+    "title": "San Martin and the Crossing of the Andes - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/surinamemaroons.html",
     "title": "Suriname's Plantation Economy and Maroon Societies - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/theaudiencias.html",
+    "title": "The Audiencias of Charcas and Quito - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/thebandeirantes.html",
+    "title": "The Bandeirantes and the Opening of Brazil's Interior - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/thecaptaincygeneralofchile.html",
+    "title": "The Captaincy-General of Chile - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/thecomunerorevolt.html",
+    "title": "The Comunero Revolt of 1781 - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6219,8 +7173,26 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/theguanoera.html",
+    "title": "The Guano Era in Peru - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/theguaranandthemissions.html",
     "title": "The Jesuit Missions of Paraguay - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/theminasgeraisgoldrush.html",
+    "title": "The Gold Rush of Minas Gerais - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6239,6 +7211,15 @@
   {
     "path": "subtopics/southam/modern/theplatinumwars.html",
     "title": "The Cisplatine and Platine Wars - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/thepombalinereforms.html",
+    "title": "The Pombaline Reforms - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
@@ -6309,8 +7290,26 @@
     "type": "topic"
   },
   {
+    "path": "subtopics/southam/modern/uruguayguerragrande.html",
+    "title": "Uruguay's Guerra Grande - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
     "path": "subtopics/southam/modern/venezuelacaudillos.html",
     "title": "Venezuela's Caudillos and the Early Oil Economy - The History Web",
+    "group": {
+      "continent": "South America",
+      "era": "Pre/Colonial"
+    },
+    "type": "topic"
+  },
+  {
+    "path": "subtopics/southam/modern/venezuelasfederalwar.html",
+    "title": "The Federal War in Venezuela - The History Web",
     "group": {
       "continent": "South America",
       "era": "Pre/Colonial"
