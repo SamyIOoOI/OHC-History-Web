@@ -23,7 +23,7 @@
 #nixie-wrap {
   display: flex; justify-content: center; align-items: flex-start; gap: 26px; flex-wrap: wrap;
   margin: 0.9em auto 0 auto; position: relative; z-index: 2;
-  width: fit-content; max-width: calc(100% - 24px); box-sizing: border-box;
+  width: fit-content; max-width: calc(100% - 24px); box-sizing: border-box; zoom: 0.8;
 }
 .nixie-cell {
   text-align: center; padding: 26px 18px 24px; border: none; border-radius: 0;
@@ -31,7 +31,7 @@
   background-image: url('nixie/frieze-top.png'), url('nixie/frieze-bottom.png');
   background-repeat: repeat-x, repeat-x;
   background-position: top center, bottom center;
-  background-size: auto 15px, auto 15px;
+  background-size: auto 9px, auto 9px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.35);
 }
 .ndisp { margin: 0 auto; background: #000; padding: 4px; box-sizing: content-box; }
@@ -46,9 +46,9 @@ html.light .nplus { color: #ff9a2e; text-shadow: #ff6a00 0 0 12px, #e74702 0 0 4
 .nixie-label { display: block; margin-top: 12px; font-size: 19px; letter-spacing: 0.03em; color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0.55), 0 0 20px rgba(255,90,10,0.30), 0 1px 2px rgba(0,0,0,0.6); }
 html.light .nixie-label { color: #ffa04a; text-shadow: 0 0 9px rgba(255,110,20,0.55), 0 0 20px rgba(255,90,10,0.30), 0 1px 2px rgba(0,0,0,0.6); }
 @media (max-width: 600px) {
-  #nixie-wrap { gap: 16px; }
+  #nixie-wrap { gap: 16px; zoom: 0.7; }
   .visits-cell { order: -1; }
-  .nixie-cell { padding: 22px 14px 20px; background-size: auto 13px, auto 13px; }
+  .nixie-cell { padding: 22px 14px 20px; background-size: auto 8px, auto 8px; }
   .nplus { font-size: 45px; }
   .nixie-label { font-size: 16px; margin-top: 10px; }
   .fakeheader { font-size: 1.2rem !important; }

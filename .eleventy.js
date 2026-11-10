@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
 
   ["carthage.css","theme.css","settings.js","download.js",
    "index.html","africa.html","asia.html","europe.html","northamerica.html","southamerica.html","oceania.html",
-   "articles.html","contactus.html","content.html","development.html","stem-curriculum.html",
+   "articles.html","contactus.html","content.html","development.html","stem-curriculum.html","license.html",
    "book.json","pages.json","search-titles.json","stats.json","sitemap.xml","robots.txt","llms.txt",
    "LICENSE","ATTRIBUTION.csv","_headers",".assetsignore",
    "*.png","*.webp","*.wav","*.svg","*.ico","*.txt",
