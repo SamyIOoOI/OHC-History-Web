@@ -163,7 +163,77 @@
     "source2label": "Encyclopedia.com: Cisplatine War",
     "source2icon": "encyclopedia.com.png",
     "source3": "https://countrystudies.us/uruguay/4.htm",
-    "source3label": "Country Studies (Library of Congress): Uruguay: The Struggle for Independence"
+    "source3label": "Country Studies (Library of Congress): Uruguay: The Struggle for Independence",
+    "article": [
+      {
+        "p": "The struggle for control of the Río de la Plata, the River Plate estuary that gave the region its name, produced a series of wars among Argentina, Brazil, and the newly independent nations of Uruguay and Paraguay in the decades after independence. The Río de la Plata was one of the great trading arteries of South America, funneling the wealth of the interior to Buenos Aires and Montevideo, and whoever held its banks held the keys to the continent's commerce. Twice within a generation that prize drew the region into full-scale war: the Cisplatine War of 1825-1828, which created Uruguay, and the Platine War of 1851-1852, which broke the power of the Argentine dictator Juan Manuel de Rosas."
+      },
+      {
+        "h2": "The Road to Revolt"
+      },
+      {
+        "p": "The east bank of the Uruguay River, the Banda Oriental, had been contested since colonial times. During the Napoleonic upheavals, Portuguese-Brazilian forces invaded it, and in January 1817 general Carlos Frederico Lecor took Montevideo, crushing the federalist movement of José Gervasio Artigas. In 1821 the territory was annexed to the United Kingdom of Portugal, Brazil and the Algarves as the Cisplatine Province, and after Brazil's independence it swore the Brazilian Constitution in May 1824. But outside Montevideo and a few coastal towns, the countryside never accepted Brazilian rule; the gauchos of the interior wanted independence or union with the United Provinces of the Río de la Plata, the future Argentina. A secret society, the Caballeros Orientales, kept the conspiracy alive."
+      },
+      {
+        "h2": "The Thirty-Three and the Cisplatine War"
+      },
+      {
+        "p": "On 19 April 1825 a band of thirty-three exiled patriots - the legendary Treinta y Tres Orientales, led by Juan Antonio Lavalleja - crossed from Buenos Aires, landed on the Agraciada beach and raised the flag of rebellion. The countryside rose with them. After victories at Rincón and Sarandí, an assembly at Florida declared the Banda Oriental independent of Brazil and joined to the United Provinces on 25 August 1825, and on 10 December the Empire of Brazil declared war."
+      },
+      {
+        "figure": {
+          "src": "thethirtythreeoath.jpg",
+          "alt": "Painting of the Oath of the Thirty-Three Orientales by Juan Manuel Blanes",
+          "cap": "The Oath of the Thirty-Three Orientales, painted by Juan Manuel Blanes (1878) - the landing of April 1825 that began Uruguay's war of independence. Public domain."
+        }
+      },
+      {
+        "p": "On land the war favored the rebels and their Argentine allies. Brazilian columns chased Fructuoso Rivera's gaucho cavalry across the countryside and lost it town by town - Mercedes, Salto, Paysandú - until only Montevideo, Colonia del Sacramento and two fortresses remained in Brazilian hands. The decisive land battle came at Ituzaingó on 20 February 1827, the largest of the war, where an Argentine-Oriental army defeated the imperial forces. At sea the story reversed: Brazil's navy blockaded the River Plate and strangled Buenos Aires's trade, and the small Argentine fleet of the Irish-born admiral William Brown, though it fought famous actions such as Juncal in 1827, was mostly destroyed by war's end. Neither side could finish the other: Argentina could not take Montevideo, Brazil could not retake the countryside, and both economies bled."
+      },
+      {
+        "figure": {
+          "src": "battleofjuncal.jpg",
+          "alt": "Painting of the naval Battle of Juncal, 1827, by Jose Murature",
+          "cap": "The naval Battle of Juncal (1827), fought between William Brown's Argentine squadron and the Brazilian blockade fleet; painted by Jose Murature (1865). Public domain."
+        }
+      },
+      {
+        "h2": "A British Peace and a New Nation"
+      },
+      {
+        "p": "The deadlock pushed both empires toward London's counting-houses. Britain, whose merchants wanted the rivers open, offered mediation. A first Argentine negotiator, Manuel José García, exceeded his instructions in 1827 and signed away the Cisplatina altogether - Buenos Aires repudiated the treaty and the war went on. Finally, on 27 August 1828, under British mediation, the two sides signed the Preliminary Peace Convention: the disputed province would belong to neither. It became the independent Eastern Republic of Uruguay - a buffer state between the two giants, born of a war neither could win."
+      },
+      {
+        "h2": "The Platine War and the Fall of Rosas"
+      },
+      {
+        "p": "Peace did not settle the Plate. In Buenos Aires, Juan Manuel de Rosas rose to dominate Argentina from 1829, ruling through his infamous political police, the mazorca, and reaching into Uruguay, where his client Manuel Oribe besieged Montevideo through the long Great War of 1839-1851. France and Britain repeatedly intervened to force open the rivers. The endgame came when Rosas's own lieutenant, Justo José de Urquiza, turned against him and allied with Brazil and Uruguay's Montevideo government. In late 1851 their 'Grand Army of South America' closed in - Urquiza's cavalry overland, the infantry carried upriver by Brazilian warships, which forced the Paraná at the Passage of the Tonelero on 17 December 1851. On 3 February 1852 the allies met Rosas's army at Caseros, just outside Buenos Aires, and destroyed it. Rosas fled to the British legation and into lifelong exile."
+      },
+      {
+        "figure": {
+          "src": "juanmanuelderosas.jpg",
+          "alt": "Portrait of Juan Manuel de Rosas, 1842, by Raymond Monvoisin",
+          "cap": "Juan Manuel de Rosas, ruler of Argentina from 1829 to 1852, painted by Raymond Monvoisin in 1842. Public domain."
+        }
+      },
+      {
+        "h2": "Legacy"
+      },
+      {
+        "p": "The Platine Wars fixed the map of southeastern South America: Uruguay independent between the giants, Paraguay soon drawn into its own catastrophic war, Brazil confirmed as the region's first power, and Argentina free to unify under the San Nicolás Agreement that followed Caseros - though Buenos Aires seceded within months and the rivalry between capital and provinces lasted another decade. The rivers stayed open, and Montevideo, twice besieged and twice saved, became the capital of the smallest Spanish-speaking nation on the continent."
+      }
+    ],
+    "description": "The Cisplatine and Platine Wars (1825-1852): how Argentina, Brazil and Uruguay fought for the River Plate - the Thirty-Three Orientales, Ituzaingo, the blockade, and the fall of Rosas at Caseros.",
+    "keywords": [
+      "platine war",
+      "cisplatine war",
+      "cisplatina",
+      "uruguay independence",
+      "thirty-three orientales",
+      "battle of ituzaingo",
+      "battle of caseros",
+      "juan manuel de rosas"
+    ]
   },
   {
     "filename": "theparaguayanwar",

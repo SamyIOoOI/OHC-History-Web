@@ -231,7 +231,54 @@
   "source4label": "National Park Service: U.S.-Mexican War",
   "source1icon": "guides.loc.gov.png",
   "source2icon": "tshaonline.org.png",
-  "source4icon": "nps.gov.png"
+  "source4icon": "nps.gov.png",
+  "description": "The Mexican-American War (1846-1848): from the Texas border dispute to the fall of Mexico City and the treaty that took half of Mexico's territory.",
+  "keywords": [
+   "mexican american war",
+   "mexican war 1846",
+   "treaty of guadalupe hidalgo",
+   "zachary taylor",
+   "winfield scott",
+   "mexican cession",
+   "buena vista",
+   "chapultepec"
+  ],
+  "article": [
+   {
+    "p": "The Mexican-American War (1846-1848) redrew the map of North America. Its roots lay in Texas, which had broken from Mexico in 1836 and was annexed by the United States in 1845. Mexico had never accepted Texan independence, and the two nations disputed the border: Mexico claimed the Nueces River, the United States the Rio Grande. When President Polk sent Zachary Taylor's army marching into the disputed land between the rivers in 1846, a clash with Mexican cavalry gave the United States its war - fought, critics like the young Congressman Abraham Lincoln and Lieutenant Ulysses S. Grant said, for territory and the expansion of slavery."
+   },
+   {
+    "h2": "Three Fronts"
+   },
+   {
+    "p": "The war was fought on three fronts. Taylor's army won at Monterrey in September 1846, then held off Santa Anna's far larger force at Buena Vista in February 1847 - 4,600 Americans against some 15,000 Mexicans. A column under Stephen Kearny marched overland to seize New Mexico and then California, where American settlers had already proclaimed the short-lived Bear Flag Republic and the navy occupied the ports. The northern campaign made Taylor a national hero and, soon enough, president."
+   },
+   {
+    "h2": "The Road to Mexico City"
+   },
+   {
+    "p": "The decisive campaign belonged to General Winfield Scott. In March 1847 his army went ashore near Veracruz in the first large-scale amphibious operation in American history, took the port, and marched inland on the old National Road. At Cerro Gordo in April he destroyed Santa Anna's hastily gathered army; at Contreras and Churubusco in August he broke the defenses before the capital; and on September 13-14 his men stormed the fortress of Chapultepec - where six young military cadets died in its defense, remembered in Mexico as the Ninos Heroes - and entered Mexico City."
+   },
+   {
+    "figure": {
+     "src": "cerrogordo1847.jpg",
+     "alt": "Lithograph of the Battle of Cerro Gordo, 1847",
+     "cap": "The Battle of Cerro Gordo, April 1847, from Carl Nebel's series of lithographs made during the war - Scott's army winding through the mountains on the road to Mexico City. Public domain."
+    }
+   },
+   {
+    "h2": "The Treaty and Its Price"
+   },
+   {
+    "p": "The Treaty of Guadalupe Hidalgo, signed in February 1848, ended the war on terms that transformed the continent. Mexico recognized the loss of Texas up to the Rio Grande and ceded California, Nevada, Utah, Arizona, and parts of Colorado, Wyoming, and New Mexico - half its national territory - in return for fifteen million dollars. Some hundred thousand Mexicans suddenly found themselves citizens of the United States, with treaty promises about their land and rights that the following years largely broke."
+   },
+   {
+    "h2": "Consequences"
+   },
+   {
+    "p": "The war made the United States a continental power, and it deepened the quarrel that would tear it apart: whether slavery would spread into the new lands became the question of American politics, leading within a dozen years to civil war. In Mexico the defeat left a lasting wound and a long memory. Grant, who fought through the whole campaign, later called it 'one of the most unjust ever waged by a stronger against a weaker nation.' It remains among the most consequential - and most contested - wars in the history of both nations."
+   }
+  ]
  },
  {
   "filename": "theantebellumsouth",
@@ -658,7 +705,59 @@
   "source1icon": "britannica.com.png",
   "source2": "https://www.worldhistory.org/Shays%27_Rebellion/",
   "source2label": "World History Encyclopedia: Shays' Rebellion",
-  "source2icon": "worldhistory.org.png"
+  "source2icon": "worldhistory.org.png",
+  "article": [
+   {
+    "p": "Shays' Rebellion (1786-87) was an armed insurrection of debt-pressed farmers in western and central Massachusetts - and the crisis that convinced a generation of Americans that the government they had won independence with was too weak to survive. It began in courtrooms, not on battlefields: after the Revolutionary War, debts, heavy state taxes and a desperate shortage of hard money pushed thousands of farm households toward foreclosure and debtors' jail. Protesters who had fought for their rights against Britain now watched a government of their own making take their farms."
+   },
+   {
+    "h2": "The Debt Trap"
+   },
+   {
+    "p": "The roots were a broken chain of credit. Massachusetts merchants traded on credit extended from Britain; shopkeepers bought on credit from the merchants; farmers bought from shopkeepers with promises against next year's harvest. When peace came in 1783, British creditors demanded payment in coin the country barely had, and the demands cascaded downward until they reached the yeoman farmer, whose taxes the state of Massachusetts also insisted on collecting in hard cash to pay its war debts. Courts filled with foreclosure suits; men who had marched to Bunker Hill and Saratoga faced prison for debts of a few pounds. Petitions for relief - paper money, tax delays - got nothing from a legislature dominated by the coastal merchant interest."
+   },
+   {
+    "figure": {
+     "src": "shaysandshattuck1787.jpg",
+     "alt": "Daniel Shays and Job Shattuck, 1787 woodcut",
+     "cap": "Daniel Shays and Job Shattuck, the two most famous leaders of the uprising, in a 1787 relief cut from Bickerstaff's Boston Almanack. Public domain."
+    }
+   },
+   {
+    "h2": "Closing the Courts"
+   },
+   {
+    "p": "In the autumn of 1786 the farmers answered directly. Organized groups - calling themselves Regulators, after the earlier Carolina movements - surrounded courthouses at Northampton, Worcester, Concord and other towns and simply stopped the courts from sitting, breaking the machinery of debt collection without bloodshed. The most familiar of their leaders was Daniel Shays, a poor Pelham farmer who had been a captain in the Continental Army. Governor James Bowdoin's government responded with a severe Riot Act and, when Congress proved unable to help under the Articles of Confederation, raised a private army paid for by Boston's merchants and commanded by the veteran general Benjamin Lincoln."
+   },
+   {
+    "figure": {
+     "src": "shaysarmory1787.jpg",
+     "alt": "The assault on the Springfield Armory, January 1787",
+     "cap": "The militia's cannon turn back the insurgents at the Springfield Armory, 25 January 1787. Nineteenth-century illustration after C. Kendrick. Wikimedia Commons, CC BY-SA 4.0."
+    }
+   },
+   {
+    "h2": "Springfield and Petersham"
+   },
+   {
+    "p": "The confrontation came in January 1787. Shays and other leaders converged on the federal arsenal at Springfield, hoping its muskets and cannon would equip a march on Boston. On 25 January the defenders - state militia under William Shepard - fired warning shots and then grape into the advancing column, killing four and scattering the rest. Lincoln's army then chased the insurgents through a snowstorm and routed their main body at Petersham on 3 February. The rebellion collapsed. Shays fled to Vermont, outside Massachusetts' reach; condemned to death, he was pardoned in 1788 and died in obscurity on a veteran's pension. Voters, meanwhile, threw out Governor Bowdoin and elected John Hancock, and the new legislature eased the tax pressure that had caused the trouble. Military defeat had not erased the grievances."
+   },
+   {
+    "h2": "The Rebellion That Made the Constitution"
+   },
+   {
+    "p": "The shock ran through every state. Under the Articles of Confederation the national government had been powerless - no army to send, no money to send it with - while a single state fought off insurrection with private funds. For men like Washington, who wrote anxiously of 'combustibles in every state', the lesson was that the confederation could not keep order; for others, the lesson was that distant government answered property before people. When the Constitutional Convention met in Philadelphia in May 1787, the memory of Springfield's snows sat in the room. Jefferson, watching from Paris, took the opposite view - 'a little rebellion now and then is a good thing' - but the Constitution that emerged gave the federal government the powers the rebellion had shown it lacked. Shays' Rebellion did not create the Constitution by itself, but it sharpened the question the delegates had to answer: how much authority a republic needs to survive, and what it owes the citizens who fight its wars."
+   }
+  ],
+  "description": "Shays' Rebellion (1786-87): the postwar debt crisis in Massachusetts, the closed courts, the assault on the Springfield Armory, and how the uprising pushed America toward the Constitution.",
+  "keywords": [
+   "shays rebellion",
+   "shays' rebellion",
+   "daniel shays",
+   "springfield armory 1787",
+   "articles of confederation",
+   "shays rebellion causes"
+  ]
  },
  {
   "filename": "ratificationandthebillofrights",
@@ -766,7 +865,60 @@
   "source1icon": "britannica.com.png",
   "source2": "https://guides.loc.gov/marbury-v-madison",
   "source2label": "Library of Congress: Marbury v. Madison",
-  "source2icon": "guides.loc.gov.png"
+  "source2icon": "guides.loc.gov.png",
+  "description": "Marbury v. Madison (1803): how John Marshall's Supreme Court claimed the power of judicial review from a dispute over an undelivered commission.",
+  "keywords": [
+   "marbury v madison",
+   "judicial review",
+   "john marshall",
+   "supreme court 1803",
+   "midnight judges",
+   "judiciary act 1789",
+   "marshall court"
+  ],
+  "article": [
+   {
+    "p": "Marbury v. Madison arose from the first contested transfer of presidential power in American history. In the final days of John Adams's administration, the outgoing Federalists created new judicial posts and filled them with party men - the 'midnight judges.' On March 2, 1801, Adams named William Marbury one of forty-two justices of the peace for the District of Columbia; the Senate confirmed him the next day, and his commission was signed and sealed. But in the rush of the last hours it was never delivered. When Thomas Jefferson took office on March 4 and found the undelivered commissions on the secretary of state's desk, he ordered them withheld. Marbury sued the new secretary of state, James Madison, asking the Supreme Court to order the commission handed over."
+   },
+   {
+    "h2": "Marshall's Dilemma"
+   },
+   {
+    "p": "The dispute placed Chief Justice John Marshall in an exquisite trap. He was a Federalist, and he had himself been Adams's acting secretary of state when the commissions were processed - it was his own failure to deliver that had created the case. If the Court ordered Madison to deliver the commission, Jefferson's administration would almost certainly ignore the order, exposing the Court's weakness before the whole country. If the Court refused Marbury any relief, it would appear to bless an unlawful seizure of a man's office. Either path diminished the judiciary at the very moment the Republican Congress had abolished the new Federalist circuit courts and was talking of impeaching judges."
+   },
+   {
+    "figure": {
+     "src": "marshallportrait.jpg",
+     "alt": "Profile portrait of Chief Justice John Marshall",
+     "cap": "John Marshall, chief justice from 1801 to 1835, in an engraved profile portrait of 1808. Library of Congress, public domain."
+    }
+   },
+   {
+    "h2": "The Opinion"
+   },
+   {
+    "p": "Marshall's unanimous opinion, delivered on February 24, 1803, separated the case into three questions. Did Marbury have a right to his commission? Yes - it was signed and sealed, and withholding it violated his legal rights. Did the laws afford him a remedy? Yes again. But then the turn: was the remedy he asked for - a writ of mandamus issued directly by the Supreme Court - one the Constitution allowed? No. The Judiciary Act of 1789 had given the Court original jurisdiction to issue such writs, but Article III of the Constitution defined the Court's original jurisdiction and did not include cases like Marbury's. The statute and the Constitution conflicted, and one of them had to yield."
+   },
+   {
+    "h2": "Judicial Review"
+   },
+   {
+    "p": "Marshall's resolution became the foundation of American constitutional law. A written constitution, he argued, is superior law - the very point of writing it down is to limit what ordinary legislation may do. A statute that conflicts with the Constitution cannot stand, and it is 'emphatically the province and duty of the judicial department' to say what the law is when courts decide cases. On that reasoning the Court declared a section of the Judiciary Act of 1789 unconstitutional - the first time the Supreme Court struck down an act of Congress."
+   },
+   {
+    "figure": {
+     "src": "oldsupremecourt.jpg",
+     "alt": "The Old Supreme Court Chamber in the U.S. Capitol",
+     "cap": "The Old Supreme Court Chamber in the Capitol, where the Marshall Court sat from 1810 - the decisions were first read in rooms far humbler than the marble palace of today. Public domain."
+    }
+   },
+   {
+    "h2": "Why It Endures"
+   },
+   {
+    "p": "Marbury lost his commission, and the Court gave Jefferson no order to defy - yet the judiciary walked away with the greater prize. Marshall had traded a powerless writ for the principle of judicial review, and he had done it in a posture of self-denial that made the grab almost impossible to attack. The decision did not make judges rulers: it claimed review as a duty incidental to deciding cases, within a constitutional system that has argued about the courts' proper role ever since. But every later case in which a court voided a law - from the school-segregation cases to the present - traces its authority back to the dispute over William Marbury's undelivered piece of parchment."
+   }
+  ]
  },
  {
   "filename": "embargoandneutralrights",
@@ -834,7 +986,59 @@
   "source1icon": "americanhistory.si.edu.png",
   "source2": "https://www.britannica.com/technology/Erie-Canal",
   "source2label": "Britannica: Erie Canal",
-  "source2icon": "britannica.com.png"
+  "source2icon": "britannica.com.png",
+  "article": [
+   {
+    "p": "In the early nineteenth century, improved transportation helped connect American farms, towns and workshops to larger markets. Historians call the change the market revolution, and it was not one invention or a sudden replacement of household production. Roads, canals, steamboats and later railroads altered the distance over which goods could be sold and the cost of moving them - and places with access to these networks gained opportunities that more isolated communities could not share. Its leading example, and its loudest triumph, was a ditch dug across New York: the Erie Canal."
+   },
+   {
+    "figure": {
+     "src": "eriecanallockportbartlett.jpg",
+     "alt": "W. H. Bartlett's engraving of the Erie Canal locks at Lockport",
+     "cap": "The Erie Canal at Lockport, where locks lifted boats over the Niagara Escarpment - engraved by W. H. Bartlett for American Scenery (1840). Public domain."
+    }
+   },
+   {
+    "h2": "Clinton's Big Ditch"
+   },
+   {
+    "p": "A canal from the Hudson River to the Great Lakes had been proposed since the 1780s, surveyed in 1808, and dismissed as fantasy by nearly everyone. New York governor DeWitt Clinton made it his cause, and in 1817 the state legislature authorized construction; opponents sneered at 'Clinton's Folly' and 'Clinton's Big Ditch'. Ground was broken at Rome, New York, on 4 July 1817. The engineering case was simple arithmetic: a mule can carry about 250 pounds on its back but can draw a 60,000-pound barge along a towpath, so a working canal could cut transport costs by about 95 percent. Workers dug the channel largely by hand, with animals and machinery in support - local laborers and, increasingly, Irish immigrants whose communities later dotted the canal towns."
+   },
+   {
+    "h2": "The Wedding of the Waters"
+   },
+   {
+    "p": "The canal was officially completed on 26 October 1825: 363 miles from the Hudson near Albany to Lake Erie at Buffalo, climbing some 565 feet through a staircase of locks, the first navigable waterway between the Atlantic and the upper Great Lakes. New York celebrated with a Grand Celebration - a ninety-minute cannonade relayed by cannon shots along the whole length of the canal and the Hudson, from Buffalo to New York City. Then a flotilla led by Governor Clinton aboard the Seneca Chief sailed the canal for ten days, and at New York Harbor Clinton ceremonially poured a keg of Lake Erie water into the Atlantic: the 'Wedding of the Waters'. The Seneca Chief carried a keg of Atlantic water home to Buffalo for the return toast. The canal was an instant commercial success - toll revenue covered the state's construction debt within its first year of operation."
+   },
+   {
+    "figure": {
+     "src": "eriecanalprofile1832.jpg",
+     "alt": "Elevation profile of the Erie Canal, 1832",
+     "cap": "The 'Profile of the Grand Erie Canal' (1832): 565 feet of rise managed by locks across the Western, Middle and Eastern sections between Albany and Buffalo. Public domain."
+    }
+   },
+   {
+    "h2": "Boomtowns and Wheat"
+   },
+   {
+    "p": "The consequences remade the map. Buffalo, chosen as the canal's western terminus over neighboring Black Rock, grew into a great city and absorbed its rival; Rochester boomed on Genesee flour; Syracuse, Utica and Lockport became canal towns. Midwestern wheat poured east - after Britain repealed its Corn Laws, exports to Europe surged - while Eastern machinery and manufactured goods moved west at prices settlers could afford. Freight costs collapsed, food got cheaper in Eastern cities, and New York City, sitting at the canal's Hudson outlet, pulled decisively ahead of every American rival port. The canal's peak year came in 1855 with 33,000 commercial shipments, and for decades it carried westbound immigrants as well as cargo. Its success provoked a national canal-building boom, and its example made transportation infrastructure a central question of public policy and private enterprise alike."
+   },
+   {
+    "h2": "A Revolution of Relationships"
+   },
+   {
+    "p": "The market revolution reached well past the towpath. Merchants coordinated shipments, credit and sales across a widening area; households increasingly bought goods they might previously have made themselves; workshops and farms adjusted production for buyers they would never meet. The benefits were uneven - a route favored one port over another, and dependence on distant prices and credit exposed producers to forces beyond their control, a lesson canal towns learned in every downturn. Railroads later changed the competitive landscape, and the Erie's own tolls were abolished in 1902. But the pattern held: the market revolution was a change in relationships as much as movement, binding households, workers and communities to distant customers and suppliers - bringing opportunity, and new dependencies, into the expanding republic."
+   }
+  ],
+  "description": "The Market Revolution in early nineteenth-century America: how the Erie Canal (1817-1825), roads and steamboats tied farms and workshops to distant markets, and what it changed.",
+  "keywords": [
+   "market revolution",
+   "erie canal",
+   "dewitt clinton",
+   "erie canal 1825",
+   "transportation revolution",
+   "wedding of the waters"
+  ]
  },
  {
   "filename": "jacksoniandemocracy",
@@ -2043,7 +2247,61 @@
   "source2icon": "nps.gov.png",
   "source3": "https://loc.gov/exhibits/religion/rel01.html",
   "source3label": "Library of Congress: America as a Religious Refuge",
-  "source3icon": "loc.gov.png"
+  "source3icon": "loc.gov.png",
+  "description": "Massachusetts Bay Colony: the Puritan Great Migration of 1630, the city upon a hill, its towns and schools, dissenters and wars, to 1691.",
+  "keywords": [
+   "massachusetts bay colony",
+   "puritans",
+   "john winthrop",
+   "great migration 1630",
+   "city upon a hill",
+   "roger williams",
+   "anne hutchinson",
+   "king philips war"
+  ],
+  "article": [
+   {
+    "p": "In 1630 a fleet of eleven ships carried about a thousand English Puritans across the Atlantic, the vanguard of a Great Migration that would bring some twenty thousand settlers to New England within a decade. Puritans were reformers who believed the Church of England had kept too much of Rome, and under mounting pressure at home they organized the Massachusetts Bay Company, won a royal charter - and then did something unprecedented: they carried the charter itself to America, turning a trading company into a self-governing commonwealth an ocean beyond royal reach. Aboard the flagship Arbella, Governor John Winthrop preached that their settlement must be 'as a city upon a hill,' watched by the world."
+   },
+   {
+    "figure": {
+     "src": "winthropportrait.jpg",
+     "alt": "Portrait of Governor John Winthrop",
+     "cap": "John Winthrop, the colony's first governor and its guiding mind for two decades, in a seventeenth-century portrait. Public domain."
+    }
+   },
+   {
+    "h2": "Towns and Schoolhouses"
+   },
+   {
+    "p": "Massachusetts Bay was planted as a chain of farming towns, each gathered around its meetinghouse, congregation, and common fields. Land went to town proprietors, freemen voted in town meetings that managed local affairs with remarkable directness, and the General Court of the colony made law under the charter. The leaders built institutions for the long term: Harvard College was founded in 1636 to train a learned ministry, and in 1647 Massachusetts passed the first general school law in America, requiring every town of fifty households to maintain a teacher - because, the law said, knowledge of scripture must not be left to fall back on ignorance."
+   },
+   {
+    "h2": "A Society of Boundaries"
+   },
+   {
+    "p": "This was also a society of strict boundaries. Voting and office belonged to male church members, and dissent could be dangerous. Roger Williams was banished in 1635 for challenging the union of church and state and the seizure of Native land, and founded Providence in 1636 on the contrary principles. Anne Hutchinson's theological challenge to the clergy ended in her trial and exile in 1638. Quakers who returned after banishment were hanged on Boston Common. Ministers and magistrates policed doctrine as a matter of public order, convinced that error was a contagion the community had the right, and the duty, to cut out."
+   },
+   {
+    "h2": "Collision with the First Peoples"
+   },
+   {
+    "p": "Puritan confidence also collided with the land's first peoples. English settlement spread into Pequot, Massachusetts, and Wampanoag country under the pressure of epidemics that had emptied whole villages and of land purchases the two sides understood very differently. The Pequot War of 1636-38 destroyed the Pequots as a nation. A generation later, in 1675-76, King Philip's War devastated both sides: whole Native nations were broken and sold into slavery, and dozens of colonial towns were attacked and some destroyed. It remains, proportionally, one of the deadliest wars in American history."
+   },
+   {
+    "figure": {
+     "src": "bostonmap1722.jpg",
+     "alt": "Bonner's 1722 map of Boston",
+     "cap": "The Town of Boston in New England, Captain John Bonner's map of 1722 - the peninsula town a generation after the charter fell, already a busy Atlantic port. Library of Congress, public domain."
+    }
+   },
+   {
+    "h2": "From Charter to Province"
+   },
+   {
+    "p": "The crown eventually caught up with the charter colony. Charles II's government annulled the charter in 1684, and after a brief, hated spell under the Dominion of New England, Massachusetts became a royal province in 1691, absorbing Plymouth and granting religious toleration to Protestants generally. The witchcraft panic at Salem in 1692 came under the new order. Yet the Puritan impress outlasted Puritan rule: the town meeting, the schoolhouse, the college, and the restless habit of building a city upon a hill became permanent parts of the American inheritance."
+   }
+  ]
  },
  {
   "filename": "newnetherland",
@@ -2126,7 +2384,54 @@
   "source3icon": "georgiaencyclopedia.org.png",
   "source4": "https://www.georgiaencyclopedia.org/articles/government-politics/james-oglethorpe-1696-1785/",
   "source4label": "New Georgia Encyclopedia: James Oglethorpe",
-  "source4icon": "georgiaencyclopedia.org.png"
+  "source4icon": "georgiaencyclopedia.org.png",
+  "description": "Colonial Georgia: Oglethorpe's 1732 experiment for the worthy poor - no slavery, no rum, small farms - and how it became a royal plantation colony.",
+  "keywords": [
+   "colonial georgia",
+   "james oglethorpe",
+   "trustee georgia",
+   "savannah 1733",
+   "tomochichi",
+   "battle of bloody marsh",
+   "georgia trustees",
+   "thirteen colonies"
+  ],
+  "article": [
+   {
+    "p": "Georgia, chartered in 1732, was the last of the thirteen colonies, founded with an unusual blend of philanthropy, idealism, and strategy. Its moving spirit was James Edward Oglethorpe, a member of Parliament whose work on prison reform had exposed the misery of debtors' jails. The Georgia Trustees proposed a colony where England's 'worthy poor' could farm small plots with dignity: land grants capped in size and passing only through male heirs, rum banned, and slavery prohibited - partly on humanitarian grounds, partly because a buffer colony of armed free farmers between South Carolina and Spanish Florida could not afford a slave population. Their motto was Non sibi sed aliis: not for self, but for others."
+   },
+   {
+    "h2": "Savannah and Tomochichi"
+   },
+   {
+    "p": "Oglethorpe led the first settlers to Savannah in 1733, laying out the town's famous grid of wards and squares. He cultivated peace with the Yamacraw chief Tomochichi, who ceded the town site and in 1734 sailed to England with his family, where the delegation was feted by the Trustees, received by the king and queen, and painted by William Verelst. Oglethorpe negotiated carefully with the powerful Creek confederacy, whose friendship kept Georgia's frontier quiet while the colony found its feet."
+   },
+   {
+    "figure": {
+     "src": "savannah1734.jpg",
+     "alt": "Engraved view of Savannah in March 1734",
+     "cap": "A View of Savannah as it stood the 29th of March 1734 - Oglethorpe's grid of wards and squares on the bluff above the river, dedicated to the colony's Trustees. Library of Congress, public domain."
+    }
+   },
+   {
+    "h2": "The Spanish Test"
+   },
+   {
+    "p": "Georgia's real test was war. When conflict with Spain came in 1739, Oglethorpe's invasion of Florida failed before St. Augustine, and in 1742 a Spanish counterattack landed on St. Simons Island. It was bloodily repulsed at the Battle of Bloody Marsh - a small fight with a large result: Spain never again mounted an offensive against Britain's colonies on the East Coast. Oglethorpe went home a national hero in 1743 and never returned."
+   },
+   {
+    "h2": "The Bans Fall"
+   },
+   {
+    "p": "The trustees' utopia eroded under pressure from within. Colonists resented the limits on landholding and complained that free labor could not compete with the slave-worked rice plantations of South Carolina next door. One by one the bans fell: rum in 1742, land restrictions loosened, slavery legalized in 1751 - and with slavery came the very plantation economy the founders had meant to prevent. In 1752 the Trustees, disappointed and broke, surrendered their charter a year early, and Georgia became a royal colony."
+   },
+   {
+    "h2": "Royal Georgia"
+   },
+   {
+    "p": "Royal Georgia boomed. Rice and indigo plantations spread along the coast, worked by enslaved Africans, while small farmers pushed into the Creek backcountry and Savannah grew into a busy Atlantic port. By the 1760s Georgia was British America's youngest and fastest-growing colony, its founders' experiment in a slave-free yeoman republic all but forgotten beneath the plantations of the southern frontier - an experiment whose bans lasted barely twenty years, but whose founding ideal made Georgia unique among the thirteen."
+   }
+  ]
  },
  {
   "filename": "colonialmaryland",

@@ -1,239 +1,406 @@
 [
-  {
-    "filename": "postclassicmayachichenitzaandmayapan",
-    "title": "Postclassic Maya (Chichén Itzá & Mayapán)",
-    "titleline": "Postclassic Maya (Chichén Itzá &amp; Mayapán) - The History Web",
-    "image": "postclassicmayachichenitzaandmayapan.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Postclassic Maya: Chichen Itza and Mayapan. When the Classic Maya cities of the south collapsed in the 9th century, Maya civilization did not die - it moved north. In the northern Yucatan, Chichen Itza rose to dominate the peninsula from the Terminal Classic into the Postclassic (c. 900-1200 AD): a city whose architecture blends Maya Puuc and Chenes styles with striking central-Mexican forms - once read as conquest from Tula, now mostly understood as cultural diffusion across a connected Maya-Mexican world. Its great pyramid, the Castillo of Kukulkan, stands over a hidden cenote never yet seen by archaeologists - the whole city sits on the buried rim of the Chicxulub impact crater, whose fractured rock feeds the sinkholes that were its water supply in a land without rivers - and its Sacred Cenote, dredged by Edward Thompson from 1904 to 1910, yielded gold, jade, pottery, incense, and human remains bearing wounds consistent with sacrifice to the rain god Chaac.",
-    "para2": "As Chichen Itza declined around 1200, Mayapan inherited the leadership of the northern Maya for another two centuries, before the peninsula fragmented into rival provinces - the divided political landscape that the Spanish would later exploit. The Postclassic period in the Maya chronology runs from about 950 to the conquest era, and modern scholars treat these period divisions as conveniences of dating rather than true cultural decline. The Postclassic was the Maya world's last indigenous age: the K'iche' kingdom expanded in the Guatemalan highlands, and Maya resistance to Spain was so stubborn that the last independent Maya city, Nojpeten in the Peten lakes, fell only in 1697 - more than 170 years after the conquest began.",
-    "source1": "https://www.britannica.com/place/Mayapan",
-    "source2": "https://www.worldhistory.org/Chichen_Itza/",
-    "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.06%3A_The_Decline_of_the_Maya",
-    "source4": "https://www.metmuseum.org/toah/ht/07/caa",
-    "source1label": "Britannica: Mayapan",
-    "source1icon": "britannica.com.png",
-    "source2label": "World History Encyclopedia: Chichen Itza",
-    "source2icon": "worldhistory.org.png",
-    "source3label": "Humanities LibreTexts: 12.6: The Decline of the Maya",
-    "source3icon": "human.libretexts.org.png",
-    "source4label": "The Metropolitan Museum of Art: Maya Area, 1000–1400 A.D.",
-    "source4icon": "metmuseum.org.png"
-  },
-  {
-    "filename": "theaztecempiretripelalliance",
-    "title": "The Aztec Empire (Triple Alliance)",
-    "titleline": "The Aztec Empire (Triple Alliance) - The History Web",
-    "image": "theaztecempiretripelalliance.png",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Aztec Empire (Triple Alliance). The last and greatest of Mexico's indigenous empires was born in 1428, when three Nahua city-states - Mexico-Tenochtitlan, Tetzcoco, and Tlacopan - formed the Triple Alliance from the victorious factions of a civil war against the city of Azcapotzalco. The Mexica of Tenochtitlan, the last of the Nahua migrants to arrive in central Mexico around 1250 - finding all the good land taken, they served as mercenaries for Culhuacan, the old refuge of the Toltecs - had founded their island city in Lake Texcoco barely a century before; within generations it was dominant over its partners and master of most of central Mexico, with outlying provinces as far as the Guatemalan border. Its people called their alliance Excān Tlahtōlōyān - we know them as the Aztec Empire.",
-    "para2": "The empire ruled indirectly: conquered cities kept their rulers so long as they paid semi-annual tribute and supplied warriors, receiving protection, stability, and access to an integrated economic network in return - a hegemonic empire, not a territorial one. But it was an empire built on resentment: when Hernan Cortes landed in 1519, he found thousands of native allies eager to march against Tenochtitlan. On 13 August 1521 the city fell to the Spaniards and their indigenous allies, and its last ruler, Cuauhtemoc, became a legend of resistance. The empire the Spaniards found was sophisticated as well as mighty: Moctezuma issued laws separating nobles and commoners, and every neighborhood had a religiously supervised school - the telpochcalli for commoners, the prestigious calmecac for the nobility and future priests. The Triple Alliance had ruled the Valley of Mexico for 93 years; its fall opened all of Mesoamerica to Spain.",
-    "source1": "https://www.britannica.com/summary/Key-People-of-the-Aztec-Empire",
-    "source2": "https://www.worldhistory.org/Aztec_Civilization/",
-    "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.08%3A_The_Aztec_People",
-    "source4": "https://smarthistory.org/introduction-mexica/",
-    "source1label": "Britannica: Aztec Empire",
-    "source1icon": "britannica.com.png",
-    "source2label": "World History Encyclopedia: Aztec Civilization: The Last Mesoamerican Empire",
-    "source2icon": "worldhistory.org.png",
-    "source3label": "Humanities LibreTexts: 12.8: The Aztec People",
-    "source3icon": "human.libretexts.org.png",
-    "source4label": "Smarthistory: Aztecs (Mexica), an introduction",
-    "source4icon": "smarthistory.org.png"
-  },
-  {
-    "filename": "thehaudenosauneeiroquoisconfederacy",
-    "title": "The Haudenosaunee / Iroquois Confederacy",
-    "titleline": "The Haudenosaunee / Iroquois Confederacy - The History Web",
-    "image": "thehaudenosauneeiroquoisconfederacy.png",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Haudenosaunee (Iroquois Confederacy). The Haudenosaunee - 'those who build the longhouse,' known to history as the Iroquois - are the great indigenous confederacy of northeastern North America: originally five nations, the Mohawk, Oneida, Onondaga, Cayuga, and Seneca - the Mohawk the 'Keepers of the Eastern Door' of the metaphorical longhouse, the Seneca the 'Keepers of the Western Door' - joined after 1722 by the Tuscarora as the Six Nations. Their oral history tells how the Great Peacemaker, with Hiawatha and Jigonhsasee, ended the wars between the nations and founded the confederacy under a constitution known as the Great Law of Peace - dated anywhere between 1142 and 1660 - one of the oldest continuing constitutions in the world, governing through the Grand Council.",
-    "para2": "The confederacy was a superpower of the colonial-era woodlands: its unity gave the five nations military and diplomatic weight far beyond their numbers, and its matrilineal clans, longhouse religion, and wampum diplomacy made it a distinctive civilization in its own right. Armed with muskets from the fur trade, the Haudenosaunee fought the Beaver Wars and defeated or assimilated most neighboring nations; at their peak around 1700 their power reached from the lower Great Lakes south to Virginia and the Ohio Valley. For nearly 200 years they held the balance of power between the French and British colonies, aligning with Britain under the Covenant Chain. The American Revolution split the confederacy - Oneida and Tuscarora sided with the Patriots, the rest with Britain - but it never died: the Haudenosaunee reestablished their Grand Council after the war, still consider themselves sovereign, issue their own passports, and in 1923 even attempted to join the League of Nations - the oldest living experiment in federal democracy on the continent.",
-    "source1": "https://www.britannica.com/topic/Haudenosaunee-Confederacy",
-    "source2": "https://www.worldhistory.org/article/1656/origins-of-the-haudenosaunee-iroquois-confederacy/",
-    "source3": "https://americanindian.si.edu/nk360/resources/Haudenosaunee-Guide-for-Educators",
-    "source4": "https://www.worldhistory.org/article/2627/de-ka-nah-wi-da-and-hiawatha/",
-    "source1label": "Britannica: Haudenosaunee Confederacy",
-    "source1icon": "britannica.com.png",
-    "source2label": "World History Encyclopedia: Origins of the Haudenosaunee (Iroquois) Confederacy",
-    "source2icon": "worldhistory.org.png",
-    "source3label": "Smithsonian Institution: Haudenosaunee Guide for Educators",
-    "source3icon": "americanindian.si.edu.png",
-    "source4label": "World History Encyclopedia: De-Ka-Nah-Wi-Da and Hiawatha",
-    "source4icon": "worldhistory.org.png"
-  },
-  {
-    "filename": "themississippianculturecahokia",
-    "title": "The Mississippian Culture (Cahokia)",
-    "titleline": "The Mississippian Culture (Cahokia) - The History Web",
-    "image": "themississippianculturecahokia.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Mississippian Culture and Cahokia. From the end of the 10th century to the 16th, the Mississippian culture transformed the river valleys of the American South and Midwest: theocratic chiefdoms, dense population centers, maize agriculture and shell-tempered pottery, the new technology of the bow and arrow, and above all the flat-topped platform mounds that crowned their towns - a leap beyond the burial mounds of the earlier Woodland peoples, crowned by a ritual world of the Corn-Mother religion and Datura ceremonies, though the Hopewell clan system endured, so that a traveler could find hospitality from a fellow clan member thousands of miles from home.",
-    "para2": "Its capital was Cahokia, near today's St. Louis: founded in 1050, it was likely a planned social and religious project, and at its peak around 1124 it held at least 22,400 people - the largest city north of Mexico. The 'Cahokian Big Bang' sent missionaries and influence 500 miles north, and sites like Angel Mounds served as pilgrimage destinations; but drought and political instability after 1150 sent half its people into exile - many to the Nashville area, which peaked around 1275 - and spread Mississippian culture outward to new centers like Moundville in Alabama, the Yazoo basin, and Etowah. Around 1300 new religious ideas swept in from the west - the Datura Ritual Complex - and the Late Mississippian world organized into larger paramount chiefdoms ruled by a 'Gran Cacique,' with whole river basins emptied into 'Vacant Quarter' buffer zones between rivals. These chiefdoms were still flourishing when de Soto's expedition found them in the 1540s; within two centuries, disease and disruption had shattered the mound-building world, leaving the great mounds to puzzle the continent's newcomers.",
-    "source1": "https://www.britannica.com/topic/Mississippian-culture",
-    "source2": "https://www.worldhistory.org/cahokia/",
-    "source3": "https://human.libretexts.org/Courses/Gavilan_College/Art_of_the_Ancient_Americas/09%3A_Chapter_Nine_-_The_Most_Powerful_Civilizations_(1000_CE__1500_CE)/9.02%3A_Mississippian_Period_(1000_CE__1500_CE)",
-    "source4": "https://whc.unesco.org/en/list/198/",
-    "source1label": "Britannica: Mississippian culture",
-    "source1icon": "britannica.com.png",
-    "source2label": "World History Encyclopedia: Cahokia",
-    "source2icon": "worldhistory.org.png",
-    "source3label": "Humanities LibreTexts: 9.2: Mississippian Period (1000 CE &ndash; 1500 CE)",
-    "source3icon": "human.libretexts.org.png",
-    "source4label": "UNESCO World Heritage Centre: Cahokia&#x20;Mounds&#x20;State&#x20;Historic&#x20;Site",
-    "source4icon": "whc.unesco.org.png"
-  },
-  {
-    "filename": "themixteccivilization",
-    "title": "The Mixtec Civilization",
-    "titleline": "The Mixtec Civilization - The History Web",
-    "image": "themixteccivilization.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Mixtec Civilization. The Mixtecs - the ñuudzahui, 'people of the rain god' - were the great civilization of the mountains and coasts of today's Oaxaca, Puebla, and Guerrero, and one of the oldest continuous cultures of Mexico: their civilization lasted from around 1500 BCE until the Spanish conquest in 1523. Their homeland, La Mixteca, was divided into three worlds: the dry highlands of the Mixteca Alta, where the region's first urbanized sites emerged; the hot Mixteca Baja; and the humid tropical Costa. Pre-Columbian Mixtec kingdoms numbered around 1.5 million people, competing and allying with each other and with their Zapotec neighbors of the Central Valleys.",
-    "para2": "The Mixtecs' golden age came in the Postclassic, when the culture hero Eight Deer Jaguar Claw, from Tilantongo in the Alta, conquered kingdom after kingdom on his way down to the coast - previously the land of the Chatino people - and founded the capital of Tututepec in the Lower Rio Verde valley. Even the Baja had its own hieroglyphic script, called nuine. The Mixteca Alta has seen the most archaeological study, with evidence of settlement going back to the Archaic and Early Formative periods - some of the deepest roots of urban life in Mexico. Conquered by the Spanish and their indigenous allies in the 16th century, the Mixtec people never disappeared: about 800,000 Mixtecs live in Mexico today, with large communities in the United States as well, and their many languages remain a major branch of the Oto-Manguean family. Descended from peoples who first settled the mountains, valleys, and Pacific coast of the Mixteca in the second millennium BCE, they are one of the great surviving indigenous nations of Mesoamerica.",
-    "source1": "https://www.britannica.com/topic/Mixtec",
-    "source2": "https://human.libretexts.org/Courses/Gavilan_College/Art_of_the_Ancient_Americas/09%3A_Chapter_Nine_-_The_Most_Powerful_Civilizations_(1000_CE__1500_CE)/9.03%3A_Mixtec_(800_CE_-_1500_CE)",
-    "source3": "https://smarthistory.org/period-culture-style/mesoamerican/mixtec-civilization/",
-    "source4": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.01%3A_The_Mixtec",
-    "source1label": "Britannica: Mixtec",
-    "source1icon": "britannica.com.png",
-    "source2label": "Humanities LibreTexts: 9.3: Mixtec (800 CE - 1500 CE)",
-    "source2icon": "human.libretexts.org.png",
-    "source3label": "Smarthistory: Mixtec civilization",
-    "source3icon": "smarthistory.org.png",
-    "source4label": "Humanities LibreTexts: 12.1: The Mixtec",
-    "source4icon": "human.libretexts.org.png"
-  },
-  {
-    "filename": "thetoltecempire",
-    "title": "The Toltec Empire",
-    "titleline": "The Toltec Empire - The History Web",
-    "image": "thetoltecempire.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Toltec Empire. After Teotihuacan burned, central Mexico's next great power was the Toltecs, whose capital was Tollan-Xicocotitlan - the Tula of the Mexican chronicles - with other important cities at Tulancingo and Huapalcalco. The Toltec state existed through the Classic and Postclassic periods, gaining most of its power in the Postclassic, when its sphere of influence reached as far as the Yucatan Peninsula. The chronicles remember a theocracy founded in the year 674 that became a monarchy around 700, and the legendary priest-king Topiltzin Ce Acatl Quetzalcoatl, who ruled Tollan by the traditional account from 923 to 947 and suppressed large-scale human sacrifice. His fall unleashed a religious war between his followers and the cult of Tezcatlipoca - a conflict that flared again from 1046 to 1110 - and later a great famine (1070-1077): events that sent waves of Toltec exiles across Mesoamerica, to Uxmal and the Maya lands, where the Itza of mixed Maya-Toltec descent carried his cult as Kukulkan, and to Cholula, taken over by Toltec exiles around 1200.",
-    "para2": "How much of this is history is honestly uncertain: the status of the Toltecs as an 'empire' has been disputed, and whether Tula dominated or even directly influenced the Yucatan is debated by scholars. What is certain is the Toltec legacy: the Maya city of Chichen Itza shows striking central-Mexican styles, and centuries later the Mexica remembered the Toltecs with awe - Culhuacan, the city where the Mexica first served as mercenaries, was honored as a refuge of the Toltecs - and Maya tradition carried his cult to Yucatan under the name Kukulkan. Tula was abandoned around 1122, but its warrior columns and its legend lived on in every Mexican state that claimed its inheritance.",
-    "source1": "https://www.britannica.com/topic/Toltec",
-    "source2": "https://www.worldhistory.org/Toltec_Civilization/",
-    "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.07%3A_The_Toltecs",
-    "source4": "https://www.metmuseum.org/toah/ht/06/cam",
-    "source1label": "Britannica: Toltec",
-    "source1icon": "britannica.com.png",
-    "source2label": "World History Encyclopedia: Toltec Civilization",
-    "source2icon": "worldhistory.org.png",
-    "source3label": "Humanities LibreTexts: 12.7: The Toltecs",
-    "source3icon": "human.libretexts.org.png",
-    "source4label": "The Metropolitan Museum of Art: Mexico, 500–1000 A.D.",
-    "source4icon": "metmuseum.org.png"
-  },
-  {
-    "filename": "thekingdomofpurepecha",
-    "title": "The Purepecha Empire",
-    "titleline": "The Purepecha Empire - The History Web",
-    "image": "thekingdomofpurepecha.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Purepecha Empire. The Purepecha Empire (c. 1350-1522), also called the Tarascan state, ruled the highlands of western Mexico from its capital at Tzintzuntzan, on the shores of Lake Patzcuaro. The Purepecha people, whose language has no known relatives, were united in the fourteenth century by the culture hero Tariacuri and his successors, who welded the lordships of the lake region into a single kingdom. At its height the empire stretched across much of modern Michoacan and beyond, ruled by a king, the irecha, whose court of priests, nobles, and warriors governed a populous and prosperous land.",
-    "para2": "The Purepecha were the great metalworkers of ancient Mexico. While most Mesoamerican peoples worked metal rarely and only for ornament, Purepecha smiths produced copper and bronze tools, weapons, bells, and ornaments in quantity, along with gold and silver work prized across Mexico. Their cities were crowned with distinctive keyhole-shaped temple platforms called yacatas, and their obsidian mines, featherwork, and lacquerware fed a busy trade.",
-    "para3": "The empire was the great rival of the Aztecs. When the Aztec armies pushed west, the Purepecha met them at the frontier, and in 1479 they crushed the invading host of King Axayacatl, the worst defeat the Aztecs ever suffered. The border held, and the Purepecha remained the one major state of central Mexico that Tenochtitlan could not conquer. Their independence ended not with the Aztecs but with the Spaniards: in 1522 the last irecha, Tangaxoan II, submitted to the conquistadors, and within a decade the kingdom had been absorbed into New Spain.",
-    "para4": "The Purepecha legacy is alive in Michoacan, where hundreds of thousands still speak the Purepecha language and keep the crafts of their ancestors. The yacatas of Tzintzuntzan still stand above Lake Patzcuaro, monuments of the empire that defied the Aztecs.",
-    "source1": "https://en.wikipedia.org/wiki/Pur%C3%A9pecha_Empire",
-    "source1label": "Wikipedia: Purepecha Empire",
-    "source1icon": "en.wikipedia.org.png",
-    "source2": "https://doi.org/10.1093/oxfordhb/9780195390933.013.0030",
-    "source2label": "Oxford Handbook of Mesoamerican Archaeology: The Tarascan Empire",
-    "source3": "https://lugares.inah.gob.mx/en/node/4481",
-    "source3label": "INAH: Tzintzuntzan",
-    "source4": "https://archive.archaeology.org/0801/abstracts/chachapoya.html",
-    "source4label": "Archaeology Magazine: Tzintzuntzan",
-    "source2icon": "doi.org.png",
-    "source3icon": "lugares.inah.gob.mx.png",
-    "source4icon": "archive.archaeology.org.png"
-  },
-  {
-    "filename": "thechichimecs",
-    "title": "The Chichimec Migrations",
-    "titleline": "The Chichimec Migrations - The History Web",
-    "image": "thechichimecs.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Chichimec Migrations. The Chichimec migrations (c. AD 600-1520) were the long waves of movement that carried the peoples of northern Mexico into the settled heartland of Mesoamerica. To the civilizations of central Mexico, the north was the land of the Chichimecs, a catch-all name for the hunting and gathering peoples beyond the farming frontier: the Guachichil, Pame, Otomi, Zacateco, and many others. Painted manuscripts such as the Codex Boturini and the Codex Xolotl preserved the traditions of how these northern peoples journeyed south into the Valley of Mexico and its neighbors.",
-    "para2": "The first great movements came as the city of Tula, heir of Teotihuacan, flourished and then fell around the twelfth century. Northern peoples pressed into its world, and new powers rose from the mixing: the Toltecs themselves traced part of their ancestry to Chichimec migrants, and after Tula's fall, bands of Chichimeca under leaders remembered as Xolotl and his son Nopaltzin settled in the eastern valley and founded the Acolhua realm of Texcoco.",
-    "para3": "The most famous migration of all was that of the Mexica, the future Aztecs, who told how they left their northern homeland of Aztlan and wandered for generations before founding Tenochtitlan in 1325. From such Chichimec beginnings rose the greatest power of late Mesoamerica. Yet the unconquered north remained: when the Spaniards tried to push into the mining country of the Chichimeca, the fierce Guachichil and their allies fought the long Chichimec War of 1550-1590, the costliest Indian war of the colonial period, which Spain ended only by negotiation and gifts.",
-    "para4": "The Chichimec migrations remind us that the civilizations of Mexico were built by migrants from the desert edge, and that the line between the settled south and the nomadic north was a frontier where new peoples and new states were continually made.",
-    "source1": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/chichimecs",
-    "source1label": "Encyclopedia.com: Chichimecs",
-    "source1icon": "encyclopedia.com.png",
-    "source2": "https://en.wikipedia.org/wiki/Chichimeca",
-    "source2label": "Wikipedia: Chichimeca",
-    "source2icon": "en.wikipedia.org.png",
-    "source3": "http://www.scielo.org.mx/scielo.php?pid=S0188-46111998000200006&script=sci_arttext",
-    "source3label": "SciELO: Cambios en la frontera Chichimeca",
-    "source4": "https://digitalcommons.sacredheart.edu/cgi/viewcontent.cgi?article=1157&context=his_fac",
-    "source4label": "Sacred Heart University: Discovering the Chichimecas",
-    "source3icon": "scielo.org.mx.png",
-    "source4icon": "digitalcommons.sacredheart.edu.png"
-  },
-  {
-    "filename": "thecreekandthesoutheast",
-    "title": "The Muskogee and the Southeastern Chiefdoms",
-    "titleline": "The Muskogee and the Southeastern Chiefdoms - The History Web",
-    "image": "thecreekandthesoutheast.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Muskogee and the Southeastern Chiefdoms. The Muskogee and the southeastern chiefdoms (c. AD 1000-1830) were the heirs of the mound-building world of the American Southeast. From about AD 1000 the Mississippian culture raised temple mounds and palisaded towns across the region: Etowah in Georgia, Moundville in Alabama, and dozens of lesser centers, ruled by chiefs who lived atop the mounds and controlled trade in copper, shell, and prestige goods stretching across the continent. Their people farmed maize, played the ballgame called chunkey, and honored their dead in rich burials.",
-    "para2": "European contact shattered this world. The expedition of Hernando de Soto, which marched through the Southeast in 1539-1542, met powerful chiefdoms and left behind devastation and disease; within a century the old mound centers had collapsed. Out of the survivors arose new peoples: the descendants of the Mississippian towns regrouped into confederacies of autonomous towns, the greatest of them the Muskogee, or Creek, whose towns stretched across what is now Alabama and Georgia.",
-    "para3": "The Creek Confederacy was a nation of towns rather than a state. Each town had its chief, its council fire, and its ball ground, and the confederacy met to treat of war and peace with the colonial powers around them. Creek diplomats played Britain, France, and Spain against one another for a century, until American expansion broke the balance. In 1813-14 the Red Stick war split the nation, and Andrew Jackson's victory at Horseshoe Bend forced the cession of millions of acres; by the 1830s the Creeks, like the other southeastern nations, had been driven west on the Trail of Tears to Indian Territory.",
-    "para4": "The descendants of the chiefdoms endure. The Muscogee (Creek) Nation is today one of the largest tribes in Oklahoma, the mounds of Etowah and Moundville are preserved as monuments of the Mississippian world, and the towns and traditions of the Southeast still shape the nations that carry their memory.",
-    "source1": "https://doi.org/10.1353/sec.2023.0012",
-    "source1label": "Southeastern Archaeology: Origins of the Creek (Muscogee) Confederacy",
-    "source2": "https://www.encyclopedia.com/history/united-states-and-canada/north-american-indigenous-peoples/creek",
-    "source2label": "Encyclopedia.com: Creek",
-    "source2icon": "encyclopedia.com.png",
-    "source3": "https://www.okhistory.org/publications/enc/entry?entry=CR006",
-    "source3label": "Oklahoma Historical Society: Creek (Muscogee)",
-    "source4": "https://www.georgiaencyclopedia.org/articles/history-archaeology/late-prehistoric-early-historic-chiefdoms-ca-a-d-1300-1850/",
-    "source4label": "New Georgia Encyclopedia: Late Prehistoric and Early Historic Chiefdoms",
-    "source1icon": "doi.org.png",
-    "source3icon": "okhistory.org.png",
-    "source4icon": "georgiaencyclopedia.org.png"
-  },
-  {
-    "filename": "thethulemigration",
-    "title": "The Thule Migration",
-    "titleline": "The Thule Migration - The History Web",
-    "image": "thethulemigration.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "The Thule Migration. The Thule migration (c. AD 1000-1600) was one of the fastest and most remarkable expansions in human prehistory: the movement of the ancestors of the Inuit across the top of the world, from Alaska to Greenland, in only a few centuries. The Thule people developed in the Bering Strait region, where for generations Arctic hunters had perfected the technology of life on the ice: the kayak and the large open boat called the umiak, dog sleds, toggling harpoons, and houses of stone, turf, and whalebone.",
-    "para2": "Around AD 1000, as the climate of the High Arctic grew briefly milder and the great bowhead whales ranged east through the channels of the Canadian Arctic, Thule hunting bands followed. Moving east in their skin boats, they spread across the northern coast of North America, reaching Greenland within a few hundred years, and displacing or absorbing the older Dorset people, whom Inuit tradition remembers as the Tuniit, a strong but shy folk who had lived in the Arctic for two thousand years before them.",
-    "para3": "The Thule were supremely adapted to their world. They hunted bowhead whales from flotillas of umiaks, seals at the breathing holes of the winter ice, and caribou on the summer tundra, and their way of life proved so successful that it changed little until modern times. Archaeologists trace their passage in the whalebone frames of their winter houses, scattered along coasts from Siberia to Greenland.",
-    "para4": "The Thule migration created the modern map of the Arctic: the Inuit of Canada and Greenland and the Inupiat of Alaska are all the descendants of these travelers, and their languages remain so similar that a Greenlander and an Alaskan can still partly understand one another after a separation of a thousand years. It stands with the Polynesian voyages as one of the greatest migrations of the pre-industrial world.",
-    "source1": "https://thecanadianencyclopedia.ca/en/article/thule-culture",
-    "source1label": "The Canadian Encyclopedia: Early Inuit (Thule Culture)",
-    "source2": "https://www.heritage.nf.ca/articles/indigenous/thule.php",
-    "source2label": "Heritage Newfoundland and Labrador: The Thule",
-    "source3": "https://www.degruyterbrill.com/document/doi/10.1515/opar-2022-0326/html",
-    "source3label": "De Gruyter: The Thule Migration: A Culture in a Hurry?",
-    "source4": "https://www.uaf.edu/museum/collections/archaeo/online-exhibits/paleo-eskimo-cultures/",
-    "source4label": "University of Alaska Museum: Thule and their Ancestors",
-    "source1icon": "thecanadianencyclopedia.ca.png",
-    "source3icon": "degruyterbrill.com.png",
-    "source4icon": "uaf.edu.png"
-  },
-  {
-    "filename": "northwestcoastsocieties",
-    "title": "Pacific Northwest Coast Societies and Maritime Trade",
-    "titleline": "Pacific Northwest Coast Societies and Maritime Trade - The History Web",
-    "image": "northwestcoastsocieties.jpg",
-    "linktoparent": "northam/northammedieval.html",
-    "para1": "Along the foggy, island-strewn coast from northern California to Alaska, Indigenous peoples built one of the most remarkable non-agricultural civilizations in world history. Tlingit, Haida, Tsimshian, Kwakwaka'wakw, Nuu-chah-nulth, Coast Salish and other nations drew their wealth from the sea: five species of salmon, halibut, herring, shellfish, sea mammals and, for some, whales. This maritime abundance supported large permanent villages of massive cedar-plank houses, dense populations and elaborate art, all without farming.",
-    "para2": "Northwest Coast society was ranked and competitive. House groups held inherited rights to fishing sites, hunting grounds and trade routes, and chiefs validated their status through the potlatch, great feasts at which hosts distributed enormous quantities of goods, blankets, canoes, carved boxes and coppers, to witnesses. The more a chief gave away, the greater his renown. Enslaved war captives formed a lower class in many communities. Monumental carved poles raised before houses proclaimed lineage histories and crests, while masks, bentwood boxes and woven Chilkat blankets displayed a sophisticated art style governed by strict aesthetic rules.",
-    "para3": "The region's peoples were master mariners and traders. Haida and Tlingit seagoing canoes, carved from single giant cedars, could carry dozens of paddlers on voyages of hundreds of kilometers for trade, war and ceremony. Grease trails carried coastal products such as eulachon oil and dentalia shells deep into the interior, returning furs, obsidian and copper. Dentalia shells circulated as a standard of value along the whole coast. Warfare and slave-raiding were real parts of this competitive world, but so were peace marriages, trade partnerships and shared ceremonies linking distant villages.",
-    "para4": "European and American ships entered this world in the late eighteenth century, seeking sea otter furs for the China trade. Coastal nations quickly became shrewd trading partners, and chiefs such as the Tlingit leader Kowee and the Haida chief Cuneah grew wealthy managing the exchange. But contact also brought smallpox and other epidemics that killed immense numbers, sometimes half a village in a single outbreak. Even so, Northwest Coast peoples adapted rather than vanished: by the early twentieth century their potlatches, carving arts and nations had carried through the worst of colonial pressure, battered but unbroken.",
-    "source1": "https://www.britannica.com/topic/Northwest-Coast-Indian",
-    "source1label": "Britannica: Northwest Coast Indian",
-    "source1icon": "britannica.com.png",
-    "source2": "https://thecanadianencyclopedia.ca/en/article/aboriginal-people-northwest-coast",
-    "source2label": "The Canadian Encyclopedia: Northwest Coast Indigenous Peoples",
-    "source2icon": "thecanadianencyclopedia.ca.png",
-    "source3": "https://www.metmuseum.org/toah/hd/nort/hd_nort.htm",
-    "source3label": "The Metropolitan Museum of Art: Northwest Coast Musical Instruments",
-    "source3icon": "metmuseum.org.png"
-  }
+ {
+  "filename": "postclassicmayachichenitzaandmayapan",
+  "title": "Postclassic Maya (Chichén Itzá & Mayapán)",
+  "titleline": "Postclassic Maya (Chichén Itzá &amp; Mayapán) - The History Web",
+  "image": "postclassicmayachichenitzaandmayapan.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Postclassic Maya: Chichen Itza and Mayapan. When the Classic Maya cities of the south collapsed in the 9th century, Maya civilization did not die - it moved north. In the northern Yucatan, Chichen Itza rose to dominate the peninsula from the Terminal Classic into the Postclassic (c. 900-1200 AD): a city whose architecture blends Maya Puuc and Chenes styles with striking central-Mexican forms - once read as conquest from Tula, now mostly understood as cultural diffusion across a connected Maya-Mexican world. Its great pyramid, the Castillo of Kukulkan, stands over a hidden cenote never yet seen by archaeologists - the whole city sits on the buried rim of the Chicxulub impact crater, whose fractured rock feeds the sinkholes that were its water supply in a land without rivers - and its Sacred Cenote, dredged by Edward Thompson from 1904 to 1910, yielded gold, jade, pottery, incense, and human remains bearing wounds consistent with sacrifice to the rain god Chaac.",
+  "para2": "As Chichen Itza declined around 1200, Mayapan inherited the leadership of the northern Maya for another two centuries, before the peninsula fragmented into rival provinces - the divided political landscape that the Spanish would later exploit. The Postclassic period in the Maya chronology runs from about 950 to the conquest era, and modern scholars treat these period divisions as conveniences of dating rather than true cultural decline. The Postclassic was the Maya world's last indigenous age: the K'iche' kingdom expanded in the Guatemalan highlands, and Maya resistance to Spain was so stubborn that the last independent Maya city, Nojpeten in the Peten lakes, fell only in 1697 - more than 170 years after the conquest began.",
+  "source1": "https://www.britannica.com/place/Mayapan",
+  "source2": "https://www.worldhistory.org/Chichen_Itza/",
+  "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.06%3A_The_Decline_of_the_Maya",
+  "source4": "https://www.metmuseum.org/toah/ht/07/caa",
+  "source1label": "Britannica: Mayapan",
+  "source1icon": "britannica.com.png",
+  "source2label": "World History Encyclopedia: Chichen Itza",
+  "source2icon": "worldhistory.org.png",
+  "source3label": "Humanities LibreTexts: 12.6: The Decline of the Maya",
+  "source3icon": "human.libretexts.org.png",
+  "source4label": "The Metropolitan Museum of Art: Maya Area, 1000–1400 A.D.",
+  "source4icon": "metmuseum.org.png"
+ },
+ {
+  "filename": "theaztecempiretripelalliance",
+  "title": "The Aztec Empire (Triple Alliance)",
+  "titleline": "The Aztec Empire (Triple Alliance) - The History Web",
+  "image": "theaztecempiretripelalliance.png",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Aztec Empire (Triple Alliance). The last and greatest of Mexico's indigenous empires was born in 1428, when three Nahua city-states - Mexico-Tenochtitlan, Tetzcoco, and Tlacopan - formed the Triple Alliance from the victorious factions of a civil war against the city of Azcapotzalco. The Mexica of Tenochtitlan, the last of the Nahua migrants to arrive in central Mexico around 1250 - finding all the good land taken, they served as mercenaries for Culhuacan, the old refuge of the Toltecs - had founded their island city in Lake Texcoco barely a century before; within generations it was dominant over its partners and master of most of central Mexico, with outlying provinces as far as the Guatemalan border. Its people called their alliance Excān Tlahtōlōyān - we know them as the Aztec Empire.",
+  "para2": "The empire ruled indirectly: conquered cities kept their rulers so long as they paid semi-annual tribute and supplied warriors, receiving protection, stability, and access to an integrated economic network in return - a hegemonic empire, not a territorial one. But it was an empire built on resentment: when Hernan Cortes landed in 1519, he found thousands of native allies eager to march against Tenochtitlan. On 13 August 1521 the city fell to the Spaniards and their indigenous allies, and its last ruler, Cuauhtemoc, became a legend of resistance. The empire the Spaniards found was sophisticated as well as mighty: Moctezuma issued laws separating nobles and commoners, and every neighborhood had a religiously supervised school - the telpochcalli for commoners, the prestigious calmecac for the nobility and future priests. The Triple Alliance had ruled the Valley of Mexico for 93 years; its fall opened all of Mesoamerica to Spain.",
+  "source1": "https://www.britannica.com/summary/Key-People-of-the-Aztec-Empire",
+  "source2": "https://www.worldhistory.org/Aztec_Civilization/",
+  "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.08%3A_The_Aztec_People",
+  "source4": "https://smarthistory.org/introduction-mexica/",
+  "source1label": "Britannica: Aztec Empire",
+  "source1icon": "britannica.com.png",
+  "source2label": "World History Encyclopedia: Aztec Civilization: The Last Mesoamerican Empire",
+  "source2icon": "worldhistory.org.png",
+  "source3label": "Humanities LibreTexts: 12.8: The Aztec People",
+  "source3icon": "human.libretexts.org.png",
+  "source4label": "Smarthistory: Aztecs (Mexica), an introduction",
+  "source4icon": "smarthistory.org.png",
+  "article": [
+   {
+    "p": "The last and greatest of Mexico's indigenous empires was born in 1428, when three Nahua city-states - Mexico-Tenochtitlan, Tetzcoco, and Tlacopan - formed the Triple Alliance from the victorious factions of the Tepanec War against the city of Azcapotzalco. The Mexica of Tenochtitlan were latecomers: the last of the Nahua migrants to reach central Mexico around 1250, they found all the good land taken and served as mercenaries for Culhuacan, the old refuge of the Toltecs, before founding their island city in Lake Texcoco. Within three generations that city was dominant over its allies and master of most of central Mexico, with outlying provinces reaching the Guatemalan border. Its people called their alliance Excan Tlahtoloyan - we know it as the Aztec Empire."
+   },
+   {
+    "figure": {
+     "src": "codexmendozafounding.jpg",
+     "alt": "Codex Mendoza folio showing the founding of Tenochtitlan",
+     "cap": "The founding of Tenochtitlan - the eagle on the cactus, the city's first leaders, and its first conquests - from the Codex Mendoza, made for the Spanish viceroys around 1541. Public domain."
+    }
+   },
+   {
+    "h2": "An Empire of Tribute"
+   },
+   {
+    "p": "The Triple Alliance ruled indirectly. Conquered cities kept their own rulers so long as they paid semi-annual tribute and supplied warriors for the alliance's campaigns; in return they received protection, stability, and access to an integrated economic network that moved cacao, feathers, jade, obsidian and cotton across Mesoamerica. The spoils of each new conquest were shared among the three great cities, with Tenochtitlan taking the lion's share. It was a hegemonic empire, not a territorial one - no colonies, no garrisons to speak of, only the ever-renewed demand for tribute and captives. That made it cheap to run and quick to grow, but it was an empire built on resentment, and the resentment would prove fatal."
+   },
+   {
+    "h2": "The Island City"
+   },
+   {
+    "p": "At its height Tenochtitlan, on the western shore of Lake Texcoco where Mexico City now stands, held at least 200,000 inhabitants - the largest city in the pre-Columbian Americas, fed by causeways and canoe-borne markets that dazzled the first Europeans to see it. The empire's order reached into every neighborhood: Moctezuma issued laws separating nobles from commoners, and every district had a religiously supervised school - the telpochcalli for commoners, where boys learned war, and the prestigious calmecac for the nobility and future priests. A merchant class, the pochteca, spied and traded as far as the Maya lowlands, while tribute lists recorded in painted books tracked what every subject town owed."
+   },
+   {
+    "figure": {
+     "src": "tenochtitlanmap1524.jpg",
+     "alt": "First European map of Tenochtitlan, 1524",
+     "cap": "The first European map of Tenochtitlan and the Gulf of Mexico, printed at Nuremberg in 1524 from reports of Cortes - the island city with its grid of canals three years after its fall. Public domain."
+    }
+   },
+   {
+    "h2": "The Fall"
+   },
+   {
+    "p": "When Hernan Cortes landed in 1519, he found thousands of native allies - above all the Tlaxcalans, the empire's stubborn unconquered enemies - eager to march against Tenochtitlan. First relations with the emperor Motecuhzoma II were friendly and gifts were exchanged, but the truce curdled: with Cortes away at Veracruz, Spanish soldiers were killed in the city, and on his return the Spaniards were driven out on 30 June 1520, the Noche Triste. Ten months later Cortes came back with an army of indigenous allies and laid siege. On 13 August 1521 Tenochtitlan fell, its last ruler Cuauhtemoc captured and made a legend of resistance. The Triple Alliance had ruled the Valley of Mexico for 93 years; its fall opened all of Mesoamerica to Spain."
+   },
+   {
+    "h2": "Legacy"
+   },
+   {
+    "p": "The Spaniards built their own capital directly on the ruins, and Mexico City still follows the old island's street plan. The empire's words - chocolate, tomato, coyote, avocado - went round the world, its tribute system became the skeleton of Spanish colonial taxation, and the memory of the Triple Alliance, half admiring and half mournful, sits at the root of Mexico's national story: the eagle on the cactus of the Codex Mendoza is on the country's flag today."
+   }
+  ],
+  "description": "The Aztec Empire (Triple Alliance): how Tenochtitlan, Tetzcoco and Tlacopan built a tribute empire over central Mexico from 1428, and how it fell to Cortes and his native allies in 1521.",
+  "keywords": [
+   "aztec empire",
+   "triple alliance",
+   "aztec realm",
+   "tenochtitlan",
+   "aztecs",
+   "moctezuma",
+   "cuauhtemoc",
+   "fall of tenochtitlan"
+  ]
+ },
+ {
+  "filename": "thehaudenosauneeiroquoisconfederacy",
+  "title": "The Haudenosaunee / Iroquois Confederacy",
+  "titleline": "The Haudenosaunee / Iroquois Confederacy - The History Web",
+  "image": "thehaudenosauneeiroquoisconfederacy.png",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Haudenosaunee (Iroquois Confederacy). The Haudenosaunee - 'those who build the longhouse,' known to history as the Iroquois - are the great indigenous confederacy of northeastern North America: originally five nations, the Mohawk, Oneida, Onondaga, Cayuga, and Seneca - the Mohawk the 'Keepers of the Eastern Door' of the metaphorical longhouse, the Seneca the 'Keepers of the Western Door' - joined after 1722 by the Tuscarora as the Six Nations. Their oral history tells how the Great Peacemaker, with Hiawatha and Jigonhsasee, ended the wars between the nations and founded the confederacy under a constitution known as the Great Law of Peace - dated anywhere between 1142 and 1660 - one of the oldest continuing constitutions in the world, governing through the Grand Council.",
+  "para2": "The confederacy was a superpower of the colonial-era woodlands: its unity gave the five nations military and diplomatic weight far beyond their numbers, and its matrilineal clans, longhouse religion, and wampum diplomacy made it a distinctive civilization in its own right. Armed with muskets from the fur trade, the Haudenosaunee fought the Beaver Wars and defeated or assimilated most neighboring nations; at their peak around 1700 their power reached from the lower Great Lakes south to Virginia and the Ohio Valley. For nearly 200 years they held the balance of power between the French and British colonies, aligning with Britain under the Covenant Chain. The American Revolution split the confederacy - Oneida and Tuscarora sided with the Patriots, the rest with Britain - but it never died: the Haudenosaunee reestablished their Grand Council after the war, still consider themselves sovereign, issue their own passports, and in 1923 even attempted to join the League of Nations - the oldest living experiment in federal democracy on the continent.",
+  "source1": "https://www.britannica.com/topic/Haudenosaunee-Confederacy",
+  "source2": "https://www.worldhistory.org/article/1656/origins-of-the-haudenosaunee-iroquois-confederacy/",
+  "source3": "https://americanindian.si.edu/nk360/resources/Haudenosaunee-Guide-for-Educators",
+  "source4": "https://www.worldhistory.org/article/2627/de-ka-nah-wi-da-and-hiawatha/",
+  "source1label": "Britannica: Haudenosaunee Confederacy",
+  "source1icon": "britannica.com.png",
+  "source2label": "World History Encyclopedia: Origins of the Haudenosaunee (Iroquois) Confederacy",
+  "source2icon": "worldhistory.org.png",
+  "source3label": "Smithsonian Institution: Haudenosaunee Guide for Educators",
+  "source3icon": "americanindian.si.edu.png",
+  "source4label": "World History Encyclopedia: De-Ka-Nah-Wi-Da and Hiawatha",
+  "source4icon": "worldhistory.org.png",
+  "article": [
+   {
+    "p": "The Haudenosaunee - 'those who build the longhouse', known to history as the Iroquois - are the great indigenous confederacy of northeastern North America. Originally five nations, the Mohawk, Oneida, Onondaga, Cayuga and Seneca, they understood themselves as one household stretched across what is now upstate New York: the Mohawk the 'Keepers of the Eastern Door' of the metaphorical longhouse, the Seneca the 'Keepers of the Western Door'. After 1722 the Tuscarora joined them as the sixth nation. Their constitution, the Great Law of Peace - dated by various scholars anywhere from 1142 to 1660 - is one of the oldest continuing constitutions in the world."
+   },
+   {
+    "figure": {
+     "src": "hiawathawampumbelt.jpg",
+     "alt": "The Hiawatha wampum belt recording the five nations of the confederacy",
+     "cap": "The wampum belt commemorating the confederacy: the linked squares of the nations joined to the central Tree of Peace. Engraving from Popular Science Monthly, 1886. Public domain."
+    }
+   },
+   {
+    "h2": "The Peacemaker and the Five Arrows"
+   },
+   {
+    "p": "The nations were once at constant war with one another. Oral history tells how a Seneca man named Hiawatha, broken by the loss of his family to the violence, wandered into the country of the Mohawk and met Dekanawida, the Great Peacemaker - a prophet from the Wendat country to the north, whose mother had dreamed he would plant the Great Tree of Peace. Dekanawida performed the first condolence ceremony, drying Hiawatha's eyes, opening his ears and clearing his throat, and the two set out together to spread the vision of a Great Peace. His proof was an arrow: one arrow snaps, but a bundle of five cannot be broken. Nation after nation accepted; tradition names Jigonhsasee as the first to believe, honored as Mother of Nations. The last holdout was the Onondaga shaman Tadodaho, whose mind was twisted as his hair was knotted with snakes - Hiawatha combed the snakes from his hair, and the confederacy was complete, with the council fire kept forever at Onondaga."
+   },
+   {
+    "h2": "The Longhouse as a Constitution"
+   },
+   {
+    "p": "The Great Law of Peace made the confederacy a single polity without extinguishing its nations. Fifty sachems, chosen by the clan mothers of the matrilineal clans and removable by them, met in the Grand Council at Onondaga; the Mohawk and Seneca debated first as elder brothers, the Oneida and Cayuga as younger, and the Onondaga, as firekeepers, confirmed the decisions. Decisions, treaties and laws were recorded not in writing but in wampum - belts and strings of shell beads whose patterns carried the memory of agreements. It was federalism woven from kinship: clans crossed national boundaries, so every nation contained relatives of every other, and war between members became a family quarrel the law forbade."
+   },
+   {
+    "figure": {
+     "src": "guyjohnsonmap1771.jpg",
+     "alt": "Guy Johnson's 1771 map of the country of the Six Nations",
+     "cap": "'The Country of the VI Nations': Guy Johnson's 1771 map of the confederacy's lands between Lake Ontario and the Susquehanna, with the boundary settled with the nations in 1768. Public domain."
+    }
+   },
+   {
+    "h2": "A Woodland Superpower"
+   },
+   {
+    "p": "Unity gave the five nations weight far beyond their numbers. Armed with muskets from the fur trade, the Haudenosaunee fought the long Beaver Wars of the seventeenth century, defeating or assimilating most neighboring nations - the Huron, the Erie, the Neutral - and by around 1700 their power reached from the lower Great Lakes south to Virginia and the Ohio Valley. For nearly two hundred years they held the balance of power in North America: France and Britain courted them, and under the Covenant Chain alliance with Britain the Grand Council spoke for a woodland empire that no colonial governor could ignore. Wampum diplomacy, longhouse religion and the matrilineal clan system made the confederacy a distinctive civilization in its own right."
+   },
+   {
+    "h2": "Split but Never Broken"
+   },
+   {
+    "p": "The American Revolution did what centuries of enemies could not: it split the longhouse. The Oneida and Tuscarora sided with the Patriots; the Mohawk, Onondaga, Cayuga and Seneca fought for Britain, and in 1779 the Sullivan expedition burned their towns and cornfields in retaliation. Yet the confederacy survived its own civil war. The Grand Council was reestablished after the peace, the Haudenosaunee continued to treat themselves as sovereign nations, and in 1923 they even attempted to join the League of Nations as a member state. Through every defeat the Great Law endured - the oldest living experiment in federal democracy on the continent."
+   }
+  ],
+  "description": "The Haudenosaunee (Iroquois) Confederacy: the Great Peacemaker and Hiawatha, the Great Law of Peace, the Beaver Wars, the Covenant Chain, and how the Six Nations survived the American Revolution.",
+  "keywords": [
+   "haudenosaunee",
+   "iroquois confederacy",
+   "iroquois",
+   "six nations",
+   "great law of peace",
+   "hiawatha",
+   "haudenosaunee confederacy"
+  ]
+ },
+ {
+  "filename": "themississippianculturecahokia",
+  "title": "The Mississippian Culture (Cahokia)",
+  "titleline": "The Mississippian Culture (Cahokia) - The History Web",
+  "image": "themississippianculturecahokia.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Mississippian Culture and Cahokia. From the end of the 10th century to the 16th, the Mississippian culture transformed the river valleys of the American South and Midwest: theocratic chiefdoms, dense population centers, maize agriculture and shell-tempered pottery, the new technology of the bow and arrow, and above all the flat-topped platform mounds that crowned their towns - a leap beyond the burial mounds of the earlier Woodland peoples, crowned by a ritual world of the Corn-Mother religion and Datura ceremonies, though the Hopewell clan system endured, so that a traveler could find hospitality from a fellow clan member thousands of miles from home.",
+  "para2": "Its capital was Cahokia, near today's St. Louis: founded in 1050, it was likely a planned social and religious project, and at its peak around 1124 it held at least 22,400 people - the largest city north of Mexico. The 'Cahokian Big Bang' sent missionaries and influence 500 miles north, and sites like Angel Mounds served as pilgrimage destinations; but drought and political instability after 1150 sent half its people into exile - many to the Nashville area, which peaked around 1275 - and spread Mississippian culture outward to new centers like Moundville in Alabama, the Yazoo basin, and Etowah. Around 1300 new religious ideas swept in from the west - the Datura Ritual Complex - and the Late Mississippian world organized into larger paramount chiefdoms ruled by a 'Gran Cacique,' with whole river basins emptied into 'Vacant Quarter' buffer zones between rivals. These chiefdoms were still flourishing when de Soto's expedition found them in the 1540s; within two centuries, disease and disruption had shattered the mound-building world, leaving the great mounds to puzzle the continent's newcomers.",
+  "source1": "https://www.britannica.com/topic/Mississippian-culture",
+  "source2": "https://www.worldhistory.org/cahokia/",
+  "source3": "https://human.libretexts.org/Courses/Gavilan_College/Art_of_the_Ancient_Americas/09%3A_Chapter_Nine_-_The_Most_Powerful_Civilizations_(1000_CE__1500_CE)/9.02%3A_Mississippian_Period_(1000_CE__1500_CE)",
+  "source4": "https://whc.unesco.org/en/list/198/",
+  "source1label": "Britannica: Mississippian culture",
+  "source1icon": "britannica.com.png",
+  "source2label": "World History Encyclopedia: Cahokia",
+  "source2icon": "worldhistory.org.png",
+  "source3label": "Humanities LibreTexts: 9.2: Mississippian Period (1000 CE &ndash; 1500 CE)",
+  "source3icon": "human.libretexts.org.png",
+  "source4label": "UNESCO World Heritage Centre: Cahokia&#x20;Mounds&#x20;State&#x20;Historic&#x20;Site",
+  "source4icon": "whc.unesco.org.png"
+ },
+ {
+  "filename": "themixteccivilization",
+  "title": "The Mixtec Civilization",
+  "titleline": "The Mixtec Civilization - The History Web",
+  "image": "themixteccivilization.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Mixtec Civilization. The Mixtecs - the ñuudzahui, 'people of the rain god' - were the great civilization of the mountains and coasts of today's Oaxaca, Puebla, and Guerrero, and one of the oldest continuous cultures of Mexico: their civilization lasted from around 1500 BCE until the Spanish conquest in 1523. Their homeland, La Mixteca, was divided into three worlds: the dry highlands of the Mixteca Alta, where the region's first urbanized sites emerged; the hot Mixteca Baja; and the humid tropical Costa. Pre-Columbian Mixtec kingdoms numbered around 1.5 million people, competing and allying with each other and with their Zapotec neighbors of the Central Valleys.",
+  "para2": "The Mixtecs' golden age came in the Postclassic, when the culture hero Eight Deer Jaguar Claw, from Tilantongo in the Alta, conquered kingdom after kingdom on his way down to the coast - previously the land of the Chatino people - and founded the capital of Tututepec in the Lower Rio Verde valley. Even the Baja had its own hieroglyphic script, called nuine. The Mixteca Alta has seen the most archaeological study, with evidence of settlement going back to the Archaic and Early Formative periods - some of the deepest roots of urban life in Mexico. Conquered by the Spanish and their indigenous allies in the 16th century, the Mixtec people never disappeared: about 800,000 Mixtecs live in Mexico today, with large communities in the United States as well, and their many languages remain a major branch of the Oto-Manguean family. Descended from peoples who first settled the mountains, valleys, and Pacific coast of the Mixteca in the second millennium BCE, they are one of the great surviving indigenous nations of Mesoamerica.",
+  "source1": "https://www.britannica.com/topic/Mixtec",
+  "source2": "https://human.libretexts.org/Courses/Gavilan_College/Art_of_the_Ancient_Americas/09%3A_Chapter_Nine_-_The_Most_Powerful_Civilizations_(1000_CE__1500_CE)/9.03%3A_Mixtec_(800_CE_-_1500_CE)",
+  "source3": "https://smarthistory.org/period-culture-style/mesoamerican/mixtec-civilization/",
+  "source4": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.01%3A_The_Mixtec",
+  "source1label": "Britannica: Mixtec",
+  "source1icon": "britannica.com.png",
+  "source2label": "Humanities LibreTexts: 9.3: Mixtec (800 CE - 1500 CE)",
+  "source2icon": "human.libretexts.org.png",
+  "source3label": "Smarthistory: Mixtec civilization",
+  "source3icon": "smarthistory.org.png",
+  "source4label": "Humanities LibreTexts: 12.1: The Mixtec",
+  "source4icon": "human.libretexts.org.png"
+ },
+ {
+  "filename": "thetoltecempire",
+  "title": "The Toltec Empire",
+  "titleline": "The Toltec Empire - The History Web",
+  "image": "thetoltecempire.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Toltec Empire. After Teotihuacan burned, central Mexico's next great power was the Toltecs, whose capital was Tollan-Xicocotitlan - the Tula of the Mexican chronicles - with other important cities at Tulancingo and Huapalcalco. The Toltec state existed through the Classic and Postclassic periods, gaining most of its power in the Postclassic, when its sphere of influence reached as far as the Yucatan Peninsula. The chronicles remember a theocracy founded in the year 674 that became a monarchy around 700, and the legendary priest-king Topiltzin Ce Acatl Quetzalcoatl, who ruled Tollan by the traditional account from 923 to 947 and suppressed large-scale human sacrifice. His fall unleashed a religious war between his followers and the cult of Tezcatlipoca - a conflict that flared again from 1046 to 1110 - and later a great famine (1070-1077): events that sent waves of Toltec exiles across Mesoamerica, to Uxmal and the Maya lands, where the Itza of mixed Maya-Toltec descent carried his cult as Kukulkan, and to Cholula, taken over by Toltec exiles around 1200.",
+  "para2": "How much of this is history is honestly uncertain: the status of the Toltecs as an 'empire' has been disputed, and whether Tula dominated or even directly influenced the Yucatan is debated by scholars. What is certain is the Toltec legacy: the Maya city of Chichen Itza shows striking central-Mexican styles, and centuries later the Mexica remembered the Toltecs with awe - Culhuacan, the city where the Mexica first served as mercenaries, was honored as a refuge of the Toltecs - and Maya tradition carried his cult to Yucatan under the name Kukulkan. Tula was abandoned around 1122, but its warrior columns and its legend lived on in every Mexican state that claimed its inheritance.",
+  "source1": "https://www.britannica.com/topic/Toltec",
+  "source2": "https://www.worldhistory.org/Toltec_Civilization/",
+  "source3": "https://human.libretexts.org/Bookshelves/History/World_History/Early_World_Civilizations_(Lumen)/12%3A_Civilizations_in_the_Americas/12.07%3A_The_Toltecs",
+  "source4": "https://www.metmuseum.org/toah/ht/06/cam",
+  "source1label": "Britannica: Toltec",
+  "source1icon": "britannica.com.png",
+  "source2label": "World History Encyclopedia: Toltec Civilization",
+  "source2icon": "worldhistory.org.png",
+  "source3label": "Humanities LibreTexts: 12.7: The Toltecs",
+  "source3icon": "human.libretexts.org.png",
+  "source4label": "The Metropolitan Museum of Art: Mexico, 500–1000 A.D.",
+  "source4icon": "metmuseum.org.png",
+  "description": "The Toltec Empire: Tollan (Tula) and the Toltecs, central Mexico's great power between Teotihuacan and the Aztecs - its capital, legends, and legacy.",
+  "keywords": [
+   "toltec empire",
+   "toltecs",
+   "tula",
+   "tollan",
+   "topiltzin",
+   "quetzalcoatl",
+   "toltec civilization",
+   "atlantean figures"
+  ],
+  "article": [
+   {
+    "p": "After Teotihuacan burned, the next great power of central Mexico was the Toltecs, whose capital was Tollan-Xicocotitlan, the Tula of the Mexican chronicles, with other important centers at Tulancingo and Huapalcalco. The Toltecs had roots in the Tolteca-Chichimeca peoples who migrated from the deserts of the northwest into the Valley of Mexico in the ninth century, first settling at Culhuacan. Their state flourished through the tenth to mid-twelfth centuries, and its influence reached as far as the Yucatan Peninsula."
+   },
+   {
+    "p": "The later Aztec chronicles remembered the Toltec past in legendary detail: a theocracy founded in the seventh century that became a monarchy, and above all the priest-king Topiltzin Ce Acatl Quetzalcoatl, placed by the traditional chronology in the tenth century, whose fall unleashed a long struggle between his followers and the cult of Tezcatlipoca. How much of this is history is honestly uncertain - modern scholars dispute whether the Toltecs were an empire at all, and whether Tula dominated or even directly influenced distant Yucatan - but the tradition shaped everything that came after."
+   },
+   {
+    "h2": "Tollan"
+   },
+   {
+    "p": "The real Tula sits on a limestone promontory in what is now the state of Hidalgo. At its height the city covered some 14 square kilometers with a population of perhaps 30,000 to 40,000, its ceremonial heart laid out in a grid remarkably similar to the Maya city of Chichen Itza. The Aztecs remembered Tollan as a place of fabulous wealth, where craftsmen 'taught the clay to lie' and cotton grew in natural colors; the archaeology confirms at least a major trade in obsidian mined at nearby Pachuca."
+   },
+   {
+    "p": "The surviving monuments are impressive: two large pyramids, a colonnaded walkway, a great palace, two ball courts, and a 40-meter L-shaped serpent wall. On top of Pyramid B stand the famous warrior columns, stone soldiers nearly five meters tall, each carved from four drums, holding a spear-thrower, wearing a butterfly pectoral and a drum-shaped headdress. Tollan also gives us the first known chacmools, the reclining stone figures holding offering vessels that would appear in temples across Mesoamerica."
+   },
+   {
+    "figure": {
+     "src": "tulapyramidb.jpg",
+     "alt": "Atlantean warrior columns atop Pyramid B at Tula",
+     "cap": "The warrior columns of Pyramid B at Tula - stone soldiers that once held up a temple roof, each holding a spear-thrower. Near-identical figures appear hundreds of miles away at Chichen Itza. Photo: CC BY 2.0."
+    }
+   },
+   {
+    "h2": "Topiltzin and the Feathered Serpent"
+   },
+   {
+    "p": "At the center of Toltec memory stands Topiltzin Ce Acatl Quetzalcoatl, a priest-king who took the name of the Feathered Serpent god. The chronicles say he opposed large-scale human sacrifice and was driven from Tollan by the partisans of Tezcatlipoca, fleeing east toward the sea. In Yucatan the Maya knew a parallel figure as Kukulkan, and the striking central-Mexican styles at Chichen Itza - warrior columns, serpent columns, chacmools - have fueled centuries of debate about whether Toltec exiles conquered or transformed that city. No consensus has ever emerged about the direction of the influence."
+   },
+   {
+    "h2": "Decline"
+   },
+   {
+    "p": "The chronicles tell of a renewal of the religious conflict in the eleventh century and a great famine in the 1070s, and the archaeology agrees on the ending: in the mid-twelfth century Tollan was violently destroyed, its columns and statues burned and deliberately buried, the site later systematically looted. Led by their last ruler Huemac, the surviving Toltecs were said to have resettled at Chapultepec on Lake Texcoco, an event traditionally dated to 1156 or 1168, while other Toltec exiles carried their cult to Cholula and the Maya lands."
+   },
+   {
+    "figure": {
+     "src": "tulaatlante.jpg",
+     "alt": "Painted stone warrior figure from Tula",
+     "cap": "A warrior figure from Tula still bearing traces of its original paint - the Toltecs' sculptures were once vividly colored. Photo: CC BY-SA 4.0."
+    }
+   },
+   {
+    "h2": "The Toltec Legacy"
+   },
+   {
+    "p": "Whatever the Toltecs actually were, their name became the highest praise in Mexico. The Aztecs looked back on the Toltec age as a golden era when writing, medicine, and metallurgy were invented, called their own finest craftsmen tolteca, and sought above all to claim Toltec descent. Their expression Toltecayotl, 'to have a Toltec heart,' meant to excel in all things. Culhuacan, the city where the Mexica first served as mercenaries, was honored as a refuge of Toltec blood. The empire may be partly legend, but the legacy governed Mexican civilization until the Spanish came."
+   }
+  ]
+ },
+ {
+  "filename": "thekingdomofpurepecha",
+  "title": "The Purepecha Empire",
+  "titleline": "The Purepecha Empire - The History Web",
+  "image": "thekingdomofpurepecha.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Purepecha Empire. The Purepecha Empire (c. 1350-1522), also called the Tarascan state, ruled the highlands of western Mexico from its capital at Tzintzuntzan, on the shores of Lake Patzcuaro. The Purepecha people, whose language has no known relatives, were united in the fourteenth century by the culture hero Tariacuri and his successors, who welded the lordships of the lake region into a single kingdom. At its height the empire stretched across much of modern Michoacan and beyond, ruled by a king, the irecha, whose court of priests, nobles, and warriors governed a populous and prosperous land.",
+  "para2": "The Purepecha were the great metalworkers of ancient Mexico. While most Mesoamerican peoples worked metal rarely and only for ornament, Purepecha smiths produced copper and bronze tools, weapons, bells, and ornaments in quantity, along with gold and silver work prized across Mexico. Their cities were crowned with distinctive keyhole-shaped temple platforms called yacatas, and their obsidian mines, featherwork, and lacquerware fed a busy trade.",
+  "para3": "The empire was the great rival of the Aztecs. When the Aztec armies pushed west, the Purepecha met them at the frontier, and in 1479 they crushed the invading host of King Axayacatl, the worst defeat the Aztecs ever suffered. The border held, and the Purepecha remained the one major state of central Mexico that Tenochtitlan could not conquer. Their independence ended not with the Aztecs but with the Spaniards: in 1522 the last irecha, Tangaxoan II, submitted to the conquistadors, and within a decade the kingdom had been absorbed into New Spain.",
+  "para4": "The Purepecha legacy is alive in Michoacan, where hundreds of thousands still speak the Purepecha language and keep the crafts of their ancestors. The yacatas of Tzintzuntzan still stand above Lake Patzcuaro, monuments of the empire that defied the Aztecs.",
+  "source1": "https://en.wikipedia.org/wiki/Pur%C3%A9pecha_Empire",
+  "source1label": "Wikipedia: Purepecha Empire",
+  "source1icon": "en.wikipedia.org.png",
+  "source2": "https://doi.org/10.1093/oxfordhb/9780195390933.013.0030",
+  "source2label": "Oxford Handbook of Mesoamerican Archaeology: The Tarascan Empire",
+  "source3": "https://lugares.inah.gob.mx/en/node/4481",
+  "source3label": "INAH: Tzintzuntzan",
+  "source4": "https://archive.archaeology.org/0801/abstracts/chachapoya.html",
+  "source4label": "Archaeology Magazine: Tzintzuntzan",
+  "source2icon": "doi.org.png",
+  "source3icon": "lugares.inah.gob.mx.png",
+  "source4icon": "archive.archaeology.org.png"
+ },
+ {
+  "filename": "thechichimecs",
+  "title": "The Chichimec Migrations",
+  "titleline": "The Chichimec Migrations - The History Web",
+  "image": "thechichimecs.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Chichimec Migrations. The Chichimec migrations (c. AD 600-1520) were the long waves of movement that carried the peoples of northern Mexico into the settled heartland of Mesoamerica. To the civilizations of central Mexico, the north was the land of the Chichimecs, a catch-all name for the hunting and gathering peoples beyond the farming frontier: the Guachichil, Pame, Otomi, Zacateco, and many others. Painted manuscripts such as the Codex Boturini and the Codex Xolotl preserved the traditions of how these northern peoples journeyed south into the Valley of Mexico and its neighbors.",
+  "para2": "The first great movements came as the city of Tula, heir of Teotihuacan, flourished and then fell around the twelfth century. Northern peoples pressed into its world, and new powers rose from the mixing: the Toltecs themselves traced part of their ancestry to Chichimec migrants, and after Tula's fall, bands of Chichimeca under leaders remembered as Xolotl and his son Nopaltzin settled in the eastern valley and founded the Acolhua realm of Texcoco.",
+  "para3": "The most famous migration of all was that of the Mexica, the future Aztecs, who told how they left their northern homeland of Aztlan and wandered for generations before founding Tenochtitlan in 1325. From such Chichimec beginnings rose the greatest power of late Mesoamerica. Yet the unconquered north remained: when the Spaniards tried to push into the mining country of the Chichimeca, the fierce Guachichil and their allies fought the long Chichimec War of 1550-1590, the costliest Indian war of the colonial period, which Spain ended only by negotiation and gifts.",
+  "para4": "The Chichimec migrations remind us that the civilizations of Mexico were built by migrants from the desert edge, and that the line between the settled south and the nomadic north was a frontier where new peoples and new states were continually made.",
+  "source1": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/chichimecs",
+  "source1label": "Encyclopedia.com: Chichimecs",
+  "source1icon": "encyclopedia.com.png",
+  "source2": "https://en.wikipedia.org/wiki/Chichimeca",
+  "source2label": "Wikipedia: Chichimeca",
+  "source2icon": "en.wikipedia.org.png",
+  "source3": "http://www.scielo.org.mx/scielo.php?pid=S0188-46111998000200006&script=sci_arttext",
+  "source3label": "SciELO: Cambios en la frontera Chichimeca",
+  "source4": "https://digitalcommons.sacredheart.edu/cgi/viewcontent.cgi?article=1157&context=his_fac",
+  "source4label": "Sacred Heart University: Discovering the Chichimecas",
+  "source3icon": "scielo.org.mx.png",
+  "source4icon": "digitalcommons.sacredheart.edu.png"
+ },
+ {
+  "filename": "thecreekandthesoutheast",
+  "title": "The Muskogee and the Southeastern Chiefdoms",
+  "titleline": "The Muskogee and the Southeastern Chiefdoms - The History Web",
+  "image": "thecreekandthesoutheast.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Muskogee and the Southeastern Chiefdoms. The Muskogee and the southeastern chiefdoms (c. AD 1000-1830) were the heirs of the mound-building world of the American Southeast. From about AD 1000 the Mississippian culture raised temple mounds and palisaded towns across the region: Etowah in Georgia, Moundville in Alabama, and dozens of lesser centers, ruled by chiefs who lived atop the mounds and controlled trade in copper, shell, and prestige goods stretching across the continent. Their people farmed maize, played the ballgame called chunkey, and honored their dead in rich burials.",
+  "para2": "European contact shattered this world. The expedition of Hernando de Soto, which marched through the Southeast in 1539-1542, met powerful chiefdoms and left behind devastation and disease; within a century the old mound centers had collapsed. Out of the survivors arose new peoples: the descendants of the Mississippian towns regrouped into confederacies of autonomous towns, the greatest of them the Muskogee, or Creek, whose towns stretched across what is now Alabama and Georgia.",
+  "para3": "The Creek Confederacy was a nation of towns rather than a state. Each town had its chief, its council fire, and its ball ground, and the confederacy met to treat of war and peace with the colonial powers around them. Creek diplomats played Britain, France, and Spain against one another for a century, until American expansion broke the balance. In 1813-14 the Red Stick war split the nation, and Andrew Jackson's victory at Horseshoe Bend forced the cession of millions of acres; by the 1830s the Creeks, like the other southeastern nations, had been driven west on the Trail of Tears to Indian Territory.",
+  "para4": "The descendants of the chiefdoms endure. The Muscogee (Creek) Nation is today one of the largest tribes in Oklahoma, the mounds of Etowah and Moundville are preserved as monuments of the Mississippian world, and the towns and traditions of the Southeast still shape the nations that carry their memory.",
+  "source1": "https://doi.org/10.1353/sec.2023.0012",
+  "source1label": "Southeastern Archaeology: Origins of the Creek (Muscogee) Confederacy",
+  "source2": "https://www.encyclopedia.com/history/united-states-and-canada/north-american-indigenous-peoples/creek",
+  "source2label": "Encyclopedia.com: Creek",
+  "source2icon": "encyclopedia.com.png",
+  "source3": "https://www.okhistory.org/publications/enc/entry?entry=CR006",
+  "source3label": "Oklahoma Historical Society: Creek (Muscogee)",
+  "source4": "https://www.georgiaencyclopedia.org/articles/history-archaeology/late-prehistoric-early-historic-chiefdoms-ca-a-d-1300-1850/",
+  "source4label": "New Georgia Encyclopedia: Late Prehistoric and Early Historic Chiefdoms",
+  "source1icon": "doi.org.png",
+  "source3icon": "okhistory.org.png",
+  "source4icon": "georgiaencyclopedia.org.png"
+ },
+ {
+  "filename": "thethulemigration",
+  "title": "The Thule Migration",
+  "titleline": "The Thule Migration - The History Web",
+  "image": "thethulemigration.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "The Thule Migration. The Thule migration (c. AD 1000-1600) was one of the fastest and most remarkable expansions in human prehistory: the movement of the ancestors of the Inuit across the top of the world, from Alaska to Greenland, in only a few centuries. The Thule people developed in the Bering Strait region, where for generations Arctic hunters had perfected the technology of life on the ice: the kayak and the large open boat called the umiak, dog sleds, toggling harpoons, and houses of stone, turf, and whalebone.",
+  "para2": "Around AD 1000, as the climate of the High Arctic grew briefly milder and the great bowhead whales ranged east through the channels of the Canadian Arctic, Thule hunting bands followed. Moving east in their skin boats, they spread across the northern coast of North America, reaching Greenland within a few hundred years, and displacing or absorbing the older Dorset people, whom Inuit tradition remembers as the Tuniit, a strong but shy folk who had lived in the Arctic for two thousand years before them.",
+  "para3": "The Thule were supremely adapted to their world. They hunted bowhead whales from flotillas of umiaks, seals at the breathing holes of the winter ice, and caribou on the summer tundra, and their way of life proved so successful that it changed little until modern times. Archaeologists trace their passage in the whalebone frames of their winter houses, scattered along coasts from Siberia to Greenland.",
+  "para4": "The Thule migration created the modern map of the Arctic: the Inuit of Canada and Greenland and the Inupiat of Alaska are all the descendants of these travelers, and their languages remain so similar that a Greenlander and an Alaskan can still partly understand one another after a separation of a thousand years. It stands with the Polynesian voyages as one of the greatest migrations of the pre-industrial world.",
+  "source1": "https://thecanadianencyclopedia.ca/en/article/thule-culture",
+  "source1label": "The Canadian Encyclopedia: Early Inuit (Thule Culture)",
+  "source2": "https://www.heritage.nf.ca/articles/indigenous/thule.php",
+  "source2label": "Heritage Newfoundland and Labrador: The Thule",
+  "source3": "https://www.degruyterbrill.com/document/doi/10.1515/opar-2022-0326/html",
+  "source3label": "De Gruyter: The Thule Migration: A Culture in a Hurry?",
+  "source4": "https://www.uaf.edu/museum/collections/archaeo/online-exhibits/paleo-eskimo-cultures/",
+  "source4label": "University of Alaska Museum: Thule and their Ancestors",
+  "source1icon": "thecanadianencyclopedia.ca.png",
+  "source3icon": "degruyterbrill.com.png",
+  "source4icon": "uaf.edu.png"
+ },
+ {
+  "filename": "northwestcoastsocieties",
+  "title": "Pacific Northwest Coast Societies and Maritime Trade",
+  "titleline": "Pacific Northwest Coast Societies and Maritime Trade - The History Web",
+  "image": "northwestcoastsocieties.jpg",
+  "linktoparent": "northam/northammedieval.html",
+  "para1": "Along the foggy, island-strewn coast from northern California to Alaska, Indigenous peoples built one of the most remarkable non-agricultural civilizations in world history. Tlingit, Haida, Tsimshian, Kwakwaka'wakw, Nuu-chah-nulth, Coast Salish and other nations drew their wealth from the sea: five species of salmon, halibut, herring, shellfish, sea mammals and, for some, whales. This maritime abundance supported large permanent villages of massive cedar-plank houses, dense populations and elaborate art, all without farming.",
+  "para2": "Northwest Coast society was ranked and competitive. House groups held inherited rights to fishing sites, hunting grounds and trade routes, and chiefs validated their status through the potlatch, great feasts at which hosts distributed enormous quantities of goods, blankets, canoes, carved boxes and coppers, to witnesses. The more a chief gave away, the greater his renown. Enslaved war captives formed a lower class in many communities. Monumental carved poles raised before houses proclaimed lineage histories and crests, while masks, bentwood boxes and woven Chilkat blankets displayed a sophisticated art style governed by strict aesthetic rules.",
+  "para3": "The region's peoples were master mariners and traders. Haida and Tlingit seagoing canoes, carved from single giant cedars, could carry dozens of paddlers on voyages of hundreds of kilometers for trade, war and ceremony. Grease trails carried coastal products such as eulachon oil and dentalia shells deep into the interior, returning furs, obsidian and copper. Dentalia shells circulated as a standard of value along the whole coast. Warfare and slave-raiding were real parts of this competitive world, but so were peace marriages, trade partnerships and shared ceremonies linking distant villages.",
+  "para4": "European and American ships entered this world in the late eighteenth century, seeking sea otter furs for the China trade. Coastal nations quickly became shrewd trading partners, and chiefs such as the Tlingit leader Kowee and the Haida chief Cuneah grew wealthy managing the exchange. But contact also brought smallpox and other epidemics that killed immense numbers, sometimes half a village in a single outbreak. Even so, Northwest Coast peoples adapted rather than vanished: by the early twentieth century their potlatches, carving arts and nations had carried through the worst of colonial pressure, battered but unbroken.",
+  "source1": "https://www.britannica.com/topic/Northwest-Coast-Indian",
+  "source1label": "Britannica: Northwest Coast Indian",
+  "source1icon": "britannica.com.png",
+  "source2": "https://thecanadianencyclopedia.ca/en/article/aboriginal-people-northwest-coast",
+  "source2label": "The Canadian Encyclopedia: Northwest Coast Indigenous Peoples",
+  "source2icon": "thecanadianencyclopedia.ca.png",
+  "source3": "https://www.metmuseum.org/toah/hd/nort/hd_nort.htm",
+  "source3label": "The Metropolitan Museum of Art: Northwest Coast Musical Instruments",
+  "source3icon": "metmuseum.org.png"
+ }
 ]

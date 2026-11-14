@@ -7,6 +7,43 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>(()=>{try{const d=document.documentElement;d.classList.add("light");const s=localStorage;if(s.getItem("hw_theme")==="dark")d.classList.remove("light");if(s.getItem("hw_crt")==="off")d.classList.add("no-crt");if(s.getItem("hw_chars")!=="on")d.classList.add("no-chars");const F={blackkiyrand:'"BlackKiryand","MedievalSharp",cursive',cinzel:'"Cinzel Decorative","MedievalSharp",cursive',uncial:'"Uncial Antiqua","MedievalSharp",cursive',imfell:'"IM Fell English SC","MedievalSharp",cursive',macondo:'"Macondo","MedievalSharp",cursive',grenze:'"Grenze Gotisch","MedievalSharp",cursive',georgia:'Georgia,"Times New Roman",serif'};const fnt=s.getItem("hw_font");if(fnt&&F[fnt]){d.classList.add("hw-custom-font");d.style.setProperty("--hw-reading-font",F[fnt])}const tcol=s.getItem("hw_titlecolor");if(tcol){const V={"#b3400f":["#b3400f","#e07020"],"#d4af37":["#8a6d1f","#d4af37"],"#a12702":["#a12702","#e0664a"],"#e8d5a3":["#8a6d1f","#e8d5a3"]};const dark=s.getItem("hw_theme")==="dark";const v=V[tcol]?V[tcol][dark?1:0]:tcol;d.classList.add("hw-custom-titlecolor");d.style.setProperty("--hw-title-color",v)}}catch(e){document.documentElement.classList.add("no-chars")}})();</script>
     <title>Colonial Georgia and the Southern Frontier - The History Web</title>
+    <meta name="description" content="Colonial Georgia: Oglethorpe's 1732 experiment for the worthy poor - no slavery, no rum, small farms - and how it became a royal plantation colony.">
+    <meta name="keywords" content="colonial georgia, james oglethorpe, trustee georgia, savannah 1733, tomochichi, battle of bloody marsh, georgia trustees, thirteen colonies">
+    <link rel="canonical" href="https://thehistoryweb.org/subtopics/northam/modern/colonialgeorgia">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Colonial Georgia and the Southern Frontier - The History Web">
+    <meta property="og:description" content="Colonial Georgia: Oglethorpe's 1732 experiment for the worthy poor - no slavery, no rum, small farms - and how it became a royal plantation colony.">
+    <meta property="og:url" content="https://thehistoryweb.org/subtopics/northam/modern/colonialgeorgia">
+    <meta property="og:site_name" content="The History Web">
+    <meta property="og:image" content="https://thehistoryweb.org/subtopics/northam/modern/images/colonialgeorgia.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Colonial Georgia and the Southern Frontier - The History Web">
+    <meta name="twitter:description" content="Colonial Georgia: Oglethorpe's 1732 experiment for the worthy poor - no slavery, no rum, small farms - and how it became a royal plantation colony.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Colonial Georgia and the Southern Frontier",
+      "description": "Colonial Georgia: Oglethorpe's 1732 experiment for the worthy poor - no slavery, no rum, small farms - and how it became a royal plantation colony.",
+      "image": "https://thehistoryweb.org/subtopics/northam/modern/images/colonialgeorgia.jpg",
+      "author": {"@type": "Person", "name": "Samy Mohamed"},
+      "publisher": {"@type": "Organization", "name": "The History Web"},
+      "mainEntityOfPage": "https://thehistoryweb.org/subtopics/northam/modern/colonialgeorgia",
+      "isPartOf": {"@type": "WebSite", "name": "The History Web", "url": "https://thehistoryweb.org/"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "The History Web", "item": "https://thehistoryweb.org/"},
+        {"@type": "ListItem", "position": 2, "name": "Northam", "item": "https://thehistoryweb.org/northam.html"},
+        {"@type": "ListItem", "position": 3, "name": "Modern", "item": "https://thehistoryweb.org/erafiles/northam/northamcolonial.html"},
+        {"@type": "ListItem", "position": 4, "name": "Colonial Georgia and the Southern Frontier"}
+      ]
+    }
+    </script>
     <link rel='stylesheet' href='../../../carthage.css'>
     <link rel="stylesheet" href="../../../theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +76,40 @@
         margin-right: 0.45em;
         border-radius: 3px;
     }
+    
+    /* article pages: wider viewbox, real article layout */
+    .table {
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: left;
+    }
+    .table h1, .table h2 {
+        text-align: center;
+    }
+    .table h2.articlesub {
+        font-size: larger;
+        margin: 1.4em 0 0.4em;
+    }
+    .table p {
+        line-height: 1.55;
+    }
+    figure.articlepic {
+        margin: 1.3em auto;
+        text-align: center;
+    }
+    figure.articlepic img {
+        max-width: min(720px, 92%);
+        border: 2px solid black;
+    }
+    figcaption.articlecap {
+        font-size: 0.85em;
+        margin-top: 0.45em;
+        text-align: center;
+    }
+    @media (max-width: 900px) {
+        .table { margin-left: 4%; margin-right: 4%; }
+    }
+    
 </style>
     <script defer src="../../../settings.js"></script>
 </head>
@@ -58,10 +129,19 @@
         <div class="table" style="gap: 10px;">
             <img class="topicimage" src="images/colonialgeorgia.jpg">
             <h1 style="font-size:larger;" data-pagefind-meta="title">Colonial Georgia and the Southern Frontier</h1>
-            <p style="font-size: large;">Georgia, chartered in 1732, was the last of the thirteen colonies, founded with an unusual blend of philanthropy, idealism and strategy. Its moving spirit was James Edward Oglethorpe, a member of Parliament whose work on prison reform had exposed the misery of debtors' jails. The Georgia Trustees proposed a colony where the 'worthy poor' could farm small plots with dignity: land grants capped in size, rum banned, and slavery prohibited, partly on principle and partly so that small farmers, not planters, would man the frontier. For South Carolina, Georgia was also a buffer against Spanish Florida and its Native and French allies.</p>
-            <p style="font-size: large;">Oglethorpe led the first settlers to Savannah in 1733, laying out the town's famous grid of wards and squares. He cultivated peace with the Yamacraw chief Tomochichi, who ceded the site and traveled to England, and negotiated with the powerful Creek confederacy. But Georgia's real test was war: when conflict with Spain came in 1739, Oglethorpe's invasion of Florida failed, and in 1742 a Spanish counterattack was bloodily repulsed at the Battle of Bloody Marsh on St. Simons Island, securing the colony's survival.</p>
-            <p style="font-size: large;">The trustees' utopia eroded under pressure. Colonists resented the limits on landholding and complained they could not compete with slave-worked Carolina rice plantations. One by one the bans fell, on rum in 1742, on slavery in 1751, and with slavery came the plantation economy the founders had meant to prevent. In 1752 the trustees, disappointed and broke, surrendered their charter a year early, and Georgia became a royal colony.</p>
-            <p style="font-size: large;">Royal Georgia boomed. Rice and indigo plantations spread along the coast, worked by enslaved Africans, while small farmers pushed into the Creek backcountry. Savannah grew into a busy Atlantic port. By the 1760s Georgia was British America's youngest and fastest-growing colony, its founders' experiment in a slave-free yeoman republic all but forgotten beneath the plantations of the southern frontier.</p>
+            <p style="font-size: large;">Georgia, chartered in 1732, was the last of the thirteen colonies, founded with an unusual blend of philanthropy, idealism, and strategy. Its moving spirit was James Edward Oglethorpe, a member of Parliament whose work on prison reform had exposed the misery of debtors' jails. The Georgia Trustees proposed a colony where England's 'worthy poor' could farm small plots with dignity: land grants capped in size and passing only through male heirs, rum banned, and slavery prohibited - partly on humanitarian grounds, partly because a buffer colony of armed free farmers between South Carolina and Spanish Florida could not afford a slave population. Their motto was Non sibi sed aliis: not for self, but for others.</p>
+            <h2 class="articlesub">Savannah and Tomochichi</h2>
+            <p style="font-size: large;">Oglethorpe led the first settlers to Savannah in 1733, laying out the town's famous grid of wards and squares. He cultivated peace with the Yamacraw chief Tomochichi, who ceded the town site and in 1734 sailed to England with his family, where the delegation was feted by the Trustees, received by the king and queen, and painted by William Verelst. Oglethorpe negotiated carefully with the powerful Creek confederacy, whose friendship kept Georgia's frontier quiet while the colony found its feet.</p>
+            <figure class="articlepic">
+                <img src="images/savannah1734.jpg" alt="Engraved view of Savannah in March 1734">
+                <figcaption class="articlecap">A View of Savannah as it stood the 29th of March 1734 - Oglethorpe's grid of wards and squares on the bluff above the river, dedicated to the colony's Trustees. Library of Congress, public domain.</figcaption>
+            </figure>
+            <h2 class="articlesub">The Spanish Test</h2>
+            <p style="font-size: large;">Georgia's real test was war. When conflict with Spain came in 1739, Oglethorpe's invasion of Florida failed before St. Augustine, and in 1742 a Spanish counterattack landed on St. Simons Island. It was bloodily repulsed at the Battle of Bloody Marsh - a small fight with a large result: Spain never again mounted an offensive against Britain's colonies on the East Coast. Oglethorpe went home a national hero in 1743 and never returned.</p>
+            <h2 class="articlesub">The Bans Fall</h2>
+            <p style="font-size: large;">The trustees' utopia eroded under pressure from within. Colonists resented the limits on landholding and complained that free labor could not compete with the slave-worked rice plantations of South Carolina next door. One by one the bans fell: rum in 1742, land restrictions loosened, slavery legalized in 1751 - and with slavery came the very plantation economy the founders had meant to prevent. In 1752 the Trustees, disappointed and broke, surrendered their charter a year early, and Georgia became a royal colony.</p>
+            <h2 class="articlesub">Royal Georgia</h2>
+            <p style="font-size: large;">Royal Georgia boomed. Rice and indigo plantations spread along the coast, worked by enslaved Africans, while small farmers pushed into the Creek backcountry and Savannah grew into a busy Atlantic port. By the 1760s Georgia was British America's youngest and fastest-growing colony, its founders' experiment in a slave-free yeoman republic all but forgotten beneath the plantations of the southern frontier - an experiment whose bans lasted barely twenty years, but whose founding ideal made Georgia unique among the thirteen.</p>
             <h1 style="font-size:large;">To read more about this topic:</h1>
             <a href="https://www.britannica.com/biography/James-Edward-Oglethorpe" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: James Edward Oglethorpe</a>
             <a href="https://www.britannica.com/place/Georgia-state" target="_blank"><img class="srcicon" src="../../../sourceicons/britannica.com.png" alt=""> Britannica: Georgia History</a>

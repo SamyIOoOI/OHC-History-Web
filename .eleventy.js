@@ -19,6 +19,15 @@ module.exports = function (eleventyConfig) {
   }
   require("./tools/paint-stem-sources.cjs")();
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false });
+  eleventyConfig.addFilter("articleBlock", (pd) => {
+    const out = [];
+    for (const b of (pd.article || [])) {
+      if (b.h2) out.push(`<h2 class="articlesub">${b.h2}</h2>`);
+      else if (b.p) out.push(`<p style="font-size: large;">${b.p}</p>`);
+      else if (b.figure) out.push(`<figure class="articlepic">\n                <img src="images/${b.figure.src}" alt="${b.figure.alt || ''}">\n                <figcaption class="articlecap">${b.figure.cap}</figcaption>\n            </figure>`);
+    }
+    return out.join("\n            ");
+  });
   eleventyConfig.addFilter("parasBlock", (pd) =>
     blocks(pd, "para", (v) => `<p style="font-size: large;">${v}</p>`));
   eleventyConfig.addFilter("sourcesBlock", (pd) => {
